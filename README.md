@@ -18,12 +18,15 @@ You either run in your CLI (command line interface):
 
 
 ```
-sqelton --layout neato -e -o visualization/<YYYY-MM-DD>-hiBC.png hiBC.db
+sqelton --layout neato -e -o hiBC.png hiBC.db
 ```
-> Replace <YYYY-MM-DD> with the current date.
 
 Or use the [makefile](makefile) in this folder and just go with 
 
 ```
 make vis 
 ```
+
+Here is how it currently looks like:
+
+![hibc_database](hiBC.svg)
