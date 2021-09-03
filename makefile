@@ -7,3 +7,6 @@ vis:
 	sqleton --layout neato -e -o $(NAME).png $(NAME).db
 	sqleton --layout neato -e -o $(NAME).svg $(NAME).db
 	open $(NAME).png
+
+import:
+	bash hiBC_import.sh
