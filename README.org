@@ -1,6 +1,24 @@
 # -*- org-export-babel-evaluate: t -*-
 # -*- coding: utf-8 -*-
 
+#+begin_code
+HHHHHHHHH     HHHHHHHHH  iiii  BBBBBBBBBBBBBBBBB           CCCCCCCCCCCCC                   UUUUUUUU     UUUUUUUUKKKKKKKKK    KKKKKKK               AAA
+H:::::::H     H:::::::H i::::i B::::::::::::::::B       CCC::::::::::::C     @@@@@@@@@     U::::::U     U::::::UK:::::::K    K:::::K              A:::A
+H:::::::H     H:::::::H  iiii  B::::::BBBBBB:::::B    CC:::::::::::::::C   @@:::::::::@@   U::::::U     U::::::UK:::::::K    K:::::K             A:::::A
+HH::::::H     H::::::HH        BB:::::B     B:::::B  C:::::CCCCCCCC::::C @@:::::::::::::@@ UU:::::U     U:::::UUK:::::::K   K::::::K            A:::::::A
+  H:::::H     H:::::H  iiiiiii   B::::B     B:::::B C:::::C       CCCCCC@:::::::@@@:::::::@ U:::::U     U:::::U KK::::::K  K:::::KKK           A:::::::::A
+  H:::::H     H:::::H  i:::::i   B::::B     B:::::BC:::::C              @::::::@   @::::::@ U:::::D     D:::::U   K:::::K K:::::K             A:::::A:::::A
+  H::::::HHHHH::::::H   i::::i   B::::BBBBBB:::::B C:::::C              @:::::@  @@@@:::::@ U:::::D     D:::::U   K::::::K:::::K             A:::::A A:::::A
+  H:::::::::::::::::H   i::::i   B:::::::::::::BB  C:::::C              @:::::@  @::::::::@ U:::::D     D:::::U   K:::::::::::K             A:::::A   A:::::A
+  H:::::::::::::::::H   i::::i   B::::BBBBBB:::::B C:::::C              @:::::@  @::::::::@ U:::::D     D:::::U   K:::::::::::K            A:::::A     A:::::A
+  H::::::HHHHH::::::H   i::::i   B::::B     B:::::BC:::::C              @:::::@  @:::::::@@ U:::::D     D:::::U   K::::::K:::::K          A:::::AAAAAAAAA:::::A
+  H:::::H     H:::::H   i::::i   B::::B     B:::::BC:::::C              @:::::@  @@@@@@@@   U:::::D     D:::::U   K:::::K K:::::K        A:::::::::::::::::::::A
+  H:::::H     H:::::H   i::::i   B::::B     B:::::B C:::::C       CCCCCC@::::::@            U::::::U   U::::::U KK::::::K  K:::::KKK    A:::::AAAAAAAAAAAAA:::::A
+HH::::::H     H::::::HHi::::::iBB:::::BBBBBB::::::B  C:::::CCCCCCCC::::C@:::::::@@@@@@@@    U:::::::UUU:::::::U K:::::::K   K::::::K   A:::::A             A:::::A
+H:::::::H     H:::::::Hi::::::iB:::::::::::::::::B    CC:::::::::::::::C @@:::::::::::::@    UU:::::::::::::UU  K:::::::K    K:::::K  A:::::A               A:::::A
+H:::::::H     H:::::::Hi::::::iB::::::::::::::::B       CCC::::::::::::C   @@:::::::::::@      UU:::::::::UU    K:::::::K    K:::::K A:::::A                 A:::::A
+HHHHHHHHH     HHHHHHHHHiiiiiiiiBBBBBBBBBBBBBBBBB           CCCCCCCCCCCCC     @@@@@@@@@@@         UUUUUUUUU      KKKKKKKKK    KKKKKKKAAAAAAA                   AAAAAAA
+#+end_code
 #+TITLE: HiBC Database
 #+PROPERTY: header-args :db hiBC.db
 
