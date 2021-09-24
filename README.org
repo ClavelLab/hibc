@@ -4,7 +4,7 @@
 #+PROPERTY: header-args :db hiBC.db
 
 
-#+begin_code
+#+begin_src
 
 
 
@@ -33,7 +33,7 @@ HHHHHHHHH     HHHHHHHHHiiiiiiiiBBBBBBBBBBBBBBBBB           CCCCCCCCCCCCC
 
 
 
-#+end_code
+#+end_sc
 This is the documentation of the database for HiBC.
 
 It contains an overview of the various tables used as well as some queries and their results.
