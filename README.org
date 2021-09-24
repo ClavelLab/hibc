@@ -6,9 +6,6 @@
 
 #+begin_src
 
-
-
-
 HHHHHHHHH     HHHHHHHHH  iiii  BBBBBBBBBBBBBBBBB           CCCCCCCCCCCCC
 H:::::::H     H:::::::H i::::i B::::::::::::::::B       CCC::::::::::::C
 H:::::::H     H:::::::H  iiii  B::::::BBBBBB:::::B    CC:::::::::::::::C
