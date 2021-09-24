@@ -1,5 +1,8 @@
 # -*- org-export-babel-evaluate: t -*-
 # -*- coding: utf-8 -*-
+#+TITLE: HiBC Database
+#+PROPERTY: header-args :db hiBC.db
+
 
 #+begin_code
 
@@ -31,9 +34,6 @@ HHHHHHHHH     HHHHHHHHHiiiiiiiiBBBBBBBBBBBBBBBBB           CCCCCCCCCCCCC
 
 
 #+end_code
-#+TITLE: HiBC Database
-#+PROPERTY: header-args :db hiBC.db
-
 This is the documentation of the database for HiBC.
 
 It contains an overview of the various tables used as well as some queries and their results.
