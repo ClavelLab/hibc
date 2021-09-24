@@ -5,7 +5,6 @@
 
 
 #+begin_src
-
 HHHHHHHHH     HHHHHHHHH  iiii  BBBBBBBBBBBBBBBBB           CCCCCCCCCCCCC
 H:::::::H     H:::::::H i::::i B::::::::::::::::B       CCC::::::::::::C
 H:::::::H     H:::::::H  iiii  B::::::BBBBBB:::::B    CC:::::::::::::::C
@@ -22,15 +21,8 @@ HH::::::H     H::::::HHi::::::iBB:::::BBBBBB::::::B  C:::::CCCCCCCC::::C
 H:::::::H     H:::::::Hi::::::iB:::::::::::::::::B    CC:::::::::::::::C
 H:::::::H     H:::::::Hi::::::iB::::::::::::::::B       CCC::::::::::::C
 HHHHHHHHH     HHHHHHHHHiiiiiiiiBBBBBBBBBBBBBBBBB           CCCCCCCCCCCCC
+#+end_src
 
-
-
-
-
-
-
-
-#+end_sc
 This is the documentation of the database for HiBC.
 
 It contains an overview of the various tables used as well as some queries and their results.
