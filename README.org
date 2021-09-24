@@ -4,6 +4,10 @@
 #+TITLE: HiBC Database
 #+PROPERTY: header-args :db hiBC.db
 
+This is the documentation of the database for HiBC.
+
+It contains an overview of the various tables used as well as some queries and their results.
+
 
 #+NAME: tables-overview
 #+BEGIN_SRC sqlite :exports both :colnames yes
@@ -69,14 +73,21 @@ PRAGMA table_info(isolate)
 
 <<Text about this query>>
 
+This query is done because we want to get a list of ...
+
 #+begin_src sqlite :exports both :colnames yes
-/* COMMENT */
 SELECT
  i.Clavel_Lab_ID,
- tf.family as "Tax Family",
+ /* check if there is a family defined
+ it can be of either table */
+  CASE WHEN  tf.family IS NOT NULL
+  /* the manually selected family is taken into account */
+       THEN tf.family
+  /* the automatically detected family based on the genus is displayed */
+       ELSE  tf2.Family
+       END AS "Tax Family",
  ts.Species as "Tax Species",
  tg.genus as "Tax Genus",
- tg.FK_TAX_FAM as "Tax Genus->Family",
  tp.Phylum as "Tax Phylum",
  g.Completeness as "Completeness",
  dsmz.State as "DSMZ",
@@ -87,6 +98,8 @@ from ISOLATE i
  left join TAX_SPE ts on ts.pk = t.FK_TAX_SPE
  left join TAX_GEN tg on tg.pk = t.FK_TAX_GEN
  left join TAX_PHY tp on tp.pk = tf.FK_TAX_PHY
+ left join TAX_FAM tf2 on tf2.pk = tg.FK_TAX_FAM
+
   left join GENOME g on g.pk = i.FK_GENOME
   left join True_False true on true.pk = g.FK_GENOME_PRESENT
   left join DSMZ on DSMZ.PK = i.FK_DSMZ
@@ -95,112 +108,170 @@ from ISOLATE i
   /*now only get records where a genome is present for XY reason */
 WHERE g.FK_GENOME_PRESENT == '1'
 
-
 #+end_src
 
 #+RESULTS:
-| Clavel_Lab_ID | Tax Family      | Tax Species      | Tax Genus               | Tax Genus->Family | Tax Phylum     | Completeness | DSMZ              | isolation date |
-|---------------+-----------------+------------------+-------------------------+-------------------+----------------+--------------+-------------------+----------------|
-| CLA-AA-H16    |                 | sp. nov          | Faecalibacterium        |                16 |                |          1.0 | Send but not safe | 7/25/19        |
-| CLA-KB-H42    | Eggerthellaceae |                  | gen. nov                |                   | Actinobacteria |              | Send but not safe | 9/5/19         |
-| CLA-AA-H141   |                 | sp. nov          | Coprococcus             |                16 |                |              | Send but not safe | 2/18/20        |
-| CLA-AA-H142   | Lachnospiraceae |                  | gen. nov                |                   | Firmicutes     |              | Send but not safe | 2/18/20        |
-| CLA-AA-H144   |                 | sp. nov          | Bacteroides             |                 4 |                |              | Send but not safe | 2/18/20        |
-| CLA-AA-H147   |                 | sp. nov          | Mediterraneibacter      |                16 |                |              |                   | 2/18/20        |
-| CLA-AA-H161   |                 | sp. nov          | Blautia                 |                16 |                |        99.37 | Send but not safe | 2/18/20        |
-| CLA-AA-H77    | Lachnospiraceae |                  | gen. nov                |                   | Firmicutes     |        99.37 |                   | 2/18/20        |
-| CLA-AA-H94    |                 | sp. nov          | Clostridium             |                 7 |                |              |                   | 2/18/20        |
-| CLA-AA-H132   | Lachnospiraceae |                  | gen. nov                |                   | Firmicutes     |              |                   | 2/18/20        |
-| CLA-AA-H145   | Prevotellaceae  |                  | gen. nov                |                   | Bacteroidetes  |              | Send but not safe | 2/18/20        |
-| CLA-AA-H176   | Lachnospiraceae |                  | gen. nov                |                   | Firmicutes     |       0.9808 |                   | 6/4/20         |
-| CLA-AA-H183   | Lachnospiraceae |                  | gen. nov                |                   | Firmicutes     |              |                   | 6/4/20         |
-| CLA-AA-H184   | Eubacteriaceae  |                  | gen. nov                |                   | Firmicutes     |              |                   | 6/4/20         |
-| CLA-AA-H192   | Lachnospiraceae |                  | gen. nov                |                   | Firmicutes     |        93.29 |                   | 6/4/20         |
-| CLA-JM-H1     |                 | inops            | Alistipes               |                23 |                |        99.95 |                   | 5/8/20         |
-| CLA-JM-H2     |                 | cellulosilyticus | Bacteroides             |                 4 |                |        99.63 |                   | 5/8/20         |
-| CLA-JM-H8     | Lachnospiraceae |                  | gen. nov                |                   | Firmicutes     |        99.52 |                   | 5/8/20         |
-| CLA-JM-H9     | Lachnospiraceae |                  | gen. nov                |                   | Firmicutes     |        98.21 |                   | 5/8/20         |
-| CLA-JM-H10    |                 | sp. nov          | Lachnospira             |                16 |                |        98.66 |                   | 5/8/20         |
-| CLA-JM-H11    | Lachnospiraceae |                  | gen. nov                |                   | Firmicutes     |         98.3 |                   | 5/8/20         |
-| CLA-JM-H12    |                 | sp. nov          | Roseburia               |                16 |                |        99.52 |                   | 5/8/20         |
-| CLA-JM-H16    |                 | sp. nov          | Blautia                 |                16 |                |        99.37 | Send but not safe | 5/8/20         |
-| CLA-JM-H19    |                 | sp. nov          | Parolsenella            |                 2 |                |        100.0 |                   | 5/8/20         |
-| CLA-AA-H199   |                 | sp. nov          | Intestinimonas          |                16 |                |        98.66 |                   | 7/20/20        |
-| CLA-AA-H204   |                 | sp. nov          | Roseburia               |                16 |                |        99.52 |                   | 7/20/20        |
-| CLA-JM-H44    | Lachnospiraceae |                  | gen. nov                |                   | Firmicutes     |        97.99 |                   | 8/6/20         |
-| CLA-JM-H45    | Lachnospiraceae |                  | gen. nov                |                   | Firmicutes     |        97.99 |                   | 8/6/20         |
-| CLA-AA-H207   |                 | sp. nov          | Bacteroides             |                 4 |                |        99.26 |                   | 9/25/20        |
-| CLA-AA-H209   |                 | sp. nov          | Roseburia               |                16 |                |        99.52 |                   | 9/25/20        |
-| CLA-AA-H212   | Lachnospiraceae |                  | gen. nov                |                   | Firmicutes     |        98.66 |                   | 9/25/20        |
-| CLA-AA-H213   |                 | sp. nov          | Blautia                 |                16 |                |        99.37 |                   | 9/25/20        |
-| CLA-AA-H215   | Lachnospiraceae |                  | gen. nov                |                   | Firmicutes     |        98.21 |                   | 9/25/20        |
-| CLA-AA-H217   |                 | sp. nov          | Blautia                 |                16 |                |        99.37 |                   | 9/25/20        |
-| CLA-AA-H220   | Lachnospiraceae |                  | gen. nov                |                   | Firmicutes     |        98.63 |                   | 9/25/20        |
-| CLA-AA-H223   |                 | sp. nov          | Faecalibacterium        |                16 |                |        100.0 |                   | 9/25/20        |
-| CLA-AA-H224   | Lachnospiraceae |                  | gen. nov                |                   | Firmicutes     |        98.73 |                   | 9/25/20        |
-| CLA-AA-H239   |                 | sp.              | Escherichia             |                11 |                |        99.62 |                   | 11/8/20        |
-| CLA-AA-H233   |                 | sp. nov          | Faecalibacterium        |                16 |                |        100.0 |                   | 11/8/20        |
-| CLA-AA-H234   |                 | sp. nov          | Parabacteroides         |                29 |                |        99.04 |                   | 11/8/20        |
-| CLA-AA-H241   |                 | sp. nov          | Blautia                 |                16 |                |        99.37 |                   | 11/8/20        |
-| CLA-AA-H232   | Lachnospiraceae |                  | gen. nov                |                   | Firmicutes     |        97.99 |                   | 11/8/20        |
-| CLA-AA-H236   |                 | sp. nov          | Faecalibacterium        |                16 |                |        100.0 |                   | 11/8/20        |
-| CLA-AA-H244   | Lachnospiraceae |                  | gen. nov                |                   | Firmicutes     |        98.66 |                   | 11/8/20        |
-| CLA-AA-H247   |                 | sp.              | Veillonella             |                30 |                |        100.0 |                   | 11/8/20        |
-| CLA-AA-H250   | Clostridiaceae  |                  | gen. nov                |                   | Firmicutes     |        98.66 |                   | 11/23/20       |
-| CLA-AA-H243   |                 | sp. nov          | Faecalibacterium        |                16 |                |        100.0 |                   | 11/23/20       |
-| CLA-AA-H254   |                 | sp. nov          | Faecalibacterium        |                16 |                |        100.0 |                   | 11/23/20       |
-| CLA-AA-H257   |                 | sp.              | Bifidobacterium         |                 6 |                |        100.0 |                   | 11/23/20       |
-| CLA-AA-H259   |                 | sp.              | Blautia                 |                16 |                |        99.37 |                   | 11/23/20       |
-| CLA-AA-H246   |                 | sp. nov          | Ruminococcus            |                16 |                |        100.0 |                   | 11/23/20       |
-| CLA-AA-H269   | Lachnospiraceae |                  | gen. nov                |                   | Firmicutes     |        98.66 |                   | 11/23/20       |
-| CLA-AA-H270   | Lachnospiraceae | sp.              | gen.                    |                   | Firmicutes     |        99.33 |                   | 11/23/20       |
-| CLA-AA-H272   | Lachnospiraceae |                  | gen. nov                |                   | Firmicutes     |         95.3 |                   | 7/20/20        |
-| CLA-AA-H273   | Lachnospiraceae |                  | gen. nov                |                   | Firmicutes     |        99.52 |                   | 7/20/20        |
-| CLA-AA-H280   |                 | sp.              | Bifidobacterium         |                 6 |                |        99.55 |                   | 11/23/20       |
-| CLA-AA-H277   | Clostridiaceae  |                  | gen. nov                |                   | Firmicutes     |        99.37 |                   | 11/8/20        |
-| CLA-AA-H276   | Clostridiaceae  |                  | gen. nov                |                   | Firmicutes     |        99.37 |                   | 11/8/20        |
-| CLA-AA-H275   |                 | sp. nov          | Blautia                 |                16 |                |        99.37 |                   | 11/8/20        |
-| CLA-AA-H274   |                 | sp. nov          | Lacrimispora            |                16 |                |        99.37 |                   | 11/8/20        |
-| CLA-AA-H278   |                 | sp. nov          | Clostridium             |                 7 |                |        100.0 |                   | 11/8/20        |
-| CLA-AA-H282   |                 | formicilis       | Gemmiger                |                16 |                |        98.95 |                   | 9/25/20        |
-| CLA-AA-H283   |                 | sp. nov          | Faecalibacterium        |                16 |                |        100.0 |                   | 7/20/20        |
-|               |                 | acetigenes       | Oscillibacter           |                16 |                |              | Safe              |                |
-|               |                 | acetigenes       | Oscillibacter           |                16 |                |              | Safe              |                |
-|               |                 | butyrica         | Huintestinicola         |                16 |                |              | Safe              |                |
-|               |                 | ammoniilytica    | Dorea                   |                16 |                |              | Safe              |                |
-|               |                 | butyrica         | Megasphaera             |                30 |                |              | Safe              |                |
-|               |                 | cellulolyticus   | Bacteroides             |                 4 |                |              | Safe              |                |
-|               |                 | fibrisolvens     | Phocaeicola             |                 4 |                |              | Safe              |                |
-|               |                 | ammoniilytica    | Brotonthovivens         |                16 |                |              | Safe              |                |
-|               |                 | amylophila       | Roseburia               |                16 |                |              | Safe              |                |
-|               |                 | fibrivorans      | Suonthocola             |                16 |                |              | Safe              |                |
-|               |                 | aceti            | Muricoprocola           |                16 |                |              | Safe              |                |
-|               |                 | ammoniilytica    | Blautia                 |                16 |                |              | Safe              |                |
-|               |                 | acetigignens     | Blautia                 |                16 |                |              | Safe              |                |
-|               |                 | ammoniilytica    | ﻿Bovifimicola            |                16 |                |              | Safe              |                |
-|               |                 | ammoniilytica    | Porcipelethomonas       |                16 |                |              | Safe              |                |
-|               |                 | ﻿ammoniilyticus   | ﻿Hoministercoradaptatus  |                16 |                |              | Safe              |                |
-|               |                 | butyrica         | ﻿Brotomerdimonas         |                32 |                |              | Safe              |                |
-|               |                 | aceti            | ﻿Hominimerdicola         |                16 |                |              | Safe              |                |
-|               |                 | acetigenes       | Dorea                   |                16 |                |              | Safe              |                |
-|               |                 | aceti            | ﻿Suilimivivens           |                16 |                |              | Safe              |                |
-|               |                 | ammoniilytica    | ﻿Laedolimicola           |                16 |                |              | Safe              |                |
-|               |                 | ﻿propionicum      | ﻿Gallintestinimicrobium  |                16 |                |              | Safe              |                |
-|               |                 | ﻿ammoniilyticum   | ﻿Agathobaculum           |                 7 |                |              | Safe              |                |
-|               |                 | ﻿propionica       | Barnesiella             |                 5 |                |              | Safe              |                |
-|               |                 | aceti            | ﻿Alitiscatomonas         |                16 |                |              | Safe              |                |
-|               |                 | acetigignens     | ﻿Brotolimicola           |                16 |                |              | Safe              |                |
-|               |                 | acetigenes       | ﻿Aedoeadaptatus          |                21 |                |              | Safe              |                |
-|               |                 | ﻿ammoniilyticus   | ﻿Hoministercoradaptatus  |                16 |                |              | Safe              |                |
-|               |                 | acetigignens     | ﻿Brotolimicola           |                16 |                |              | Safe              |                |
-|               |                 | aceti            | Coprococcus             |                16 |                |              | Safe              |                |
-|               |                 | ﻿amylophilus      | Anaerostipes            |                16 |                |              | Safe              |                |
-|               |                 | acetigenes       | ﻿Faecalicatena           |                16 |                |              | Safe              |                |
-|               |                 | ﻿ammoniilyticum   | Clostridium             |                 7 |                |              | Safe              |                |
-|               |                 | amylophila       | Dorea                   |                16 |                |              | Safe              |                |
-|               |                 | ﻿ammoniilyticum   | Clostridium             |                 7 |                |              | Safe              |                |
-|               |                 | ﻿ammoniilyticum   | Clostridium             |                 7 |                |              | Safe              |                |
-|               |                 | aceti            | ﻿Muriventricola          |                16 |                |              | Safe              |                |
-|               |                 | aceti            | ﻿Muriventricola          |                16 |                |              | Safe              |                |
-|               |                 | aceti            | ﻿Anthropogastromicrobium |                16 |                |              | Safe              |                |
-|               |                 | ammoniilytica    | Brotonthovivens         |                16 |                |              | Safe              |                |
+| Clavel_Lab_ID | Tax Family            | Tax Species      | Tax Genus               | Tax Phylum     | Completeness | DSMZ              | isolation date |
+|---------------+-----------------------+------------------+-------------------------+----------------+--------------+-------------------+----------------|
+| CLA-AA-H16    | Lachnospiraceae       | sp. nov          | Faecalibacterium        |                |          1.0 | Send but not safe | 7/25/19        |
+| CLA-KB-H42    | Eggerthellaceae       |                  | gen. nov                | Actinobacteria |              | Send but not safe | 9/5/19         |
+| CLA-AA-H141   | Lachnospiraceae       | sp. nov          | Coprococcus             |                |              | Send but not safe | 2/18/20        |
+| CLA-AA-H142   | Lachnospiraceae       |                  | gen. nov                | Firmicutes     |              | Send but not safe | 2/18/20        |
+| CLA-AA-H144   | Bacteroidaceae        | sp. nov          | Bacteroides             |                |              | Send but not safe | 2/18/20        |
+| CLA-AA-H147   | Lachnospiraceae       | sp. nov          | Mediterraneibacter      |                |              |                   | 2/18/20        |
+| CLA-AA-H161   | Lachnospiraceae       | sp. nov          | Blautia                 |                |        99.37 | Send but not safe | 2/18/20        |
+| CLA-AA-H77    | Lachnospiraceae       |                  | gen. nov                | Firmicutes     |        99.37 |                   | 2/18/20        |
+| CLA-AA-H94    | Clostridiaceae        | sp. nov          | Clostridium             |                |              |                   | 2/18/20        |
+| CLA-AA-H132   | Lachnospiraceae       |                  | gen. nov                | Firmicutes     |              |                   | 2/18/20        |
+| CLA-AA-H145   | Prevotellaceae        |                  | gen. nov                | Bacteroidetes  |              | Send but not safe | 2/18/20        |
+| CLA-AA-H176   | Lachnospiraceae       |                  | gen. nov                | Firmicutes     |       0.9808 |                   | 6/4/20         |
+| CLA-AA-H183   | Lachnospiraceae       |                  | gen. nov                | Firmicutes     |              |                   | 6/4/20         |
+| CLA-AA-H184   | Eubacteriaceae        |                  | gen. nov                | Firmicutes     |              |                   | 6/4/20         |
+| CLA-AA-H192   | Lachnospiraceae       |                  | gen. nov                | Firmicutes     |        93.29 |                   | 6/4/20         |
+| CLA-JM-H1     | Rikenellaceae         | inops            | Alistipes               |                |        99.95 |                   | 5/8/20         |
+| CLA-JM-H2     | Bacteroidaceae        | cellulosilyticus | Bacteroides             |                |        99.63 |                   | 5/8/20         |
+| CLA-JM-H8     | Lachnospiraceae       |                  | gen. nov                | Firmicutes     |        99.52 |                   | 5/8/20         |
+| CLA-JM-H9     | Lachnospiraceae       |                  | gen. nov                | Firmicutes     |        98.21 |                   | 5/8/20         |
+| CLA-JM-H10    | Lachnospiraceae       | sp. nov          | Lachnospira             |                |        98.66 |                   | 5/8/20         |
+| CLA-JM-H11    | Lachnospiraceae       |                  | gen. nov                | Firmicutes     |         98.3 |                   | 5/8/20         |
+| CLA-JM-H12    | Lachnospiraceae       | sp. nov          | Roseburia               |                |        99.52 |                   | 5/8/20         |
+| CLA-JM-H16    | Lachnospiraceae       | sp. nov          | Blautia                 |                |        99.37 | Send but not safe | 5/8/20         |
+| CLA-JM-H19    | Atopobiaceae          | sp. nov          | Parolsenella            |                |        100.0 |                   | 5/8/20         |
+| CLA-AA-H199   | Lachnospiraceae       | sp. nov          | Intestinimonas          |                |        98.66 |                   | 7/20/20        |
+| CLA-AA-H204   | Lachnospiraceae       | sp. nov          | Roseburia               |                |        99.52 |                   | 7/20/20        |
+| CLA-JM-H44    | Lachnospiraceae       |                  | gen. nov                | Firmicutes     |        97.99 |                   | 8/6/20         |
+| CLA-JM-H45    | Lachnospiraceae       |                  | gen. nov                | Firmicutes     |        97.99 |                   | 8/6/20         |
+| CLA-AA-H207   | Bacteroidaceae        | sp. nov          | Bacteroides             |                |        99.26 |                   | 9/25/20        |
+| CLA-AA-H209   | Lachnospiraceae       | sp. nov          | Roseburia               |                |        99.52 |                   | 9/25/20        |
+| CLA-AA-H212   | Lachnospiraceae       |                  | gen. nov                | Firmicutes     |        98.66 |                   | 9/25/20        |
+| CLA-AA-H213   | Lachnospiraceae       | sp. nov          | Blautia                 |                |        99.37 |                   | 9/25/20        |
+| CLA-AA-H215   | Lachnospiraceae       |                  | gen. nov                | Firmicutes     |        98.21 |                   | 9/25/20        |
+| CLA-AA-H217   | Lachnospiraceae       | sp. nov          | Blautia                 |                |        99.37 |                   | 9/25/20        |
+| CLA-AA-H220   | Lachnospiraceae       |                  | gen. nov                | Firmicutes     |        98.63 |                   | 9/25/20        |
+| CLA-AA-H223   | Lachnospiraceae       | sp. nov          | Faecalibacterium        |                |        100.0 |                   | 9/25/20        |
+| CLA-AA-H224   | Lachnospiraceae       |                  | gen. nov                | Firmicutes     |        98.73 |                   | 9/25/20        |
+| CLA-AA-H239   | Enterobacteriaceae    | sp.              | Escherichia             |                |        99.62 |                   | 11/8/20        |
+| CLA-AA-H233   | Lachnospiraceae       | sp. nov          | Faecalibacterium        |                |        100.0 |                   | 11/8/20        |
+| CLA-AA-H234   | Tannerellaceae        | sp. nov          | Parabacteroides         |                |        99.04 |                   | 11/8/20        |
+| CLA-AA-H241   | Lachnospiraceae       | sp. nov          | Blautia                 |                |        99.37 |                   | 11/8/20        |
+| CLA-AA-H232   | Lachnospiraceae       |                  | gen. nov                | Firmicutes     |        97.99 |                   | 11/8/20        |
+| CLA-AA-H236   | Lachnospiraceae       | sp. nov          | Faecalibacterium        |                |        100.0 |                   | 11/8/20        |
+| CLA-AA-H244   | Lachnospiraceae       |                  | gen. nov                | Firmicutes     |        98.66 |                   | 11/8/20        |
+| CLA-AA-H247   | Veillonellaceae       | sp.              | Veillonella             |                |        100.0 |                   | 11/8/20        |
+| CLA-AA-H250   | Clostridiaceae        |                  | gen. nov                | Firmicutes     |        98.66 |                   | 11/23/20       |
+| CLA-AA-H243   | Lachnospiraceae       | sp. nov          | Faecalibacterium        |                |        100.0 |                   | 11/23/20       |
+| CLA-AA-H254   | Lachnospiraceae       | sp. nov          | Faecalibacterium        |                |        100.0 |                   | 11/23/20       |
+| CLA-AA-H257   | Bifidobacteriaceae    | sp.              | Bifidobacterium         |                |        100.0 |                   | 11/23/20       |
+| CLA-AA-H259   | Lachnospiraceae       | sp.              | Blautia                 |                |        99.37 |                   | 11/23/20       |
+| CLA-AA-H246   | Lachnospiraceae       | sp. nov          | Ruminococcus            |                |        100.0 |                   | 11/23/20       |
+| CLA-AA-H269   | Lachnospiraceae       |                  | gen. nov                | Firmicutes     |        98.66 |                   | 11/23/20       |
+| CLA-AA-H270   | Lachnospiraceae       | sp.              | gen.                    | Firmicutes     |        99.33 |                   | 11/23/20       |
+| CLA-AA-H272   | Lachnospiraceae       |                  | gen. nov                | Firmicutes     |         95.3 |                   | 7/20/20        |
+| CLA-AA-H273   | Lachnospiraceae       |                  | gen. nov                | Firmicutes     |        99.52 |                   | 7/20/20        |
+| CLA-AA-H280   | Bifidobacteriaceae    | sp.              | Bifidobacterium         |                |        99.55 |                   | 11/23/20       |
+| CLA-AA-H277   | Clostridiaceae        |                  | gen. nov                | Firmicutes     |        99.37 |                   | 11/8/20        |
+| CLA-AA-H276   | Clostridiaceae        |                  | gen. nov                | Firmicutes     |        99.37 |                   | 11/8/20        |
+| CLA-AA-H275   | Lachnospiraceae       | sp. nov          | Blautia                 |                |        99.37 |                   | 11/8/20        |
+| CLA-AA-H274   | Lachnospiraceae       | sp. nov          | Lacrimispora            |                |        99.37 |                   | 11/8/20        |
+| CLA-AA-H278   | Clostridiaceae        | sp. nov          | Clostridium             |                |        100.0 |                   | 11/8/20        |
+| CLA-AA-H282   | Lachnospiraceae       | formicilis       | Gemmiger                |                |        98.95 |                   | 9/25/20        |
+| CLA-AA-H283   | Lachnospiraceae       | sp. nov          | Faecalibacterium        |                |        100.0 |                   | 7/20/20        |
+|               | Lachnospiraceae       | acetigenes       | Oscillibacter           |                |              | Safe              |                |
+|               | Lachnospiraceae       | acetigenes       | Oscillibacter           |                |              | Safe              |                |
+|               | Lachnospiraceae       | butyrica         | Huintestinicola         |                |              | Safe              |                |
+|               | Lachnospiraceae       | ammoniilytica    | Dorea                   |                |              | Safe              |                |
+|               | Veillonellaceae       | butyrica         | Megasphaera             |                |              | Safe              |                |
+|               | Bacteroidaceae        | cellulolyticus   | Bacteroides             |                |              | Safe              |                |
+|               | Bacteroidaceae        | fibrisolvens     | Phocaeicola             |                |              | Safe              |                |
+|               | Lachnospiraceae       | ammoniilytica    | Brotonthovivens         |                |              | Safe              |                |
+|               | Lachnospiraceae       | amylophila       | Roseburia               |                |              | Safe              |                |
+|               | Lachnospiraceae       | fibrivorans      | Suonthocola             |                |              | Safe              |                |
+|               | Lachnospiraceae       | aceti            | Muricoprocola           |                |              | Safe              |                |
+|               | Lachnospiraceae       | ammoniilytica    | Blautia                 |                |              | Safe              |                |
+|               | Lachnospiraceae       | acetigignens     | Blautia                 |                |              | Safe              |                |
+|               | Lachnospiraceae       | ammoniilytica    | ﻿Bovifimicola            |                |              | Safe              |                |
+|               | Lachnospiraceae       | ammoniilytica    | Porcipelethomonas       |                |              | Safe              |                |
+|               | Lachnospiraceae       | ﻿ammoniilyticus   | ﻿Hoministercoradaptatus  |                |              | Safe              |                |
+|               | unassigned eubacteria | butyrica         | ﻿Brotomerdimonas         |                |              | Safe              |                |
+|               | Lachnospiraceae       | aceti            | ﻿Hominimerdicola         |                |              | Safe              |                |
+|               | Lachnospiraceae       | acetigenes       | Dorea                   |                |              | Safe              |                |
+|               | Lachnospiraceae       | aceti            | ﻿Suilimivivens           |                |              | Safe              |                |
+|               | Lachnospiraceae       | ammoniilytica    | ﻿Laedolimicola           |                |              | Safe              |                |
+|               | Lachnospiraceae       | ﻿propionicum      | ﻿Gallintestinimicrobium  |                |              | Safe              |                |
+|               | Clostridiaceae        | ﻿ammoniilyticum   | ﻿Agathobaculum           |                |              | Safe              |                |
+|               | Barnesiellaceae       | ﻿propionica       | Barnesiella             |                |              | Safe              |                |
+|               | Lachnospiraceae       | aceti            | ﻿Alitiscatomonas         |                |              | Safe              |                |
+|               | Lachnospiraceae       | acetigignens     | ﻿Brotolimicola           |                |              | Safe              |                |
+|               | Peptoniphilaceae      | acetigenes       | ﻿Aedoeadaptatus          |                |              | Safe              |                |
+|               | Lachnospiraceae       | ﻿ammoniilyticus   | ﻿Hoministercoradaptatus  |                |              | Safe              |                |
+|               | Lachnospiraceae       | acetigignens     | ﻿Brotolimicola           |                |              | Safe              |                |
+|               | Lachnospiraceae       | aceti            | Coprococcus             |                |              | Safe              |                |
+|               | Lachnospiraceae       | ﻿amylophilus      | Anaerostipes            |                |              | Safe              |                |
+|               | Lachnospiraceae       | acetigenes       | ﻿Faecalicatena           |                |              | Safe              |                |
+|               | Clostridiaceae        | ﻿ammoniilyticum   | Clostridium             |                |              | Safe              |                |
+|               | Lachnospiraceae       | amylophila       | Dorea                   |                |              | Safe              |                |
+|               | Clostridiaceae        | ﻿ammoniilyticum   | Clostridium             |                |              | Safe              |                |
+|               | Clostridiaceae        | ﻿ammoniilyticum   | Clostridium             |                |              | Safe              |                |
+|               | Lachnospiraceae       | aceti            | ﻿Muriventricola          |                |              | Safe              |                |
+|               | Lachnospiraceae       | aceti            | ﻿Muriventricola          |                |              | Safe              |                |
+|               | Lachnospiraceae       | aceti            | ﻿Anthropogastromicrobium |                |              | Safe              |                |
+|               | Lachnospiraceae       | ammoniilytica    | Brotonthovivens         |                |              | Safe              |                |
+
+** Example 2
+
+<< description / explaination for query >>
+
+We like to get a list of isolates which are of the genus =Blautia=.
+
+#+begin_src sqlite :exports both :colnames yes
+/* COMMENT */
+SELECT
+ i.Clavel_Lab_ID,
+  CASE WHEN  tf.family IS NOT NULL
+  /* the manually selected family is taken into account */
+       THEN tf.family
+  /* the automatically detected family based on the genus is displayed */
+       ELSE  tf2.Family
+       END AS "Tax Family",
+
+ ts.Species as "Tax Species", /* Tax species for any reason  */
+ tg.genus as "Tax Genus",
+ tp.Phylum as "Tax Phylum",
+ g.Completeness as "Completeness"
+from ISOLATE i
+ left join TAXONOMY t on t.pk = i.FK_TAXONOMY
+ left join TAX_FAM tf on tf.pk = t.FK_TAX_FAM
+ left join TAX_SPE ts on ts.pk = t.FK_TAX_SPE
+ left join TAX_GEN tg on tg.pk = t.FK_TAX_GEN
+ left join TAX_PHY tp on tp.pk = tf.FK_TAX_PHY
+  left join TAX_FAM tf2 on tf2.pk = tg.FK_TAX_FAM
+
+  left join GENOME g on g.pk = i.FK_GENOME
+  left join True_False true on true.pk = g.FK_GENOME_PRESENT
+
+WHERE
+ tg.Genus LIKE "%Blautia%"
+#+end_src
+
+#+RESULTS:
+| Clavel_Lab_ID | Tax Family      | Tax Species   | Tax Genus | Tax Phylum | Completeness |
+|---------------+-----------------+---------------+-----------+------------+--------------|
+| CLA-AA-H165   | Lachnospiraceae | sp.           | Blautia   |            |              |
+| CLA-AA-H120   | Lachnospiraceae | obeum         | Blautia   |            |              |
+| CLA-AA-H160   | Lachnospiraceae | sp. nov       | Blautia   |            |              |
+| CLA-AA-H161   | Lachnospiraceae | sp. nov       | Blautia   |            |        99.37 |
+| CLA-AA-H95    | Lachnospiraceae | sp. nov       | Blautia   |            |              |
+| CLA-AA-H187   | Lachnospiraceae | sp. nov       | Blautia   |            |              |
+| CLA-JM-H16    | Lachnospiraceae | sp. nov       | Blautia   |            |        99.37 |
+| CLA-AA-H213   | Lachnospiraceae | sp. nov       | Blautia   |            |        99.37 |
+| CLA-AA-H217   | Lachnospiraceae | sp. nov       | Blautia   |            |        99.37 |
+| CLA-AA-H235   | Lachnospiraceae | hansenii      | Blautia   |            |              |
+| CLA-AA-H241   | Lachnospiraceae | sp. nov       | Blautia   |            |        99.37 |
+| CLA-AA-H259   | Lachnospiraceae | sp.           | Blautia   |            |        99.37 |
+| CLA-JM-H31-B  | Lachnospiraceae | wexlerae      | Blautia   |            |              |
+| CLA-AA-H275   | Lachnospiraceae | sp. nov       | Blautia   |            |        99.37 |
+|               | Lachnospiraceae | ammoniilytica | Blautia   |            |              |
+|               | Lachnospiraceae | acetigignens  | Blautia   |            |              |
+| CLA-JM-H31    | Lachnospiraceae | sp.           | Blautia   |            |              |
+| CLA-JM-H41    | Lachnospiraceae | sp.           | Blautia   |            |              |
+| CLA-JM-H46    | Lachnospiraceae | obeum         | Blautia   |            |              |
