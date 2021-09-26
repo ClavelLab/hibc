@@ -43,10 +43,15 @@ WHERE g.FK_GENOME_PRESENT == '1'
 </sql><sql name="SQL 5">/* COMMENT */
 SELECT 
  i.Clavel_Lab_ID,
- tf.family as &quot;Tax Family&quot;,
+  CASE WHEN  tf.family IS NOT NULL
+  /* the manually selected family is taken into account */
+       THEN tf.family
+  /* the automatically detected family based on the genus is displayed */
+       ELSE  tf2.Family
+       END AS &quot;Tax Family&quot;,
+	  
  ts.Species as &quot;Tax Species&quot;, /* Tax species for any reason  */
  tg.genus as &quot;Tax Genus&quot;,
- tg.FK_TAX_FAM as &quot;Tax Genus-&gt;Family&quot;,
  tp.Phylum as &quot;Tax Phylum&quot;,
  g.Completeness as &quot;Completeness&quot;
 from ISOLATE i
@@ -55,10 +60,12 @@ from ISOLATE i
  left join TAX_SPE ts on ts.pk = t.FK_TAX_SPE
  left join TAX_GEN tg on tg.pk = t.FK_TAX_GEN
  left join TAX_PHY tp on tp.pk = tf.FK_TAX_PHY
+  left join TAX_FAM tf2 on tf2.pk = tg.FK_TAX_FAM
+
   left join GENOME g on g.pk = i.FK_GENOME
   left join True_False true on true.pk = g.FK_GENOME_PRESENT
 
 WHERE 
  /* i.Clavel_Lab_ID LIKE &quot;%H16%&quot; */
  tg.Genus LIKE &quot;%Blautia%&quot;
- </sql><current_tab id="2"/></tab_sql></sqlb_project>
+ </sql><current_tab id="3"/></tab_sql></sqlb_project>
