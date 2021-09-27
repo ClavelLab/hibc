@@ -89,6 +89,8 @@ PRAGMA table_info(isolate)
 
 * Queries
 
+** TODO TAX_PHY values need to be considered
+
 ** Example 1
 
 <<Text about this query>>
