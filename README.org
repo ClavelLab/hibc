@@ -302,8 +302,11 @@ WHERE
 
 
 
-Example 3
+** Example 3
+
 << description / explaination for query >>
+
+
 This lists all the relavent information we want users to see from the HiBC database.
 
 
