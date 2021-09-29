@@ -67,6 +67,17 @@ SELECT name FROM sqlite_master where type='table' ORDER BY name
 PRAGMA table_info(isolate)
 #+END_SRC
 
+The Isolate table is the main body of the database, linking together all information available for every isolate.
+
+It is connected to the tables "Cryo", "DSMZ", "Genome", "Isolation", "MALDI", "Sampling", "Taxonomy", "rRNA" and "References" by stating the foreign key (FK) of the relevant entry.
+
+Additionally the following information are stated directly in this table:
+Clavel_Lab_ID:	Official identifier given to isolates of interest that were isolated in our own lab.
+ID:	Identifier of bacterial strains that were not isolated in our lab. For our own isolates this column stats the first "working title" identifier that was given during isolation, before relevancy of the isolate was confirmed.
+DSM:	Identifier for the DSMZ (German Collection of Microorganisms and Cell Cultures), in case the isolate is deposited there.
+Risk_Group:	Official risk group of the isolate.
+MALDI_Score:	Confidence score of the MALDI test results.
+
 #+RESULTS:
 | cid | name          | type    | notnull | dflt_value | pk |
 |-----+---------------+---------+---------+------------+----|
