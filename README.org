@@ -63,9 +63,6 @@ SELECT name FROM sqlite_master where type='table' ORDER BY name
 | sqlite_sequence |
 
 * Table "Isolate"
-#+BEGIN_SRC sqlite :exports both :colnames yes
-PRAGMA table_info(isolate)
-#+END_SRC
 
 The Isolate table is the main body of the database, linking together all information available for every isolate.
 
@@ -82,6 +79,10 @@ DSM:	Identifier for the DSMZ (German Collection of Microorganisms and Cell Cultu
 Risk_Group:	Official risk group of the isolate.
 
 MALDI_Score:	Confidence score of the MALDI test results.
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(isolate)
+#+END_SRC
 
 #+RESULTS:
 | cid | name          | type    | notnull | dflt_value | pk |
