@@ -1,0 +1,11 @@
+name: hibc-shineyapp
+title:
+username:
+account: hitch-research
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5323913
+bundleId: 5371256
+url: https://hitch-research.shinyapps.io/hibc-shineyapp/
+when: 1639488612.37982
+lastSyncTime: 1639488612.37984
