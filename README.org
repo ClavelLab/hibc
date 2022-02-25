@@ -105,6 +105,329 @@ PRAGMA table_info(isolate)
 |  14 | FK_REFERENCES | INTEGER |       0 |            |  0 |
 |  15 | Comment       | TEXT    |       0 |            |  0 |
 
+* Table "Taxonomy"
+
+This table gives a taxonomic description of the isolates.
+
+Phylum and family can be determined from other tables, as long as the genus is known. Thats why most entries in this table only have foreign keys (FK) to the genus (FK_Tax_Gen) and species (FK_Tax_Spe) table. This connections can not be drawn, when the genus of an isolate is unknown (novel genus). For those cases an additional connection to the family (FK_Tax_Fam) table was established.
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(taxonomy)
+#+END_SRC
+
+#+RESULTS:
+
+
+* Table "Tax_Phy"
+
+A list of all taxonomic phyla covered by the databas.
+
+In addition to the names the wikidata ID is stated for every phylum.
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(tax_phy)
+#+END_SRC
+
+#+RESULTS:
+
+
+* Table "Tax_Fam"
+
+A list of all taxonomic families covered by the databas.
+
+This table contains the name and the wikidata ID of all taxonomic families in the database. Additionally the foreign key (FK) to the phylum table (FK_Tax_Phy) is stated for every family.
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(tax_fam)
+#+END_SRC
+
+#+RESULTS:
+
+
+* Table "Tax_Gen"
+
+A list of all taxonomic genuses covered by the databas.
+
+This table contains the name and the wikidata ID of all taxonomic genuses in the database. Additionally the foreign key (FK) to the family table (FK_Tax_Fam) is stated for every genus.
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(tax_gen)
+#+END_SRC
+
+#+RESULTS:
+
+
+* Table "Tax_Spe"
+
+A list of all taxonomic species covered by the databas.
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(tax_spe)
+#+END_SRC
+
+#+RESULTS:
+
+
+* Table "MALDI"
+
+MALDI is used as a quick method for an initial identification of new isolates. The MALDI software provides either the genus and species of the identified organism, or gives an error message that describes why the identification failed. The results of those tests are summarized in this table.
+
+This table contains the foreign keys (FK) to the genus (FK_Tax_Gen) and the species (FK_Tax_Spe) table. Alternatively the error message is stated in text form.
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(maldi)
+#+END_SRC
+
+#+RESULTS:
+
+
+* Table "rRNA"
+
+16S rRNA gene sequencing is used as a more robust method for identification. It is used as a confirmation of the MALDI results of interesting isolates or as an alternative identification method when MALDI fails. The resulting sequences are compared to the EZBioCloud database to identify the isolates. This table contains the following results of the 16S rRNA gene sequencing:
+
+Identity: The similarity between the resulting sequence and the 16S rRNA sequence of the closest relative found in the EZBioCloud database.
+
+Length: Length of the optained sequence in bp (base-pairs).
+
+Sequence: The optained 16S rRNA gene sequence in text form.
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(rrna)
+#+END_SRC
+
+#+RESULTS:
+
+
+* Table "rRNA_Spe_Gen"
+
+This table is an addition to the "rRNA" table which summarizes the results from the 16S rRNA sequencing. Its job is to provide the taxonomic name of the closest relative found in EZBioCloud.
+
+To connect taxonomy and 16S rRNA gene sequencing results the foreign keys (FK) of the rRNA table (FK_rRNA) are connected to FKs from the genus (FK_Tax_Gen) and species (FK_Tax_Spe) tables. For isolates with a novel genus the FK to the family table (FK_Tax_Fam) is stated instead.
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(rrna_spe_gen)
+#+END_SRC
+
+#+RESULTS:
+
+
+* Table "Isolation"
+
+The isolation table collects all information about the isolation process and the cultivation of the isolates.
+
+It is connected to the tables "Location" (FK_Location), "Staff" (FK_Staff), "Source" (FK_Source) and "Atmosphere" (FK_Atmosphere) by stating the foreign key (FK) of the relevant entry.
+
+Additionally the following information are stated directly in this table:
+
+Date: Date on which the isolation was performed.
+
+Temperature: Temperature in °C at which the isolate is cultivated.
+
+pH: Common pH value of the medium used for cultivating the isolates.
+
+Time: Rough time estimation from streaking on a new plate to the developement of a fully grown colony.
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(isolation)
+#+END_SRC
+
+#+RESULTS:
+
+
+* Table "Location"
+
+List of locations in which sampling or isolation were performed. 
+
+This table contains the foreign key (FK) to the country table (FK_Country).
+
+Additionally the following information are stated in text form directly in this table:
+
+Location: Short text describing the location (e.g. "RWTH - Uniklinik Aachen, AG Clavel").
+
+Longitude: Longitudinal coordinates of the location in DMS (degrees, minutes, seconds) formate.
+
+Latitude: Latidudinal coordinates of the location in DMS (degrees, minutes, seconds) formate.
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(location)
+#+END_SRC
+
+#+RESULTS:
+
+
+* Table "Country"
+
+Name of the country in which the sampling or isolation was performed.
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(country)
+#+END_SRC
+
+#+RESULTS:
+
+
+* Table "Staff"
+
+Name of the person who performed the sampling or isolation.
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(staff)
+#+END_SRC
+
+#+RESULTS:
+
+
+* Table "Atmosphere"
+
+Description of the gasing conditions the isolates were cultivated in.
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(atmosphere)
+#+END_SRC
+
+#+RESULTS:
+
+
+* Table "Media"
+
+List of all growth media that were used in the cultivation of isolates in this database.
+
+Medium: Name of the basic medium, while further specifications are given in the following columns.
+
+Condition: The media can come in two different conditions. Either liquid in hungates or solid in form of an agar plate.
+
+Addition: Further substances added to the basic medium.
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(media)
+#+END_SRC
+
+#+RESULTS:
+
+
+* Table "Isolation_Media"
+
+This table connects the isolates to all media that were used in our lab to cultivate them. Because some isolates were cultivated in several different media this information could not be integrated into the isolation table, where all other cultivation based information are collected.
+
+This table contains the foreign keys (FK) of the isolation (FK_Isolation) and the media (FK_Media) table and links them together.
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(isolation_media)
+#+END_SRC
+
+#+RESULTS:
+
+
+* Table "Sampling"
+
+All isolates are isolated from a source material. Sampling describes the process in which this source material is collected. The sampling table collects all relevant information about this process.
+
+It is connected to the tables "Location" (FK_Location) and "Staff" (FK_Staff) by stating the foreign key (FK) of the relevant entry.
+
+Additionally the table contains the date on which the sample was taken.
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(sampling)
+#+END_SRC
+
+#+RESULTS:
+
+
+* Table "Cryo"
+
+Cryo stocks are created of each isolate for long term storage. This table collects information about the state of the cryo stocks.
+
+This table contains foreign keys (FK) to the storage (FK_Storage) and true-false (FK_Revival_Test) table.
+
+Additionally the date on which the cryo stock was created is stated.
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(cryo)
+#+END_SRC
+
+#+RESULTS:
+
+
+* Table "Storage"
+
+The cryo stocks of the isolates are stored in labled boxes within the -80°C freezer.
+
+This table contains the names of all boxes used for the storage of HiBC isolates.
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(storage)
+#+END_SRC
+
+#+RESULTS:
+
+
+* Table "True_False"
+
+A table that can be used for simple true or false statements. It only contains the two options "yes" or "no".
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(true_false)
+#+END_SRC
+
+#+RESULTS:
+
+
+* Table "Genome"
+
+One aim of the HiBC project is the collection of the full genomic sequence of every isolate. This table gives an overview over the progress of this endeavour.
+
+The table contains foreign keys (FK) to the true_false table (FK_Genome_Present) to state, whether a full genome sequence of the isolate is already available or not.
+
+Additionally the following information are stated directly in this table:
+
+Date: The date on which the genome sequencing was performed.
+
+Completeness: A score judging how much of the actual genome is covered by the sequenced fraction.
+
+Contamination: A score judging how much of the sequenced genome might be wrong.
+
+Length: The length of the sequenced genome in Mbp (mega base pairs). *This information is not implemented jet!*
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(genome)
+#+END_SRC
+
+#+RESULTS:
+
+
+* Table "DSMZ"
+
+Novel taxa will be deposited at the DSMZ. We destinguish between 4 stages of this process. This stages (state) are listed in this table.
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(dsmz)
+#+END_SRC
+
+#+RESULTS:
+
+
+* Table "Iso_Iso"
+
+The HiBC includes several species that have the same taxonomy but differ in their origin (e.g. same experiment but different donors). The purpose of this table is to connect the redundant species. This allows to search for closely related species within the database.
+
+For each redundant species one representative is chosen from the isolate table (FK_Isolate_One) using their foreign key (FK). This representative is than connected to all similar isolates using ther FK from the isolate table (FK_Isolate_Two).
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(iso_iso)
+#+END_SRC
+
+#+RESULTS:
+
+
+* Table "References"
+
+The HiBC contains several taxa that are not officially named jet. Our group proposed names for those taxa in previous publications and we used those names to describe the isolates in this database. The reference table lists the DOI of our publications and can be used to quote the isolates names. 
+
+#+BEGIN_SRC sqlite :exports both :colnames yes
+PRAGMA table_info(references)
+#+END_SRC
+
+#+RESULTS:
 
 * Queries
 
