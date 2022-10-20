@@ -151,7 +151,7 @@ shinyUI(fluidPage(navbarPage(
   h3("About HiBC"),
   h4("HiBC is a collection of bacterial strains, isolated from the human gut for which 16S rRNA, genome and cultivation conditions are available."),
   h4("At current, HiBC contains many novel strains which we aim to describe in our ongoing work."),
-  h4("If you make use of HiBC please cite: Masson et al (TBA)"),
+  h4("If you make use of HiBC please cite: Hitch et al (TBA)"),
   
   fluidRow(
     align = 'center',
