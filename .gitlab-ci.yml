@@ -1,0 +1,38 @@
+stages:
+  - container
+  - host
+
+.default_rules:
+  rules:
+    - if: $CI_COMMIT_TAG =~ /v[0-9]*\.[0-9]*\.[0-9]*/
+
+
+container:
+  stage: container
+  tags: [docker]
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  script:
+    - mkdir -p /kaniko/.docker
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+    - /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY/$CI_PROJECT_PATH/main:latest
+  rules:
+  - !reference [.default_rules, rules]
+
+
+trigger-hosting:
+  stage: trigger
+  variables:
+    TRIGGER_HOSTING_PROJECT: shinydemo
+  trigger: rpdm/hosting
+  rules:
+  - !reference [.default_rules, rules]
+
+host:
+  stage: host
+  variables:
+    TRIGGER_HOSTING_PROJECT: hibc
+  trigger: rpdm/hosting
+  rules:
+  - !reference [.default_rules, rules]
