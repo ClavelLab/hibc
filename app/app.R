@@ -4,7 +4,8 @@ library(DT)
 library(tidyverse)
 
 # Load the hibc table
-hibc_data <- read_delim("2023-01-12.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE)
+hibc_data <- read_delim("2023-01-12.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
+  arrange(Species)
 
 # Define UI
 ui <- navbarPage(
@@ -79,15 +80,35 @@ ui <- navbarPage(
   ),
   tabPanel(
     "Taxonomy",
+    fluidRow(
+      column(
+        width = 4, offset = 2,
+        tags$style(type = "text/css", "body {padding-top: 70px;}"),
+        h4("Taxonomy of the hibc isolates"),
+        p("Browse through the complete list of the isolates in the table below."),
+        p(
+          "If you want to have more information on a specific isolate,",
+          "please select your isolate in the table and click on the button on the right.",
+        ),
+      ),
+      column(
+        width = 4, align = "center",
+        tags$style(type = "text/css", "body {padding-top: 70px;}"),
+        h4("An isolate of interest?"),
+        br(),
+        actionButton(
+          inputId = "viewDetail", class = "go-to-top success",
+          label = "Select a row and click me",
+          width = "150px",
+        )
+      )
+    ),
     column(
       width = 8, offset = 2, align = "center",
-      tags$style(type = "text/css", "body {padding-top: 70px;}"),
-      h2("List of the hibc isolates and the associated taxonomy", align = "center"),
-      br(),
       fluidRow(
         DT::dataTableOutput("taxonomy")
-      ),
-    )
+      )
+    ),
   ),
   tabPanel("Cultivation"),
   tabPanel("Genomes"),
@@ -96,12 +117,14 @@ ui <- navbarPage(
 
 # Define server logic
 server <- function(input, output, session) {
+  preview_hibc <- reactive({
+    hibc_data
+  })
   # Taxonomy table
   output$taxonomy <- DT::renderDT(
     DT::datatable(
-      hibc_data %>%
-        select(StrainID, Species, `DSM no.`, Phylum, Family) %>%
-        arrange(Species),
+      preview_hibc() %>%
+        select(StrainID, Species, `DSM no.`, Phylum, Family),
       filter = "top",
       extensions = "Responsive",
       selection = list(
@@ -112,6 +135,24 @@ server <- function(input, output, session) {
     ) %>% formatStyle(columns = "Species", fontStyle = "italic"),
     server = TRUE
   )
+
+  # Selected isolate
+  output$isolate_id <- renderText({
+    preview_hibc()[input$taxonomy_rows_selected, ] %>% pull("StrainID")
+  })
+
+  observe({
+    req(input$taxonomy_rows_selected)
+    # The action button needs to be observed to be able to register the different row selection
+    updateActionButton(
+      session, "viewDetail",
+      paste(
+        "Details on",
+        preview_hibc()[input$taxonomy_rows_selected, ] %>%
+          pull("StrainID")
+      )
+    )
+  })
 }
 
 # Run the application
