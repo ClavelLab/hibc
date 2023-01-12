@@ -131,6 +131,9 @@ server <- function(input, output, session) {
         mode = "single",
         selected = "7",
         target = "row"
+      ),
+      options = list(
+        dom = "rtflp"
       )
     ) %>% formatStyle(columns = "Species", fontStyle = "italic"),
     server = TRUE
