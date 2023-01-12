@@ -164,6 +164,35 @@ ui <- navbarPage(
         DT::dataTableOutput("genome")
       )
     )
+  ),
+  tabPanel("Details isolate",
+    value = "detail",
+    fluidRow(
+      column(
+        width = 8, offset = 2,
+        h2("Details on the hibc isolate", textOutput("isolate_id", inline = T),
+          id = "isolate-details", align = "center"
+        ),
+
+        # h3("Interaction name:", textOutput("int_name", inline = T), align = "center"),
+        h4("Genome assembly"),
+        column(width = 10, offset = 1, tableOutput("details_assembly")),
+        # h4("Taxonomy and specificity"),
+        # tags$ul(
+        #   tags$li(textOutput("int_tax")),
+        #   tags$li(textOutput("int_specificity"))
+        # ),
+        # h4("Interaction features"),
+        # fluidRow(
+        #   column(width = 5, offset = 1, h5("Dependencies"), tableOutput("dependencies_table")),
+        #   column(width = 5, offset = 1, h5("Site"), tableOutput("site_table"))
+        # ),
+        # fluidRow(
+        #   column(width = 5, offset = 1, h5("Habitat"), tableOutput("habitat_table")),
+        #   column(width = 5, offset = 1, h5("Compounds"), tableOutput("compounds_table"))
+        # )
+      )
+    )
   )
 )
 
@@ -233,6 +262,28 @@ server <- function(input, output, session) {
       )
     )
   })
+
+  output$contamination <- renderText({
+    preview_hibc()[input$taxonomy_rows_selected, ] %>% pull("contam_score")
+  })
+
+  output$details_assembly <- renderTable(
+    {
+      # This function should not be ran before a row is selected.
+      req(input$taxonomy_rows_selected)
+      #
+      preview_hibc() %>%
+        select(genome_length, number_contig, N50, number_contig_below_1kb, max_contig_length) %>%
+        .[input$taxonomy_rows_selected, ] %>%
+        t()
+    },
+    rownames = T,
+    colnames = F,
+    na = "",
+    hover = T,
+    spacing = "xs",
+    digits = 0
+  )
 }
 
 # Run the application
