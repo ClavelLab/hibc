@@ -1,14 +1,21 @@
 library(shiny)
-library(shinythemes)
+library(bslib)
 library(DT)
-
 
 # Define UI
 ui <- navbarPage(
   lang = "en",
-  title = p(icon("bacteria"), "hibc"),
+  title = span(icon("bacteria"), "hibc"),
   windowTitle = "hibc: The Human Intestinal Bacterial Collection",
-  theme = shinytheme("cosmo"),
+  theme = bs_theme(
+    version = 5,
+    bootswatch = "minty",
+    base_font = font_google("Source Sans Pro"),
+    code_font = font_google("Source Code Pro")
+  ) %>%
+    bs_add_rules(
+      ':target:before { content: "";  display: block;  height: 80px;  margin: -20px 0 0;}'
+    ),
   position = "fixed-top",
   footer = list(
     column(hr(),
@@ -22,20 +29,29 @@ ui <- navbarPage(
     column(
       width = 12, align = "center",
       tags$style(type = "text/css", "body {padding-top: 70px;}"),
-      h1(icon("bacteria"), "hibc: The Human Intestinal Bacterial Collection")
+      h1("hibc: The Human Intestinal Bacterial Collection")
     ),
     column(
       width = 8, offset = 2,
-      fluidRow(
-        column(
-          width = 6,
-          p("Placeholder for an large coloured button indicating the number of isolates in the hibc")
+      layout_column_wrap(
+        width = 1 / 2,
+        value_box(
+          # showcase = icon("bacteria"),
+          showcase = tags$i(class = "fas fa-bacteria", style = "font-size: 96px"),
+          title = "hibc contains",
+          value = "224",
+          theme_color = "primary",
+          p("isolates"),
         ),
-        column(
-          width = 6,
-          p("Placeholder for an large coloured button indicating the number of species in the hibc")
+        value_box(
+          showcase = tags$i(class = "fas fa-bugs", style = "font-size: 96px"),
+          title = "hibc contains",
+          value = "123",
+          theme_color = "secondary",
+          p("isolates")
         )
       ),
+      br(),
       fluidRow(
         h2("About hibc", align = "center"),
         p(
