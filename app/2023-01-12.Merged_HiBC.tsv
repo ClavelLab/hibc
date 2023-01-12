@@ -1,0 +1,1290 @@
+StrainID	genome_md5	assembly_qual	genome_length	number_contig	N50	number_contig_below_1kb	max_contig_length	coverage	assembly_software	compl_score	compl_software	contam_score	contam_software	trnas	trna_ext_software	plasmid_length	is_compl_grtr_90	is_contam_less_5	is_coverage_grtr_10	are_contigs_less_100	is_N50_grtr_25kb	is_max_contig_grtr_100kb	is_trnas_grtr_18	is_SSU_grtr_0	is_LSU_grtr_0	is_5S_grtr_0	assembly_date	workflow_version	sequencer	Species	DSM no.	Phylum	Family	Growth atm.	Medium for best growth	Incubation time	Risk Group	16S Accession	Geographic location	Donor type	Gut region	Date of isolation (JJJJ-MM-DD)	Reference (doi)
+CLAAAH117	6867ff28776c681b5390c00d8d46a7b2	Manual review: is_contam_less_5, are_contigs_less_100, is_N50_grtr_25kb, is_max_contig_grtr_100kb, is_trnas_grtr_18	3630371	628	9789	1109	46463	69	SPAdes	97.25	checkm	5.27	checkm	18	tRNAscan-SE	0	True	False	True	False	False	False	False	True	True	True	2022-12-15	v6.1	Nextseq	Prevotella copri		Bacteroidota	Prevotellaceae	Anaerobic	GMM	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH119	fa82c5a1ca302c953d366f2b1d657c88	High-quality draft	3905583	94	123594	192	280010	322	SPAdes	99.37	checkm	0.0	checkm	20	tRNAscan-SE	7191	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	gen. nov.	111178	Bacillota	Lachnospiraceae	Anaerobic	GMM	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH120	68563ef6853ebeffbeaa8c2402a44791	Manual review: is_trnas_grtr_18	3733273	41	239251	78	565219	246	SPAdes	99.37	checkm	0.0	checkm	18	tRNAscan-SE	0	True	True	True	True	True	True	False	True	True	True	2022-12-15	v6.1	Nextseq	Blautia obeum		Bacillota	Lachnospiraceae	Anaerobic	GMM	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH143	bc1960536aba396ded3c0591b6d5a45a	Manual review: is_trnas_grtr_18	2451404	43	164015	143	301928	558	SPAdes	98.66	checkm	0.34	checkm	17	tRNAscan-SE	0	True	True	True	True	True	True	False	True	True	True	2022-12-15	v6.1	Nextseq	Ruminococcus sp. nov.		Bacillota	Ruminococcaceae	Anaerobic	BHI	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH150	d88db37a1e885704b015b846071bd382	Manual review: are_contigs_less_100	3079905	119	63472	167	138638	224	SPAdes	99.33	checkm	0.81	checkm	20	tRNAscan-SE	8468;7755	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Agathobaculum sp.		Bacillota	Oscillospiraceae	Anaerobic	BHI	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH15	a252fc5a671347bce7a19a4f284493fb	Manual review: are_contigs_less_100	6531469	144	92325	130	223210	141	SPAdes	99.32	checkm	0.76	checkm	20	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Enterocloster bolteae		Bacillota	Lachnospiraceae	Anaerobic	WCA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2019-07-25	
+CLAAAH160	af351a5a5dd44262ebd9b7dbf5bbb495	High-quality draft	3541322	35	224296	312	497783	473	SPAdes	99.37	checkm	0.32	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Blautia sp. nov.	111352	Bacillota	Lachnospiraceae	Anaerobic	mGAM Blood	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH163	b88e97d757102f25888fb419dcd93197	High-quality draft	2848197	98	78262	132	203023	236	SPAdes	100.0	checkm	0.0	checkm	19	tRNAscan-SE	7016;1003	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Faecalibacterium longum	111626	Bacillota	Oscillospiraceae	Anaerobic	mGAM Blood	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH169	f0cce22c431f6e19c5cf3d243a5d0e75	Manual review: are_contigs_less_100	3534048	142	56028	179	206355	368	SPAdes	97.28	checkm	0.0	checkm	19	tRNAscan-SE	39068;1310	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Gemmiger sp.		Bacillota	Ruminococcaceae	Anaerobic	BHI	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2020-06-04	
+CLAAAH171	40591613c147a7e58cf4a46756b71221	Manual review: are_contigs_less_100	2257677	103	51194	143	177900	363	SPAdes	98.66	checkm	0.0	checkm	20	tRNAscan-SE	1825	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	gen. nov.	114689	Bacillota	Ruminococcaceae	Anaerobic	BHI	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2020-06-04	
+CLAAAH173	658db4dcf565a330b7c8ca6071a8419f	Manual review: are_contigs_less_100	3034395	322	75098	1131	175513	943	SPAdes	100.0	checkm	0.21	checkm	20	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Sutterella wadsworthensis		Pseudomonadota	Sutterellaceae	Anaerobic	YCFA	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2020-06-04	
+CLAAAH175	c2b0d09a4d5d39d2e2baac89f92204bc	Manual review: are_contigs_less_100	3027795	126	107947	650	431243	416	SPAdes	97.96	checkm	0.0	checkm	20	tRNAscan-SE	14735	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Faecalibacterium prausnitzii		Bacillota	Oscillospiraceae	Anaerobic	YCFA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2020-06-04	
+CLAAAH177	12dfd5b47ae30c537756a5d15848dc8a	Manual review: are_contigs_less_100	5042939	203	45133	497	230877	130	SPAdes	99.37	checkm	0.63	checkm	19	tRNAscan-SE	3649	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Clostridium symbiosum		Bacillota	Lachnospiraceae	Anaerobic	YCFA	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2020-06-04	
+CLAAAH178	e8ca8a8bd724e9099c5ed7402ad0978c	High-quality draft	3125344	60	106267	190	317734	313	SPAdes	99.12	checkm	0.0	checkm	19	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Mediterraneibacter faecis		Bacillota	Lachnospiraceae	Anaerobic	YCFA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2020-06-04	
+CLAAAH180	1535a5676e4839ddeb02429af8c877ed	High-quality draft	2687844	95	68918	39	178998	264	SPAdes	100.0	checkm	0.81	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Adlercreutzia equolifaciens 		Actinomycetota	Eggerthellaceae	Anaerobic	mGAM Blood	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2020-06-04	
+CLAAAH181	40d510a02e2f228c8990d9c02b8be730	Manual review: is_trnas_grtr_18	3205794	39	274290	134	624766	557	SPAdes	99.33	checkm	0.0	checkm	18	tRNAscan-SE	0	True	True	True	True	True	True	False	True	True	True	2022-12-15	v6.1	Nextseq	Coprococcus eutactus 		Bacillota	Lachnospiraceae	Anaerobic	BHI	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2020-06-04	
+CLAAAH182	4ebf37beaaf2a2df0d6bc2a455a7314d	High-quality draft	2798347	75	98687	127	187046	323	SPAdes	99.42	checkm	0.0	checkm	19	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Ruminococcus torques		Bacillota	Lachnospiraceae	Anaerobic	mGAM Blood	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2020-06-04	
+CLAAAH185	2b743c78d868b13804a5a577a59dfcac	High-quality draft	2846153	48	183261	320	384635	386	SPAdes	97.41	checkm	0.45	checkm	19	tRNAscan-SE	2341	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	gen. nov.		Bacillota	Lachnospiraceae	Anaerobic	Agar: mGAM Blood, BHI, YCFA, WCA; Liquid: BHI; Use agar!  	1-3 days	1.0	CTCAGGATGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGAAGCACTTTACCACGATTCCTTCGGGATGACGGTTTAGTGACTGAGTGGCGGACGGGTGAGTAACGCGTGGGGAACCTGCCCCATACCGGGGGATAACAGCCGGAAACGGCTGCTAATACCGCATAAGCGCACAGTACCGCATGGTACGGTGTGAAAAACTCCGGTGGTATGGGATGGACCCGCGTCTGATTAGCCAGTTGGCGGGGTAACGGCCCACCAAAGCGACGATCAGTAGCCGGCCTGAGAGGGCGACCGGCCACATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGGGAAACCCTGATGCAGCGACGCCGCGTGAGTGAGGAAGTATTTCGGTATGTAAAGCTCTATCAGCAGGGAAGAAGAAATGACGGTACCTGACTAAGAAGCCCCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGGGCAAGCGTTATCCGGATTTACTGGGTGTAAAGGGAGCGCAGGCGGCATGATAAGTCTGATGTGAAAACCCAAGGCTCAACCATGGGACTGCATTGGAAACTGTCGTGCTGGAGTGTCGGAGAGGTAAGCGGAATTCCTAGTGTAGCGGTGAAATGCGTAGATATTAGGAGGAACACCAGTGGCGAAGGCGGCTTACTGGACGATGACTGACGCTGAGGCTCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGAATACTAGGTGTCGGGGAGCACAGCTCTTCGGTGCCGCAGCAAACGCAGTAAGTATTCCACCTGGGGAGTACGTTCGCAAGAATGAAACTCAAAGGAATTGACGGGGACCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAAGTCTTGACATCCTTCTGACAGAGTATGTAATGTACTTTCCCTTCGGGGCAGGAGTGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTAGTAGCCAGCACGTCGTGGTGGGCACTCTGGGGAGACTGCCAGGGATAACCTGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGACTTGGGCTACACACGTGCTACAATGGCGTAAACAAAGGGAAGCGAGCCCGTGAGGGGGAGCAAATCCCAAAAATAACGTCCCAGTTCGGATTGTAGTCTGCAACTCGACTACATGAAGCTGGAATCGCTAGTAATCGCGAATCAGAATGTCGCGGTGAATACGTTCCCGGGTCTTGTACACACCGCCCGTCACACCATGGGAGTCGGGAATGCCCGAAGCCGGTGACCTAA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2020-06-04	
+CLAAAH186	4980cc6fd927c2e086938972a8913bcd	Manual review: are_contigs_less_100	4388561	148	91684	374	287678	501	SPAdes	99.52	checkm	1.29	checkm	19	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Roseburia inulinivorans		Bacillota	Lachnospiraceae	Anaerobic	YCFA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2020-06-04	
+CLAAAH187	1e0ffde744a87defbac8d7cd5b3258ef	Manual review: is_trnas_grtr_18	3277529	40	154242	138	351652	290	SPAdes	99.37	checkm	0.32	checkm	18	tRNAscan-SE	21493	True	True	True	True	True	True	False	True	True	True	2022-12-15	v6.1	Nextseq	Blautia sp. nov.	114687	Bacillota	Lachnospiraceae	Anaerobic	YCFA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2020-06-04	
+CLAAAH188	4b03d3362957283b7773f00e2e68c426	Manual review: are_contigs_less_100, is_trnas_grtr_18	2969409	148	49816	149	120220	360	SPAdes	98.66	checkm	0.0	checkm	18	tRNAscan-SE	0	True	True	True	False	True	True	False	True	True	True	2022-12-15	v6.1	Nextseq	gen. nov.	114727	Bacillota	Oscillospiraceae	Anaerobic	mGAM	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2020-06-04	
+CLAAAH190	3a77391b844d06c7d580045a42b7f17e	Manual review: are_contigs_less_100, is_N50_grtr_25kb, is_max_contig_grtr_100kb	3584473	550	10714	1021	42882	259	SPAdes	98.43	checkm	2.52	checkm	20	tRNAscan-SE	20255	True	True	True	False	False	False	True	True	True	True	2022-12-15	v6.1	Nextseq	Coprococcus sp. nov.	114688	Bacillota	Lachnospiraceae	Anaerobic	mGAM Blood	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2020-06-04	
+CLAAAH191	031a858a8aa48a110aca700a483f6308	Manual review: is_trnas_grtr_18	3050230	28	244960	116	370005	640	SPAdes	98.43	checkm	0.0	checkm	18	tRNAscan-SE	2114	True	True	True	True	True	True	False	True	True	True	2022-12-15	v6.1	Nextseq	Bacteroides (Lactobacillus) galacturonicus (rogosae)		Bacteroidota	Bacteroidaceae	Anaerobic	mGAM Blood	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2020-06-04	
+CLAAAH193	18b51245eb54fa086e598a1967e44f5d	High-quality draft	3490979	20	323687	29	635418	277	SPAdes	99.62	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Barnesiella intestinihominis		Bacteroidota	Barnesiellaceae	Anaerobic	YCFA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2020-06-04	
+CLAAAH194	078b5e778793f48975ea9f58b2ae40d1	High-quality draft	1843760	26	202298	110	542603	159	SPAdes	98.1	checkm	0.63	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Dialister invisus		Bacillota	Veillonellaceae	Anaerobic	mGAM Blood, mGAM supplemented with succinic acid (ca. 20mg/10ml)	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2020-06-04	
+CLAAAH195	3d4be4bf92fe124bacf23887e5fe5017	Manual review: is_trnas_grtr_18	2617539	46	123405	75	298901	317	SPAdes	99.33	checkm	0.0	checkm	18	tRNAscan-SE	0	True	True	True	True	True	True	False	True	True	True	2022-12-15	v6.1	Nextseq	Eubacterium ventriosum		Bacillota	Eubacteriaceae	Anaerobic	YCFA	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2020-06-04	
+CLAAAH197	3daeb59beb56d08fb1c15cab281ba8be	High-quality draft	2181565	43	105206	309	208053	425	SPAdes	99.19	checkm	3.23	checkm	20	tRNAscan-SE	5816	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Olsenella faecalis (gen. nov.?)		Actinomycetota	Atopobiaceae 	Anaerobic	YCFA	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 3), Healthy, Male	Faeces	2020-07-20	https://doi.org/10.1111/1462-2920.15935
+CLAAAH198	b82d0f392c9cee4ad0a08cd66e0571d3	High-quality draft	2182765	27	167222	11	403497	278	SPAdes	99.54	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Bifidobacterium bifidum		Actinomycetota	Bifidobacteriaceae	Anaerobic		1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 3), Healthy, Male	Faeces	2020-07-20	https://doi.org/10.1111/1462-2920.15935
+CLAAAH201	db140e1f6d3833bacba7aa3fb35251bc	Manual review: are_contigs_less_100	2737451	119	52117	170	189490	396	SPAdes	99.29	checkm	0.59	checkm	20	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Desulfovibrio piger		Pseudomonadota	Desulfovibrionaceae	Anaerobic	mGAM/WCA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 3), Healthy, Male	Faeces	2020-07-20	https://doi.org/10.1111/1462-2920.15935
+CLAAAH202	4fc5b35eaa14ab1d89b57520fbcaeca8	Manual review: are_contigs_less_100, is_trnas_grtr_18	3281344	128	53961	261	153383	579	SPAdes	99.33	checkm	0.67	checkm	18	tRNAscan-SE	14587;5671	True	True	True	False	True	True	False	True	True	True	2022-12-15	v6.1	Nextseq	Anaerobutyricum hallii		Bacillota	Lachnospiraceae	Anaerobic	BHI	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 3), Healthy, Male	Faeces	2020-07-20	https://doi.org/10.1111/1462-2920.15935
+CLAAAH203	80cac7617b7a05fc1e1dfa19749f740b	Manual review: is_trnas_grtr_18	1778916	33	157334	284	287759	2088	SPAdes	99.3	checkm	0.0	checkm	18	tRNAscan-SE	0	True	True	True	True	True	True	False	True	True	True	2022-12-15	v6.1	Nextseq	Peptoniphilus lacrimalis		Bacillota	Peptoniphilaceae	Anaerobic	BHI	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 3), Healthy, Male	Faeces	2020-07-20	https://doi.org/10.1111/1462-2920.15935
+CLAAAH205	6ef7f00918f5d4053e6a57ed8e5121bd	High-quality draft	2456166	67	96302	141	391866	864	SPAdes	99.81	checkm	0.0	checkm	19	tRNAscan-SE	21074;20156	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Anaerostipes caccae		Bacillota	Lachnospiraceae	Anaerobic	mGAM	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Healthy, Male	Faeces	2018-05-07	
+CLAAAH211	27a3d7c68d429d6bb1e54ad56a5e66d5	High-quality draft	2693411	92	70531	170	161528	382	SPAdes	99.06	checkm	0.0	checkm	19	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Faecalibacillus faecis		Bacillota	Erysipelotrichaceae	Anaerobic	mGAM Blood	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 4), Healthy, Female	Faeces	2020-09-25	https://doi.org/10.1111/1462-2920.15935
+CLAAAH219	16cf34859fb6cf1fcedfe48beb9c1a24	Manual review: is_contam_less_5, are_contigs_less_100, is_N50_grtr_25kb, is_max_contig_grtr_100kb, is_trnas_grtr_18	4590986	1962	3124	880	48546	51	SPAdes	90.6	checkm	6.6	checkm	18	tRNAscan-SE	7610	True	False	True	False	False	False	False	True	True	True	2022-12-15	v6.1	Nextseq	Flavonifractor plautii		Bacillota	Oscillospiraceae	Anaerobic	mGAM Blood	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 4), Healthy, Female	Faeces	2020-09-25	https://doi.org/10.1111/1462-2920.15935
+CLAAAH222	d66643086582af83b8ebe77a9297a254	High-quality draft	3245101	60	195687	262	637075	664	SPAdes	100.0	checkm	0.0	checkm	19	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Faecalibacterium prausnitzii		Bacillota	Oscillospiraceae	Anaerobic	YCFA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 4), Healthy, Female	Faeces	2020-09-25	https://doi.org/10.1111/1462-2920.15935
+CLAAAH225	7f266d4f3dc0efa898edb4c0a30dc826	Manual review: are_contigs_less_100	7671397	183	96399	320	435891	139	SPAdes	98.85	checkm	4.31	checkm	20	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Eisenbergiella tayi		Bacillota	Lachnospiraceae	Anaerobic	mGAM Blood	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2018-05-07	
+CLAAAH226	02787a6c932c4250c07a473497435f43	Manual review: are_contigs_less_100	6751782	191	101293	321	585191	145	SPAdes	99.37	checkm	0.95	checkm	20	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Hungatella sp.		Bacillota	Lachnospiraceae	Anaerobic	WCA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2018-08-14	
+CLAAAH228	44ceb52a51f2d012a9f4c88d41812d78	Manual review: are_contigs_less_100	2432666	301	94178	2362	226081	971	SPAdes	99.17	checkm	4.19	checkm	19	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Staphylococcus sp.		Bacillota	Staphylococcaceae	Anaerobic	BHI	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2018-05-03	
+CLAAAH229	33fdad125c59db689e0f2785263abce6	Manual review: are_contigs_less_100, is_N50_grtr_25kb	2965771	263	24821	166	113711	99	SPAdes	99.63	checkm	0.5	checkm	20	tRNAscan-SE	5121	True	True	True	False	False	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Enterococcus faecalis		Bacillota	Enterococcaceae	Anaerobic	BHI	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2018-05-04	
+CLAAAH230	451e10fe8945e8b48c62d2aba17ad197	High-quality draft	2260501	35	180294	38	353389	457	SPAdes	99.32	checkm	0.45	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Bifidobacterium adolescentis		Actinomycetota	Bifidobacteriaceae	Anaerobic	MRS	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2018-08-10	
+CLAAAH231	b538f27ce9c580cb40eaf58ddd13dcf3	High-quality draft	6121650	80	242760	143	741716	130	SPAdes	99.37	checkm	0.0	checkm	20	tRNAscan-SE	4735	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Enterocloster citroniae		Bacillota	Lachnospiraceae	Anaerobic	WCA/BHI	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2018-08-14	
+CLAAAH235	2e6d95a02db26ccd64bc211bac10a1ab	Manual review: is_trnas_grtr_18	3161638	93	121370	308	232794	176	SPAdes	99.36	checkm	0.32	checkm	17	tRNAscan-SE	5983;1275	True	True	True	True	True	True	False	True	True	True	2022-12-15	v6.1	Nextseq	Blautia hansenii		Bacillota	Lachnospiraceae	Anaerobic	BHI	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-11-08	https://doi.org/10.1111/1462-2920.15935
+CLAAAH238	37a22e824e3546a9b31f579c42d0dcd6	Manual review: are_contigs_less_100	4433007	162	87334	429	291854	295	SPAdes	99.03	checkm	0.46	checkm	20	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Roseburia intestinalis		Bacillota	Lachnospiraceae	Anaerobic	BHI	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-11-08	https://doi.org/10.1111/1462-2920.15935
+CLAAAH240	2e31a78b1fdb7fadbba50c1fdb233c20	High-quality draft	2915826	54	126661	181	343965	655	SPAdes	99.06	checkm	0.0	checkm	20	tRNAscan-SE	1116	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Faecalibacillus intestinalis		Bacillota	Erysipelotrichaceae	Anaerobic	YCFA	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-11-08	https://doi.org/10.1111/1462-2920.15935
+CLAAAH242	a49b2ce904798a9b1effbbaca9e31233	Manual review: are_contigs_less_100, is_max_contig_grtr_100kb	2145787	148	27205	303	91600	366	SPAdes	98.73	checkm	0.02	checkm	20	tRNAscan-SE	0	True	True	True	False	True	False	True	True	True	True	2022-12-15	v6.1	Nextseq	Dialister hominis		Bacillota	Veillonellaceae	Anaerobic	BHI/mGAM both media supplemented with succinic acid (ca. 20mg/10ml)	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-11-08	https://doi.org/10.1111/1462-2920.15935
+CLAAAH248	e1038ef8b1573d7d369124f95d6463e0	Manual review: are_contigs_less_100, is_N50_grtr_25kb	4178866	450	15081	196	107340	197	SPAdes	100.0	checkm	0.0	checkm	20	tRNAscan-SE	4531	True	True	True	False	False	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Bilophila wadsworthia		Pseudomonadota	Desulfovibrionaceae	Anaerobic	BHI	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 5), Healthy, Female	Faeces	2020-11-23	https://doi.org/10.1111/1462-2920.15935
+CLAAAH249	2197882277fd6ca8d678734451677bd5	High-quality draft	2644692	61	146289	158	252902	247	SPAdes	99.33	checkm	1.34	checkm	19	tRNAscan-SE	5022	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Anaerostipes amylophilus		Bacillota	Lachnospiraceae	Anaerobic	BHI	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 5), Healthy, Female	Faeces	2020-11-23	https://doi.org/10.1111/1462-2920.15935
+CLAAAH251	fd1bb7d45eed0eddb2668428e041ab13	High-quality draft	4106641	75	96576	77	221499	177	SPAdes	97.17	checkm	0.0	checkm	20	tRNAscan-SE	54612;7806;4077	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Clostridium innocuum		Bacillota	Clostridiaceae	Anaerobic	mGAM Blood	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 5), Healthy, Female	Faeces	2020-11-23	https://doi.org/10.1111/1462-2920.15935
+CLAAAH252	b228e7681e18dcb68027bf85438342d0	High-quality draft	3866492	98	219934	181	420091	602	SPAdes	98.95	checkm	1.27	checkm	20	tRNAscan-SE	6345;5022	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Fusicatenibacter saccharivorans		Bacillota	Lachnospiraceae	Anaerobic	mGAM Blood	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 5), Healthy, Female	Faeces	2020-11-23	https://doi.org/10.1111/1462-2920.15935
+CLAAAH254	285d975ebca63ea1a79ce0c28c0ef880	High-quality draft	3192135	71	143001	140	475781	274	SPAdes	99.42	checkm	0.19	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Faecalibacterium hominis	113716	Bacillota	Oscillospiraceae	Anaerobic	mGAM Blood	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 5), Healthy, Female	Faeces	2020-11-23	https://doi.org/10.1111/1462-2920.15935
+CLAAAH255	07a635c2ed5234a47e087089db01ffb9	High-quality draft	2798283	23	356991	93	531548	307	SPAdes	98.66	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Bacteroides galacturonicus		Bacteroidota	Bacteroidaceae	Anaerobic	mGAM Blood	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 5), Healthy, Female	Faeces	2020-11-23	https://doi.org/10.1111/1462-2920.15935
+CLAAAH256	9e51574d11fe7a148cacab766f1f7525	Manual review: are_contigs_less_100	4088419	102	102520	277	305435	318	SPAdes	99.26	checkm	0.56	checkm	19	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Phocaeicola massiliensis		Bacteroidota	Bacteroidaceae	Anaerobic	mGAM Blood	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 5), Healthy, Female	Faeces	2020-11-23	https://doi.org/10.1111/1462-2920.15935
+CLAAAH25	b5d4f674c5bb5b183f63c2a3dc004a07	High-quality draft	2167688	36	217321	131	369727	444	SPAdes	99.84	checkm	0.58	checkm	19	tRNAscan-SE	3681	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Streptococcus sp.		Bacillota	Streptococcaceae	Anaerobic	WCA	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2019-07-25	
+CLAAAH260	564e88147cf81c598967af1a55b07181	High-quality draft	3078207	53	160247	85	350915	124	SPAdes	98.66	checkm	0.67	checkm	20	tRNAscan-SE	11333	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Lachnospira eligens		Bacillota	Lachnospiraceae	Anaerobic	BHI	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 5), Healthy, Female	Faeces	2020-11-23	https://doi.org/10.1111/1462-2920.15935
+CLAAAH261	6de7cbb0df505e749dbf9e6c5902cf92	Manual review: are_contigs_less_100	2975974	109	68234	163	173441	568	SPAdes	99.42	checkm	0.0	checkm	19	tRNAscan-SE	6813	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Ruminococcus torques		Bacillota	Oscillospiraceae	Anaerobic	BHI	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 5), Healthy, Female	Faeces	2020-11-23	https://doi.org/10.1111/1462-2920.15935
+CLAAAH266	374a16fa23f5ca43a675d1d68588bbe1	High-quality draft	2727557	64	97379	169	242342	656	SPAdes	100.0	checkm	0.0	checkm	20	tRNAscan-SE	4665	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Adlercreutzia equolifaciens 		Actinomycetota	Eggerthellaceae	Anaerobic	BHI	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 5), Healthy, Female	Faeces	2020-11-23	https://doi.org/10.1111/1462-2920.15935
+CLAAAH279	40d2b43f616de88bdfa5bfbcd52505c2	Manual review: are_contigs_less_100, is_max_contig_grtr_100kb	2923316	206	34488	263	95202	184	SPAdes	98.25	checkm	0.0	checkm	19	tRNAscan-SE	6828	True	True	True	False	True	False	True	True	True	True	2022-12-15	v6.1	Nextseq	Ruminococcus lactaris		Bacillota	Lachnospiraceae	Anaerobic	BHI	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2020-06-04	
+CLAAAH281	f91bb5f015a12f8024f39de7734719b2	High-quality draft	2973806	78	92486	219	380592	431	SPAdes	100.0	checkm	0.0	checkm	19	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Faecalibacterium sp. nov.		Bacillota	Oscillospiraceae	Anaerobic	YCFA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 3), Healthy, Male	Faeces	2020-07-20	
+CLAAAH2	b70d007b3364e82252c964bc7ed781e5	High-quality draft	2075051	15	431353	43	844658	590	SPAdes	100.0	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Veillonella parvula		Bacillota	Veillonellaceae	Anaerobic	WCA	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2019-07-25	
+CLAAAH40	7d86b1380117faa5a5fe8759c0095c63	Manual review: are_contigs_less_100	2780400	149	52366	236	223493	271	SPAdes	99.46	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Lactobacillus paracasei		Bacillota	Lactobacillaceae	Anaerobic	WCA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2019-07-25	
+CLAAAH4	3e4a240dae8bd607f29223c966aca251	High-quality draft	2049759	27	183322	55	794408	395	SPAdes	100.0	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Veillonella dispar		Bacillota	Veillonellaceae	Anaerobic	WCA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2019-07-25	
+CLAAAH53	3fc4e9dac1cdb9bd6212421420f6d0f5	Manual review: are_contigs_less_100	3137536	101	75231	281	186282	1161	SPAdes	99.33	checkm	2.03	checkm	20	tRNAscan-SE	16133	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Anaerostipes hadrus		Bacillota	Lachnospiraceae	Anaerobic	WCA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2019-07-25	
+CLAAAH54	b47655e1b4088961a0691ff5970cc761	High-quality draft	2556268	64	172726	783	348597	592	SPAdes	99.54	checkm	0.0	checkm	20	tRNAscan-SE	6176;4896	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Bifidobacterium longum		Actinomycetota	Bifidobacteriaceae	Anaerobic	WCA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2019-07-25	
+CLAAAH58	12ba80d61fc9a4078f8f4516eed7ba84	Manual review: are_contigs_less_100	3820001	231	39354	308	120930	82	SPAdes	99.37	checkm	0.0	checkm	20	tRNAscan-SE	5603	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	gen. nov.	114581	Bacillota	Lachnospiraceae	Anaerobic	WCA	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2019-07-25	
+CLAAAH70	c2399b64be8260eebe7d6c350b995084	Manual review: are_contigs_less_100, is_trnas_grtr_18	5072029	115	220239	402	582317	312	SPAdes	99.97	checkm	0.08	checkm	18	tRNAscan-SE	2519;1546;1005	True	True	True	False	True	True	False	True	True	True	2022-12-15	v6.1	Nextseq	Escherichia fergusonii		Pseudomonadota	Enterobacteriaceae	Anaerobic	BHI	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2018-05-04	
+CLAAAH71	3a2ec475b85cdab993d7f60140c6bd4e	High-quality draft	2154931	64	280645	523	639535	912	SPAdes	99.65	checkm	0.38	checkm	20	tRNAscan-SE	39753	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Selenomonas noxia		Bacillota	Selenomonadaceae	Anaerobic		1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-03-15	
+CLAAAH78B	25b8754b1c4bcef251a344f9bf6aeb4d	Manual review: is_trnas_grtr_18	3166916	78	103760	182	216162	272	SPAdes	99.37	checkm	0.27	checkm	18	tRNAscan-SE	7983	True	True	True	True	True	True	False	True	True	True	2022-12-15	v6.1	Nextseq	Coprococcus sp. nov.	111355	Bacillota	Lachnospiraceae	Anaerobic	BHI	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH80	99b4c13ba2cd869dd051bdfc4db905ba	Manual review: are_contigs_less_100	4010140	238	41679	369	187266	231	SPAdes	97.96	checkm	0.0	checkm	20	tRNAscan-SE	7614	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Eubacterium siraeum		Bacillota	Eubacteriaceae	Anaerobic	GMM	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH81	af9a09cb672ce63626481bccb9b14e72	Manual review: are_contigs_less_100	2382222	166	30890	262	114839	179	SPAdes	100.0	checkm	0.0	checkm	19	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Megasphaera indica		Bacillota	Veillonellaceae	Anaerobic	BHI	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH83	47fddfffa0481892358b0b336318ef98	Manual review: are_contigs_less_100	4990207	343	32552	113	147166	44	SPAdes	99.21	checkm	0.0	checkm	20	tRNAscan-SE	2751	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Dorea formicigenerans		Bacillota	Lachnospiraceae	Anaerobic	BHI	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH87	4111a924f5308830c666e0362797a66b	Manual review: are_contigs_less_100	2878227	113	61230	237	165221	308	SPAdes	99.42	checkm	0.0	checkm	19	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Ruminococcus lactaris		Bacillota	Lachnospiraceae	Anaerobic	GMM	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH88	71220b2e4aac68642b9c860c1be2ad9b	High-quality draft	2019486	75	59437	226	112236	385	SPAdes	98.95	checkm	0.0	checkm	19	tRNAscan-SE	32379	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Lactobacillus ruminis		Bacillota	Lactobacillaceae	Anaerobic	BHI	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH90G	df9a10159b86da4aa5be024214043445	High-quality draft	3479611	57	220380	102	983709	358	SPAdes	99.37	checkm	0.16	checkm	19	tRNAscan-SE	5471;2990	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	gen. nov.	111356	Bacillota	Lachnospiraceae	Anaerobic	GMM	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH95	1d69fbe4dd1c7907fb540586f34729eb	Manual review: are_contigs_less_100	4072995	226	49826	271	227132	128	SPAdes	98.73	checkm	0.63	checkm	20	tRNAscan-SE	22629	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Blautia sp. nov.	111354	Bacillota	Lachnospiraceae	Anaerobic	GMM	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAJMH10	919aaf7d759319b0fd2959c5c4c29cd8	High-quality draft	3153493	81	163768	201	379644	435	SPAdes	98.66	checkm	0.67	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Lachnospira sp. nov.	114599	Bacillota	Lachnospiraceae	Anaerobic	BHI	1-3 days	1.0	CTGGCTCAGGATGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGAAGCATTTAAGACAGATTTTTTCGGAATGAAGTTTTTTATGACTGAGTGGCGGACGGGTGAGTAACGCGTGGGTAACCTGCCTCACACAGGGGGATAGCAGTTGGAAACGACTGGTAATACCGCATAAGCGCACAGCTTCGCATGAAGCGGTGTGAAAAACTCCGGTGGTGTGAGATGGACCCGCGTCTGATTAGGTAGTTGGTGAGGTAACGGCCCACCAAGCCGACGATCAGTAGCCGACCTGAGAGGGTGACCGGCCACATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGAGGAAACTCTGATGCAGCGACGCCGCGTGAGTGAAGAAGTATTTCGGTATGTAAAGCTCTATCAGCAGGGAAGACAGTGACGGTACCTGACTAAGAAGCTCCGGCTAAATACGTGCCAGCAGCCGCGGTAATACGTATGGAGCAAGCGTTATCCGGATTTACTGGGTGTAAAGGGAGTGTAGGTGGTATCACAAGTCAGAAGTGAAAGCCCGGGGCTCAACCCCGGGACTGCTTTTGAAACTGTGGAACTGGAGTGCAGGAGAGGTAAGTGGAATTCCTAGTGTAGCGGTGAAATGCGTAGATATTAGGAGGAACACCAGTGGCGAAGGCGGCTTACTGGACTGTAACTGACACTGAGGCTCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGAATACTAGGTGTCGGGGCTCATAAGAGCTTCGGTGCCGCAGCAAACGCAATAAGTATTCCACCTGGGGAGTACGTTCGCAAGAATGAAACTCAAAGGAATTGACGGGGACCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAAGTCTTGACATCCTTCTGACCGGACAGTAATGTGTCCTTTCCTTCGGGACAGAAGAGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCCTATCCTCAGTAGCCAGCAGGTAAAGCTGGGCACTCTGTGGAGACTGCCAGGGATAACCTGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGACTTGGGCTACACACGTGCTACAATGGCGTAAACAAAGTGAAGCGAGAGTGTGAGCTTAAGCAAATCACAAAAATAACGTCTCAGTTCGGATTGTAGTCTGCAACTCGACTACATGAAGCTGGAATCGCTAGTAATCGCGAATCAGAATGTCGCGGTGAATACGTTCCCGGGTCTTGTACACACCGCCCGTCACACCATGGGAGTCGGAAATGCCCGAAGTCGGTGACCTAACGTAAGAAGGAGCCGCCGAAGGCAGGTCTGATAACTGGGGTGAAGTC	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH12	2b34d0d6a6891e20282606f5f80f1c45	Manual review: are_contigs_less_100	3202267	100	127312	221	554558	241	SPAdes	99.52	checkm	2.19	checkm	20	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Roseburia sp. nov.	114583	Bacillota	Lachnospiraceae	Anaerobic	YCFA	1-3 days	1.0	CTGGCTCAGGATGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGAAGCACTTTATTACGATTTCTTCGGAATGACGATTTAGTGACTGAGTGGCGGACGGGTGAGTAACGCGTGGGTAACCTGCCTTATACAGGGGGATAACAGTTAGAAATGACTGCTAATACCGCATAAGCGCACAGGATTGCATGATCTGGTGTGAAAAACTCCGGTGGTATAAGATGGACCCGCGTCTGATTAGCTGGTTGGTGAGGTAACGGCCCACCAAGGCGACGATCAGTAGCCGACCTGAGAGGGTGACCGGCCACATTGGGACTGAGACACGGCCCAAACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGGGAAACCCTGATGCAGCGACGCCGCGTGAGCGAAGAAGTATTTCGGTATGTAAAGCTCTATCAGCAGGGAAGAAAAAATGACGGTACCTGACTAAGAAGCCCCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGGGCAAGCGTTATCCGGATTTACTGGGTGTAAAGGGAGCGCAGGCGGTGCGGCAAGTCTGATGTGAAAGCCCGGGGCTCAACCCCGGGACTGCATTGGAAACTGTCGTACTTGAGTATCGGAGAGGTAAGTGGAATTCCTAGTGTAGCGGTGAAATGCGTAGATATTAGGAGGAACACCAGTGGCGAAGGCGGCTTACTGGACGATAACTGACGCTGAGGCTCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGAATACTAGGTGTCGGGGGACATAGTCCTTCGGTGCCGCAGCAAACGCAATAAGTATTCCACCTGGGGAGTACGTTCGCAAGAATGAAACTCAAAGGAATTGACGGGGACCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAAGTCTTGACATCCCGGTGACAAAGTATGTAATGTACTCTTTCTTCGGAACACCGGTGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCCTGTTCTTAGTAGCCAGCAGTTCGGCTGGGCACTCTAGGGAGACTGCCAGGGATAACCTGGAGGAAGGCGGGGATGACGTCAAATCATCATGCCCCTTATGACTTGGGCTACACACGTGCTACAATGGCGTAAACAAAGGGAAGCGAAAAGGTGACTTCTAGCAAATCCCAAAAATAACGTCCCAGTTCGGACTGTAGTCTGCAACTCGACTACACGAAGCTGGAATCGCTAGTAATCGCGAATCAGAATGTCGCGGTGAATACGTTCCCGGGTCTTGTACACACCGCCCGTCACACCATGGGAGTCGGGAATGCCCGAAGCCGGTGACTCAACCGAAAGGAGAGAGCCGTCGAAGGCAGGTCTGATAACTGGGGTGAAGTCGTAC	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH14B	db80ba09ee4a3c8856b8dcb96906669f	Manual review: are_contigs_less_100	6252940	120	160196	400	455292	261	SPAdes	99.46	checkm	0.63	checkm	20	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Bacteroides thetaiotaomicron 		Bacteroidota	Bacteroidaceae	Anaerobic	mGAM	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-08-06	
+CLAJMH14	31a8e1f08d641f5661c98d0cc20eafdd	High-quality draft	6105421	62	249518	135	504178	198	SPAdes	99.46	checkm	0.27	checkm	19	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Bacteroides thetaiotaomicron 		Bacteroidota	Bacteroidaceae	Anaerobic	BHI	1-3 days	2.0	TCAGGATGAACGCTAGCTACAGGCTTAACACATGCAAGTCGAGGGGCAGCATTTCAGTTTGCTTGCAAACTGGAGATGGCGACCGGCGCACGGGTGAGTAACACGTATCCAACCTGCCGATAACTCGGGGATAGCCTTTCGAAAGAAAGATTAATACCCGATGGTATAATTAGACCGCATGGTCTTGTTATTAAAGAATTTCGGTTATCGATGGGGATGCGTTCCATTAGGCAGTTGGTGAGGTAACGGCTCACCAAACCTTCGATGGATAGGGGTTCTGAGAGGAAGGTCCCCCACATTGGAACTGAGACACGGTCCAAACTCCTACGGGAGGCAGCAGTGAGGAATATTGGTCAATGGGCGCAAGCCTGAACCAGCCAAGTAGCGTGAAGGATGACTGCCCTATGGGTTGTAAACTTCTTTTATATGGGAATAAAGTTTTCCACGTGTGGAATTTTGTATGTACCATATGAATAAGGATCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGATCCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGAGCGTAGGTGGACAGTTAAGTCAGTTGTGAAAGTTTGCGGCTCAACCGTAAAATTGCAGTTGATACTGGCTGTCTTGAGTACAGTAGAGGTGGGCGGAATTCGTGGTGTAGCGGTGAAATGCTTAGATATCACGAAGAACTCCGATTGCGAAGGCAGCTCACTGGACTGCAACTGACACTGATGCTCGAAAGTGTGGGTATCAAACAGGATTAGATACCCTGGTAGTCCACACAGTAAACGATGAATACTCGCTGTTTGCGATATACAGTAAGCGGCCAAGCGAAAGCATTAAGTATTCCACCTGGGGAGTACGCCGGCAACGGTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGAGGAACATGTGGTTTAATTCGATGATACGCGAGGAACCTTACCCGGGCTTAAATTGCATTTGAATATATTGGAAACAGTATAGCCGTAAGGCAAATGTGAAGGTGCTGCATGGTTGTCGTCAGCTCGTGCCGTGAGGTGTCGGCTTAAGTGCCATAACGAGCGCAACCCTTATCTTTAGTTACTAACAGGTCATGCTGAGGACTCTAGAGAGACTGCCGTCGTAAGATGTGAGGAAGGTGGGGATGACGTCAAATCAGCACGGCCCTTACGTCCGGGGCTACACACGTGTTACAATGGGGGGTACAGAAGGCAGCTACCTGGTGACAGGATGCTAATCCCAAAAGCCTCTCTCAGTTCGGATCGAAGTCTGCAACCCGACTTCGTGAAGCTGGATTCGCTAGTAATCGCGCATCAGCCATGGCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCAAGCCATGAAAGCCGGGGGTACCTGAAGTACGTAACCGCAAGGAGCGTCCTAGGGTAAAACTGGTAATTGGGGCTAAGTCGTAACAAGGTAACCA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH15	c9e1b74f3e9fd8b964e359236177091f	High-quality draft	4567768	80	169452	285	443891	260	SPAdes	93.5	checkm	0.07	checkm	19	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Bacteroides sp. nov.	114584	Bacteroidota	Bacteroidaceae	Anaerobic	BHI	1-3 days	1.0	AGAGTTTGATCCTGGCTCAGGATGAACGCTAGCTACAGGCTTAACACATGCAAGTCGAGGGGCAGCATTTTAGTTTGCTTGCAAACTAAAGATGGCGACCGGCGCACGGGTGAGTAACACGTATCCAACCTGCCGATAACTCAGGGATAGCCTTTCGAAAGAAAGATTAATACCTGATGGCATAGGATTATCGCATGATGATCCTATTAAAGAATTTCGGTTATCGATGGGGATGCGTTCCATTAGTTTGTTGGCGGGGTAACGGCCCACCAAGACAGCGATGGATAGGGGTTCTGAGAGGAAGGTCCCCCACATTGGAACTGAGACACGGTCCAAACTCCTACGGGAGGCAGCAGTGAGGAATATTGGTCAATGGACGGGAGTCTGAACCAGCCAAGTAGCGTGAAGGATGACTGCCCTATGGGTTGTAAACTTCTTTTATACGGGAATAAAGTGATCCACGTGTGGATTTTTGTATGTACCGTATGAATAAGGATCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGATCCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGAGCGTAGGTGGATTGTTAAGTCAGTTGTGAAAGTTTGCGGCTCAACCGTAAAATTGCAGTTGATACTGGCAGTCTTGAGTACAGTAGAGGTGGGCGGAATTCGTGGTGTAGCGGTGAAATGCTTAGATATCACGAAGAACTCCGATTGCGAAGGCAGCTCACTGGACTGCAACTGACACTGATGCTCGAAAGTGTGGGTATCAAACAGGATTAGATACCCTGGTAGTCCACACAGTAAACGATGAATACTCGCTGTTTGCGATATACGGTAAGCGGCCAAGCGAAAGCGTTAAGTATTCCACCTGGGGAGTACGCCGGCAACGGTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGAGGAACATGTGGTTTAATTCGATGATACGCGAGGAACCTTACCCGGGCTTAAATTGCAAATGAATAATCTGGAAACAGGTTAGCCGCAAGGCATTTGTGAAGGTGCTGCATGGTTGTCGTCAGCTCGTGCCGTGAGGTGTCGGCTTAAGTGCCATAACGAGCGCAACCCTTATCTTCAGTTACTAACAGGTCATGCTGAGGACTCTGGAGAGACTGCCGTCGTAAGATGTGAGGAAGGTGGGGATGACGTCAAATCAGCACGGCCCTTACGTCCGGGGCTACACACGTGTTACAATGGGGGGTACAGAAGGCAGCTACCTGGCGACAGGATGCCAATCCCGAAAACCTCTCTCAGTTCGGATCGAAGTCTGCAACCCGACTTCGTGAAGCTGGATTCGCTAGTAATCGCGCATCAGCCATGGCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCAAGCCATGAAAGCCGGGGGTACCTGAAGTACGTAACCGCGAGGAGCGTCCTAGGGTAAAACTGGTAATTGGGGCTAAGTCGTAACAAGGTAACCA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-04-28	
+CLAJMH16	ccaa52612ead5971a241b453956c76a6	Manual review: is_trnas_grtr_18	3592357	55	158103	109	404798	292	SPAdes	99.37	checkm	0.32	checkm	18	tRNAscan-SE	37495;1036	True	True	True	True	True	True	False	True	True	True	2022-12-15	v6.1	Nextseq	Blautia sp. nov.	114586	Bacillota	Lachnospiraceae	Anaerobic	BHI	1-3 days	1.0	AGAGTTTGATCCTGGCTCAGGATGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGGGAATTACTTTATTGAAACTTCGGTCGATTTAAATTAATTCTAGTGGCGGACGGGTGAGTAACGCGTGGGTAACCTGCCTTGTACAGGGGGATAACAGTCAGAAATGGCTGCTAATACCGCATAAGCGCACAGGACCGCATGGTCCGGTGTGAAAAACTCCGGTGGTATAAGATGGACCCGCGTTGGATTAGCTTGTTGGCAGGGTAACGGCCTACCAAGGCGACGATCCATAGCCGGCCTGAGAGGGTGAACGGCCACATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGGGAAACCCTGATGCAGCGACGCCGCGTGAAGGAAGAAGTATCTCGGTATGTAAACTTCTATCAGCAGGGAAGAGATTGACGGTACCTGACTAAGAAGCCCCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGGGCAAGCGTTATCCGGATTTACTGGGTGTAAAGGGAGCGTAGACGGATGGACAAGTCTGATGTGAAAGGCTGGGGCTCAACCCCGGGACTGCATTGGAAACTGCCCGTCTTGAGTGCCGGAGAGGTAAGCGGAATTCCTAGTGTAGCGGTGAAATGCGTAGATATTAGGAGGAACACCAGTGGCGAAGGCGGCTTACTGGACGGTAACTGACGTTGAGGCTCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCGGTAAACGATGAATGCTAGGTGTCGGGGAGCAAAGCTCTTCGGTGCCGCCGCAAACGCATTAAGCATTCCACCTGGGGAGTACGTTCGCAAGAATGAAACTCAAAGGAATTGACGGGGACCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAAGTCTTGACATCCTTCTGACCGGAACTTAACCGTTCCTTCCCTTCGGGGCAGAAGAGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCCTATCCCCAGTAGCCAGCGGTCCGGCCGGGCACTCTGAGGAGACTGCCAGGGATAACCTGGAGGAAGGCGGGGATGACGTCAAATCATCATGCCCCTTATGATTTGGGCTACACACGTGCTACAATGGCGTAAACAAAGGGAAGCGAACCTGTGAGGGTGGGCAAATCCCAAAAATAACGTCCCAGTTCGGACTGTAGTCTGCAACCCGACTACACGAAGCTGGAATCGCTAGTAATCGCGGATCAGAATGCCGCGGTGAATACGTTCCCGGGTCTTGTACACACCGCCCGTCACACCATGGGAGTCAGTAACGCCCGAAGTCAGTGACCTAACCTTATAGGGAGGAGCTGCCGAAGGCGGGACCGATGACTGGGGTG	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH17B	b8653161691b3e1fd15761563c60f483	High-quality draft	5160244	97	104750	310	288425	314	SPAdes	99.42	checkm	0.32	checkm	20	tRNAscan-SE	30956	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Parabacteroides distasonis		Bacteroidota	Tannerellaceae	Anaerobic	BHI	1-3 days	2.0	CTGGCTCAGGATGAACGCTAGCGACAGGCTTAACACATGCAAGTCGAGGGGCAGCACAGGTAGCAATACCGGGTGGCGACCGGCGCACGGGTGAGTAACGCGTATGCAACTTACCTATCAGAGGGGGATAACCCGGCGAAAGTCGGACTAATACCGCATGAAGCAGGGGCCCCGCATGGGGATATTTGCTAAAGATTCATCGCTGATAGATAGGCATGCGTTCCATTAGGCAGTTGGCGGGGTAACGGCCCACCAAACCGACGATGGATAGGGGTTCTGAGAGGAAGGTCCCCCACATTGGTACTGAGACACGGACCAAACTCCTACGGGAGGCAGCAGTGAGGAATATTGGTCAATGGGCGCGAGCCTGAACCAGCCAAGTCGCGTGAGGGATGAAGGTTCTATGGATCGTAAACCTCTTTTATAAGGGAATAAAGTGCGGGACGTGTCCCGTTTTGTATGTACCTTATGAATAAGGATCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGATCCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGTGCGTAGGCGGCCTTTTAAGTCAGCGGTGAAAGTCTGTGGCTCAACCATAGAATTGCCGTTGAAACTGGGGGGCTTGAGTATGTTTGAGGCAGGCGGAATGCGTGGTGTAGCGGTGAAATGCTTAGATATCACGCAGAACCCCGATTGCGAAGGCAGCCTGCCAAGCCATGACTGACGCTGATGCACGAAAGCGTGGGGATCAAACAGGATTAGATACCCTGGTAGTCCACGCAGTAAACGATGATCACTAGCTGTTTGCGATACACTGTAAGCGGCACAGCGAAAGCGTTAAGTGATCCACCTGGGGAGTACGCCGGCAACGGTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGAGGAACATGTGGTTTAATTCGATGATACGCGAGGAACCTTACCCGGGTTTGAACGCATTCGGACCGAGGTGGAAACACCTTTTCTAGCAATAGCCGTTTGCGAGGTGCTGCATGGTTGTCGTCAGCTCGTGCCGTGAGGTGTCGGCTTAAGTGCCATAACGAGCGCAACCCTTGCCACTAGTTACTAACAGGTAAAGCTGAGGACTCTGGTGGGACTGCCAGCGTAAGCTGCGAGGAAGGCGGGGATGACGTCAAATCAGCACGGCCCTTACATCCGGGGCGACACACGTGTTACAATGGCGTGGACAAAGGGATGCCACCTGGCGACAGGGAGCGAATCCCCAAACCACGTCTCAGTTCGGATCGGAGTCTGCAACCCGACTCCGTGAAGCTGGATTCGCTAGTAATCGCGCATCAGCCATGGCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCAAGCCATGGGAGCCGGGGGTACCTGAAGTCCGTAACCGCGAGGATCGGCCTAGGGTAAAACTGGTGACTGGGGCTAAGTCGTAA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-08-06	
+CLAJMH17	95388be07db32663d3a39ac2a4cc72f0	High-quality draft	5278600	83	172730	158	616224	310	SPAdes	99.42	checkm	0.32	checkm	19	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Parabacteroides distasonis		Bacteroidota	Tannerellaceae	Anaerobic	mGAM	1-3 days	2.0	AGAGTTTGATCCTGGCTCAGGATGAACGCTAGCGACAGGCTTAACACATGCAAGTCGAGGGGCAGCGCAGGTAGCAATACCGGGTGGCGACCGGCGCACGGGTGAGTAACGCGTATGCAACTTACCTATCAGAGGGGGATAACCCGGCGAAAGTCGGACTAATACCGCATGAAGCAGGGGTCCCGCATGGGGATATTTGCTAAAGATTCATCGCTGATAGATAGGCATGCGTTCCATTAGGCAGTTGGCGGGGTAACGGCCCACCAAACCGACGATGGATAGGGGTTCTGAGAGGAAGGTCCCCCACATTGGTACTGAGACACGGACCAAACTCCTACGGGAGGCAGCAGTGAGGAATATTGGTCAATGGCCGAGAGGCTGAACCAGCCAAGTCGCGTGAGGGATGAAGGTTCTATGGATCGTAAACCTCTTTTATAAGGGAATAAAGTGCGGGACGTGTCCCGTTTTGTATGTACCTTATGAATAAGGATCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGATCCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGTGCGTAGGCGGCCTTTTAAGTCAGCGGTGAAAGTCTGTGGCTCAACCATAGAATTGCCGTTGAAACTGGGGGGCTTGAGTATGTTTGAGGCAGGCGGAATGCGTGGTGTAGCGGTGAAATGCATAGATATCACGCAGAACCCCGATTGCGAAGGCAGCCTGCCAAGCCATTACTGACGCTGATGCACGAAAGCGTGGGGATCAAACAGGATTAGATACCCTGGTAGTCCACGCAGTAAACGATGATCACTAGCTGTTTGCGATACACTGTAAGCGGCACAGCGAAAGCGTTAAGTGATCCACCTGGGGAGTACGCCGGCAACGGTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGAGGAACATGTGGTTTAATTCGATGATACGCGAGGAACCTTACCCGGGTTTGAACGCATTCGGACCGAGGTGGAAACACCTTTTCTAGCAATAGCCGTTTGCGAGGTGCTGCATGGTTGTCGTCAGCTCGTGCCGTGAGGTGTCGGCTTAAGTGCCATAACGAGCGCAACCCTTGCCACTAGTTACTAACAGGTAAAGCTGAGGACTCTGGTGGGACTGCCAGCGTAAGCTGCGAGGAAGGCGGGGATGACGTCAAATCAGCACGGCCCTTACATCCGGGGCGACACACGTGTTACAATGGCGTGGACAAAGGGAAGCCACCTGGCGACAGGGAGCGAATCCCCAAACCACGTCTCAGTTCGGATCGGAGTCTGCAACCCGACTCCGTGAAGCTGGATTCGCTAGTAATCGCGCATCAGCCATGGCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCAAGCCATGGGAGCCGGGGGTACCTGAAGTCCGTAACCGCGAGGATCGGCCTAGGGTAAAACTGGTGACTGGGGCTAAGTCGTAACA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-04-28	
+CLAJMH18B	12f24130a70709559c2754f3bcdaf711	High-quality draft	4579722	95	91946	209	234448	211	SPAdes	99.46	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Odoribacter splanchnicus		Bacteroidota	Marinifilaceae	Anaerobic	BHI	1-3 days	2.0	GCTCAGGATGAACGCTAGCGACAGGCTTAACACATGCGAGTCGAGGGGCATCATGAGGTAGCGATACCTTGATGGCGACCGGCGCACGGGTGAGTAACGCGTATGCAACCTGCCTGATACCGGGGTATAGCCCATGGAAACGTGGATTAACACCCCATAGTACTTTTATCCTGCATGGGATGTGAGTTAAATGTTCAAGGTATCGGATGGGCATGCGTCCTATTAGTTAGTTGGCGGGGTAACAGCCCACCAAGACGATGATAGGTAGGGGTTCTGAGAGGAAGGTCCCCCACATTGGAACTGAGACACGGTCCAAACTCCTACGGGAGGCAGCAGTGAGGAATATTGGTCAATGGACGAGAGTCTGAACCAGCCAAGTCGCGTGAGGGAAGACTGCCCTATGGGTTGTAAACCTCTTTTATAAGGGAAGAATAAGTTCTACGTGTAGAATGATGCCTGTACCTTATGAATAAGCATCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGATGCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGTGCGTAGGCGGTTTATTAAGTTAGTGGTTAAATATTTGAGCTAAACTCAATTGTGCCATTAATACTGGTAAACTGGAGTACAGACGAGGTAGGCGGAATAAGTTAAGTAGCGGTGAAATGCATAGATATAACTTAGAACTCCGATAGCGAAGGCAGCTTACCAGACTGTAACTGACGCTGATGCACGAGAGCGTGGGTAGCGAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGCTCACTGGTTCTGTGCGATATATTGTACGGGATTAAGCGAAAGTATTAAGTGAGCCACCTGGGGAGTACGTCGGCAACGATGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGAGGAACATGTGGTTTAATTCGATGATACGCGAGGAACCTTACCTGGGTTTAAATGGGAAATGTCGTATTTGGAAACAGATATTCTCTTCGGAGCGTTTTTCAAGGTGCTGCATGGTTGTCGTCAGCTCGTGCCGTGAGGTGTCGGGTTAAGTCCCATAACGAGCGCAACCCTTACCGTTAGTTGCTAGCATGTAATGATGAGCACTCTAACGGGACTGCCACCGTAAGGTGAGAGGAAGGCGGGGATGACGTCAAATCAGCACGGCCCTTACACCCAGGGCTACACACGTGTTACAATGGCCGGTACAGAGGGCCGCTACCAGGTGACTGGATGCCAATCTCAAAAGCCGGTCGTAGTTCGGATTGGAGTCTGTAACCCGACTCCATGAAGTTGGATTCGCTAGTAATCGCGCATCAGCCATGGCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCAAGCCATGGAAGCCGGGGGTGCCTGAAGTCCGTAACCGCGAGGATCGGCCTAGGGCAAAACTGGTAACTGGGGCTAAGTC	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-08-06	
+CLAJMH18	f9e0839021d6289fa2cbabc5a5376c37	Manual review: are_contigs_less_100	4571849	131	67385	184	174119	212	SPAdes	99.46	checkm	0.0	checkm	19	tRNAscan-SE	7059	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Odoribacter splanchnicus		Bacteroidota	Marinifilaceae	Anaerobic	BHI	1-3 days	2.0	AGTTTGATCCTGGCTCAGGATGAACGCTAGCGACAGGCTTAACACATGCAAGTCGAGGGGCATCATGAGGTAGCAATACCTTGATGGCGACCGGCGCACGGGTGAGTAACGCGTATGCAACCTGCCCGATACCGGGGTATAGCCCATGGAAACGTGGATTAACACCCCATAGTACTTTTATCCTGCATGGGATGTGAGTTAAATGTTCAAGGTATCGGATGGGCATGCGTCCTATTAGTTAGTTGGCGGGGTAACAGCCCACCAAGACGATGATAGGTAGGGGTTCTGAGAGGAAGGTCCCCCACATTGGAACTGAGACACGGTCCAAACTCCTACGGGAGGCAGCAGTGAGGAATATTGGTCAATGGACGAGAGTCTGAACCAGCCAAGTCGCGTGAGGGAAGACTGCCCTATGGGTTGTAAACCTCTTTTATAAGGGAAGAATAAGTTCTACGTGTAGAATGATGCCTGTACCTTATGAATAAGCATCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGATGCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGTGCGTAGGCGGTTTATTAAGTTAGTGGTTAAATATTTGAGCTAAACTCAATTGTGCCATTAATACTGGTAAACTGGAGTACAGACGAGGTAGGCGGAATAAGTTAAGTAGCGGTGAAATGCATAGATATAACTTAGAACTCCGATAGCGAAGGCAGCTTACCAGACTGTAACTGACGCTGATGCACGAGAGCGTGGGTAGCGAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGCTCACTGGTTCTGTGCGATATATTGTACGGGATTAAGCGAAAGTATTAAGTGAGCCACCTGGGGAGTACGTCGGCAACGATGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGAGGAACATGTGGTTTAATTCGATGATACGCGAGGAACCTTACCTGGGTTTAAATGGGAAATGTCGTATTTGGAAACAGATATTCTCTTCGGAGCGTTTTTCAAGGTGCTGCATGGTTGTCGTCAGCTCGTGCCGTGAGGTGTCGGGTTAAGTCCCATAACGAGCGCAACCCTTACCGTTAGTTGCTAGCATGTAATGATGAGCACTCTAACGGGACTGCCACCGTAAGGTGAGAGGAAGGCGGGGATGACGTCAAATCAGCACGGCCCTTACACCCAGGGCTACACACGTGTTACAATGGCCGGTACAGAGGGCCGCTACCAGGTGACTGGATGCCAATCTCAAAAGCCGGTCGTAGTTCGGATTGGAGTCTGTAACCCGACTCCATGAAGTTGGATTCGCTAGTAATCGCGCATCAGCCATGGCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCAAGCCATGGAAGCCGGGGGTGCCTGAAGTCCGTAACCGCGAGGATCGGCCTAGGGCAAAACTGGTAACTGGGGCTAAGTC	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-04-28	
+CLAJMH19	4d9a903551b09fbf54cf9dc20bed9db3	High-quality draft	2372526	58	99775	48	294506	249	SPAdes	100.0	checkm	0.0	checkm	20	tRNAscan-SE	5017;3971	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Parolsenella sp. nov.	114585	Actinomycetota	Atopobiaceae	Anaerobic	mGAM	1-3 days	2.0	TCCTGGCTCAGGATGAACGCTGGCGGCGCGCCTAACACATGCAAGTCGAACGGTTAAGGCATCCCTCGGGATGCGAATAGAGTGGCGAACGGCTGAGTAACACGTGGGCAACCTGCCCCCCTCCCCGGAATAGCCTCGCGAAAGCGGGATTAATGCCGGATACTCCGCCACCCCCCGCATGGGGGAGGCGGGAAAGCCCAGACGGGGGGGGATGGGCCCGCGGCCTGTTAGCTAGTTGGCGGGGCAACGGCCCACCAAGGCGACTATGGGTAGCCGGGTTGAGAGACCGACCGGCCAGATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATCTTGCGCAATGGGGGGAACCCTGACGCAGCGACGCCGCGTGCGGGACGAAGGCCCTCGGGTCGTAAACCGCTTTCAGCAGGGAAGAGGCCGAAAGGTGACGGTACCTGCAGAAGAAGCCCCGGCTAAATACGTGCCAGCAGCCGCGGTAATACGTATGGGGCGAGCGTTATCCGGATTCATTGGGCGTAAAGCGCGCGTAGGCGGCCTCGTAGGCCGGGAGTCAAATCCGGGGGCTCAACCCCCGCCCGCTCCCGGAACCACGGGGCTTGAGTCTGGCAGGGGAGGGTGGAATTCCCAGTGTAGCGGTGGAATGCGCAGATATTGGGAAGAACACCGGTGGCGAAGGCGGCCCTCTGGGCCACGACTGACGCTGAGGCGCGAAAGCTGGGGGAGCGAACAGGATTAGATACCCTGGTAGTCCCAGCCGTAAACGATGGACGCTAGGTGTGGGGGGACGACCCCCCCGTGCCGCAGCCAACGCATTAAGCGTCCCGCCTGGGGAGTACGGCCGCAAGGCTAAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCAGCGGAGCATGTGGCTTAATTCGATGCAACGCGAAGAACCTTACCTGGGCTTGACATTCAGGTGAAGCGGCGGAGACGCCGTGGCCGAGAGGAGCCTGAACAGGTGGTGCATGGCTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCCCGTCGCGTGTTGCCAGCGGTTAGGCCGGGCACCCGCGCGAGACCGCCGGCGTCAAGCCGGAGGAAGGTGGGGACGACGTCAAGTCATCATGCCCCTTATGTCCAGGGCTGCACACGTGCTACAATGGCCGGCACAGCGGGCTGCGACTGCGCGAGCAGGAGCGAATCCCTCAAAGCCGGCCCCAGTTCGGACCGGGGGCTGCAACCCGCCCCCGCGAAGTCGGAGTTGCTAGTAATCGCGGATCAGCACGCCGCGGTGAATGCGTTCCCGGGCCTTGTACACACCGCCCGTCACACCACCCGAGTCGTCTGCACCCGAAGTCGCCGGCCCAACCAGCAATGGGGGGAGGCGCCGAAGGTGTGGAGGGTAAGGGGGGTGAAGTCGTAACAAGGTAACCAA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH20B	4fbfabaa301e0f053e117ac8ce5ae992	High-quality draft	3635535	40	311562	57	392878	315	SPAdes	99.28	checkm	0.48	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Alistipes onderdonkii		Bacteroidota	Rikenellaceae	Anaerobic	mGAM	1-3 days	1.0	TCCTGGCTCAGGATGAACGCTAGCGGCAGGCCTAACACATGCAAGTCGAGGGGCATCACGAGGTAGCAATACTTTGGTGGCGACCGGCGCACGGGTGCGTAACGCGTATGTAACCTACCTATAACAGGGGCATAACACTGAGAAATTGGTACTAATTCCCCATAATATTCGGAGAGGCATCTCTCCGGGTTGAAAACTCCGGTGGTTATAGATGGACATGCGTTGTATTAGCTAGTTGGTGAGGTAACGGCTCACCAAGGCAACGATACATAGGGGGACTGAGAGGTTAACCCCCCACACTGGTACTGAGACACGGACCAGACTCCTACGGGAGGCAGCAGTGAGGAATATTGGTCAATGGACGCAAGTCTGAACCAGCCATGCCGCGTGCAGGAAGACGGCTCTATGAGTTGTAAACTGCTTTTGTACGAGGGTAAACTCACCTACGTGTAGGTGACTGAAAGTATCGTACGAATAAGGATCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGATTCAAGCGTTATCCGGATTTATTGGGTTTAAAGGGTGCGTAGGCGGTTTGATAAGTTAGAGGTGAAATCCCGGGGCTTAACTCCGGAACTGCCTCTAATACTGTTAGACTAGAGAGTAGTTGCGGTAGGCGGAATGTATGGTGTAGCGGTGAAATGCTTAGAGATCATACAGAACACCGATTGCGAAGGCAGCTTACCAAACTATATCTGACGTTGAGGCACGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCAGTAAACGATGATAACTCGTTGTCGGCGATACACAGTCGGTGACTAAGCGAAAGCGATAAGTTATCCACCTGGGGAGTACGTTCGCAAGAATGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGAGGAACATGTGGTTTAATTCGATGATACGCGAGGAACCTTACCCGGGCTTGAAAGTTACTGACGATTCTGGAAACAGGATTTCCCTTCGGGGCAGGAAACTAGGTGCTGCATGGTTGTCGTCAGCTCGTGCCGTGAGGTGTCGGGTTAAGTCCCATAACGAGCGCAACCCCTACCGTTAGTTGCCATCAGGTCAAGCTGGGCACTCTGGCGGGACTGCCGGTGTAAGCCGAGAGGAAGGTGGGGATGACGTCAAATCAGCACGGCCCTTACGTCCGGGGCTACACACGTGTTACAATGGTAGGTACAGAGGGTCGCTACTCCGTGAGGAGATGCCAATCTCGAAAGCCTATCTCAGTTCGGATTGGAGGCTGAAACCCGCCTCCATGAAGTTGGATTCGCTAGTAATCGCGCATCAGCCATGGCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCAAGCCATGGAAGCTGGGGGTGCCTGAAGTTCGTGACCGCAAGGAGCGACCTAGGGCAAAACCGGTAACTGGGGCTAAGTCGTAACAAGGTAAC	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-08-06	
+CLAJMH20	7bce2b5e78b208b1fd0f83191b5b9853	Manual review: are_contigs_less_100, is_N50_grtr_25kb, is_max_contig_grtr_100kb	3881427	382	18135	643	54089	233	SPAdes	98.8	checkm	2.64	checkm	20	tRNAscan-SE	0	True	True	True	False	False	False	True	True	True	True	2022-12-15	v6.1	Nextseq	Alistipes onderdonkii		Bacteroidota	Rikenellaceae	Anaerobic	mGAM	1-3 days	1.0	AGAGTTTGATCCTGGCTCAGGATGAACGCTAGCGGCAGGCCTAACACATGCAAGTCGAGGGGCATCGGGATTGAAGCTTGCTTCAATTGCCGGCGACCGGCGCACGGGTGCGTAACGCGTATGTAACCTACCTATAACAGGGGCATAACACTGAGAAATTGGTACTAATTCCCCATAATATTCGGAGAGGCATCTCTCCGGGTTGAAAACTCCGGTGGTTATAGATGGACATGCGTTGTATTAGCTAGTTGGTGAGGTAACGGCTCACCAAGGCAACGATACATAGGGGGACTGAGAGGTTAACCCCCCACACTGGTACTGAGACACGGACCAGACTCCTACGGGAGGCAGCAGTGAGGAATATTGGTCAATGGACGCAAGTCTGAACCAGCCATGCCGCGTGCAGGAAGACGGCTCTATGAGTTGTAAACTGCTTTTGTACGAGGGTAAACTCACCTACGTGTAGGTGACTGAAAGTATCGTACGAATAAGGATCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGATTCAAGCGTTATCCGGATTTATTGGGTTTAAAGGGTGCGTAGGCGGTTTGATAAGTTAGAGGTGAAATCCCGGGGCTTAACTCCGGAACTGCCTCTAATACTGTTAGACTAGAGAGTAGTTGCGGTAGGCGGAATGTATGGTGTAGCGGTGAAATGCTTAGAGATCATACAGAACACCGATTGCGAAGGCAGCTTACCAAACTATATCTGACGTTGAGGCACGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCAGTAAACGATGATAACTCGTTGTCGGCGATACACAGTCGGTGACTAAGCGAAAGCGATAAGTTATCCACCTGGGGAGTACGTTCGCAAGAATGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGAGGAACATGTGGTTTAATTCGATGATACGCGAGGAACCTTACCCGGGCTTGAAAGTTACTGACGATTCTGGAAACAGGATTTCCCTTCGGGGCAGGAAACTAGGTGCTGCATGGTTGTCGTCAGCTCGTGCCGTGAGGTGTCGGGTTAAGTCCCATAACGAGCGCAACCCCTACCGTTAGTTGCCATCAGGTCAAGCTGGGCACTCTGGCGGGACTGCCGGTGTAAGCCGAGAGGAAGGTGGGGATGACGTCAAATCAGCACGGCCCTTACGTCCGGGGCTACACACGTGTTACAATGGTAGGTACAGAGGGTCGCTACCCCGTGAGGGGATGCCAATCTCGAAAGCCTATCTCAGTTCGGATTGGAGGCTGAAACCCGCCTCCATGAAGTTGGATTCGCTAGTAATCGCGCATCAGCCATGGCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCAAGCCATGGAAGCTGGGGGTGCCTGAAGTTCGTGACCGCAAGGAGCGACCTAGGGCAAAACCGGTAACTGGGGCTAAGTCGTAACAAGGTAACC	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-04-28	
+CLAJMH21B	b729913ec62f988e25eb66684a12df6e	High-quality draft	2645618	63	86041	59	232344	235	SPAdes	99.52	checkm	0.96	checkm	19	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Alistipes putredinis		Bacteroidota	Rikenellaceae	Anaerobic	mGAM	1-3 days	2.0	GGATGAACGCTAGCGGCAGGCTTAACACATGCAAGTCGAGGGGCAGCATAATGGATAGCAATATCTATGGTGGCGACCGGCGCACGGGTGCGTAACGCGTATGCAACCTACCTTTAACAGGGGGATAACACTGAGAAATTGGTACTAATACCCCATAATATCATAGAAGGCATCTTTTATGGTTGAAAATTCCGATGGTTAGAGATGGGCATGCGTTGTATTAGCTAGTTGGTGGGGTAACGGCTCACCAAGGCGACGATACATAGGGGGACTGAGAGGTTAACCCCCCACACTGGTACTGAGACACGGACCAGACTCCTACGGGAGGCAGCAGTGAGGAATATTGGTCAATGGACGCAAGTCTGAACCAGCCATGCCGCGTGCAGGATGACGGCTCTATGAGTTGTAAACTGCTTTTGTACGAGGGTAAACGCAGATACGTGTATCTGTCTGAAAGTATCGTACGAATAAGGATCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGATTCAAGCGTTATCCGGATTTATTGGGTTTAAAGGGTGCGTAGGCGGTTTGATAAGTTAGAGGTGAAATTTCGGGGCTCAACCCTGAACGTGCCTCTAATACTGTTGAGCTAGAGAGTAGTTGCGGTAGGCGGAATGTATGGTGTAGCGGTGAAATGCTTAGAGATCATACAGAACACCGATTGCGAAGGCAGCTTACCAAACTATATCTGACGTTGAGGCACGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCAGTAAACGATGATAACTCGTTGTCGGCGATACACAGTCGGTGACTAAGCGAAAGCGATAAGTTATCCACCTGGGGAGTACGTTCGCAAGAATGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGAGGAACATGTGGTTTAATTCGATGATACGCGAGGAACCTTACCCGGGCTTGAAAGTTAGCGACGATTCTTGAAAGAGGATTTCCCTTCGGGGCGCGAAACTAGGTGCTGCATGGTTGTCGTCAGCTCGTGCCGTGAGGTGTCGGGTTAAGTCCCATAACGAGCGCAACCCCTACCGTTAGTTGCCATCAGGTGAAGCTGGGCACTCTGGCGGGACTGCCGGTGTAAGCCGAGAGGAAGGTGGGGATGACGTCAAATCAGCACGGCCCTTACGTCCGGGGCTACACACGTGTTACAATGGTAGGTACAGAGGGCAGCTACCCAGCGATGGGATGCGAATCTCGAAAGCCTATCTCAGTTCGGATTGGAGGCTGAAACCCGCCTCCATGAAGTTGGATTCGCTAGTAATCGCGCATCAGCCATGGCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCAAGCCATGGGAGCCGGGGGTGCCTGAAGTTCGTGACCGCAAGGAGCGACCTAGGGCAAAACTGGTGACTGGGGCTAAGT	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-08-06	
+CLAJMH21	43ff8ce82b41df6cdf1d535f2e55971d	High-quality draft	2611663	53	178910	269	443733	283	SPAdes	99.52	checkm	0.96	checkm	20	tRNAscan-SE	1239	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Alistipes putredinis		Bacteroidota	Rikenellaceae	Anaerobic	YCFA/mGAM	1-3 days	2.0	AGTTTGATCCTGGCTCAGGATGAACGCTAGCGGCAGGCTTAACACATGCAAGTCGAGGGGCAGCATAATGGATAGCAATATCTATGGTGGCGACCGGCGCACGGGTGCGTAACGCGTATGCAACCTACCTTTAACAGGGGGATAACACTGAGAAATTGGTACTAATACCCCATAATATCATAGAAGGCATCTTTTATGGTTGAAAATTCCGATGGTTAGAGATGGGCATGCGTTGTATTAGCTAGTTGGTGGGGTAACGGCTCACCAAGGCGACGATACATAGGGGGACTGAGAGGTTAACCCCCCACACTGGTACTGAGACACGGACCAGACTCCTACGGGAGGCAGCAGTGAGGAATATTGGTCAATGGACGCAAGTCTGAACCAGCCATGCCGCGTGCAGGATGACGGCTCTATGAGTTGTAAACTGCTTTTGTACGAGGGTAAACGCAGATACGTGTATCTGTCTGAAAGTATCGTACGAATAAGGATCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGATTCAAGCGTTATCCGGATTTATTGGGTTTAAAGGGTGCGTAGGCGGTTTGATAAGTTAGAGGTGAAATTTCGGGGCTCAACCCTGAACGTGCCTCTAATACTGTTGAGCTAGAGAGTAGTTGCGGTAGGCGGAATGTATGGTGTAGCGGTGAAATGCTTAGAGATCATACAGAACACCGATTGCGAAGGCAGCTTACCAAACTATATCTGACGTTGAGGCACGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCAGTAAACGATGATAACTCGTTGTCGGCGATACACAGTCGGTGACTAAGCGAAAGCGATAAGTTATCCACCTGGGGAGTACGTTCGCAAGAATGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGAGGAACATGTGGTTTAATTCGATGATACGCGAGGAACCTTACCCGGGCTTGAAAGTTAGCGACGATTCTTGAAAGAGGATTTCCCTTCGGGGCGCGAAACTAGGTGCTGCATGGTTGTCGTCAGCTCGTGCCGTGAGGTGTCGGGTTAAGTCCCATAACGAGCGCAACCCCTACCGTTAGTTGCCATCAGGTGAAGCTGGGCACTCTGGCGGGACTGCCGGTGTAAGCCGAGAGGAAGGTGGGGATGACGTCAAATCAGCACGGCCCTTACGTCCGGGGCTACACACGTGTTACAATGGTAGGTACAGAGGGCAGCTACCCAGCGATGGGATGCGAATCTCGAAAGCCTATCTCAGTTCGGATTGGAGGCTGAAACCCGCCTCCATGAAGTTGGATTCGCTAGTAATCGCGCATCAGCCATGGCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCAAGCCATGGGAGCCGGGGGTGCCTGAAGTTCGTGACCGCAAGGAGCGACCTAGGGCAAAACTGGTGACTGGGGCTAAGTCGTAAC	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-04-28	
+CLAJMH22	fa2949e8e5ab40d1c7750a1290bc7efe	High-quality draft	3381052	51	134218	57	396417	834	SPAdes	100.0	checkm	0.48	checkm	19	tRNAscan-SE	3410	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Alistipes shahii		Bacteroidota	Rikenellaceae	Anaerobic	mGAM	1-3 days	1.0	AGAGTTTGATCCTGGCTCAGGATGAACGCTAGCGGCAGGCCTAACACATGCAAGTCGAGGGGCAGCACGGTGTAGCAATACACTGGTGGCGACCGGCGCACGGGTGCGTAACGCGTATGCAACCTACCCATAACAGGGGGATAACACTGAGAAATTGGTACTAATACCCCATAACATCAGGACCGGCATCGGTTCTGGTTGAAAACTCCGGTGGTTATGGATGGGCATGCGTTGTATTAGCTGGTTGGTGAGGTAACGGCTCACCAAGGCAACGATACATAGGGGGACTGAGAGGTTAACCCCCCACATTGGTACTGAGACACGGACCAAACTCCTACGGGAGGCAGCAGTGAGGAATATTGGTCAATGGACGCAAGTCTGAACCAGCCATGCCGCGTGCAGGAAGACGGCTCTATGAGTTGTAAACTGCTTTTGTACGAGGGTAAACGCTCTTACGTGTAAGAGCCTGAAAGTATCGTACGAATAAGGATCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGATCCAAGCGTTATCCGGATTTATTGGGTTTAAAGGGTGCGTAGGCGGTTTGATAAGTTAGAGGTGAAATACCGGTGCTTAACACCGGAACTGCCTCTAATACTGTTGAACTAGAGAGTAGTTGCGGTAGGCGGAATGTATGGTGTAGCGGTGAAATGCTTAGAGATCATACAGAACACCGATTGCGAAGGCAGCTTACCAAACTATATCTGACGTTGAGGCACGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCAGTAAACGATGATAACTCGCTGTCGGCGATACACGGTCGGCGGCTAAGCGAAAGCGATAAGTTATCCACCTGGGGAGTACGTTCGCAAGAATGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGAGGAACATGTGGTTTAATTCGATGATACGCGAGGAACCTTACCCGGGCTTGAAAGTTACTGACGATTCTGGAAACAGGATTTCCCTTCGGGGCAGGAAACTAGGTGCTGCATGGTTGTCGTCAGCTCGTGCCGTGAGGTGTCGGGTTAAGTCCCATAACGAGCGCAACCCCTACCGTTAGTTGCCATCAGGTCAAGCTGGGCACTCTGGCGGGACTGCCGGTGTAAGCCGAGAGGAAGGTGGGGATGACGTCAAATCAGCACGGCCCTTACGTCCGGGGCTACACACGTGTTACAATGGTAGGTACAGAGGGCAGCTACCCAGTGATGGGATGCGAATCTCGAAAGCCTATCTCAGTTCGGATCGGAGGCTGAAACCCGCCTCCGTGAAGTTGGATTCGCTAGTAATCGCGCATCAGCCATGGCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCAAGCCATGGAAGCTGGGGGTGCCTGAAGTTCGTGACCGCAAGGAGCGACCTAGGGCAAAACCGGTGACTGGGGCTAAGTCGTAACAA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH23	031544f742900ae7758296371a72dfc5	High-quality draft	2969103	23	294916	109	475888	712	SPAdes	98.66	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Bacteroides galacturonicus		Bacteroidota	Bacteroidaceae	Anaerobic	BHI	1-3 days	1.0	CTGGCTCAGGATGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGAAGCATTTAAGACAGATTACTTCGGTTTGAAGTCTTTTATGACTGAGTGGCGGACGGGTGAGTAACGCGTGGGTAACCTGCCTCATACAGGGGGATAGCAGCTGGAAACGGCTGGTAATACCGCATAAGCGCACAGTACCACATGGTACAGTGTGAAAAACTCCGGTGGTATGAGATGGACCCGCGTCTGATTAGCTTGTTGGCGGGGTAACGGCCCACCAAGGCGACGATCAGTAGCCGACCTGAGAGGGTGACCGGCCACATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGAGGAAACTCTGATGCAGCGACGCCGCGTGAGTGAAGAAGTAGTTCGCTATGTAAAGCTCTATCAGCAGGGAAGATAGTGACGGTACCTGACTAAGAAGCTCCGGCTAAATACGTGCCAGCAGCCGCGGTAATACGTATGGAGCAAGCGTTATCCGGATTTACTGGGTGTAAAGGGAGTGTAGGTGGCCAGGCAAGTCAGAAGTGAAAGCCCGGGGCTCAACCCCGGGACTGCTTTTGAAACTGCAGGGCTAGAGTGCAGGAGGGGCAAGTGGAATTCCTAGTGTAGCGGTGAAATGCGTAGATATTAGGAGGAACACCAGTGGCGAAGGCGGCTTGCTGGACTGTAACTGACACTGAGGCTCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGAATACTAGGTGTCGGGGCACATAAGTGCTCCGGTGCCGCAGCAAACGCAATAAGTATTCCACCTGGGGAGTACGTTCGCAAGAATGAAACTCAAAGGAATTGACGGGGACCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAAGTCTTGACATCCTCTTGACCGGTCAGTAATGTGACCTTTTCTTCGGAACAAGAGTGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTAGTAGCCAGCAGTTCGGCTGGGCACTCTAGGGAGACTGCCAGGGATAACCTGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGACTTGGGCTACACACGTGCTACAATGGCGTAAACAAAGTGAAGCGAGAGTGTGAGCTTAAGCAAATCACAAAAATAACGTCTCAGTTCGGATTGTAGTCTGCAACTCGACTACATGAAGCTGGAATCGCTAGTAATCGCAGATCAGAATGCTGCGGTGAATACGTTCCCGGGTCTTGTACACACCGCCCGTCACACCATGGGAGTCGGAAATGCCCGAAGTCGGTGACCTAACGTAAGAAGGAGCCGCCGAAGGCAGGTCTGATAACTGGGGTGAAGTCGTA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH25	606c32c1e718487dd9e3fa632b397da7	High-quality draft	6427710	73	177784	118	557957	362	SPAdes	99.3	checkm	0.65	checkm	19	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Bacteroides ovatus		Bacteroidota	Bacteroidaceae	Anaerobic	BHI	1-3 days	2.0	GGCTCAGGATGAACGCTAGCTACAGGCTTAACACATGCAAGTCGAGGGGCAGCATTTTAGTTTGCTTGCAAACTGAAGATGGCGACCGGCGCACGGGTGAGTAACACGTATCCAACCTGCCGATAACTCCGGGATAGCCTTTCGAAAGAAAGATTAATACCGGATGGCATACGAATATCGCATGATATTTTTATTAAAGAATTTCGGTTATCGATGGGGATGCGTTCCATTAGTTTGTTGGCGGGGTAACGGCCCACCAAGACTACGATGGATAGGGGTTCTGAGAGGAAGGTCCCCCACATTGGAACTGAGACACGGTCCAAACTCCTACGGGAGGCAGCAGTGAGGAATATTGGTCAATGGGCGCGAGCCTGAACCAGCCAAGTAGCGTGAAGGATGAAGGCTCTATGGGTCGTAAACTTCTTTTATATGGGAATAAAGTTTTCCACGTGTGGAATTTTGTATGTACCATATGAATAAGGATCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGATCCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGAGCGTAGGTGGATTGTTAAGTCAGTTGTGAAAGTTTGCGGCTCAACCGTAAAATTGCAGTTGAAACTGGCAGTCTTGAGTACAGTAGAGGTGGGCGGAATTCGTGGTGTAGCGGTGAAATGCTTAGATATCACGAAGAACTCCGATTGCGAAGGCAGCTCACTAGACTGTCACTGACACTGATGCTCGAAAGTGTGGGTATCAAACAGGATTAGATACCCTGGTAGTCCACACAGTAAACGATGAATACTCGCTGTTTGCGATATACAGTAAGCGGCCAAGCGAAAGCATTAAGTATTCCACCTGGGGAGTACGCCGGCAACGGTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGAGGAACATGTGGTTTAATTCGATGATACGCGAGGAACCTTACCCGGGCTTAAATTGCAACAGAATATATTGGAAACAGTATAGCCGTAAGGCTGTTGTGAAGGTGCTGCATGGTTGTCGTCAGCTCGTGCCGTGAGGTGTCGGCTTAAGTGCCATAACGAGCGCAACCCTTATCTTTAGTTACTAACAGGTTATGCTGAGGACTCTAGAGAGACTGCCGTCGTAAGATGTGAGGAAGGTGGGGATGACGTCAAATCAGCACGGCCCTTACGTCCGGGGCTACACACGTGTTACAATGGGGGGTACAGAAGGCGGCTACCTGGTGACAGGATGCTAATCCCAAAAACCTCTCTCAGTTCGGATCGAAGTCTGCAACCCGACTTCGTGAAGCTGGATTCGCTAGTAATCGCGCATCAGCCATGGCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCAAGCCATGAAAGCCGGGGGTACCTGAAGTACGTAACCGCAAGGAGCGTCCTAGGGTAAAACTGGTAATTGGGGCTAAGTCGTAACAA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-04-28	
+CLAJMH26	e940ddc678149199ea3a31c9926e8355	High-quality draft	4388882	97	139050	83	386348	456	SPAdes	99.26	checkm	0.5	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Bacteroides uniformis		Bacteroidota	Bacteroidaceae	Anaerobic	BHI	1-3 days	2.0	AGTTTGATCCTGGCTCAGGATGAACGCTAGCTACAGGCTTAACACATGCAAGTCGAGGGGCAGCATGAACTTAGCTTGCTAAGTTTGATGGCGACCGGCGCACGGGTGAGTAACACGTATCCAACCTGCCGATGACTCGGGGATAGCCTTTCGAAAGAAAGATTAATACCCGATGGCATAGTTCTTCCGCATGGTGGAACTATTAAAGAATTTCGGTCATCGATGGGGATGCGTTCCATTAGGTTGTTGGCGGGGTAACGGCCCACCAAGCCTTCGATGGATAGGGGTTCTGAGAGGAAGGTCCCCCACATTGGAACTGAGACACGGTCCAAACTCCTACGGGAGGCAGCAGTGAGGAATATTGGTCAATGGACGAGAGTCTGAACCAGCCAAGTAGCGTGAAGGATGACTGCCCTATGGGTTGTAAACTTCTTTTATACGGGAATAAAGTGAGGCACGTGTGCCTTTTTGTATGTACCGTATGAATAAGGATCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGATCCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGAGCGTAGGCGGACGCTTAAGTCAGTTGTGAAAGTTTGCGGCTCAACCGTAAAATTGCAGTTGATACTGGGTGTCTTGAGTACAGTAGAGGCAGGCGGAATTCGTGGTGTAGCGGTGAAATGCTTAGATATCACGAAGAACTCCGATTGCGAAGGCAGCTTGCTGGACTGTAACTGACGCTGATGCTCGAAAGTGTGGGTATCAAACAGGATTAGATACCCTGGTAGTCCACACAGTAAACGATGAATACTCGCTGTTTGCGATATACAGTAAGCGGCCAAGCGAAAGCGTTAAGTATTCCACCTGGGGAGTACGCCGGCAACGGTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGAGGAACATGTGGTTTAATTCGATGATACGCGAGGAACCTTACCCGGGCTTGAATTGCAACTGAATGATGTGGAGACATGTCAGCCGCAAGGCAGTTGTGAAGGTGCTGCATGGTTGTCGTCAGCTCGTGCCGTGAGGTGTCGGCTTAAGTGCCATAACGAGCGCAACCCTTATCGATAGTTACCATCAGGTGATGCTGGGGACTCTGTCGAGACTGCCGTCGTAAGATGTGAGGAAGGTGGGGATGACGTCAAATCAGCACGGCCCTTACGTCCGGGGCTACACACGTGTTACAATGGGGGGTACAGAAGGCAGCTACACGGCGACGTGATGCTAATCCCTAAAGCCTCTCTCAGTTCGGATTGGAGTCTGCAACCCGACTCCATGAAGCTGGATTCGCTAGTAATCGCGCATCAGCCACGGCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCAAGCCATGAAAGCCGGGGGTACCTGAAGTGCGTAACCGCAAGGAGCGCCCTAGGGTAAAACTGGTGATTGGGGCTAAGTCGTAACAAGGTAA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-04-28	
+CLAJMH27B	cb793eeee655a040f7bb68d178be1432	Manual review: are_contigs_less_100	5183727	136	95340	273	318040	148	SPAdes	99.25	checkm	0.0	checkm	19	tRNAscan-SE	30960;9129;4148;2751;1014	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Phocaeicola vulgatus		Bacteroidota	Bacteroidaceae	Anaerobic	mGAM	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-08-06	
+CLAJMH29	8674410c93d4d316931119aecb661b9f	High-quality draft	1918958	48	83148	16	182138	379	SPAdes	100.0	checkm	0.15	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Bifidobacterium animalis		Actinomycetota	Bifidobacteriaceae	Anaerobic	BHI	1-3 days	1.0	TCCTGGCTCAGGATGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGGGATCCCTGGCAGCTTGCTGTCGGGGTGAGAGTGGCGAACGGGTGAGTAATGCGTGACCAACCTGCCCTGTGCACCGGAATAGCTCCTGGAAACGGGTGGTAATACCGGATGCTCCGCTCCATCGCATGGTGGGGTGGGAAATGCTTTTGCGGCATGGGATGGGGTCGCGTCCTATCAGCTTGTTGGCGGGGTGATGGCCCACCAAGGCGTTGACGGGTAGCCGGCCTGAGAGGGTGACCGGCCACATTGGGACTGAGATACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCGACGCCGCGTGCGGGATGGAGGCCTTCGGGTTGTAAACCGCTTTTGTTCAAGGGCAAGGCACGGTTTCGGCCGTGTTGAGTGGATTGTTCGAATAAGCACCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGTGCGAGCGTTATCCGGATTTATTGGGCGTAAAGGGCTCGTAGGCGGTTCGTCGCGTCCGGTGTGAAAGTCCATCGCCTAACGGTGGATCTGCGCCGGGTACGGGCGGGCTGGAGTGCGGTAGGGGAGACTGGAATTCCCGGTGTAACGGTGGAATGTGTAGATATCGGGAAGAACACCAATGGCGAAGGCAGGTCTCTGGGCCGTCACTGACGCTGAGGAGCGAAAGCGTGGGGAGCGAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGGTGGATGCTGGATGTGGGGCCCTTTCCACGGGTCCCGTGTCGGAGCCAACGCGTTAAGCATCCCGCCTGGGGAGTACGGCCGCAAGGCTAAAACTCAAAGAAATTGACGGGGGCCCGCACAAGCGGCGGAGCATGCGGATTAATTCGATGCAACGCGAAGAACCTTACCTGGGCTTGACATGTGCCGGATCGCCGTGGAGACACGGTTTCCCTTCGGGGCCGGTTCACAGGTGGTGCATGGTCGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTCGCCGCATGTTGCCAGCGGGTGATGCCGGGAACTCATGTGGGACCGCCGGGGTCAACTCGGAGGAAGGTGGGGATGACGTCAGATCATCATGCCCCTTACGTCCAGGGCTTCACGCATGCTACAATGGCCGGTACAACGCGGTGCGACACGGTGACGTGGGGCGGATCGCTGAAAACCGGTCTCAGTTCGGATCGCAGTCTGCAACTCGACTGCGTGAAGGCGGAGTCGCTAGTAATCGCGGATCAGCAACGCCGCGGTGAATGCGTTCCCGGGCCTTGTACACACCGCCCGTCAAGTCATGAAAGTGGGTAGCACCCGAAGCCGGTGGCCCGACCCTTGTGGGGGGAGCCGTCTAAGGTGAGACTCGTGATTGGGACTAAGTCGTA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-04-28	
+CLAJMH30C	ed8d341cd825b2a07cdc98737874c219	High-quality draft	2541554	76	129300	53	294714	832	SPAdes	100.0	checkm	0.0	checkm	20	tRNAscan-SE	10224;5017	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Bifidobacterium longum		Actinobacteria	Bifidobacteriaceae	Anaerobic	mGAM	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH30	d30c6ada2159f3638df4cae1140cc475	Manual review: are_contigs_less_100, is_N50_grtr_25kb, is_max_contig_grtr_100kb	2546684	337	12744	183	63907	81	SPAdes	99.94	checkm	1.19	checkm	20	tRNAscan-SE	10224;5017;3971	True	True	True	False	False	False	True	True	True	True	2022-12-15	v6.1	Nextseq	Bifidobacterium longum		Actinomycetota	Bifidobacteriaceae	Anaerobic	mGAM	1-3 days	1.0	TCCTGGCTCAGGATGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGGGATCCATCAGGCTTTGCTTGGTGGTGAGAGTGGCGAACGGGTGAGTAATGCGTGACCGACCTGCCCCATACACCGGAATAGCTCCTGGAAACGGGTGGTAATGCCGGATGCTCCAGTTGATCGCATGGTCTTCTGGGAAAGCTTTCGCGGTATGGGATGGGGTCGCGTCCTATCAGCTTGACGGCGGGGTAACGGCCCACCGTGGCTTCGACGGGTAGCCGGCCTGAGAGGGCGACCGGCCACATTGGGACTGAGATACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCGACGCCGCGTGAGGGATGGAGGCCTTCGGGTTGTAAACCTCTTTTATCGGGGAGCAAGCGAGAGTGAGTTTACCCGTTGAATAAGCACCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGTGCAAGCGTTATCCGGAATTATTGGGCGTAAAGGGCTCGTAGGCGGTTCGTCGCGTCCGGTGTGAAAGTCCATCGCTTAACGGTGGATCCGCGCCGGGTACGGGCGGGCTTGAGTGCGGTAGGGGAGACTGGAATTCCCGGTGTAACGGTGGAATGTGTAGATATCGGGAAGAACACCAATGGCGAAGGCAGGTCTCTGGGCCGTTACTGACGCTGAGGAGCGAAAGCGTGGGGAGCGAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGGTGGATGCTGGATGTGGGGCCCGTTCCACGGGTTCCGTGTCGGAGCTAACGCGTTAAGCATCCCGCCTGGGGAGTACGGCCGCAAGGCTAAAACTCAAAGAAATTGACGGGGGCCCGCACAAGCGGCGGAGCATGCGGATTAATTCGATGCAACGCGAAGAACCTTACCTGGGCTTGACATGTTCCCGACGGTCGTAGAGATACGGCTTCCCTTCGGGGCGGGTTCACAGGTGGTGCATGGTCGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTCGCCCCGTGTTGCCAGCGGATTATGCCGGGAACTCACGGGGGACCGCCGGGGTTAACTCGGAGGAAGGTGGGGATGACGTCAGATCATCATGCCCCTTACGTCCAGGGCTTCACGCATGCTACAATGGCCGGTACAACGGGATGCGACGCGGCGACGCGGAGCGGATCCCTGAAAACCGGTCTCAGTTCGGATCGCAGTCTGCAACTCGACTGCGTGAAGGCGGAGTCGCTAGTAATCGCGAATCAGCAACGTCGCGGTGAATGCGTTCCCGGGCCTTGTACACACCGCCCGTCAAGTCATGAAAGTGGGCAGCACCCGAAGCCGGTGGCCTAACCCCTTGTGGGATGGAGCCGTCTAAGGTGAGGCTCGTGATTGGGACTAAGTCGTAC	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-04-28	
+CLAJMH31	f3e7b73e03756cf19e48e6a66aa04581	Manual review: are_contigs_less_100, is_trnas_grtr_18	4045321	175	56561	410	257988	169	SPAdes	99.37	checkm	0.63	checkm	18	tRNAscan-SE	8441	True	True	True	False	True	True	False	True	True	True	2022-12-15	v6.1	Nextseq	Blautia sp.		Bacillota	Lachnospiraceae	Anaerobic	YCFA	1-3 days	1.0	ATTTATTTCTAGTGGCGGACGGGTGAGTAACGCGTGGGTAACCTGCCTTATACAGGGGGATAACAGTCAGAAATGGCTGCTAATACCGCATAAGCGCACAGAGCTGCATGGCTCAGTGTGAAAAACTCCGGTGGTATAAGATGGACCCGCGTTGGATTAGCTGGTTGGTGGGGTAACGGCCCACCAAGGCGACGATCCATAGCCGGCCTGAGAGGGTGAACGGCCACATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGGGAAACCCTGATGCAGCGACGCCGCGTGAAGGAAGAAGTATCTCGGTATGTAAACTTCTATCAGCAGGGAAGATAGTGACGGTACCTGACTAAGAAGCCCCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGGGCAAGCGTTATCCGGATTTACTGGGTGTAAAGGGAGCGTAGACGGTGTGGCAAGTCTGATGTGAAAGGCATGGGCTCAACCTGTGGACTGCATTGGAAACTGTCATACTTGAGTGCCGGAGGGGTAAGCGGAATTCCTAGTGTAGCGGTGAAATGCGTAGATATTAGGAGGAACACCAGTGGCGAAGGCGGCTTACTGGACGGTAACTGACGTTGAGGCTCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGAATACTAGGTGTCGGG	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH33	e358237fde3a7b56f86699c7f3bc4f1d	Manual review: are_contigs_less_100	3392875	122	61464	154	194920	420	SPAdes	99.42	checkm	0.0	checkm	19	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Coprococcus comes		Bacillota	Lachnospiraceae	Anaerobic	BHI	1-3 days	1.0	CTGGCTCAGGATGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGAAGCACTTATCTTTGATTCTTCGGATGAAGGTGTTTGTGACTGAGTGGCGGACGGGTGAGTAACGCGTGGGTAACCTGCCTCATACAGGGGGATAACAGTTAGAAATGACTGCTAATACCGCATAAGACCACGGAGCCGCATGGCTCAGTGGGAAAAACTCCGGTGGTATGAGATGGACCCGCGTCTGATTAGGTAGTTGGTGGGGTAACGGCCTACCAAGCCAACGATCAGTAGCCGACCTGAGAGGGTGACCGGCCACATTGGGACTGAGACACGGCCCAAACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGGGAAACCCTGATGCAGCGACGCCGCGTGAGCGAAGAAGTATTTCGGTATGTAAAGCTCTATCAGCAGGGAAGAAAATGACGGTACCTGACTAAGAAGCACCGGCTAAATACGTGCCAGCAGCCGCGGTAATACGTATGGTGCAAGCGTTATCCGGATTTACTGGGTGTAAAGGGAGCGTAGACGGCTGTGTAAGTCTGAAGTGAAAGCCCGGGGCTCAACCCCGGGACTGCTTTGGAAACTATGCAGCTAGAGTGTCGGAGAGGTAAGTGGAATTCCCAGTGTAGCGGTGAAATGCGTAGATATTGGGAGGAACACCAGTGGCGAAGGCGGCTTACTGGACGATGACTGACGTTGAGGCTCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGACTACTAGGTGTCGGGGAGCAAAGCTCTTCGGTGCCGCAGCAAACGCAATAAGTAGTCCACCTGGGGAGTACGTTCGCAAGAATGAAACTCAAAGGAATTGACGGGGACCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCTGCTCTTGACATCCCGGTGACCGGCGTGTAATGACGCCTTTTCTTCGGAACACCGGTGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCTTCAGTAGCCAGCATTTCGGATGGGCACTCTGGAGAGACTGCCAGGGATAACCTGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGAGCAGGGCTACACACGTGCTACAATGGCGTAAACAAAGGGAAGCAAGCCTGCGAGGGTAAGCAAATCTCAAAAATAACGTCTCAGTTCGGATTGTAGTCTGCAACTCGACTACATGAAGCTGGAATCGCTAGTAATCGCGAATCAGCATGTCGCGGTGAATACGTTCCCGGGTCTTGTACACACCGCCCGTCACACCATGGGAGTTGGTAACGCCCGAAGTCAGTGACCCAACCGTAAGGAGGGAGCTGCCGAAGGTGGGACCGATAACTGGGGTGAAGTCGTAACA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH34	d37d2692498af74069252ca8918ac034	Manual review: is_contam_less_5, are_contigs_less_100	3608311	836	65846	2777	198731	425	SPAdes	99.42	checkm	6.27	checkm	20	tRNAscan-SE	2743	True	False	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Dorea longicatena		Bacillota	Lachnospiraceae	Anaerobic	YCFA	1-3 days	1.0	AGAGTTTGATCCTGGCTCAGGATGAACGCGGGCGGCGTGCTTAACACATGCAAGTCGAGCGAAGCACTTAGGAAAGATTCTTCGGATGATTTCTTTTGTGACTGAGCGGCGGACGGGTGAGTAACGCGTGGGTAACCTGCCTCATACAGGGGGATAACAGTTAGAAATGACTGCTAATACCGCATAAGACCACGGTACCGCATGGTACAGTGGTAAAAACTCCGGTGGTATGAGATGGACCCGCGTCTGATTAGGTAGTTGGTGGGGTAACGGCCTACCAAGCCGACGATCAGTAGCCGACCTGAGAGGGTGACCGGCCACATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGAGGAAACTCTGATGCAGCGACGCCGCGTGAAGGATGAAGTATTTCGGTATGTAAACTTCTATCAGCAGGGAAGAAAATGACGGTACCTGACTAAGAAGCCCCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGGGCAAGCGTTATCCGGATTTACTGGGTGTAAAGGGAGCGTAGACGGCACGGCAAGCCAGATGTGAAAGCCCGGGGCTCAACCCCGGGACTGCATTTGGAACTGCTGAGCTAGAGTGTCGGAGAGGCAAGTGGAATTCCTAGTGTAGCGGTGAAATGCGTAGATATTAGGAGGAACACCAGTGGCGAAGGCGGCTTGCTGGACGATGACTGACGTTGAGGCTCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGACTGCTAGGTGTCGGGTGGCAAAGCCATTCGGTGCCGCAGCTAACGCAATAAGCAGTCCACCTGGGGAGTACGTTCGCAAGAATGAAACTCAAAGGAATTGACGGGGACCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCTGATCTTGACATCCCGATGACCGCTTCGTAATGGAAGCTTTTCTTCGGAACATCGGTGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCCTATCTTCAGTAGCCAGCAGGTTAAGCTGGGCACTCTGGAGAGACTGCCAGGGATAACCTGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGACCAGGGCTACACACGTGCTACAATGGCGTAAACAAAGAGAAGCGAACTCGCGAGGGTAAGCAAATCTCAAAAATAACGTCTCAGTTCGGATTGTAGTCTGCAACTCGACTACATGAAGCTGGAATCGCTAGTAATCGCAGATCAGAATGCTGCGGTGAATACGTTCCCGGGTCTTGTACACACCGCCCGTCACACCATGGGAGTCAGTAACGCCCGAAGTCAGTGACCCAACCGTAAGGAGGGAGCTGCCGAAGGTGGGACCGATAACTGGGGTGAAGTCGTAACA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH37	2aba6b4c15ca2811c635994e4fa6f320	Manual review: are_contigs_less_100	4564726	103	115355	269	281912	213	SPAdes	99.62	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Parabacteroides merdae		Bacteroidota	Tannerellaceae	Anaerobic	mGAM	1-3 days	1.0	TGGCTCAGGATGAACGCTAGCGACAGGCTTAACACATGCGAGTCGAGGGGCAGCATGATTTGTAGCAATACAGATTGATGGCGACCGGCGCACGGGTGAGTAACGCGTATGCAACTTACCTATCAGAGGGGGATAGCCCGGCGAAAGTCGGATTAATACCCCATAAAACAGGGGTCCCGCATGGGAATATTTGTTAAAGATTCATCGCTGATAGATAGGCATGCGTTCCATTAGGCAGTTGGCGGGGTAACGGCCCACCAAACCGACGATGGATAGGGGTTCTGAGAGGAAGGTCCCCCACATTGGTACTGAGACACGGACCAAACTCCTACGGGAGGCAGCAGTGAGGAATATTGGTCAATGGCCGAGAGGCTGAACCAGCCAAGTCGCGTGAAGGAAGAAGGATCTATGGTTTGTAAACTTCTTTTATAGGGGAATAAAGTGGAGGACGTGTCCTTTTTTGTATGTACCCTATGAATAAGCATCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGATGCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGTGCGTAGGTGGTGATTTAAGTCAGCGGTGAAAGTTTGTGGCTCAACCATAAAATTGCCGTTGAAACTGGGTTACTTGAGTGTGTTTGAGGTAGGCGGAATGCGTGGTGTAGCGGTGAAATGCATAGATATCACGCAGAACTCCGATTGCGAAGGCAGCTTACTAAACCATAACTGACACTGAAGCACGAAAGCGTGGGGATCAAACAGGATTAGATACCCTGGTAGTCCACGCAGTAAACGATGATTACTAGGAGTTTGCGATACAATGTAAGCTCTACAGCGAAAGCGTTAAGTAATCCACCTGGGGAGTACGCCGGCAACGGTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGAGGAACATGTGGTTTAATTCGATGATACGCGAGGAACCTTACCCGGGTTTGAACGTAGTCTGACCGGAGTGGAAACACTCTTTCTAGCAATAGCAGATTACGAGGTGCTGCATGGTTGTCGTCAGCTCGTGCCGTGAGGTGTCGGCTTAAGTGCCATAACGAGCGCAACCCTTATCACTAGTTACTAACAGGTGAAGCTGAGGACTCTGGTGAGACTGCCAGCGTAAGCTGTGAGGAAGGTGGGGATGACGTCAAATCAGCACGGCCCTTACATCCGGGGCGACACACGTGTTACAATGGCATGGACAAAGGGCAGCTACCTGGTGACAGGATGCTAATCTCCAAACCATGTCTCAGTTCGGATCGGAGTCTGCAACTCGACTCCGTGAAGCTGGATTCGCTAGTAATCGCGCATCAGCCATGGCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCAAGCCATGGGAGCCGGGGGTACCTGAAGTCCGTAACCGCAAGGATCGGCCTAGGGTAAAACTGGTGACTGGGGCTAAGTC	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-04-28	
+CLAJMH38	8e68d07d242aaa9194c02e4463fedf56	Manual review: is_trnas_grtr_18	2317003	59	69317	40	148621	80	SPAdes	99.33	checkm	1.01	checkm	18	tRNAscan-SE	0	True	True	True	True	True	True	False	True	True	True	2022-12-15	v6.1	Nextseq	Ruminococcus bromii		Bacillota	Oscillospiraceae	Anaerobic	BHI	1-3 days	1.0	CTGGCTCAGGACGAACGCTGGCGGCGTGCCTAACACATGCAAGTCGAACGGAACTGTTTTGAAAGATTTCTTCGGAATGAATTTGATTTAGTTTAGTGGCGGACGGGTGAGTAACGCGTGAGTAACCTGCCTTCAAGAGGGGGATAACATTCTGAAAAGAATGCTAATACCGCATGACATATCGGAACCACATGGTTCTGATATCAAAGATTTTATCGCTTGAAGATGGACTCGCGTCCGATTAGTTAGTTGGTGAGGTAACGGCTCACCAAGACCGCGATCGGTAGCCGGACTGAGAGGTTGAACGGCCACATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGGATATTGCGCAATGGGGGCAACCCTGACGCAGCAACGCCGCGTGAAGGATGAAGGTTTTCGGATTGTAAACTTCTTTTATTAAGGACGAAACTTGACGGTACTTAATGAATAAGCTCCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGAGCAAGCGTTGTCCGGATTTACTGGGTGTAAAGGGTGCGTAGGCGGCTTTGCAAGTCAGATGTGAAATCTATGGGCTCAACCCATAAACTGCATTTGAAACTGTAGAGCTTGAGTGAAGTAGAGGCAGGCGGAATTCCCCGTGTAGCGGTGAAATGCGTAGAGATGGGGAGGAACACCAGTGGCGAAGGCGGCCTGCTGGGCTTTAACTGACGCTGAGGCACGAAAGCGTGGGTAGCAAACAGGATTAGATACCCTGGTAGTCCACGCTGTAAACGATGATTACTAGGTGTGGGGGGTCTGACCCCTTCCGTGCCGGAGTTAACACAATAAGTAATCCACCTGGGGAGTACGGCCGCAAGGTTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCAGTGGAGTATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAGGTCTTGACATCCAACTAACGAAGTAGAGATACATTAGGTGCCCTTCGGGGAAAGTTGAGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTGCTATTAGTTGCTACGCAAGAGCACTCTAATAGGACTGCCGTTGACAAAACGGAGGAAGGTGGGGACGACGTCAAATCATCATGCCCCTTATGACCTGGGCTACACACGTACTACAATGGATGTTAACAGAGGGAAGCAAGACAGTGATGTGGAGCAAACCCCTAAAAACATTCTCAGTTCAGATTGCAGGCTGCAACCCGCCTGCATGAAGATGGAATTGCTAGTAATCGCGGATCAGCATGCCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGCCGGTAATACCCGAAGTCAGTAGTCCAACCTCGTGAGGACGCTGCCGAAGGTAGGATTGGCGACTGGGGTGAAGTCGTA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH39	5fd31045221c9ed15b17bbcdfb4e1348	High-quality draft	1796138	40	91290	152	404301	731	SPAdes	99.89	checkm	0.15	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Streptococcus sp.		Bacillota	Streptococcaceae	Anaerobic	BHI	1-3 days	2.0	AGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCGTGCCTAATACATGCAAGTAGAACGCTGAAGAGAGGAGCTTGCTCTTCTTGGATGAGTTGCGAACGGGTGAGTAACGCGTAGGTAACCTGCCTTGTAGCGGGGGATAACTATTGGAAACGATAGCTAATACCGCATAACAATGGATGACACATGTCATTTATTTGAAAGGGGCAATTGTTCCACTACAAGATGGACCTGCGTTGTATTAGCTAGTAGGTGAGGTAATGGCTCACCTAGGCGACGATACATAGCCGACCTGAGAGGGTGATCGGCCACACTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTAGGGAATCTTCGGCAATGGGGGCAACCCTGACCGAGCAACGCCGCGTGAGTGAAGAAGGTTTTCGGATCGTAAAGCTCTGTTGTAAGTCAAGAACGGGTGTGAGAGTGGAAAGTTCACACTGTGACGGTAGCTTACCAGAAAGGGACGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGTCCCGAGCGTTGTCCGGATTTATTGGGCGTAAAGCGAGCGCAGGCGGTTTGATAAGTCTGAAGTTAAAGGCTGTGGCTCAACCATAGTTCGCTTTGGAAACTGTCAAACTTGAGTGCAGAAGGGGAGAGTGGAATTCCATGTGTAGCGGTGAAATGCGTAGATATATGGAGGAACACCGGTGGCGAAAGCGGCTCTCTGGTCTGTAACTGACGCTGAGGCTCGAAAGCGTGGGGAGCGAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGAGTGCTAGGTGTTGGATCCTTTCCGGGATTCAGTGCCGCAGCTAACGCATTAAGCACTCCGCCTGGGGAGTACGACCGCAAGGTTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAGGTCTTGACATCCCGATGCTATTTCTAGAGATAGAAAGTTACTTCGGTACATCGGTGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCCTATTGTTAGTTGCCATCATTCAGTTGGGCACTCTAGCGAGACTGCCGGTAATAAACCGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGACCTGGGCTACACACGTGCTACAATGGTTGGTACAACGAGTTGCGAGTCGGTGACGGCGAGCTAATCTCTTAAAGCCAATCTCAGTTCGGATTGTAGGCTGCAACTCGCCTACATGAAGTCGGAATCGCTAGTAATCGCGGATCAGCACGCCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCACGAGAGTTTGTAACACCCGAAGTCGGTGAGGTAACCTTTTGGAGCCAGCCGCCTAAGGTGGGACAGATGATTGGGGTGAAGTCGTAACAAG	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-04-28	
+CLAJMH3	4bed17bf2b66afe72b80d658adee5fdc	Manual review: are_contigs_less_100	4076216	240	31260	215	117935	174	SPAdes	98.88	checkm	0.19	checkm	20	tRNAscan-SE	7059;6604;5396	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Bacteroides coprocola		Bacteroidota	Bacteroidaceae	Anaerobic	mGAM	1-3 days	1.0	CTGGCTCAGGATGAACGCTAGCTACAGGCTTAACACATGCAAGTCGAGGGGCAGCATGAACTTAGCTTGCTAAGTTTGATGGCGACCGGCGCACGGGTGAGTAACACGTATCCAACCTTCCGTTTACTCAGGGATAGCCTTTCGAAAGAAAGATTAATACCTGATAGTATGGTGAGATTGCATGATAGCACCATTAAAGATTTATTGGTAAACGATGGGGATGCGTTCCATTAGGTAGTAGGCGGGGTAACGGCCCACCTAGCCGACGATGGATAGGGGTTCTGAGAGGAAGGTCCCCCACATTGGAACTGAGACACGGTCCAAACTCCTACGGGAGGCAGCAGTGAGGAATATTGGTCAATGGGCGAGAGCCTGAACCAGCCAAGTAGCGTGAAGGATGAAGGTCCTACGGATTGTAAACTTCTTTTATACGGGAATAAAGTATCCTACGTGTAGGATTTTGTATGTACCGTATGAATAAGCATCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGATGCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGAGCGCAGACGGGAGATTAAGTCAGTTGTGAAAGTTTGCGGCTCAACCGTAAAATTGCAGTTGATACTGGTTTCCTTGAGTGCAGTTGAGGCAGGCGGAATTCGTGGTGTAGCGGTGAAATGCTTAGATATCACGAAGAACCCCGATTGCGAAGGCAGCTTGCTAAACTGTAACTGACGTTCATGCTCGAAAGTGTGGGTATCAAACAGGATTAGATACCCTGGTAGTCCACACGGTAAACGATGGATACTCGCTGTTGGCGATATACTGTCAGCGGCCAAGCGAAAGCATTAAGTATCCCACCTGGGGAGTACGCCGGCAACGGTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGAGGAACATGTGGTTTAATTCGATGATACGCGAGGAACCTTACCCGGGCTTAAATTGCAGACGAATTACGAGGAAACTTGTAAGCCGCAAGGCGTCTGTGAAGGTGCTGCATGGTTGTCGTCAGCTCGTGCCGTGAGGTGTCGGCTTAAGTGCCATAACGAGCGCAACCCTCGTGGTCAGTTACTAACAGGTAACGCTGAGGACTCTGGCCAGACTGCCATCGTAAGATGTGAGGAAGGTGGGGATGACGTCAAATCAGCACGGCCCTTACGTCCGGGGCTACACACGTGTTACAATGGGAGGTACAGAAGGCTGCTACCCGGCGACGGGATGCCAATCCCCAAAACCTCTCTCAGTTCGGACTGGAGTCTGCAACCCGACTCCACGAAGCTGGATTCGCTAGTAATCGCGCATCAGCCACGGCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCAAGCCATGAAAGCCGGGGGTACCTGAAGTGCGTAACCGCAAGGAGCGCCCTAGGGTAAAACCGGTAATTGGGGCTAAGTCGTACAAA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH42	7361f35b92bcf2f31ceb8e33b4870915	High-quality draft	3022614	63	123655	151	520360	1008	SPAdes	99.52	checkm	1.21	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Agathobacter rectalis		Bacillota	Lachnospiraceae	Anaerobic	BHI	1-3 days	1.0	AGAGTTTGATCCTGGCTCAGGATGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGAAGCACTTTATTTGATTTCCTTCGGGACTGATTATTTTGTGACTGAGTGGCGGACGGGTGAGTAACGCGTGGGTAACCTGCCTTGTACAGGGGGATAACAGTTGGAAACGGCTGCTAATACCGCATAAGCGCACGGCATCGCATGATGCAGTGTGAAAAACTCCGGTGGTATAAGATGGACCCGCGTTGGATTAGCTAGTTGGTGAGGTAACGGCCCACCAAGGCGACGATCCATAGCCGACCTGAGAGGGTGACCGGCCACATTGGGACTGAGACACGGCCCAAACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGAAAGCCTGATGCAGCGACGCCGCGTGAGCGAAGAAGTATTTCGGTATGTAAAGCTCTATCAGCAGGGAAGATAATGACGGTACCTGACTAAGAAGCACCGGCTAAATACGTGCCAGCAGCCGCGGTAATACGTATGGTGCAAGCGTTATCCGGATTTACTGGGTGTAAAGGGAGCGCAGGCGGTGCGGCAAGTCTGATGTGAAAGCCCGGGGCTCAACCCCGGTACTGCATTGGAAACTGTCGTACTAGAGTGTCGGAGGGGTAAGCGGAATTCCTAGTGTAGCGGTGAAATGCGTAGATATTAGGAGGAACACCAGTGGCGAAGGCGGCTTACTGGACGATAACTGACGCTGAGGCTCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGAATACTAGGTGTTGGGAAGCATTGCTTCTCGGTGCCGTCGCAAACGCAGTAAGTATTCCACCTGGGGAGTACGTTCGCAAGAATGAAACTCAAAGGAATTGACGGGGACCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAAGTCTTGACATCCTTCTGACCGGTACTTAACCGTACCTTCTCTTCGGAGCAGGAGTGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCTTTAGTAGCCAGCGGTCAGGCCGGGCACTCTAGAGAGACTGCCAGGGATAACCTGGAGGAAGGCGGGGATGACGTCAAATCATCATGCCCCTTATGACTTGGGCTACACACGTGCTACAATGGCGTAAACAAAGGGAAGCAAAGCTGTGAAGCCGAGCAAATCTCAAAAATAACGTCTCAGTTCGGACTGTAGTCTGCAACCCGACTACACGAAGCTGGAATCGCTAGTAATCGCAGATCAGAATGCTGCGGTGAATACGTTCCCGGGTCTTGTACACACCGCCCGTCACACCATGGGAGTTGGGAATGCCCGAAGCCAGTGACCTAACCGAAAGGAAGGAGCTGTCGAAGGCAGGCTCGATAACTGGGGTGAAGTCGTAACAAGGTAACC	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-04-28	
+CLAJMH43	f89a864fe94a8551e9276afb4de34c85	Manual review: are_contigs_less_100	3455867	153	45538	123	141444	214	SPAdes	98.64	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Dysosmobacter (Oscillibacter) welbionis (sp. nov..)		Bacillota	Oscillospiraceae	Anaerobic	BHI	1-3 days	1.0	AGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGGAGCACCCTTGACTGAGGTTTCGGCCAAATGATAGGAATGCTTAGTGGCGGACTGGTGAGTAACGCGTGAGGAACCTACCTTCCAGAGGGGGACAACAGTTGGAAACGACTGCTAATACCGCATGACGCATGACCGGGGCATCCCGGGCATGTCAAAGATTTTATCGCTGGAAGATGGCCTCGCGTCTGATTAGCTAGATGGTGGGGTAACGGCCCACCATGGCGACGATCAGTAGCCGGACTGAGAGGTTGACCGGCCACATTGGGACTGAGATACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGGGCAATGGACGCAAGTCTGACCCAGCAACGCCGCGTGAAGGAAGAAGGCTTTCGGGTTGTAAACTTCTTTTGTCAGGGAAGAGTAGAAGACGGTACCTGACGAATAAGCCACGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGTGGCAAGCGTTGTCCGGATTTACTGGGTGTAAAGGGCGTGCAGCCGGGCCGGCAAGTCAGATGTGAAATCTGGAGGCTTAACCTCCAAACTGCATTTGAAACTGTAGGTCTTGAGTACCGGAGAGGTTATCGGAATTCCTTGTGTAGCGGTGAAATGCGTAGATATAAGGAAGAACACCAGTGGCGAAGGCGGATAACTGGACGGCAACTGACGGTGAGGCGCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCTGTAAACGATGGATACTAGGTGTGCGGGGACTGACCCCCTGCGTGCCGCAGTTAACACAATAAGTATCCCACCTGGGGAGTACGATCGCAAGGTTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGTGGATTATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAGGGCTTGACATCCTACTAACGAAGTAGAGATACATCAGGTGCCCTTCGGGGAAAGTAGAGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCCTATTGTTAGTTGCTACGCAAGAGCACTCTAGCGAGACTGCCGTTGACAAAACGGAGGAAGGTGGGGACGACGTCAAATCATCATGCCCCTTATGTCCTGGGCTACACACGTAATACAATGGCGGTCAACAGAGGGAGGCAAAGCCGCGAGGCAGAGCAAACCCCCAAAAGCCGTCCCAGTTCGGATCGCAGGCTGCAACCCGCCTGCGTGAAGTCGGAATCGCTAGTAATCGCGGATCAGCATGCCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGAGAGTCGGGAACACCCGAAGTCCGTAGCCTAACCGCAAGGAGGGCGCGGCCGAAGGTGGGTTCGATAATTGGGGTGAAGTCGTAACAAAGGTAACCA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-04-28	
+CLAJMH44	84fdb9c24bb6d936e5a70f1020dee01c	High-quality draft	2808005	71	109291	198	459731	373	SPAdes	97.99	checkm	0.67	checkm	19	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	gen. nov.	114601	Bacillota	Oscillospiraceae	Anaerobic	YCFA	1-3 days	1.0	CTGGCTCAGGACGAACGCTGGCGGCGTGCCTAACACATGCAAGTCGAACGGAGTTTAGCCCTTCGGGGGTAAACTTAGTGGCGGACGGGTGAGTAACGCGTGAGCAACCTGCCTAGAAGAGGGGGATAACGACTGGAAACGGTCGCTAATACCGCATAACATTCCACTGCCGCATGGTGGAGGAATCAAAGGAGCAATCCGCTTTTAGATGGGCTCGCGTCCGATTAGCTAGTTGGTGGGGTAACGGCCTACCAAGGCGACGATCGGTAGCCGAACTGAGAGGTTGATCGGCCACATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGGATATTGCACAATGGGGGAAACCCTGATGCAGCAACGCCGCGTGAGGGAAGACGGTTTTCGGATTGTAAACCTCTGTCCTTAGTGACGATAATGACGGTAGCTAAGGAGGAAGCCACGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGTGGCAAGCGTTGTCCGGAATTACTGGGTGTAAAGGGAGCGTAGGCGGGAAGGCAAGTCAGATGTGAAATCCACAGGCTTAACCTGTGGCGTGCATTTGAAACTGTTTTTCTTGAGTGAAGTAGAGGCAGGCGGAATTCCGAGTGTAGCGGTGAAATGCGTAGATATTCGGAGGAACACCAGTGGCGAAGGCGGCCTGCTGGGCTTTTACTGACGCTGATGCTCGAAAGCATGGGTAGCAAACAGGATTAGATACCCTGGTAGTCCATGCCGTAAACGATGATTGCTAGGTGTGGGTGGGCTGACCCCATCCGTGCCGGAGTAAACACAATAAGCAATCCACCTGGGGAGTACGGCCGCAAGGTTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCAGTGGAGTATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAGGTCTTGACATCCAACTAACGAGGTAGAGATACGTCAGGTGCCCTTCGGGGAAAGTTGAGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTGCCATTAGTTGCTACGCAAGAGCACTCTAATGGGACTGCCGTTGACAAAACGGAGGAAGGTGGGGACGACGTCAAATCATCATGCCCCTTATGACCTGGGCTACACACGTACTACAATGGCCGTTAACAGAGGGAAGCAATGCCGCGAGGTGGAGCAAACCCCTAAAAACGGTCTCAGTTCAGATTGCAGGCTGCAACCCGCCTGCATGAAGTCGGAATTGCTAGTAATCGCGGATCAGCATGCCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGAAGCCGGTAATACCCGAAGTCAGTAGCCTAACCTTTTAGGAGGGCGCTGCCGAAGGTAGGATTGGTGACTGGGGTGAAGTC	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-08-06	
+CLAJMH45	80a93d2f99efa3f23aac30581a2e9f44	Manual review: is_trnas_grtr_18	2234262	24	200073	74	464360	343	SPAdes	95.3	checkm	0.67	checkm	18	tRNAscan-SE	3541	True	True	True	True	True	True	False	True	True	True	2022-12-15	v6.1	Nextseq	gen. nov.	114602	Bacillota	Oscillospiraceae	Anaerobic	YCFA	1-3 days	1.0	CTGGCTCAGGACGAACGCTGGCGGCGCGCCTAACACATGCAAGTCGAACGAGCCGAGGGGAGCTTGCTCCCCAGAGCTAGTGGCGGACGGGTGAGTAACACGTGAGCAACCTGCCTTTCAGAGGGGGATAACGTTTGGAAACGAACGCTAATACCGCATAACATACCGGGACCGCATGATTCTGGTATCAAAGGAGCAATCCGCTGAAAGATGGGCTCGCGTCCGATTAGCTAGTTGGCGGGGTAACGGCCCACCAAGGCGACGATCGGTAGCCGGACTGAGAGGTTGATCGGCCACATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGGATATTGCACAATGGAGGAAACTCTGATGCAGCGACGCCGCGTGAGGGAAGACGGTCTTCGGATTGTAAACCTCTGTCTTTGGGGACGATAATGACGGTACCCAAGGAGGAAGCTCCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGAGCGAGCGTTGTCCGGAATTACTGGGTGTAAAGGGAGCGTAGGCGGGGTCTCAAGTCGAATGTTAAATCTACCGGCTCAACTGGTAGCTGCGTTCGAAACTGGGGCTCTTGAGTGAAGTAGAGGCAGGCGGAATTCCTAGTGTAGCGGTGAAATGCGTAGATATTAGGAGGAACACCAGTGGCGAAGGCGGCCTGCTGGGCTTTTACTGACGCTGAGGCTCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGATTACTAGGTGTGGGGGGACTGACCCCTTCCGTGCCGGAGTTAACACAATAAGTAATCCACCTGGGGAGTACGACCGCAAGGTTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCAGTGGATTATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAGGTCTTGACATCGAGTGACGGCTCTAGAGATAGAGCTTTCCTTCGGGACACAAAGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATTATTAGTTGCTACATTCAGTTGAGCACTCTAATGAGACTGCCGTTGACAAAACGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGACCTGGGCTACACACGTAATACAATGGCGATCAACAGAGGGAAGCAAGACCGCGAGGTGGAGCAAACCCCTAAAAGTCGTCTCAGTTCGGATTGCAGGCTGCAACTCGCCTGCATGAAGTCGGAATTGCTAGTAATCGCGGATCAGCATGCCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGGGAGTCGGTAACACCCGAAGTCAGTAGCCTAACCGCAAGGAGGGCGCTGCCGAAGGTGGGATTGATGACTGGGGTGAAGTC	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-08-06	
+CLAJMH46	fb0cb62f04335327e3f1b0a59fe524f3	Manual review: is_contam_less_5, are_contigs_less_100, is_N50_grtr_25kb	7351752	746	22799	428	215847	167	SPAdes	100.0	checkm	100.0	checkm	20	tRNAscan-SE	94987;7961;4985;4731	True	False	True	False	False	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Blautia obeum		Bacillota	Lachnospiraceae	Anaerobic	BHI	1-3 days	1.0	GTTTCTAGTGGCGGACGGGTGAGTAACGCGTGGGTAACCTGCCTTATACAGGGGGATAACAACCAGAAATGGTTGCTAATACCGCATAAGCGCACAGGACCGCATGGTCCGGTGTGAAAAACTCCGGTGGTATAAGATGGACCCGCGTTGGATTAGCTAGTTGGCAGGGTAACGGCCTACCAAGGCGACGATCCATAGCCGGCCTGAGAGGGTGAACGGCCACATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGGGAAACCCTGATGCAGCGACGCCGCGTGAAGGAAGAAGTATCTCGGTATGTAAACTTCTATCAGCAGGGAAGATAGTGACGGTACCTGACTAAGAAGCCCCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGGGCAAGCGTTATCCGGATTTACTGGGTGTAAAGGGAGCGTAGACGGACTGGCAAGTCTGATGTGAAAGGCGGGGGCTCAACCCCTGGACTGCATTGGAAACTGTTAGTCTTGAGTGCCGGAGAGGTAAGCGGAATTCCTAGTGTAGCGGTGAAATGCGTAGATATTAGGAGGAACACCAGTGGCGAAGGCGGCTTACTGGACGGTAACTGACGTTGAGGCTCGAAAGCGTGGGGAGCAGACAGGATTAGATACCCTGGTAGTCCACGCCGTAGACGATGAATACTAGGTGTTGGGGAGCAAAGCTCTTCGGTGCCGCCGCAAACGCATTAAGTATTCCACCTGGGGAGTACGTTCGCAAGAATGAAACTCAAAGGAATTGACGGGGACCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAAGTCTTGACATCTCTCTGACCGA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-08-06	
+CLAJMH47	837fbdb62867c30277796dc08d20e5b6	High-quality draft	2214160	25	300043	44	617245	314	SPAdes	100.0	checkm	0.09	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Bifidobacterium adolescentis		Actinomycetota	Bifidobacteriaceae	Anaerobic	mGAM	1-3 days	1.0	TGGCTCAGGATGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGGGATCCCAGGAGCTTGCTCCTGGGTGAGAGTGGCGAACGGGTGAGTAATGCGTGACCGACCTGCCCCATACACCGGAATAGCTCCTGGAAACGGGTGGTAATGCCGGATGCTCCAGTTGACTGCATGTCCCTCTGGGAAAGATTCAGCGGTATGGGATGGGGTCGCGTCCTATCAGCTTGATGGCGGGGTAACGGCCCACCATGGCTTCGACGGGTAGCCGGCCTGAGAGGGCGACCGGCCACATTGGGACTGAGATACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCGACGCCGCGTGCGGGATGACGGCCTTCGGGTTGTAAACCGCTTTTGACTGGGAGCAAGCCCTTCGGGGTGAGTGTACCTTTCGAATAAGCACCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGTGCAAGCGTTATCCGGAATTATTGGGCGTAAAGGGCTCGTAGGCGGTTCGTCGCGTCCGGTGTGAAAGTCCATCGCTTAACGGTGGATCCGCGCCGGGTACGGGCGGGCTTGAGTGCGGTAGGGGAGACTGGAATTCCCGGTGTAACGGTGGAATGTGTAGATATCGGGAAGAACACCAATGGCGAAGGCAGGTCTCTGGGCCGTCACTGACGCTGAGGAGCGAAAGCGTGGGGAGCGAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGGTGGATGCTGGATGTGGGGACCATTCCACGGTCTCCGTGTCGGAGCCAACGCGTTAAGCATCCCGCCTGGGGAGTACGGCCGCAAGGCTAAAACTCAAAGAAATTGACGGGGGCCCGCACAAGCGGCGGAGCATGCGGATTAATTCGATGCAACGCGAAGAACCTTACCTGGGCTTGACATGTTCCCGACAGCCGCAGAGATGCGGCCTCCCTTCGGGGCGGGTTCACAGGTGGTGCATGGTCGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTCGCCCTGTGTTGCCAGCACGTCGTGGTGGGAACTCACGGGGGACCGCCGGGGTCAACTCGGAGGAAGGTGGGGATGACGTCAGATCATCATGCCCCTTACGTCCAGGGCTTCACGCATGCTACAATGGCCGGTACAACGGGATGCGACCTCGTGAGGGGGAGCGGATCCCTTAAAACCGGTCTCAGTTCGGATTGGAGTCTGCAACCCGACTCCATGAAGGCGGAGTCGCTAGTAATCGCGGATCAGCAACGCCGCGGTGAATGCGTTCCCGGGCCTTGTACACACCGCCCGTCAAGTCATGAAAGTGGGTAGCACCCGAAGCCGGTGGCCCAACCTTTTGGGGGG	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-04-28	
+CLAJMH4	7e2dba730e1437b0b2de7305cf87f6a7	High-quality draft	5539316	52	310764	54	521268	309	SPAdes	99.26	checkm	0.05	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Bacteroides salyersiae		Bacteroidota	Bacteroidaceae	Anaerobic	mGAM	1-3 days	2.0	CTGGCTCAGGATGAACGCTAGCTACAGGCTTAACACATGCAAGTCGAGGGGCATCAGGGTGTAGCAATACGCCGCTGGCGACCGGCGCACGGGTGAGTAACACGTATCCAACCTGCCCTTTACTCGGGGATAGCCTTTCGAAAGAAAGATTAATACCCGATGGCATAACATGACCTCCTGGTTTTGTTATTAAAGAATTTCGGTAGAGGATGGGGATGCGTTCCATTAGGCAGTTGGCGGGGTAACGGCCCACCAAACCTTCGATGGATAGGGGTTCTGAGAGGAAGGTCCCCCACATTGGAACTGAGACACGGTCCAAACTCCTACGGGAGGCAGCAGTGAGGAATATTGGTCAATGGGCGAGAGCCTGAACCAGCCAAGTAGCGTGAAGGATGACCGCCCTATGGGTTGTAAACTTCTTTTATATGGGAATAAAGGGTGCCACGTGTGGCATTTTGTATGTACCATATGAATAAGGATCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGATCCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGAGCGTAGGTGGACATGTAAGTCAGTTGTGAAAGTTTGCGGCTCAACCGTAAAATTGCAGTTGATACTGCGTGTCTTGAGTACAGTAGAGGTGGGCGGAATTCGTGGTGTAGCGGTGAAATGCTTAGATATCACGAAGAACTCCGATTGCGAAGGCAGCTCACTGGACTGCAACTGACACTGATGCTCGAAAGTGTGGGTATCAAACAGGATTAGATACCCTGGTAGTCCACACAGTAAACGATGAATACTCGCTGTTTGCGATATACAGTAAGCGGCCAAGCGAAAGCATTAAGTATTCCACCTGGGGAGTACGCCGGCAACGGTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGAGGAACATGTGGTTTAATTCGATGATACGCGAGGAACCTTACCCGGGCTTAAATTGCAAATGAATATGCCGGAAACGGCATAGCCGCAAGGCATTTGTGAAGGTGCTGCATGGTTGTCGTCAGCTCGTGCCGTGAGGTGTCGGCTTAAGTGCCATAACGAGCGCAACCCTTATCTTCAGTTACTAACAGGTCATGCTGAGGACTCTGGAGAGACTGCCGTCGTAAGATGTGAGGAAGGTGGGGATGACGTCAAATCAGCACGGCCCTTACGTCCGGGGCTACACACGTGTTACAATGGGGGGTACAGAAGGCCGCTACACAGCGATGTGATGCCAATCCCTAAAGCCCCTCTCAGTTCGGATCGAAGTCTGCAACCCGACTTCGTGAAGCTGGATTCGCTAGTAATCGCGCATCAGCCACGGCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCAAGCCATGGGAGCCGGGGGTACCTGAAGTACGTAACCGCAAGGAGCGTCCTAGGGTAAAACTGGTGACTGGGGCTAAGTCGTAACA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-04-28	
+CLAJMH58	809cc5519b7ecfe040feaef9c5a9927c	Manual review: is_trnas_grtr_18	2319461	38	102581	56	495773	378	SPAdes	99.33	checkm	1.01	checkm	18	tRNAscan-SE	0	True	True	True	True	True	True	False	True	True	True	2022-12-15	v6.1	Nextseq	Ruminococcus bromii		Firmicutes	Acutalibacteraceae	Anaerobic	BHI	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH59	0f87ee27af858c052c49d7718907cccd	Manual review: are_contigs_less_100	3760198	131	61893	428	194244	917	SPAdes	98.21	checkm	0.79	checkm	20	tRNAscan-SE	24157	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Pseudolachnospira sp. nov.		Firmicutes	Lachnospiraceae	Anaerobic	BHI	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH5	566c714e5cce0abcae008d4d1063f048	Manual review: are_contigs_less_100	4838887	132	83261	189	291966	394	SPAdes	99.46	checkm	0.0	checkm	20	tRNAscan-SE	7059	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Butyricimonas virosa		Bacteroidota	Marinifilaceae	Anaerobic	BHI	1-3 days	1.0	CTGGCTCAGGATGAACGCTAGCGACAGGCTTAACACATGCAAGTCGAGGGGCAGCGGGGAGTAGCAATACTTCGCCGGCGACCGGCGCACGGGTGAGTAACACGTGTGCAACCAACCCCGTACCGGGAGATAACCCGCGGAAACGTGGACTAACATCCCATGATACTCGAGGGCCGCATGGCTCTCGATTTAAAATTCCGGTGGTACGGGACGGGCACGCGCGACATTAGGTAGTTGGCGGGGTAACGGCCCACCAAGCCGACGATGTCTAGGGGTTCTGAGAGGAAGGTCCCCCACACTGGAACTGAGACACGGTCCAGACTCCTACGGGAGGCAGCAGTGAGGAATATTGGTCAATGGGCGAGAGCCTGAACCAGCCAAGTCGCGTGAGGGAAGAATGGTCTATGGCCTGTAAACCTCTTTTGTCAGGGAAGAATAAGGATGACGAGTCATTCGATGCCAGTACTTGACGAATAAGCATCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGGGGATGCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGCGCGTAGGCGGGACGTCAAGTCAGCGGTAAAAGACTGCAGCTAAACTGTAGCACGCCGTTGAAACTGGCGCCCTGGAGACGAGACGAGGGAGGCGGAACAAGTGAAGTAGCGGTGAAATGCATAGATATCACTTGGAACCCCGATAGCGAAGGCAGCTTCCCAGGCTCGTTCTGACGCTGATGCGCGAGAGCGTGGGTAGCGAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGCTCACTGGATCTTGGCGATACACTGCCAGGGTTCAAGCGAAAGTATTAAGTGAGCCACCTGGGGAGTACGTCGGCAACGATGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGAGGAACATGTGGTTTAATTCGATGATACGCGAGGAACCTTACCCGGGTTTAAATGTAGATTGCATGAGGTGGAAACACTTCTTCCCTTCGGGGCTATTTACAAGGTGCTGCATGGTTGTCGTCAGCTCGTGCCGTGAGGTGTCGGGTTAAGTCCCATAACGAGCGCAACCCCTATCGCCAGTTGCCATCGGTTGAAGCCGGGCACTCTGTCGAGACTGCCACCGTAAGGTGCGAGGAAGGCGGGGATGACGTCAAATCAGCACGGCCCTTACACCCGGGGCGACACACGTGTTACAATGGCCGGTACAGAGGGCAGCCACGGGGTGACCCGGAGCGAATCTCTAAAGCCGGTCGTAGTTCGGACTGGAGTCTGCAACCCGACTCCACGAAGTTGGATTCGCTAGTAATCGCGCATCAGCCATGGCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCAAGCCATGGAAGCCGGGAGTACCTGAAGATCGTGACCGCGAGGAACGGGCTAGGGTAATACCGGTAACTGGGGCTAAGTCGTAC	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH60	e088636a5a79d9199032b373091b338b	Manual review: are_contigs_less_100	3201774	101	110181	226	449357	295	SPAdes	99.52	checkm	2.19	checkm	20	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	gen. nov.		Firmicutes	Lachnospiraceae	Anaerobic	YCFA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH61	ca6e67ad4ab63c7be9c0d441abe6c88e	High-quality draft	2306620	60	91743	84	232346	761	SPAdes	100.0	checkm	0.81	checkm	20	tRNAscan-SE	5623	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Collinsella sp. nov.		Actinobacteria	Coriobacteriaceae	Anaerobic	BHI	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-04-28	
+CLAJMH62	7e65af31a5631eda639ea2311cf1505b	Manual review: are_contigs_less_100, is_trnas_grtr_18	3192759	105	83508	151	177362	310	SPAdes	98.95	checkm	0.63	checkm	18	tRNAscan-SE	0	True	True	True	False	True	True	False	True	True	True	2022-12-15	v6.1	Nextseq	Fusicatibacter saccharivorans		Firmicutes	Lachnospiraceae	Anaerobic	YCFA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-12-04	
+CLAJMH6	84bc6e205fe55afb279e9848820c3d95	Manual review: is_trnas_grtr_18	3118807	33	230602	66	523659	364	SPAdes	98.66	checkm	0.0	checkm	18	tRNAscan-SE	0	True	True	True	True	True	True	False	True	True	True	2022-12-15	v6.1	Nextseq	Eubacterium eligens		Bacillota	Eubacteriaceae	Anaerobic	BHI	1-3 days	1.0	TCCTGGCTCAGGATGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGAAGCATTTAGAACAGATTACTTCGGTTTGAAGTTCTTTATGACTGAGTGGCGGACGGGTGAGTAACGCGTGGGTAACCTGCCTTGTACTGGGGGATAGCAGCTGGAAACGGCTGGTAATACCGCATAAGCGCACAATGTTGCATGACATGGTGTGAAAAACTCCGGTGGTATAAGATGGACCCGCGTCTGATTAGCTAGTTGGTGAGATAACAGCCCACCAAGGCGACGATCAGTAGCCGACCTGAGAGGGTGACCGGCCACATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGAGGAAACTCTGATGCAGCGACGCCGCGTGAGTGAAGAAGTAATTCGTTATGTAAAGCTCTATCAGCAGGGAAGATAGTGACGGTACCTGACTAAGAAGCTCCGGCTAAATACGTGCCAGCAGCCGCGGTAATACGTATGGAGCAAGCGTTATCCGGATTTACTGGGTGTAAAGGGAGTGTAGGTGGCCATGCAAGTCAGAAGTGAAAATCCGGGGCTCAACCCCGGAACTGCTTTTGAAACTGTAAGGCTAGAGTGCAGGAGGGGTGAGTGGAATTCCTAGTGTAGCGGTGAAATGCGTAGATATTAGGAGGAACACCAGTGGCGAAGGCGGCTCACTGGACTGTAACTGACACTGAGGCTCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGAATACTAGGTGTCGGGGCCCATAAGGGCTTCGGTGCCGCAGCAAACGCAATAAGTATTCCACCTGGGGAGTACGTTCGCAAGAATGAAACTCAAAGGAATTGACGGGGACCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAAGTCTTGACATCCCACTGACCGGACAGTAATGTGTCCTTTCCTTCGGGACAGTGGAGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCCTATCCTTAGTAGCCAGCAGTAAGATGGGCACTCTAGGGAGACTGCCAGGGATAACCTGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGACTTGGGCTACACACGTGCTACAATGGCGTAAACAAAGTGAAGCGAAGTCGTGAGGCCAAGCAAATCACAAAAATAACGTCTCAGTTCGGATTGTAGTCTGCAACTCGACTACATGAAGCTGGAATCGCTAGTAATCGCAGATCAGAATGCTGCGGTGAATACGTTCCCGGGTCTTGTACACACCGCCCGTCACACCATGGGAGTCGAAAATGCCCGAAGTCGGTGACCTAACGAAAGAAGGAGCCGCCGAAGGCAGGTTTGATAACTGGGGTGAAGTCGTAACA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH7B	e4ed3a300fc8f8d5ce4ba8deaf22bf8e	High-quality draft	2708385	65	111619	185	249080	384	SPAdes	100.0	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Faecalibacterium sp. nov.	114587	Bacillota	Oscillospiraceae	Anaerobic	BHI	1-3 days	1.0	AGAGTTTGACCCTGGCTCAGGACGAACGCGGGCGGCGCGCCTAACACATGCAAGTCGAACGAGCGAGAGAGAGCTTGCTTTCTCGAGCGAGTGGCGAACGGGTGAGTAACGCGTGAGGAACCTGCCTCAAAGAGGGGGACAACAGTTGGAAACGACTGCTAATACCGCATAAGCCCACGGTGCCGCATGGCGCAGAGGGAAAAGGAGCAATCCGCTTTGAGATGGCCTCGCGTCCGATTAGCTAGTTGGTGAGGTAATGGCCCACCAAGGCGACGATCGGTAGCCGGACTGAGAGGTTGAACGGCCACATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGGGAAACCCTGATGCAGCGACGCCGCGTGGAGGAAGAAGGTCTTCGGATTGTAAACTCCTGTTGTTGGGGAAGATAATGACGGTACCCAACAAGGAAGTGACGGCTAACTACGTGCCAGCAGCCGCGGTAAAACGTAGGTCACAAGCGTTGTCCGGAATTACTGGGTGTAAAGGGAGCGCAGGCGGGAAGACAAGTTGGAAGTGAAATCTATGGGCTCAACCCATAAACTGCTTTCAAAACTGTTTTTCTTGAGTAGTGCAGAGGTAGGCGGAATTCCCGGTGTAGCGGTGGAATGCGTAGATATCGGGAGGAACACCAGTGGCGAAGGCGGCCTACTGGGCACCAACTGACGCTGAGGCTCGAAAGTGTGGGTAGCAAACAGGATTAGATACCCTGGTAGTCCACACCGTAAACGATGATTACTAGGTGTTGGAGGATTGACCCCTTCAGTGCCGCAGTTAACACAATAAGTAATCCACCTGGGGAGTACGACCGCAAGGTTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCAGTGGAGTATGTGGTTTAATTCGACGCAACGCGAAGAACCTTACCAAGTCTTGACATCCCTTGACAGGCATAGAAATATGTTTTCTCTTCGGAGCAAGGAGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATGGTCAGTTACTACGCAAGAGGACTCTGGCCAGACTGCCGTTGACAAAACGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCTTTATGACTTGGGCTACACACGTACTACAATGGCGTTAAACAAAGAGAAGCAAGACCGCGAGGTGGAGCAAAACTCAGAAACAACGTCCCAGTTCGGACTGCAGGCTGCAACTCGCCTGCACGAAGTCGGAATTGCTAGTAATCGTGGATCAGCATGCCACGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGAGAGCCGGGGGGACCCGAAGTCGGTAGTCTAACCGCAAGGAGGACGCCGCCGAAGGTAAAACTGGTGATTGGGGTGAAGTCGTAAC	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-08-06	
+CLAJMH7	c49b63c127a6ceb7192c66af00fd69d1	High-quality draft	3150295	90	90725	395	354431	3011	SPAdes	100.0	checkm	0.0	checkm	20	tRNAscan-SE	24162	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Faecalibacterium prausnitzii		Bacillota	Oscillospiraceae	Anaerobic	BHI	1-3 days	1.0	CTGGCTCAGGACGAACGCTGGCGGCGCGCCTAACACATGCAAGTCGAACGAGCGAGAGAGAGCTTGCTTTCTCAAGCGAGTGGCGAACGGGTGAGTAACGCGTGAGGAACCTGCCTCAAAGAGGGGGACAACAGTTGGAAACGACTGCTAATACCGCATAAGCCCACGACCCGGCATCGGGTAGAGGGAAAAGGAGCAATCCGCTTTGAGATGGCCTCGCGTCCGATTAGCTAGTTGGTGAGGTAATGGCCCACCAAGGCGACGATCGGTAGCCGGACTGAGAGGTTGAACGGCCACATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGGGAAACCCTGATGCAGCGACGCCGCGTGGAGGAAGAAGGTCTTCGGATTGTAAACTCCTGTTGTTGAGGAAGATAATGACGGTACTCAACAAGGAAGTGACGGCTAACTACGTGCCAGCAGCCGCGGTAAAACGTAGGTCACAAGCGTTGTCCGGAATTACTGGGTGTAAAGGGAGCGCAGGCGGGAAGACAAGTTGGAAGTGAAATCCATGGGCTCAACCCATGAACTGCTTTCAAAACTGTTTTTCTTGAGTAGTGCAGAGGTAGGCGGAATTCCCGGTGTAGCGGTGGAATGCGTAGATATCGGGAGGAACACCAGTGGCGAAGGCGGCCTACTGGGCACCAACTGACGCTGAGGCTCGAAAGTGTGGGTAGCAAACAGGATTAGATACCCTGGTAGTCCACACTGTAAACGATGATTACTAGGTGTTGGAGGATTGACCCCTTCAGTGCCGCAGTTAACACAATAAGTAATCCACCTGGGGAGTACGACCGCAAGGTTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCAGTGGAGTATGTGGTTTAATTCGACGCAACGCGAAGAACCTTACCAAGTCTTGACATCCTGCGACGGTGCTGGAAACAGTACTTTCCTTCGGGACGCAGAGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATGGTCAGTTACTACGCAAGAGGACTCTGGCCAGACTGCCGTTGACAAAACGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCTTTATGACTTGGGCTACACACGTACTACAATGGCGTTAAACAAAGAGAAGCAAGACCGCGAGGTGGAGCAAAACTCAGAAACAACGTCCCAGTTCGGACTGCAGGCTGCAACTCGCCTGCACGAAGTCGGAATTGCTAGTAATCGCAGATCAGCATGCTGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGAGAGCCGGGGGGACCCGAAGTCGGTAGTCTAACCGCAAGGAGGACGCCGCCGAAGGTAAAACTGGTGATTGGGGTGAAGTCGTAA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH8	3155004fb81e68f774ab77dcca3fd445	Manual review: are_contigs_less_100	3975090	174	60502	349	146187	180	SPAdes	99.52	checkm	2.42	checkm	19	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	gen. nov.	114603	Bacillota	Lachnospiraceae	Anaerobic	BHI	1-3 days	1.0	CTGGCTCAGGATGAACGCTGGCGGCGTGCCTAACACATGCAAGTCGAACGGAATTTCAATGAAGCCTAGCGATTGTAAATTTAGTGGCGGACGGGTGAGTAACGCGTGGGTAACCTGCCTTGTACTGGGGGACAACAGTTGGAAACGACTGCTAATACCGCATAAGCGCACAGCTTCGCATGAAGCAGTGTGAAAAACTCCGGTGGTACAAGATGGACCCGCGTCTGATTAGCTGGTTGGTGAGGTAACGGCCCACCAAGGCGACGATCAGTAGCCGGCCTGAGAGGGTGAACGGCCACATTGGGACTGAGACACGGCCCAAACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGGGAAACCCTGATGCAGCAACGCCGCGTGAGTGAAGAAGTATTTCGGTATGTAAAGCTCTATCAGCAGGAAAGAAAATGACGGTACCTGACTAAGAAGCCCCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGGGCAAGCGTTATCCGGATTTACTGGGTGTAAAGGGAGCGTAGACGGTTTTGCAAGTCTGAAGTGAAAGCCCGGGGCTTAACCCCGGGACTGCTTTGGAAACTGTAGGACTAGAGTGCAGGAGAGGTAAGTGGAATTCCTAGTGTAGCGGTGAAATGCGTAGATATTAGGAGGAACACCAGTGGCGAAGGCGGCTTACTGGACTGTAACTGACGTTGAGGCTCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGATTACTAGGTGTTGGTGGGTATGACCCATCGGTGCCGCAGCAAACGCAATAAGTAATCCACCTGGGGAGTACGTTCGCAAGAATGAAACTCAAAGGAATTGACGGGGACCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCTGGTCTTGACATCCCTATGAATAACGGGCAATGCCGTTAGTACTTCGGTACATAGGAGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCTTTAGTAGCCAGCAGTAAGATGGGCACTCTAGAGAGACTGCCGGGGATAACCCGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGACCAGGGCTACACACGTGCTACAATGGCGTAAACAAAGAGAAGCGAAGTCGTGAGGCAGAGCGAATCTCAAAAATAACGTCTCAGTTCGGATTGTAGTCTGCAACTCGACTACATGAAGCTGGAATCGCTAGTAATCGCAGATCAGAATGCTGCGGTGAATACGTTCCCGGGTCTTGTACACACCGCCCGTCACACCATGGGAGTCGGAAATGCCCGAAGTCGGTGACCTAACCGAAAGGAAGGAGCCGCCGAAGGCAGGTCTGATAACTGGGGTGAAGTCGTAAC	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH9	64ed4b8462ca35aa569c3ad86d781308	Manual review: are_contigs_less_100	3642682	212	39817	348	132279	321	SPAdes	94.41	checkm	1.27	checkm	19	tRNAscan-SE	125594	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	gen. nov.	114605	Bacillota	Lachnospiraceae	Anaerobic	BHI	1-3 days	1.0	AGAGTTTGATCCTGGCTCAGGATGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGAAGCAACCATGAAGCCTAGCGATTGGTTGACTGAGTGGCGGACGGGTGAGTAACGCGTGGGTAACCTGCCTCATACAGGGGGACAACAGTTAGAAATGACTGCTAATACCGCATAACCCGCTAGGGCCGCATGGCCCGGACGGAAAAGGAGCAATCCGGTATGAGATGGACCCGCGTCTGATTAGCTAGTTGGTGGGGTAACGGCCTACCAAGGCAACGATCAGTAGCCGAACTGAGAGGTTGACCGGCCACATTGGGACTGAGACACGGCCCAAACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGGGAAACCCTGATGCAGCGACGCCGCGTGAGTGAAGAAGTATTTCGGTATGTAAAGCTCTATCAGCAGGGAAGAAAATGACGGTACCTGACTAAGAAGCCCCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGGGCAAGCGTTATCCGGATTTACTGGGTGTAAAGGGAGCGTAGGTGGTATGGCAAGTCAGAGGTGAAAACCCAGGGCTTAACCTTGGGATTGCCTTTGAAACTGTCAGACTAGAGTGCAGGAGGGGTAAGTGGAATTCCTAGTGTAGCGGTGAAATGCGTAGATATTAGGAGGAACACCAGTGGCGAAGGCGGCTTACTGGACTGTAACTGACACTGAGGCTCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGAATACTAGGTGTTGGGGAGCGAAGCTCCTCGGTGCCGCAGTTAACGCAATAAGTATTCCACCTGGGGAGTACGTTCGCAAGAATGAAACTCAAAGGAATTGACGGGGACCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAGATCTTGACATCCCTCTGACCGTCCCGTAATGGGGGCTTTCCTTCGGGACAGAGGAGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCGTCAGTAGCCAGCAGGTAAAGCTGGGCACTCTGGCGAGACTGCCGGAGATAATCCGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGATCTGGGCTACACACGTGCTACAATGGCGTTTAACAAAGAGAAGCGAAGCTGTGAGGCAGAGCAAATCTCAAAAACAACGTCTCAGTTCGGATTGTAGTCTGCAACTCGACTACATGAAGCTGGAATCGCTAGTAATCGCGAATCAGAATGTCGCGGTGAATACGTTCCCGGGTCTTGTACACACCGCCCGTCACACCATGGGAGTTGATAACGCCCGAAGTCAGTGACCCAACTGTAAAGAGGGAGCTGCCGAAGGCGGGATCGATAACTGGGGTGAAGTCGTAACAAGGGTAACC	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAKBH105	6e4f737b43ecab9542b88d3fea431031	Manual review: are_contigs_less_100	5887937	132	109438	230	294308	172	SPAdes	99.06	checkm	0.35	checkm	19	tRNAscan-SE	4148	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Bacteroides faecis		Bacteroidota	Bacteroidaceae	Anaerobic	BBE/mGAM	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Healthy	Faeces	2020-02-14	
+CLAKBH116	471ae1fac0cb0cb475c5cd4b7d1f5be2	High-quality draft	4882674	81	124223	116	475502	131	SPAdes	99.19	checkm	0.62	checkm	20	tRNAscan-SE	4138	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Bacteroides caccae		Bacteroidota	Bacteroidaceae	Anaerobic	BBE/mGAM	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Healthy	Faeces	2020-03-06	
+CLAKBH81	0d53bd0186d74ca90c7630d9b71a484b	High-quality draft	2133480	53	116300	23	351020	343	SPAdes	100.0	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1	Nextseq	Bifidobacterium catenulatum		Actinomycetota	Bifidobacteriaceae	Anaerobic		1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Healthy	Faeces	2020-02-11	
+4716a	8432e12dff7a05f4685cf86379ac8786	Manual review: are_contigs_less_100	5141681	116	127592	351	435303	248	SPAdes	99.25	checkm	0.0	checkm	19	tRNAscan-SE	5323;4138	True	True	True	False	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Phocaeicola vulgatus		Bacteroidota	Bacteroidaceae	Anaerobic	BHI	1-3 days	1.0						
+4835b	0c083cdc374bdb33e797ae62473e0e65	Manual review: are_contigs_less_100	4836026	113	101257	209	239775	39	SPAdes	99.25	checkm	0.0	checkm	20	tRNAscan-SE	6748;4981	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Phocaeicola vulgatus		Bacteroidota	Bacteroidaceae	Anaerobic	BHI	1-3 days	1.0						
+4852a	69b1643f9a1fe76e738a54d475ad2b92	Manual review: are_contigs_less_100, is_trnas_grtr_18	4966105	155	121595	954	313632	278	SPAdes	99.25	checkm	0.0	checkm	18	tRNAscan-SE	0	True	True	True	False	True	True	False	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Phocaeicola vulgatus		Bacteroidota	Bacteroidaceae	Anaerobic	BHI	1-3 days	1.0						
+4889a	61fc3f4b319138497add6ebc068b2c96	Manual review: are_contigs_less_100	5557123	256	43153	471	145866	271	SPAdes	99.25	checkm	0.75	checkm	20	tRNAscan-SE	6500;5909;2932;2684	True	True	True	False	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Phocaeicola vulgatus		Bacteroidota	Bacteroidaceae	Anaerobic	BHI	1-3 days	1.0						
+4889b	748315a6cbd681fda4e271c14a54a771	Manual review: are_contigs_less_100	5546777	744	50154	1118	139023	103	SPAdes	99.25	checkm	0.0	checkm	20	tRNAscan-SE	66220;9472;3067;2751	True	True	True	False	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Phocaeicola vulgatus		Bacteroidota	Bacteroidaceae	Anaerobic	BHI	1-3 days	1.0						
+4896a	2e04555e634981b2cc887e7e994da2a8	Manual review: are_contigs_less_100	5303287	161	68660	167	218257	112	SPAdes	99.25	checkm	0.09	checkm	20	tRNAscan-SE	36145;11828;7584;5594;5397;4138	True	True	True	False	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Phocaeicola vulgatus		Bacteroidota	Bacteroidaceae	Anaerobic	BHI	1-3 days	1.0						
+CLAAAH132	fa21110367a6091bbd03e2a50c385195	High-quality draft	3441365	40	172211	121	522469	445	SPAdes	99.37	checkm	0.16	checkm	19	tRNAscan-SE	5131	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	gen. nov.		Bacillota	Lachnospiraceae	Anaerobic	Agar: BHI, WCA, mGAM, YCFA. Liquid: mGAM & WCA	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH141	c3c0c1196cb7ac5c2c10353dc3930560	High-quality draft	2855671	21	383686	83	668919	442	SPAdes	99.33	checkm	0.0	checkm	19	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Coprococcus sp. nov.	111142	Bacillota	Lachnospiraceae	Anaerobic	mGAM Blood	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH142	a6c41b2470999539b9c7adc59210030c	High-quality draft	3578030	98	93681	173	241119	278	SPAdes	99.37	checkm	0.16	checkm	20	tRNAscan-SE	5504	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	gen. nov.	111146	Bacillota	Lachnospiraceae	Anaerobic	mGAM Blood	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH144	7a766fa29104bfed8d2859ec7120f325	High-quality draft	5111101	59	236805	231	390463	69	SPAdes	94.5	checkm	0.15	checkm	20	tRNAscan-SE	4148	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Bacteroides sp. nov.	111147	Bacteroidota	Bacteroidaceae	Anaerobic	BHI	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH145	1daa58648c82b268270699d18a68b3e2	Manual review: are_contigs_less_100, is_trnas_grtr_18	3287725	155	53808	406	165123	886	SPAdes	98.65	checkm	1.35	checkm	18	tRNAscan-SE	0	True	True	True	False	True	True	False	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	gen. nov.	111357	Bacteroidota	Prevotellaceae	Anaerobic	BHI/GAM(modified)/YCFA	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH147	4aee8004dba86031474759ed0b01e599	High-quality draft	2979449	32	263560	57	389857	416	SPAdes	99.22	checkm	1.75	checkm	19	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Mediterraneibacter sp. nov.	114683	Bacillota	Lachnospiraceae	Anaerobic	BHI	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH161	9669e90242c63b043bb4416484caff54	Manual review: are_contigs_less_100	4214918	213	50437	552	216001	171	SPAdes	99.37	checkm	0.0	checkm	19	tRNAscan-SE	1261	True	True	True	False	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Blautia sp. nov.	111353	Bacillota	Lachnospiraceae	Anaerobic	mGAM Blood	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH167	bac1755a537c056232fc9e735b90165f	High-quality draft	2249707	33	149301	36	469366	259	SPAdes	100.0	checkm	0.81	checkm	20	tRNAscan-SE	5085	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Collinsella aerofaciens		Actinomycetota	Coriobacteriaceae	Anaerobic	GMM	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH168	a0a62a04aca9632762d6f28a5c069f77	High-quality draft	6770775	33	560218	39	1005808	62	SPAdes	99.46	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Bacteroides sp.		Bacteroidota	Bacteroidaceae	Anaerobic	mGAM Blood	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH16	226ab1e3f8e2759dce672e62cbdeca67	High-quality draft	2933069	72	228318	1326	416825	650	SPAdes	100.0	checkm	0.27	checkm	19	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Faecalibacterium sp. nov.	111140	Bacillota	Oscillospiraceae	Anaerobic	WCA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2019-07-25	
+CLAAAH176	db1edd52a4a21bc24ba798ca98161997	High-quality draft	3646624	96	94697	226	198959	468	SPAdes	98.08	checkm	1.34	checkm	19	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	gen. nov.	114690	Bacillota	Lachnospiraceae	Anaerobic	YCFA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2020-06-04	
+CLAAAH183	13209aba0c6cb5c820566d455ec28640	Manual review: are_contigs_less_100	3875389	137	73942	513	202359	387	SPAdes	99.52	checkm	2.13	checkm	20	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	gen. nov.	114684	Bacillota	Lachnospiraceae	Anaerobic	mGAM Blood	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2020-06-04	
+CLAAAH184	f6f72ba6a3581ea23e17d40b3af67b2d	High-quality draft	2844879	16	479426	54	1015136	434	SPAdes	98.66	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	gen. nov.	114686	Bacillota	Eubacteriaceae	Anaerobic	mGAM Blood	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2020-06-04	
+CLAAAH192	1edc4b2b4add066ae344140c4c80b25b	Manual review: are_contigs_less_100, is_N50_grtr_25kb	2953462	279	22302	377	146701	229	SPAdes	93.29	checkm	0.0	checkm	19	tRNAscan-SE	23094;3448	True	True	True	False	False	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	gen. nov.		Bacillota	Oscillospiraceae	Anaerobic	YCFA Agar, mGAM liquid	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2020-06-04	
+CLAAAH199	e045e537c48a5f04caf35010ce7ba1c8	Manual review: are_contigs_less_100	3724641	278	28277	319	120599	158	SPAdes	98.66	checkm	0.34	checkm	20	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Intestinimonas aquisgranensis	112680	Bacillota	Oscillospiraceae	Anaerobic	BHI	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 3), Healthy, Male	Faeces	2020-07-20	https://doi.org/10.1111/1462-2920.15935
+CLAAAH1	0e74a26f8fd261c7b2ae3bbb96cad110	Manual review: are_contigs_less_100, is_trnas_grtr_18	5093282	105	185524	886	460965	331	SPAdes	99.97	checkm	0.08	checkm	18	tRNAscan-SE	2519;1546;1005	True	True	True	False	True	True	False	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Escherichia coli		Pseudomonadota	Enterobacteriaceae	Anaerobic	WCA	1 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Healthy	Faeces		
+CLAAAH200	94a104ac720d80ca02bda41ba429bf12	Manual review: is_contam_less_5, are_contigs_less_100	3825550	111	92015	59	244676	193	SPAdes	98.34	checkm	5.38	checkm	20	tRNAscan-SE	0	True	False	True	False	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Ruminococcus turbiniformis	112681	Bacillota	Lachnospiraceae	Anaerobic	YCFA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 3), Healthy, Male	Faeces	2020-07-20	https://doi.org/10.1111/1462-2920.15935
+CLAAAH204	4a89de737f79028b42c5c4202b94f421	Manual review: is_trnas_grtr_18	3034574	81	69236	166	192497	195	SPAdes	99.52	checkm	1.22	checkm	15	tRNAscan-SE	3691	True	True	True	True	True	True	False	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Roseburia amylophila	112682	Bacillota	Lachnospiraceae	Anaerobic	mGAM Blood	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 3), Healthy, Male	Faeces	2020-07-20	https://doi.org/10.1111/1462-2920.15935
+CLAAAH207	e2303df2d26d2779aaa933ea8dc10d83	Manual review: are_contigs_less_100	5180564	154	81929	422	179677	106	SPAdes	99.26	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Bacteroides hominis	112683	Bacteroidota	Bacteroidaceae	Anaerobic	BHI	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 4), Healthy, Female	Faeces	2020-09-25	https://doi.org/10.1111/1462-2920.15935
+CLAAAH209	c7157ced3624aed967cf98a2781a5a10	Manual review: are_contigs_less_100, is_trnas_grtr_18	3166259	113	87361	337	243020	197	SPAdes	99.52	checkm	1.27	checkm	15	tRNAscan-SE	0	True	True	True	False	True	True	False	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Roseburia amylophila	112721	Bacillota	Lachnospiraceae	Anaerobic	YCFA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 4), Healthy, Female	Faeces	2020-09-25	https://doi.org/10.1111/1462-2920.15935
+CLAAAH212	c901d838e3dfa785d01c55a0db8de5ff	Manual review: is_trnas_grtr_18	2894614	42	160987	79	575245	213	SPAdes	98.66	checkm	0.0	checkm	18	tRNAscan-SE	0	True	True	True	True	True	True	False	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Coprococcus hominis	112732	Bacillota	Lachnospiraceae	Anaerobic	mGAM Blood	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 4), Healthy, Female	Faeces	2020-09-25	https://doi.org/10.1111/1462-2920.15935
+CLAAAH213	dae62f6655506456e821201ffb630fef	Manual review: are_contigs_less_100, is_trnas_grtr_18	3942755	254	38862	581	105215	141	SPAdes	99.37	checkm	2.74	checkm	16	tRNAscan-SE	6403	True	True	True	False	True	True	False	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Oliverpabstia intestinalis	112722	Bacillota	Lachnospiraceae	Anaerobic	YCFA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 4), Healthy, Female	Faeces	2020-09-25	https://doi.org/10.1111/1462-2920.15935
+CLAAAH215	c266cd8a858ed1b4549bc94da7b0e8e1	Manual review: are_contigs_less_100	3985210	272	47753	972	117385	155	SPAdes	98.21	checkm	0.63	checkm	19	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Hominifimenecus microfluidus  	112725	Bacillota	Lachnospiraceae	Anaerobic	BHI	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 4), Healthy, Female	Faeces	2020-09-25	https://doi.org/10.1111/1462-2920.15935
+CLAAAH217	0fa89822c20603552791d79cbf0e1e12	Manual review: are_contigs_less_100, is_trnas_grtr_18	3474269	107	73282	386	162110	174	SPAdes	99.37	checkm	0.32	checkm	18	tRNAscan-SE	0	True	True	True	False	True	True	False	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Blautia fusiformis	112726	Bacillota	Lachnospiraceae	Anaerobic	mGAM Blood	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 4), Healthy, Female	Faeces	2020-09-25	https://doi.org/10.1111/1462-2920.15935
+CLAAAH220	4e5aff505a4564b35e80847baad17d56	Manual review: are_contigs_less_100, is_trnas_grtr_18	2868742	147	47399	260	165936	270	SPAdes	98.63	checkm	0.0	checkm	17	tRNAscan-SE	48979	True	True	True	False	True	True	False	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Hominimerdicola aceti 	113001	Bacillota	Oscillospiraceae	Anaerobic	mGAM Blood	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 4), Healthy, Female	Faeces	2020-09-25	https://doi.org/10.1111/1462-2920.15935
+CLAAAH223	de7a30711df739bca3ba864d361c0b5d	Manual review: are_contigs_less_100	2953411	194	53220	489	233084	197	SPAdes	100.0	checkm	0.0	checkm	19	tRNAscan-SE	3540	True	True	True	False	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Faecalibacterium hominis	113002	Bacillota	Oscillospiraceae	Anaerobic	YCFA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 4), Healthy, Female	Faeces	2020-09-25	https://doi.org/10.1111/1462-2920.15935
+CLAAAH224	33cc7d68123dbec37d1750924b5ede96	Manual review: are_contigs_less_100, is_trnas_grtr_18	3696597	170	53175	853	124771	195	SPAdes	98.73	checkm	1.58	checkm	18	tRNAscan-SE	5022	True	True	True	False	True	True	False	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Anthropogastromicrobium aceti	113003	Bacillota	Lachnospiraceae	Anaerobic	YCFA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 4), Healthy, Female	Faeces	2020-09-25	https://doi.org/10.1111/1462-2920.15935
+CLAAAH227	f9b96086e25255929ecc55cdba46655b	High-quality draft	4739252	83	166270	1670	527028	425	SPAdes	98.85	checkm	2.13	checkm	19	tRNAscan-SE	2470	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Bacillus yapensis (Published by Xu et al., but not validated)	113004	Bacillota	Bacillaceae	Anaerobic	BHI	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 2), Healthy, Male	Faeces	2018-05-03	
+CLAAAH232	6668854501b41dfaacf40063330182d8	Manual review: is_trnas_grtr_18	3088526	90	96180	228	287312	306	SPAdes	97.99	checkm	1.34	checkm	17	tRNAscan-SE	0	True	True	True	True	True	True	False	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Hominilimicola fabiformis	113452	Bacillota	Oscillospiraceae	Anaerobic	BHI	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-11-08	https://doi.org/10.1111/1462-2920.15935
+CLAAAH233	c337ff2a0f8a59a7f10b4ba3394743aa	Manual review: are_contigs_less_100	2563204	152	44050	407	150582	221	SPAdes	100.0	checkm	0.0	checkm	19	tRNAscan-SE	22016;7262	True	True	True	False	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Faecalibacterium butyricigenerans	113005	Bacillota	Oscillospiraceae	Anaerobic	BHI	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-11-08	https://doi.org/10.1111/1462-2920.15935
+CLAAAH234	de0d14071b34257725e586716f7506b6	Manual review: are_contigs_less_100	5146304	141	81264	468	202795	105	SPAdes	99.04	checkm	0.13	checkm	19	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Parabacteroides sp. nov.	113006	Bacteroidota	Tannerellaceae	Anaerobic	BHI	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-11-08	https://doi.org/10.1111/1462-2920.15935
+CLAAAH236	ecd5b71fa5654b5bfaf674f68c6ae200	Manual review: are_contigs_less_100, is_trnas_grtr_18	2835160	159	39664	317	176431	200	SPAdes	100.0	checkm	0.0	checkm	18	tRNAscan-SE	0	True	True	True	False	True	True	False	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Faecalibacterium longum	113007	Bacillota	Oscillospiraceae	Anaerobic	mGAM Blood	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-11-08	https://doi.org/10.1111/1462-2920.15935
+CLAAAH239	88c49955b7bbdce4c88b489c569efecf	Manual review: are_contigs_less_100, is_trnas_grtr_18	4743486	214	64810	653	179620	136	SPAdes	99.93	checkm	0.88	checkm	18	tRNAscan-SE	0	True	True	True	False	True	True	False	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Escherichia sp.		Pseudomonadota	Enterobacteriaceae	Anaerobic	BHI	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-11-08	https://doi.org/10.1111/1462-2920.15935
+CLAAAH241	82819ca0b3bccc11bc90860c46d211ba	Manual review: are_contigs_less_100, is_trnas_grtr_18	3779874	234	38504	561	117473	177	SPAdes	99.37	checkm	1.58	checkm	17	tRNAscan-SE	42277	True	True	True	False	True	True	False	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Oliverpabstia intestinalis	113008	Bacillota	Lachnospiraceae	Anaerobic	BHI	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-11-08	https://doi.org/10.1111/1462-2920.15935
+CLAAAH243	f787ea93034a32ec91669f5b0fc8880c	Manual review: are_contigs_less_100	2951594	180	52060	435	232470	254	SPAdes	100.0	checkm	0.0	checkm	19	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Faecalibacterium longum	114051	Bacillota	Oscillospiraceae	Anaerobic	Liquid: YCFA, WCA, mGAM	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 5), Healthy, Female	Faeces	2020-11-23	https://doi.org/10.1111/1462-2920.15935
+CLAAAH244	e8740971d3075b030db048d8625d5138	Manual review: are_contigs_less_100, is_trnas_grtr_18	3584442	219	37850	581	115350	196	SPAdes	98.66	checkm	0.19	checkm	18	tRNAscan-SE	17430;5962	True	True	True	False	True	True	False	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Gallintestinimicrobium propionicum	113251	Bacillota	Lachnospiraceae	Anaerobic	mGAM Blood	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-11-08	https://doi.org/10.1111/1462-2920.15935
+CLAAAH246	d45b27b0c5acb26b6301e92e9ef58d5a	Manual review: are_contigs_less_100, is_trnas_grtr_18	3244645	217	30525	718	198424	204	SPAdes	100.0	checkm	0.63	checkm	18	tRNAscan-SE	5167;5022	True	True	True	False	True	True	False	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Hominisplanchenecus faecis	113194	Bacillota	Oscillospiraceae	Anaerobic	BHI	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 5), Healthy, Female	Faeces	2020-11-23	https://doi.org/10.1111/1462-2920.15935
+CLAAAH247	4e7b1c1c2e7b1a77d2ad2cc182bce297	Manual review: is_trnas_grtr_18	2068409	76	63437	201	182201	387	SPAdes	100.0	checkm	0.0	checkm	17	tRNAscan-SE	4580	True	True	True	True	True	True	False	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Veillonella fallax	113117	Bacillota	Veillonellaceae	Anaerobic	WCA	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-11-08	https://doi.org/10.1111/1462-2920.15935
+CLAAAH250	5fcbf9b1e61c561e39f09731227e089a	High-quality draft	2848438	67	169968	172	517383	198	SPAdes	98.66	checkm	0.0	checkm	19	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Hominenteromicrobium mulieris	113252	Bacillota	Clostridiaceae	Anaerobic	BHI	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 5), Healthy, Female	Faeces	2020-11-23	https://doi.org/10.1111/1462-2920.15935
+CLAAAH257	ff2073f89b8ff656df3148b961bd2ac1	High-quality draft	2226303	61	84607	136	175809	261	SPAdes	100.0	checkm	0.23	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Bifidobacterium sp.		Actinomycetota	Bifidobacteriaceae	Anaerobic	YCFA	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 5), Healthy, Female	Faeces	2020-11-23	https://doi.org/10.1111/1462-2920.15935
+CLAAAH259	fea968381ab887681326d77a9f9b5093	Manual review: are_contigs_less_100, is_N50_grtr_25kb, is_trnas_grtr_18	3951934	323	24869	697	102115	155	SPAdes	99.37	checkm	0.0	checkm	17	tRNAscan-SE	37400;5022;2405	True	True	True	False	False	True	False	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Blautia sp.		Bacillota	Lachnospiraceae	Anaerobic	YCFA	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 5), Healthy, Female	Faeces	2020-11-23	https://doi.org/10.1111/1462-2920.15935
+CLAAAH269	f9183a2ddf92d886e956e7b0c18b52b2	Manual review: are_contigs_less_100, is_N50_grtr_25kb	3341374	321	23950	786	164137	162	SPAdes	98.66	checkm	0.34	checkm	20	tRNAscan-SE	6293	True	True	True	False	False	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Hominicoprocola fusiformis 	113271	Bacillota	Oscillospiraceae	Anaerobic	YCFA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 5), Healthy, Female	Faeces	2020-11-23	https://doi.org/10.1111/1462-2920.15935
+CLAAAH270	e2945a4ff9333662781fe7d17ec53aa2	Manual review: are_contigs_less_100	2684116	222	28335	660	105145	254	SPAdes	99.33	checkm	0.67	checkm	19	tRNAscan-SE	6293;5022	True	True	True	False	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	gen. sp		Bacillota	Oscillospiraceae	Anaerobic	YCFA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 5), Healthy, Female	Faeces	2020-11-23	https://doi.org/10.1111/1462-2920.15935
+CLAAAH272	90c2c3e15e77093f8185978995b6397a	Manual review: are_contigs_less_100, is_trnas_grtr_18	3345015	269	27478	528	133150	172	SPAdes	95.3	checkm	2.01	checkm	17	tRNAscan-SE	5277	True	True	True	False	True	True	False	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Brotocaccenecus cirricatena 	113272	Bacillota	Oscillospiraceae	Anaerobic	YCFA Agar	3-5 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 3), Healthy, Male	Faeces	2020-07-20	https://doi.org/10.1111/1462-2920.15935
+CLAAAH273	429ccd9fe1d4d211b57e484600659e2c	Manual review: are_contigs_less_100, is_trnas_grtr_18	3870333	196	43136	664	106360	154	SPAdes	99.03	checkm	1.61	checkm	17	tRNAscan-SE	0	True	True	True	False	True	True	False	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Brotolimicola acetigignens (= Waltera sp.)	113284	Bacillota	Lachnospiraceae	Anaerobic	YCFA	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 3), Healthy, Male	Faeces	2020-07-20	https://doi.org/10.1111/1462-2920.15935
+CLAAAH274	9dbd73d0f80d3475f50eeeffef6da03c	Manual review: are_contigs_less_100, is_trnas_grtr_18	3300409	159	46099	769	145356	222	SPAdes	99.37	checkm	0.63	checkm	18	tRNAscan-SE	5504;5416	True	True	True	False	True	True	False	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Brotaphodocola catenula	113285	Bacillota	Lachnospiraceae	Anaerobic	YCFA	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-11-08	https://doi.org/10.1111/1462-2920.15935
+CLAAAH275	0c6865c9dd5b22156fe7f5df642d6844	High-quality draft	3535005	70	129393	487	244427	209	SPAdes	99.37	checkm	0.32	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Blautia fusiformis	113286	Bacillota	Lachnospiraceae	Anaerobic	mGAM Blood	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-11-08	https://doi.org/10.1111/1462-2920.15935
+CLAAAH276	590beb1390ad0cdb1fa93ec87472d36e	Manual review: is_trnas_grtr_18	3434966	98	110298	265	245187	171	SPAdes	99.37	checkm	0.32	checkm	16	tRNAscan-SE	52508;5471;2990	True	True	True	True	True	True	False	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Hominiventricola filiformis 	113464	Bacillota	Clostridiaceae	Anaerobic	Liquid: mGAM (GROW BETTER)/AAM (GROW BETTER)/YCFA(+500ul RF)	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-11-08	https://doi.org/10.1111/1462-2920.15935
+CLAAAH277	8817e29926c7d3ba2c503b292ea22316	Manual review: are_contigs_less_100	3863231	203	41612	619	230334	155	SPAdes	99.37	checkm	0.0	checkm	19	tRNAscan-SE	13671;7191	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Fusicatenibacter faecihominis 	113288	Bacillota	Clostridiaceae	Anaerobic	YCFA	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-11-08	https://doi.org/10.1111/1462-2920.15935
+CLAAAH278	40f4398c881503b9ffd54e61b93acae9	Manual review: are_contigs_less_100, is_trnas_grtr_18	3111108	162	35781	423	127518	153	SPAdes	100.0	checkm	0.16	checkm	18	tRNAscan-SE	0	True	True	True	False	True	True	False	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Clostridium sp. nov.	113287	Bacillota	Clostridiaceae	Anaerobic	mGAM Blood	1-3 days			"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-11-08	
+CLAAAH280	e4b457c8d27bb7c1390113acc885705b	High-quality draft	2236155	60	89454	118	211158	111	SPAdes	99.55	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Bifidobacterium sp.		Actinomycetota	Bifidobacteriaceae	Anaerobic	YCFA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 5), Healthy, Female	Faeces	2020-11-23	https://doi.org/10.1111/1462-2920.15935
+CLAAAH283	19a522095ed4a3527abac319a1bfc02f	Manual review: are_contigs_less_100	2789711	167	68776	562	347077	230	SPAdes	100.0	checkm	0.0	checkm	19	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Faecalibacterium hominis	113416	Bacillota	Oscillospiraceae	Anaerobic	mGAM Blood	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 3), Healthy, Male	Faeces	2020-07-20	https://doi.org/10.1111/1462-2920.15935
+CLAAAH284	fcd809a9d52ffe0dcf9a97223beabf2c	High-quality draft	3282712	74	106770	85	316066	156	SPAdes	97.28	checkm	0.0	checkm	20	tRNAscan-SE	16102	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Gemmiger formicilis		Pseudomonadota	Hyphomicrobiaceae										https://doi.org/10.1111/1462-2920.15935
+CLAJMH32	5850cb2fc9d77bafbf9789a08516508c	High-quality draft	2196504	33	161586	30	277951	268	SPAdes	100.0	checkm	1.61	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Collinsella aerofaciens		Actinomycetota	Coriobacteriaceae	Anaerobic	YCFA	1-3 days	2.0	AGAGTTTGATCCTGGCTCAGGATGAACGCTGGCGGCGCGCCTAACACATGCAAGTCGAACGGCACCTATCTTCGGATAGAAGCGAGTGGCGAACGGCTGAGTAACACGTGGAGAACCTGCCCCCTCCCCCGGGATAGCCGCCCGAAAGGACGGGTAATACCGGATACCCCGGGGCGCCGCATGGCGCCCCGGCTAAAGCCCCGACGGGAGGGGATGGCTCCGCGGCCCATCAGGTAGACGGCGGGGTGACGGCCCACCGTGCCGACAACGGGTAGCCGGGTTGAGAGACCGACCGGCCAGATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATCTTGCGCAATGGGGGGAACCCTGACGCAGCGACGCCGCGTGCGGGACGGAGGCCTTCGGGTCGTAAACCGCTTTCAGCAGGGAAGAGTCAAGACTGTACCTGCAGAAGAAGCCCCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGGGCGAGCGTTATCCGGATTCATTGGGCGTAAAGCGCGCGTAGGCGGCCCGGCAGGCCGGGGGTCGAAGCGGGGGGCTCAACCCCCCGAAGCCCCCGGAACCTCCGCGGCTTGGGTCCGGTAGGGGAGGGTGGAACACCCGGTGTAGCGGTGGAATGCGCAGATATCGGGTGGAACACCGGTGGCGAAGGCGGCCCTCTGGGCCGAGACCGACGCTGAGGCGCGAAAGCTGGGGGAGCGAACAGGATTAGATACCCTGGTAGTCCCAGCCGTAAACGATGGACGCTAGGTGTGGGGGGACGATCCCCCCGTGCCGCAGCCAACGCATTAAGCGTCCCGCCTGGGGAGTACGGCCGCAAGGCTAAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCAGCGGAGCATGTGGCTTAATTCGAAGCAACGCGAAGAACCTTACCAGGGCTTGACATATGGGTGAAGCGGGGGAGACCCCGTGGCCGAGAGGAGCCCATACAGGTGGTGCATGGCTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCCCGCCGCGTGTTGCCATCGGGTGATGCCGGGAACCCACGCGGGACCGCCGCCGTCAAGGCGGAGGAGGGCGGGGACGACGTCAAGTCATCATGCCCCTTATGCCCTGGGCTGCACACGTGCTACAATGGCCGGTACAGAGGGATGCCACCCCGCGAGGGGGAGCGGATCCCGGAAAGCCGGCCCCAGTTCGGATTGGGGGCTGCAACCCGCCCCCATGAAGTCGGAGTTGCTAGTAATCGCGGATCAGCATGCCGCGGTGAATGCGTTCCCGGGCCTTGTACACACCGCCCGTCACACCACCCGAGTCGTCTGCACCCGAAGTCGCCGGCCCAACCGCAAGGGGGGAGGCGCCGAAGGTGTGGAGGGTGAGGGGGGTG	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-04-28	
+CLAAAH77	bdc504bfe4d4e443dca61fc038ac256e	Manual review: are_contigs_less_100, is_trnas_grtr_18	3301747	160	46099	742	131494	180	SPAdes	99.37	checkm	0.63	checkm	18	tRNAscan-SE	5504;5416	True	True	True	False	True	True	False	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	gen. nov.	114582	Bacillota	Lachnospiraceae	Anaerobic	BHI	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAAH94	c0e0aa5315141b32194eb5733813088b	High-quality draft	3131625	44	159128	151	511111	435	SPAdes	100.0	checkm	0.16	checkm	19	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Clostridium sp. nov.	114682	Bacillota	Clostridiaceae	Anaerobic	GMM	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 1), Healthy, Male	Faeces	2020-02-18	
+CLAAPH1	c972cce5b4499d12cf312f13d6c7f84e	High-quality draft	2235983	41	146378	39	305477	264	SPAdes	100.0	checkm	0.81	checkm	20	tRNAscan-SE	5426;1455	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Collinsella aerofaciens		Actinomycetota	Coriobacteriaceae	Anaerobic	WCA	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Cultimic C05), IgA CD2a146	Faeces		
+CLAERH10	df60497fc3525b133d292c0ffb584cef	High-quality draft	2166143	62	97800	31	320256	346	SPAdes	100.0	checkm	0.81	checkm	20	tRNAscan-SE	37138;2417;2167	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Collinsella aerofaciens		Actinomycetota	Coriobacteriaceae	Anaerobic	BHI/WCA	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Healthy		2021-07-05	
+CLAERH11	15d853a7dd1d34335c6c99721e00579e	High-quality draft	2200306	40	170508	23	383428	333	SPAdes	100.0	checkm	0.81	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Collinsella aerofaciens		Actinomycetota	Coriobacteriaceae	Anaerobic	BHI/WCA	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Healthy		2021-07-05	
+CLAERH1	178924d6a90ab5ffa7502cad166e0cd7	High-quality draft	3437003	73	70695	31	321908	37	SPAdes	100.0	checkm	0.0	checkm	20	tRNAscan-SE	3791;1550	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Eggerthella lenta		Actinomycetota	Eggerthellaceae	Anaerobic	BHI/WCA	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 3), Healthy, Male		2021-05-27	
+CLAERH2	4891deabd7ff877ec162eaf75bf88f87	High-quality draft	2256205	71	67957	48	160862	280	SPAdes	100.0	checkm	0.81	checkm	20	tRNAscan-SE	6451	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Collinsella aerofaciens		Actinomycetota	Coriobacteriaceae	Anaerobic	BHI/WCA	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 3), Healthy, Male		2021-05-27	
+CLAERH3	531a913b140e4d512358c5c731865087	High-quality draft	2266083	31	275237	33	355003	258	SPAdes	100.0	checkm	0.81	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Collinsella aerofaciens		Actinomycetota	Coriobacteriaceae	Anaerobic	BHI/WCA	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 3), Healthy, Male		2021-05-27	
+CLAERH4	350bbafe9369f0fe70996e58fefddc77	High-quality draft	2183686	36	139492	28	486135	283	SPAdes	99.19	checkm	0.81	checkm	20	tRNAscan-SE	31189	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Collinsella aerofaciens		Actinomycetota	Coriobacteriaceae	Anaerobic	BHI/WCA	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 4), Healthy, Female		2021-06-10	
+CLAERH5	98a9e1ac955761f4246a38d160236d82	High-quality draft	2251764	53	82280	48	255209	260	SPAdes	100.0	checkm	0.81	checkm	20	tRNAscan-SE	32274	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Collinsella aerofaciens		Actinomycetota	Coriobacteriaceae	Anaerobic	BHI/WCA	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human(Subject 4), Healthy, Female		2021-06-11	
+CLAERH6	b8719bde384b76eaeec911a5427bd488	High-quality draft	2254908	47	107882	29	186226	294	SPAdes	100.0	checkm	0.81	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Collinsella aerofaciens		Actinomycetota	Coriobacteriaceae	Anaerobic	BHI/WCA	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Healthy		2021-06-21	
+CLAERH7	09f23b3c080f51630d748216b44a092b	High-quality draft	2268808	37	136867	26	307371	396	SPAdes	100.0	checkm	0.81	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Collinsella aerofaciens		Actinomycetota	Coriobacteriaceae	Anaerobic	BHI/WCA	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Healthy		2021-06-28	
+CLAERH8	8bd6c443c6896d4ea87b30c9afbc6174	High-quality draft	2232447	34	178335	36	267567	284	SPAdes	100.0	checkm	0.81	checkm	20	tRNAscan-SE	35438;2622	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Collinsella aerofaciens		Actinomycetota	Coriobacteriaceae	Anaerobic	BHI/WCA	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Healthy		2021-06-28	
+CLAERH9	9f3ccdd21f3a0795d9d4c664f208b57d	High-quality draft	2263666	45	134870	40	425388	263	SPAdes	100.0	checkm	0.81	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Collinsella aerofaciens		Actinomycetota	Coriobacteriaceae	Anaerobic	BHI/WCA	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Healthy		2021-07-02	
+CLAJMH11	c5c24869602151813c03b78b1d0725bd	Manual review: are_contigs_less_100	3090530	116	53148	129	175477	249	SPAdes	98.3	checkm	0.0	checkm	19	tRNAscan-SE	5063	True	True	True	False	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	gen. nov.	114600, 114604	Bacillota	Oscillospiraceae	Anaerobic	BHI	1-3 days	1.0	CTGGCTCAGGACGAACGCTGGCGGCGCGCCTAACACATGCAAGTCGAACGGAGCTATTTCGATAGATCTCTTCGGAGTGACATTGGCTTAGCTTAGTGGCGAACGGGTGAGTAACACGTGAGGAACCTGCCTTTCAGGGGGGGACAACAGTTGGAAACGACTGCTAATACCGCATAAGACCACGATACGGCATCGTATTGAGGTCAAAGGAGCAATCCGCTGAAAGATGGCCTCGCGTCCGATTAGCTGGATGGTGAGGTAACGGCCCACCATGGCGACGATCGGTAGCCGGACTGAGAGGTTGATCGGCCACATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGAGGAAACTCTGATGCAGCGACGCCGCGTGAGGGAAGAAGGTCTTCGGATTGTAAACCTCTGTTGTCAGGGACGATAATGACGGTACCTGACGAGGAAGCCACGGCTAACTACGTGCCAGCAGCCGCGGTAAAACGTAGGTGGCAAGCGTTGTCCGGAATTACTGGGTGTAAAGGGAGCGCAGGCGGATTTGCAAGTTGGAAGTGAAACTCATGGGCTCAACCCATGAACTGCTTTCAAAACTGCAGATCTTGAGTGGTGTAGAGGTAGGCGGAATTCCCGGTGTAGCGGTGGAATGCGTAGATATCGGGAGGAACACCAGTGGCGAAGGCGGCCTACTGGGCACTAACTGACGCTGAGGCTCGAAAGCATGGGTAGCAAACAGGATTAGATACCCTGGTAGTCCATGCTGTAAACGATGATTACTAGGTGTGGGTGGATTGACCCCATCCGTGCCGCAGTTAACACAATAAGTAATCCACCTGGGGAGTACGACCGCAAGGTTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCAGTGGAGTATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAGGTCTTGACATCCGATGCATAGCTAAGAGATTAGTGAAGTCCTTCGGGACATCGAGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCGTTAGTTACTACGCAAGAGGACTCTAGCGAGACTGCCGTTGACAAAACGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCTTTATGACCTGGGCTACACACGTACTACAATGGCTATTAACAAAGAGAAGCGATACCGCGAGGTGGAGCAAACCTCACAAAAATAGTCTCAGTTCGGATCGCAGGCTGCAACCCGCCTGCGTGAAGCCGGAATTGCTAGTAATCGCGGATCAGCATGCCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATGAGAGCCGGGGGGACCCGAAGTCGGTAGTCTAACCGCAAGGAGGACGCCGCCGAAGGTAAAACTGGTGATTGGGGTGAAGTCGTA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH13	eb11951fb4ae16a94ceb853399fd26e0	High-quality draft	4103803	62	177287	26	425080	30	SPAdes	99.26	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Paraprevotella clara		Bacteroidota	Prevotellaceae	Anaerobic	mGAM	1-3 days	1.0	TCCTGGCTCAGGATGAACGCTAGCTACAGGCTTAACACATGCAAGTCGAGGGGCAGCATGGACCCAGTTTTGCTGGGTTTGATGGCGACCGGCGCACGGGTGAGTAACGCGTATCCAACCTGCCCTTTACTCCGGGATAGTCTCCTGAAAGGGAGTTTAATACCGGATGTGTTTGTCTTTCCGCATGGGAGCGACAAATAAAGATTGATTGGTAAAGGATGGGGATGCGTCCCATTAGCTTGTTGGCGGGGTAACGGCCCACCAAGGCGACGATGGGTAGGGGTTCTGAGAGGAAGGTCCCCCACATTGGAACTGAGACACGGTCCAAACTCCTACGGGAGGCAGCAGTGAGGAATATTGGTCAATGGGCGGGAGCCTGAACCAGCCAAGTAGCGTGAAGGATGACGGCCCTACGGGTTGTAAACTTCTTTTATAAGGGAATAAAGTTCGCCACGTGTGGTGTTTTGTATGTACCTTATGAATAAGCATCGGCTAATTCCGTGCCAGCAGCCGCGGTAATACGGAAGATGCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGAGCGTAGGCGGGCTTTTAAGTCAGCGGTCAAATGCCACGGCTCAACCGTGGCCAGCCGTTGAAACTGCAAGCCTTGAGTCTGCACAGGGCACATGGAATTCGTGGTGTAGCGGTGAAATGCTTAGATATCACGAAGAACTCCGATCGCGAAGGCATTGTGCCGGGGCAGCACTGACGCTGAGGCTCGAAAGTGCGGGTATCAAACAGGATTAGATACCCTGGTAGTCCGCACGGTAAACGATGAATGCTCGCTATGGGCGATACAATGTCCGTGGCCAAGCGAAAGCGTTAAGCATTCCACCTGGGGAGTACGCCGGCAACGGTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGAGGAACATGTGGTTTAATTCGATGATACGCGAGGAACCTTACCCGGGCTTGAATTGCAGGTGCATGAGTCGGAGACGGCTCTTTCCTTCGGGACTCCTGTGAAGGTGCTGCATGGTTGTCGTCAGCTCGTGCCGTGAGGTGTCGGCTTAAGTGCCATAACGAGCGCAACCCTTCTCCCCAGTTGCCATCGGGTAATGCCGGGCCCTCTGGGGACACTGCCATCGTAAGATGCGAGGAAGGTGGGGATGACGTCAAATCAGCACGGCCCTTACGTCCGGGGCTACACACGTGTTACAATGGGGGGTACAGAGGGCCGCTGTCCGGTGACGGTCGGCCAATCCCTAAAACTCCTCTCAGTTCGGACTGGAGTCTGCAACCCGACTCCACGAAGCTGGATTCGCTAGTAATCGCGCATCAGCCATGGCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCAAGCCATGAAAGCCGGGGGTGCCTGAAGTCCGTGACCGCGAGGGTCGGCCTAGGGTAAAACTGGTGATTGGGGCTAAGTCGTAACAAAGGTAACCA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH24	7ff3e014ebebddd1b1d1ab7fe1514529	High-quality draft	6000158	91	131832	42	369878	22	SPAdes	99.25	checkm	0.47	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Bacteroides intestinalis		Bacteroidota	Bacteroidaceae	Anaerobic	mGAM	1-3 days	1.0	CTGGCTCAGGATGAACGCTAGCTACAGGCTTAACACATGCAAGTCGAGGGGCAGCATGACCTAGCAATAGGTTGATGGCGACCGGCGCACGGGTGAGTAACACGTATCCAACCTGCCGATTATTCCGGGATAGCCTTTCGAAAGAAAGATTAATACTGGATAGCATAACGAGAAGGCATCTTCTTGTTATTAAAGAATTTCGATAATCGATGGGGATGCGTTCCATTAGTTTGTTGGCGGGGTAACGGCCCACCAAGACATCGATGGATAGGGGTTCTGAGAGGAAGGTCCCCCACATTGGAACTGAGACACGGTCCAAACTCATACGGGAGGCAGCAGTGAGGAATATTGGTCAATGGACGAGAGTCTGAACCAGCCAAGTAGCGTGAAGGATGACTGCCCTATGGGTTGTAAACTTCTTTTATATGGGAATAAAGTGAGCCACGTGTGGCTTTTTGTATGTACCATACGAATAAGGATCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGATCCAAGCGTTATCCGGATTTATTGGGTTTAAAGGGAGCGTAGGCGGATTATTAAGTCAGTTGTGAAAGTTTGCGGCTCAACCGTAAAATTGCAGTTGATACTGGTAGTCTTGAGTGCAGCAGAGGTAGGCGGAATTCGTGGTGTAGCGGTGAAATGCTTAGATATCACGAAGAACTCCGATTGCGAAGGCAGCTTACTGGACTGTAACTGACGCTGATGCTCGAAAGTGTGGGTATCAAACAGGATTAGATACCCTGGTAGTCCACACAGTAAACGATGAATACTCGCTGTTTGCGATATACAGCAAGCGGCCAAGCGAAAGCATTAAGTATTCCACCTGGGGAGTACGCCGGCAACGGTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGAGGAACATGTGGTTTAATTCGATGATACGCGAGGAACCTTACCCGGGCTTAAATTGCAACTGACGGATTTGGAAACAGATCTTCCTTCGGGCAGTTGTGAAGGTGCTGCATGGTTGTCGTCAGCTCGTGCCGTGAGGTGTCGGCTTAAGTGCCATAACGAGCGCAACCCTTATCTTTAGTTACTAACAGGTCATGCTGAGGACTCTAGAGAGACTGCCGTCGTAAGATGTGAGGAAGGTGGGGATGACGTCAAATCAGCACGGCCCTTACGTCCGGGGCTACACACGTGTTACAATGGGGGGTACAGAAGGCAGCTACACAGCGATGTGATGCTAATCCCAAAAGCCTCTCTCAGTTCGGATTGGAGTCTGCAACCCGACTCCATGAAGCTGGATTCGCTAGTAATCGCGCATCAGCCACGGCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCAAGCCATGAAAGCCGGGGGTACCTGAAGTACGTAACCGCAAGGAGCGTCCTAGGGTAAAACTGGTAATTGGGGCTAAGTCGTAACAAAGGTAACC	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-04-28	
+CLAJMH26B	197640ed5f2a7b2abd553d6cbc2467c1	High-quality draft	4291979	45	173391	23	397194	28	SPAdes	99.26	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Bacteroides uniformis		Bacteroidota	Bacteroidaceae	Anaerobic	mGAM	1-3 days	2.0	TCCTGGCTCAGGATGAACGCTAGCTACAGGCTTAACACATGCAAGTCGAGGGGCATCAGGAAGAAAGCTTGCTTTCTTTGCTGGCGACCGGCGCACGGGTGAGTAACACGTATCCAACCTGCCGATGACTCGGGGATAGCCTTTCGAAAGAAAGATTAATACCCGATGGTATATCTGAAAGGCATCTTTCAGCTATTAAAGAATTTCGGTCATTGATGGGGATGCGTTCCATTAGGTTGTTGGCGGGGTAACGGCCCACCAAGCCATCGATGGATAGGGGTTCTGAGAGGAAGGTCCCCCACATTGGAACTGAGACACGGTCCAAACTCCTACGGGAGGCAGCAGTGAGGAATATTGGTCAATGGACGAGAGTCTGAACCAGCCAAGTAGCGTGAAGGATGACTGCCCTATGGGTTGTAAACTTCTTTTATACGGGAATAAAGTTGGGCACGTGTGCCTTTTTGTATGTACCGTATGAATAAGGATCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGATCCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGAGCGTAGGCGGATGCTTAAGTCAGTTGTGAAAGTTTGCGGCTCAACCGTAAAATTGCAGTTGATACTGGGTGTCTTGAGTACAGTAGAGGCAGGCGGAATTCGTGGTGTAGCGGTGAAATGCTTAGATATCACGAAGAACTCCGATTGCGAAGGCAGCTTGCTGGACTGTAACTGACGCTGATGCTCGAAAGTGTGGGTATCAAACAGGATTAGATACCCTGGTAGTCCACACAGTAAACGATGAATACTCGCTGTTTGCGATATACAGTAAGCGGCCAAGCGAAAGCGTTAAGTATTCCACCTGGGGAGTACGCCGGCAACGGTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGAGGAACATGTGGTTTAATTCGATGATACGCGAGGAACCTTACCCGGGCTTAAATTGCAAATGAATGTTCTGGAAACAGATCAGCCGCAAGGCATTTGTGAAGGTGCTGCATGGTTGTCGTCAGCTCGTGCCGTGAGGTGTCGGCTTAAGTGCCATAACGAGCGCAACCCTTATCGATAGTTACCATCAGGTTATGCTGGGGACTCTGTCGAGACTGCCGTCGTAAGATGTGAGGAAGGTGGGGATGACGTCAAATCAGCACGGCCCTTACGTCCGGGGCTACACACGTGTTACAATGGGGGGTACAGAAGGCAGCTACACGGCGACGTGATGCTAATCCCTAAAACCTCTCTCAGTTCGGATTGGAGTCTGCAACCCGACTCCATGAAGCTGGATTCGCTAGTAATCGCGCATCAGCCACGGCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCAAGCCATGAAAGCCGGGGGTACCTGAAGTGCGTAACCGCGAGGAGCGCCCTAGGGTAAAACTGGTGATTGGGGCTAAGTCGTAACAAGGGTAACCAAATTG	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-08-06	
+CLAJMH27	382f7e543a1553c50e5ee49d40cb2c37	Manual review: are_contigs_less_100	5304965	126	85626	233	196879	213	SPAdes	99.25	checkm	0.0	checkm	19	tRNAscan-SE	5397	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Phocaeicola vulgatus		Bacteroidota	Bacteroidaceae	Anaerobic	BHI	1-3 days	1.0	AGTTTGATCCTGGCTCAGGATGAACGCTAGCTACAGGCTTAACACATGCAAGTCGAGGGGCAGCATGGTCTTAGCTTGCTAAGGCCGATGGCGACCGGCGCACGGGTGAGTAACACGTATCCAACCTGCCGTCTACTCTTGGACAGCCTTCTGAAAGGAAGATTAATACAAGATGGCATCATGAGTCCGCATGTTCACATGATTAAAGGTATTCCGGTAGACGATGGGGATGCGTTCCATTAGATAGTAGGCGGGGTAACGGCCCACCTAGTCTTCGATGGATAGGGGTTCTGAGAGGAAGGTCCCCCACATTGGAACTGAGACACGGTCCAAACTCCTACGGGAGGCAGCAGTGAGGAATATTGGTCAATGGGCGAGAGCCTGAACCAGCCAAGTAGCGTGAAGGATGACTGCCCTATGGGTTGTAAACTTCTTTTATAAAGGAATAAAGTCGGGTATGGATACCCGTTTGCATGTACTTTATGAATAAGGATCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGATCCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGAGCGTAGATGGATGTTTAAGTCAGTTGTGAAAGTTTGCGGCTCAACCGTAAAATTGCAGTTGATACTGGATATCTTGAGTGCAGTTGAGGCAGGCGGAATTCGTGGTGTAGCGGTGAAATGCTTAGATATCACGAAGAACTCCGATTGCGAAGGCAGCCTGCTAAGCTGCAACTGACATTGAGGCTCGAAAGTGTGGGTATCAAACAGGATTAGATACCCTGGTAGTCCACACGGTAAACGATGAATACTCGCTGTTTGCGATATACTGCAAGCGGCCAAGCGAAAGCGTTAAGTATTCCACCTGGGGAGTACGCCGGCAACGGTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGAGGAACATGTGGTTTAATTCGATGATACGCGAGGAACCTTACCCGGGCTTAAATTGCAGATGAATTACGGTGAAAGCCGTAAGCCGCAAGGCATCTGTGAAGGTGCTGCATGGTTGTCGTCAGCTCGTGCCGTGAGGTGTCGGCTTAAGTGCCATAACGAGCGCAACCCTTGTTGTCAGTTACTAACAGGTTCCGCTGAGGACTCTGACAAGACTGCCATCGTAAGATGTGAGGAAGGTGGGGATGACGTCAAATCAGCACGGCCCTTACGTCCGGGGCTACACACGTGTTACAATGGGGGGTACAGAGGGCCGCTACCACGCGAGTGGATGCCAATCCCCAAAACCTCTCTCAGTTCGGACTGGAGTCTGCAACCCGACTCCACGAAGCTGGATTCGCTAGTAATCGCGCATCAGCCACGGCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCAAGCCATGGGAGCCGGGGGTACCTGAAGTGCGTAACCGCGAGGAGCGCCCTAGGGTAAAACTGGTGACTGGGGCTAAGTC	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-04-28	
+CLAJMH28	83c8f86c808095f77c5eb2c8e0b350a6	High-quality draft	2213050	18	308261	27	920338	57	SPAdes	100.0	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Bifidobacterium faecale		Actinomycetota	Bifidobacteriaceae	Anaerobic	BHI	1-3 days	1.0	CCTGGCTCAGGATGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGGGATCCCAGGAGCTTGCTCCTGGGTGAGAGTGGCGAACGGGTGAGTAATGCGTGACCGACCTGCCCCATACACCGGAATAGCTCCTGGAAACGGGTGGTAATGCCGGATGCTCCAGTTGACCGCATGGTCCTCTGGGAAAGCTTTTGCGGTATGGGATGGGGTCGCGTCCTATCAGCTTGATGGCGGGGTAACGGCCCACCATGGCTTCGACGGGTAGCCGGCCTGAGAGGGCGACCGGCCACATTGGGACTGAGATACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCGACGCCGCGTGCGGGATGACGGCCTTCGGGTTGTAAACCGCTTTTGACTGGGAGCAAGCCCTTCGGGGTGAGTGTACCTTTCGAATAAGCACCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGTGCAAGCGTTATCCGGAATTATTGGGCGTAAAGGGCTCGTAGGCGGTTCGTCGCGTCCGGTGTGAAAGTCCATCGCTTAACGGTGGATCCGCGCCGGGTACGGGCGGGCTTGAGTGCGGTAGGGGAGACTGGAATTCCCGGTGTAACGGTGGAATGTGTAGATATCGGGAAGAACACCAATGGCGAAGGCAGGTCTCTGGGCCGTCACTGACGCTGAGGAGCGAAAGCGTGGGGAGCGAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGGTGGATGCTGGATGTGGGGACCATTCCACGGTCTCCGTGTCGGAGCCAACGCGTTAAGCATCCCGCCTGGGGAGTACGGCCGCAAGGCTAAAACTCAAAGAAATTGACGGGGGCCCGCACAAGCGGCGGAGCATGCGGATTAATTCGATGCAACGCGAAGAACCTTACCTGGGCTTGACATGTTCCCGACAGCCGTAGAGATACGGTCTCCCTTCGGGGCGGGTTCACAGGTGGTGCATGGTCGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTCGCCCTGTGTTGCCAGCACGTCGTGGTGGGAACTCACGGGGGACCGCCGGGGTCAACTCGGAGGAAGGTGGGGATGACGTCAGATCATCATGCCCCTTACGTCCAGGGCTTCACGCATGCTACAATGGCCGGTACAACGGGATGCGACACCGCGAGGTGGAGCGGATCCCTTAAAACCGGTCTCAGTTCGGATTGGAGTCTGCAACCCGACTCCATGAAGGCGGAGTCGCTAGTAATCGCGGATCAGCAACGCCGCGGTGAATGCGTTCCCGGGCCTTGTACACACCGCCCGTCAAGTCATGAAAGTGGGTAGCACCCGAAGCCGGTGGCCCAACCTTTTGGGGGGAGCCGTCTAAGGTGAGACTCGTGATTGGGACTAAGTCGTAC	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH30B	f33087f20af22ffd5a8e1b2a3707876c	High-quality draft	2379098	27	179259	22	362919	105	SPAdes	100.0	checkm	0.46	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Bifidobacterium longum		Actinomycetota	Bifidobacteriaceae	Anaerobic	YCFA	1-3 days	1.0	CTGGCTCAGGATGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGGGATCCATCAAGCTTGCTTGGTGGTGAGAGTGGCGAACGGGTGAGTAATGCGTGACCGACCTGCCCCATACACCGGAATAGCTCCTGGAAACGGGTGGTAATGCCGGATGCTCCAGTTGATCGCATGGTCTTCTGGGAAAGCTTTCGCGGTATGGGATGGGGTCGCGTCCTATCAGCTTGACGGCGGGGTAACGGCCCACCGTGGCTTCGACGGGTAGCCGGCCTGAGAGGGCGACCGGCCACATTGGGACTGAGATACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGCAAGCCTGATGCAGCGACGCCGCGTGAGGGATGGAGGCCTTCGGGTTGTAAACCTCTTTTATCGGGGAGCAAGCGAGAGTGAGTTTACCCGTTGAATAAGCACCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGTGCAAGCGTTATCCGGAATTATTGGGCGTAAAGGGCTCGTAGGCGGTTCGTCGCGTCCGGTGTGAAAGTCCATCGCTTAACGGTGGATCCGCGCCGGGTACGGGCGGGCTTGAGTGCGGTAGGGGAGACTGGAATTCCCGGTGTAACGGTGGAATGTGTAGATATCGGGAAGAACACCAATGGCGAAGGCAGGTCTCTGGGCCGTTACTGACGCTGAGGAGCGAAAGCGTGGGGAGCGAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGGTGGATGCTGGATGTGGGGCCCGTTCCACGGGTTCCGTGTCGGAGCTAACGCGTTAAGCATCCCGCCTGGGGAGTACGGCCGCAAGGCTAAAACTCAAAGAAATTGACGGGGGCCCGCACAAGCGGCGGAGCATGCGGATTAATTCGATGCAACGCGAAGAACCTTACCTGGGCTTGACATGTTCCCGACGGTCGTAGAGATACGGCTTCCCTTCGGGGCGGGTTCACAGGTGGTGCATGGTCGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTCGCCCCGTGTTGCCAGCGGATTATGCCGGGAACTCACGGGGGACCGCCGGGGTTAACTCGGAGGAAGGTGGGGATGACGTCAGATCATCATGCCCCTTACGTCCAGGGCTTCACGCATGCTACAATGGCCGGTACAACGGGATGCGACGCGGCGACGCGGAGCGGATCCCTGAAAACCGGTCTCAGTTCGGATCGCAGTCTGCAACTCGACTGCGTGAAGGCGGAGTCGCTAGTAATCGCGAATCAGCAACGTCGCGGTGAATGCGTTCCCGGGCCTTGTACACACCGCCCGTCAAGTCATGAAAGTGGGCAGCACCCGAAGCCGGTGGCCTAACCCCTTGTGGGATGGAGCCGTCTAAGGTGAGGCTCGTGATTGGGACTAAGTCGTA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-12-04	
+CLAJMH31B	30543fbc9ff875c2905b389c7377e004	High-quality draft	3617312	66	172774	183	404743	77	SPAdes	99.37	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Blautia wexlerae		Bacillota	Lachnospiraceae	Anaerobic	YCFA	1-3 days	1.0	TGGCTCAGGATGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGGGAATTACTTCATTGAAACTTCGGTCGATTTAATTTAATTCTAGTGGCGGACGGGTGAGTAACGCGTGGGTAACCTGCCTTATACAGGGGGATAACAGTCAGAAATGGCTGCTAATACCGCATAAGCGCACAGAGCTGCATGGCTCAGTGTGAAAAACTCCGGTGGTATAAGATGGACCCGCGTTGGATTAGCTTGTTGGTGGGGTAACGGCCCACCAAGGCGACGATCCATAGCCGGCCTGAGAGGGTGAACGGCCACATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGGGAAACCCTGATGCAGCGACGCCGCGTGAAGGAAGAAGTATCTCGGTATGTAAACTTCTATCAGCAGGGAAGATAGTGACGGTACCTGACTAAGAAGCCCCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGGGCAAGCGTTATCCGGATTTACTGGGTGTAAAGGGAGCGTAGACGGTGTGGCAAGTCTGATGTGAAAGGCATGGGCTCAACCTGTGGACTGCATTGGAAACTGTCATACTTGAGTGCCGGAGGGGTAAGCGGAATTCCTAGTGTAGCGGTGAAATGCGTAGATATTAGGAGGAACACCAGTGGCGAAGGCGGCTTACTGGACGGTAACTGACGTTGAGGCTCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGAATACTAGGTGTCGGGTAGCATAGCTCTTCGGTGCCGTCGCAAACGCAGTAAGTATTCCACCTGGGGAGTACGTTCGCAAGAATGAAACTCAAAGGAATTGACGGGGACCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAAGTCTTGACATCCGCCTGACCGATCCTTAACCGGATCTTTCCTTCGGGACAGGCGAGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCCTATCCTCAGTAGCCAGCATTTAAGGTGGGCACTCTGGGGAGACTGCCAGGGATAACCTGGAGGAAGGCGGGGATGACGTCAAATCATCATGCCCCTTATGATTTGGGCTACACACGTGCTACAATGGCGTAAACAAAGGGAAGCGAGATTGTGAGATGGAGCAAATCCCAAAAATAACGTCCCAGTTCGGACTGTAGTCTGCAACCCGACTACACGAAGCTGGAATCGCTAGTAATCGCGGATCAGAATGCCGCGGTGAATACGTTCCCGGGTCTTGTACACACCGCCCGTCACACCATGGGAGTCAGTAACGCCCGAAGTCAGTGACCTAACTGCAAAGAAGGAGCTGCCGAAGGCGGGACCGATGACTGGGGTGAATC	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-12-04	
+CLAJMH32B	0545188ae5f29878efbc15d298386d6e	High-quality draft	2287966	42	113777	48	490482	301	SPAdes	100.0	checkm	0.81	checkm	20	tRNAscan-SE	22593;5623;2964	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Collinsella aerofaciens		Actinomycetota	Coriobacteriaceae	Anaerobic	mGAM	1-3 days	2.0	AGAGTTTGATCCTGGCTCAGGATGAACGCTGGCGGCGCGCCTAACACATGCAAGTCGAACGGCACCCATCTTCGGATGGAAGCGAGTGGCGAACGGCTGAGTAACACGTGGAGAACCTGCCCCCTCCCCCGGGATAGCCGCCCGAAAGGACGGGTAATACCGGATACCCCGGGGTGCCGCATGGCACCCCGGCTAAAGCCCCGACGGGAGGGGATGGCTCCGCGGCCCATCAGGTAGACGGCGGGGTGACGGCCCACCGTGCCGACAACGGGTAGCCGGGTTGAGAGACCGACCGGCCAGATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATCTTGCGCAATGGGGGGAACCCTGACGCAGCGACGCCGCGTGCGGGACGGAGGCCTTCGGGTCGTAAACCGCTTTCAGCAGGGAAGAGTCAAGACTGTACCTGCAGAAGAAGCCCCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGGGCGAGCGTTATCCGGATTCATTGGGCGTAAAGCGCGCGTAGGCGGCCCGGCAGGCCGGGGGTCGAAGCGGGGGGCTCAACCCCCCGAAGCCCCCGGAACCTCCGCGGCTTGGGTCCGGTAGGGGAGGGTGGAACACCCGGTGTAGCGGTGGAATGCGCAGATATCGGGTGGAACACCGGTGGCGAAGGCGGCCCTCTGGGCCGAGACCGACGCTGAGGCGCGAAAGCTGGGGGAGCGAACAGGATTAGATACCCTGGTAGTCCCAGCCGTAAACGATGGACGCTAGGTGTGGGGGGACGATCCCCCCGTGCCGCAGCCAACGCATTAAGCGTCCCGCCTGGGGAGTACGGCCGCAAGGCTAAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCAGCGGAGCATGTGGCTTAATTCGAAGCAACGCGAAGAACCTTACCAGGGCTTGACATATGGGTGAAGCGGGGGAGACCCCGTGGCCGAGAGGAGCCCATACAGGTGGTGCATGGCTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCCCGCCGCGTGTTGCCATCGGGTGATGCCGGGAACCCACGCGGGACCGCCGCCGTCAAGGCGGAGGAGGGCGGGGACGACGTCAAGTCATCATGCCCCTTATGCCCTGGGCTGCACACGTGCTACAATGGCCGGTACAGAGGGATGCCACCCCGCGAGGGGGAGCGGATCCCGGAAAGCCGGCCCCAGTTCGGATTGGGGGCTGCAACCCGCCCCCATGAAGTCGGAGTTGCTAGTAATCGCGGATCAGCATGCCGCGGTGAATGCGTTCCCGGGCCTTGTACACACCGCCCGTCACACCACCCGAGTCGTCTGCACCCGAAGTCGCCGGCCCAACCGAGAGGGGGGAGGCGCCGAAGGTGTGGAGGGTGAGGGGGGTGAAGTC	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-04-28	
+CLAJMH41	577c08b03c1f8f15985a8349dcae555d	Manual review: is_trnas_grtr_18	3178909	66	105893	311	271768	356	SPAdes	99.37	checkm	0.32	checkm	17	tRNAscan-SE	7241;6320;5186;4531	True	True	True	True	True	True	False	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Blautia sp.	114606	Bacillota	Lachnospiraceae	Anaerobic	YCFA	1-3 days		GGGTGAGTAACGCGTGGGTAACCTGCCTTATACAGGGGGATAACAGTCAGAAATGACTGCTAATACCGCATAAGCGCACAGAGCTGCATGGCTCGGTGTGAAAAACTCCGGTGGTATAAGATGGACCCGCGTTGGATTAGCTAGTTGGTGAGGTAACGGCCCACCAAGGCGACGATCCATAGCCGGCCTGAGAGGGTGAACGGCCACATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGGGAAACCCTGATGCAGCGACGCCGCGTGAAGGAAGAAGTATCTCGGTATGTAAACTTCTATCAGCAGGGAAGAAAATGACGGTACCTGACTAAGAAGCCCCGGCTAACTACGTGCCAGCAGCCGCGGTAATACCTAAGGGGCAAGCGTTATCCGGATTTACTGGGTGTAAAGGGAACGTAAACCGATGGACAAGTCTGATGTGAAAGGCTGGGGCTCAACCCCGGGACTGCATTGGAAACTGGCCGTCTTGAGTGCCGGA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-05-08	
+CLAJMH48	75973137be58a4a2dd3669150c234d64	High-quality draft	5113804	21	522849	28	767044	80	SPAdes	99.26	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Bacteroides fragilis		Bacteroidota	Bacteroidaceae	Anaerobic	mGAM	1-3 days	2.0	CCTGGCTCAGGATGAACGCTAGCTACAGGCTTAACACATGCAAGTCGAGGGGCATCAGGAAGAAAGCTTGCTTTCTTTGCTGGCGACCGGCGCACGGGTGAGTAACACGTATCCAACCTGCCCTTTACTCGGGGATAGCCTTTCGAAAGAAAGATTAATACCCGATAGCATAATGATTCCGCATGGTTTCATTATTAAAGGATTCCGGTAAAGGATGGGGATGCGTTCCATTAGGTTGTTGGTGAGGTAACGGCCCACCAAGCCTTCGATGGATAGGGGTTCTGAGAGGAAGGTCCCCCACATTGGAACTGAGACACGGTCCAAACTCCTACGGGAGGCAGCAGTGAGGAATATTGGTCAATGGGCGTTAGCCTGAACCAGCCAAGTAGCGTGAAGGATGAAGGCTCTATGGGTCGTAAACTTCTTTTATATAAGAATAAAGTGCAGTATGTATACTGTTTTGTATGTATTATATGAATAAGGATCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGATCCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGAGCGTAGGTGGACTGGTAAGTCAGTTGTGAAAGTTTGCGGCTCAACCGTAAAATTGCAGTTGATACTGTCAGTCTTGAGTACAGTAGAGGTGGGCGGAATTCGTGGTGTAGCGGTGAAATGCTTAGATATCACGAAGAACTCCGATTGCGAAGGCAGCTCACTGGACTGCAACTGACACTGATGCTCGAAAGTGTGGGTATCAAACAGGATTAGATACCCTGGTAGTCCACACAGTAAACGATGAATACTCGCTGTTTGCGATATACAGTAAGCGGCCAAGCGAAAGCATTAAGTATTCCACCTGGGGAGTACGCCGGCAACGGTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGAGGAACATGTGGTTTAATTCGATGATACGCGAGGAACCTTACCCGGGCTTAAATTGCAGTGGAATGATGTGGAAACATGTCAGTGAGCAATCACCACTGTGAAGGTGCTGCATGGTTGTCGTCAGCTCGTGCCGTGAGGTGTCGGCTTAAGTGCCATAACGAGCGCAACCCTTATCTTTAGTTACTAACAGGTTATGCTGAGGACTCTGGAGAGACTGCCGTCGTAAGATGTGAGGAAGGTGGGGATGACGTCAAATCAGCACGGCCCTTACGTCCGGGGCTACACACGTGTTACAATGGGGGGTACAGAAGGCAGCTAGCGGGTGACCGTATGCTAATCCCAAAAGCCTCTCTCAGTTCGGATCGAAGTCTGCAACCCGACTTCGTGAAGCTGGATTCGCTAGTAATCGCGCATCAGCCACGGCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCAAGCCATGGGAGCCGGGGGTACCTGAAGTACGTAACCGCAAGGATCGTCCTAGGGTAAAACTGGTGACTGGGGCTAAGTCGTAA--------------------------------------------------------------------	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-12-04	
+CLAJMH50	00955a34b6268390b3380d9c7694364b	High-quality draft	3051293	59	157623	83	574164	142	SPAdes	99.42	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Ruminococcus gnavus		Bacillota	Lachnospiraceae	Anaerobic	GAM	1-3 days	1.0	TGGCTCAGGATGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAGCGAAGCACTTTTGCGGATTTCTTCGGATTGAAGCAATTGTGACTGAGCGGCGGACGGGTGAGTAACGCGTGGGTAACCTGCCTCATACAGGGGGATAACAGTTGGAAACGGCTGCTAATACCGCATAAGCGCACAGTACCGCATGGTACCGTGTGAAAAACTCCGGTGGTATGAGATGGACCCGCGTCTGATTAGCTAGTTGGTGGGGTAACGGCCTACCAAGGCGACGATCAGTAGCCGACCTGAGAGGGTGACCGGCCACATTGGGACTGAGACACGGCCCAAACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGGGAAACCCTGATGCAGCGACGCCGCGTGAGCGATGAAGTATTTCGGTATGTAAAGCTCTATCAGCAGGGAAGAAAATGACGGTACCTGACTAAGAAGCCCCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGGGCAAGCGTTATCCGGATTTACTGGGTGTAAAGGGAGCGTAGACGGCATGGCAAGCCAGATGTGAAAGCCCGGGGCTCAACCCCGGGACTGCATTTGGAACTGTCAGGCTAGAGTGTCGGAGAGGAAAGCGGAATTCCTAGTGTAGCGGTGAAATGCGTAGATATTAGGAGGAACACCAGTGGCGAAGGCGGCTTTCTGGACGATGACTGACGTTGAGGCTCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGAATACTAGGTGTCGGGTGGCAAAGCCATTCGGTGCCGCAGCAAACGCAATAAGTATTCCACCTGGGGAGTACGTTCGCAAGAATGAAACTCAAAGGAATTGACGGGGACCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCTGGTCTTGACATCCCTCTGACCGCTCTTTAATCGGAGCTTTCCTTCGGGACAGAGGAGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCCTATCTTTAGTAGCCAGCATTTAAGGTGGGCACTCTAGAGAGACTGCCAGGGATAACCTGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGACCAGGGCTACACACGTGCTACAATGGCGTAAACAAAGGGAAGCGAGCCCGCGAGGGGGAGCAAATCCCAAAAATAACGTCTCAGTTCGGATTGTAGTCTGCAACTCGACTACATGAAGCTGGAATCGCTAGTAATCGCGAATCAGAATGTCGCGGTGAATACGTTCCCGGGTCTTGTACACACCGCCCGTCACACCATGGGAGTCAGTAACGCCCGAAGTCAGTGACCCAACCGTAAGGAGGGAGCTGCCGAAGGTGGGACCGATAACTGGGGTGAAGTC	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-12-04	
+CLAJMH51	17ce0e0cd44d788a7940c54e81ed842c	Manual review: are_contigs_less_100	5393119	244	55189	319	159010	47	SPAdes	99.32	checkm	0.56	checkm	20	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Enterocloster clostridioforme		Bacillota	Lachnospiraceae	Anaerobic	BHI	1-3 days	2.0	GGCTCAGGATGAACGCTGGCGGCGTGCCTAACACATGCAAGTCGAACGAAGCAATTAAGATGAAGTTTTCGGATGGAATCTTGATTGACTGAGTGGCGGACGGGTGAGTAACGCGTGGATAACCTGCCTCACACTGGGGGATAACAGTTAGAAATGACTGCTAATACCGCATAAGCGCACAGTGCCGCATGGCAGTGTGTGAAAAACTCCGGTGGTGTGAGATGGATCCGCGTCTGATTAGCCAGTTGGCGGGGTAACGGCCCACCAAAGCGACGATCAGTAGCCGACCTGAGAGGGTGACCGGCCACATTGGGACTGAGACACGGCCCAAACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGCGAAAGCCTGATGCAGCGACGCCGCGTGAGTGAAGAAGTATTTCGGTATGTAAAGCTCTATCAGCAGGGAAGAAAATGACGGTACCTGACTAAGAAGCCCCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGGGCAAGCGTTATCCGGATTTACTGGGTGTAAAGGGAGCGTAGACGGCGAAGCAAGTCTGAAGTGAAAACCCAGGGCTCAACCCTGGGACTGCTTTGGAAACTGTTTTGCTAGAGTGTCGGAGAGGTAAGTGGAATTCCTAGTGTAGCGGTGAAATGCGTAGATATTAGGAGGAACACCAGTGGCGAAGGCGGCTTACTGGACGATAACTGACGTTGAGGCTCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGAATGCTAGGTGTTGGGGGGCAAAGCCCTTCGGTGCCGCCGCAAACGCAGTAAGCATTCCACCTGGGGAGTACGTTCGCAAGAATGAAACTCAAAGGAATTGACGGGGACCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAAGTCTTGACATCCCCCTGACGGGCCGGTAACGCGGCCTTTCCTTCGGGACAGGGGAGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCCTTAGTAGCCAGCAGGTAGAGCCGGGCACTCTAGGGAGACTGCCAGGGATAACCTGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGATTTGGGCTACACACGTGCTACAATGGCGTAAACAAAGGGAAGCGAGACAGTGATGTGGAGCAAATCCCAAAAATAACGTCCCAGTTCGGACTGTAGTCTGCAACCCGACTACACGAAGCTGGAATCGCTAGTAATCGCGAATCAGAATGTCGCGGTGAATACGTTCCCGGGTCTTGTACACACCGCCCGTCACACCATGGGAGTCAGCAACGCCCGAAGTCAGTGACCCAACCGAAAGGAGGGAGCTGCCGAAGGCGGGGCAGGTAACTGGGGTGAAGTCGTA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-12-04	
+CLAJMH52	4d6e7ee56228a66ca76c12caa6630274	High-quality draft	3509353	45	155162	49	436788	166	SPAdes	100.0	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Clostridium ramosum		Bacillota	Erysipelotrichaceae	Anaerobic	BHI	1-3 days	2.0	GCTCAGGATGAACGCTGGCGGCGTGCCTAATACATGCAAGTCGAACGCGAGCACTTGTGCTCGAGTGGCGAACGGGTGAGTAATACATAAGTAACCTGCCCTAGACAGGGGGATAACTATTGGAAACGATAGCTAAGACCGCATAGGTACGGACACTGCATGGTGACCGTATTAAAAGTGCCTCAAAGCACTGGTAGAGGATGGACTTATGGCGCATTAGCTGGTTGGCGGGGTAACGGCCCACCAAGGCGACGATGCGTAGCCGACCTGAGAGGGTGACCGGCCACACTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTAGGGAATTTTCGGCAATGGGGGAAACCCTGACCGAGCAACGCCGCGTGAAGGAAGAAGGTTTTCGGATTGTAAACTTCTGTTATAAAGGAAGAACGGCGGCTACAGGAAATGGTAGCCGAGTGACGGTACTTTATTAGAAAGCCACGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGTGGCAAGCGTTATCCGGAATTATTGGGCGTAAAGAGGGAGCAGGCGGCAGCAAGGGTCTGTGGTGAAAGCCTGAAGCTTAACTTCAGTAAGCCATAGAAACCAGGCAGCTAGAGTGCAGGAGAGGATCGTGGAATTCCATGTGTAGCGGTGAAATGCGTAGATATATGGAGGAACACCAGTGGCGAAGGCGACGATCTGGCCTGCAACTGACGCTCAGTCCCGAAAGCGTGGGGAGCAAATAGGATTAGATACCCTAGTAGTCCACGCCGTAAACGATGAGTACTAAGTGTTGGATGTCAAAGTTCAGTGCTGCAGTTAACGCAATAAGTACTCCGCCTGAGTAGTACGTTCGCAAGAATGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCAGGTCTTGACATACTCATAAAGGCTCCAGAGATGGAGAGATAGCTATATGAGATACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCTTATCGTTAGTTACCATCATTAAGTTGGGGACTCTAGCGAGACTGCCAGTGACAAGCTGGAGGAAGGCGGGGATGACGTCAAATCATCATGCCCCTTATGACCTGGGCTACACACGTGCTACAATGGATGGTGCAGAGGGAAGCGAAGCCGCGAGGTGAAGCAAAACCCATAAAACCATTCTCAGTTCGGATTGTAGTCTGCAACTCGACTACATGAAGTTGGAATCGCTAGTAATCGCGAATCAGCATGTCGCGGTGAATACGTTCTCGGGCCTTGTACACACCGCCCGTCACACCACGAGAGTTGATAACACCCGAAGCCGGTGGCCTAACCGCAAGGAAGGAGCTGTCTAAGGTGGGATTGATGATTGGGGTGAAGT	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-12-04	
+CLAJMH54	60dc9a86a37e6a6e4877ac609855bd57	High-quality draft	2081647	17	466090	45	854590	194	SPAdes	100.0	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Veillonella sp.		Bacillota	Veillonellaceae	Anaerobic	mGAM	1-3 days	1.0	GGCTCAGGACGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGAAGAGCGATGGAAGCTTGCTTCTATCAATCTTAGTGGCGAACGGGTGAGTAACGCGTAATCAACCTGCCCTTCAGAGGGGGACAACAGTTGGAAACGACTGCTAATACCGCATACGATCTAATCTCGGCATCGAGGATAGATGAAAGGTGGCCTCTACATGTAAGCTATCACTGAAGGAGGGGATTGCGTCTGATTAGCTAGTTGGAGGGGTAACGGCCCACCAAGGCGATGATCAGTAGCCGGTCTGAGAGGATGAACGGCCACATTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATCTTCCGCAATGGACGAAAGTCTGACGGAGCAACGCCGCGTGAGTGATGACGGCCTTCGGGTTGTAAAGCTCTGTTAATCGGGACGAAAGGCCTTCTTGCGAATAGTGAGAAGGATTGACGGTACCGGAATAGAAAGCCACGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGTGGCAAGCGTTGTCCGGAATTATTGGGCGTAAAGCGCGCGCAGGCGGATCGGTCAGTCTGTCTTAAAAGTTCGGGGCTTAACCCCGTGATGGGATGGAAACTGCCAATCTAGAGTATCGGAGAGGAAAGTGGAATTCCTAGTGTAGCGGTGAAATGCGTAGATATTAGGAAGAACACCAGTGGCGAAGGCGACTTTCTGGACGAAAACTGACGCTGAGGCGCGAAAGCCAGGGGAGCGAACGGGATTAGATACCCCGGTAGTCCTGGCCGTAAACGATGGGTACTAGGTGTAGGAGGTATCGACCCCTTCTGTGCCGGAGTTAACGCAATAAGTACCCCGCCTGGGGAGTACGACCGCAAGGTTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGTGGAGTATGTGGTTTAATTCGACGCAACGCGAAGAACCTTACCAGGTCTTGACATTGATGGACAGAACTAGAGATAGTTCCTCTTCTTCGGAAGCCAGAAAACAGGTGGTGCACGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCCTATCTTATGTTGCCAGCACGTAATGGTGGGAACTCATGAGAGACTGCCGCAGACAATGCGGAGGAAGGCGGGGATGACGTCAAATCATCATGCCCCTTATGACCTGGGCTACACACGTACTACAATGGGAGTTAATAGACGGAAGCGAGATCGCGAGATGGAGCAAACCCGAGAAACACTCTCTCAGTTCGGATCGTAGGCTGCAACTCGCCTACGTGAAGTCGGAATCGCTAGTAATCGCAGGTCAGCATACTGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCACGAAAGTCGGAAGTGCCCAAAGCCGGTGGGGTAACCTTCGGGAGCCAGCCGTCTAAGGTAAAGTCGATGATTGGGGTGAAGTCGA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-12-04	
+CLAJMH56	e01deb6e7f5bed532e30dd6546cf9b8c	High-quality draft	5178423	54	253849	39	647323	74	SPAdes	99.25	checkm	0.75	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Phocaeicola dorei		Bacteroidota	Bacteroidaceae	Anaerobic	BHI	1-3 days	1.0	TGGCTCAGGATGAACGCTAGCTACAGGCTTAACACATGCAAGTCGAGGGGCAGCATGGTCTTAGCTTGCTAAGGCTGATGGCGACCGGCGCACGGGTGAGTAACACGTATCCAACCTGCCGTCTACTCTTGGCCAGCCTTCTGAAAGGAAGATTAATCCAGGATGGGATCATGAGTTCACATGTCCGCATGATTAAAGGTATTTTCCGGTAGACGATGGGGATGCGTTCCATTAGATAGTAGGCGGGGTAACGGCCCACCTAGTCAACGATGGATAGGGGTTCTGAGAGGAAGGTCCCCCACATTGGAACTGAGACACGGTCCAAACTCCTACGGGAGGCAGCAGTGAGGAATATTGGTCAATGGGCGATGGCCTGAACCAGCCAAGTAGCGTGAAGGATGACTGCCCTATGGGTTGTAAACTTCTTTTATAAAGGAATAAAGTCGGGTATGCATACCCGTTTGCATGTACTTTATGAATAAGGATCGGCTAACTCCGTGCCAGCAGCCGCGGTAATACGGAGGATCCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGAGCGTAGATGGATGTTTAAGTCAGTTGTGAAAGTTTGCGGCTCAACCGTAAAATTGCAGTTGATACTGGATGTCTTGAGTGCAGTTGAGGCAGGCGGAATTCGTGGTGTAGCGGTGAAATGCTTAGATATCACGAAGAACTCCGATTGCGAAGGCAGCCTGCTAAGCTGCAACTGACATTGAGGCTCGAAAGTGTGGGTATCAAACAGGATTAGATACCCTGGTAGTCCACACGGTAAACGATGAATACTCGCTGTTTGCGATATACGGCAAGCGGCCAAGCGAAAGCGTTAAGTATTCCACCTGGGGAGTACGCCGGCAACGGTGAAACTCAAAGGAATTGACGGGGGCCCGCACAAGCGGAGGAACATGTGGTTTAATTCGATGATACGCGAGGAACCTTACCCGGGCTTAAATTGCACTCGAATGATCCGGAAACGGTTCAGCTAGCAATAGCGAGTGTGAAGGTGCTGCATGGTTGTCGTCAGCTCGTGCCGTGAGGTGTCGGCTTAAGTGCCATAACGAGCGCAACCCTTGTTGTCAGTTACTAACAGGTGATGCTGAGGACTCTGACAAGACTGCCATCGTAAGATGTGAGGAAGGTGGGGATGACGTCAAATCAGCACGGCCCTTACGTCCGGGGCTACACACGTGTTACAATGGGGGGTACAGAGGGCCGCTACCACGCGAGTGGATGCCAATCCCTAAAACCCCTCTCAGTTCGGACTGGAGTCTGCAACCCGACTCCACGAAGCTGGATTCGCTAGTAATCGCGCATCAGCCACGGCGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCAAGCCATGGGAGCCGGGGGTACCTGAAGTGCGTAACCGCGAGGATCGCCCTAGGGTAAAACTGGTGACTGGGGCTAA	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-12-04	
+CLAJMH57	9101d20075d8c3dab4e67f8e0d234889	Manual review: is_trnas_grtr_18	2838429	41	260683	69	579169	74	SPAdes	99.37	checkm	0.0	checkm	18	tRNAscan-SE	0	True	True	True	True	True	True	False	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Faecalimonas umbilicata		Bacillota	Lachnospiraceae	Anaerobic	BHI	1-3 days	1.0	TGGCTCAGGATGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGAAGCGCTTGAATGGAATTCTTCGGAAGGAAGCTCAAGTGACTGAGTGGCGGACGGGTGAGTAACGCGTGGGTAACCTGCCTCATACAGGGGGATAACAGTTAGAAATGACTGCTAATACCGCATAAGCACACGTGATCGCATGATCGAGTGTGAAAAACTCCGGTGGTATGAGATGGACCCGCGTCTGATTAGCTAGTTGGTGGGGTAATGGCCCACCAAGGCGACGATCAGTAGCCGGCCTGAGAGGGTGAACGGCCACATTGGGACTGAGACACGGCCCAAACTCCTACGGGAGGCAGCAGTGGGGAATATTGCACAATGGGGGAAACCCTGATGCAGCGACGCCGCGTGAAGGATGAAGTATTTCGGTATGTAAACTTCTATCAGCAGGGAAGAAAATGACGGTACCTGACTAAGAAGCCCCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGGGCAAGCGTTATCCGGATTTACTGGGTGTAAAGGGAGCGTAGACGGCAGTGCAAGTCTGAAGTGAAAGCCCGGGGCTCAACCCCGGGACTGCTTTGGAAACTGTGCAGCTAGAGTGTCGGAGAGGCAAGCGGAATTCCTAGTGTAGCGGTGAAATGCGTAGATATTAGGAGGAACACCAGTGGCGAAGGCGGCTTGCTGGACGATGACTGACGTTGAGGCTCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCCGTAAACGATGACTACTAGGTGTCGGGGAGCAAAGCTCTTCGGTGCCGCAGCCAACGCAATAAGTAGTCCACCTGGGGAGTACGTTCGCAAGAATGAAACTCAAAGGAATTGACGGGGACCCGCACAAGCGGTGGAGCATGTGGTTTAATTCGAAGCAACGCGAAGAACCTTACCTGCTCTTGACATCCCTCTGACCGCTCTTTAATCGGAGCTTTCCTTCGGGACAGAGGAGACAGGTGGTGCATGGTTGTCGTCAGCTCGTGTCGTGAGATGTTGGGTTAAGTCCCGCAACGAGCGCAACCCCTATCTTCAGTAGCCAGCGGCAAGGCCGGGCACTCTGGAGAGACTGCCAGGGATAACCTGGAGGAAGGTGGGGATGACGTCAAATCATCATGCCCCTTATGAGCAGGGCTACACACGTGCTACAATGGCGTAAACAAAGGGAAGCAGAGTCGTGAGGCCGAGCAAATCCCAAAAATAACGTCTCAGTTCGGATTGTAGTCTGCAACTCGACTACATGAAGCTGGAATCGCTAGTAATCGCGAATCAGAATGTCGCGGTGAATACGTTCCCGGGTCTTGTACACACCGCCCGTCACACCATGGGAGTCAGTAACGCCCGAAGTCAGTGACCCAACCGTAAGGAGGGAGCTGCCGAAGGTGGGACCGATAACTGGGGTGAAGTC	"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Keto-diet project	Faeces	2020-12-04	
+CLAKBH118	7c91dcc622250aa9263b845e9cbf9027	Manual review: are_contigs_less_100	5203337	119	105390	259	373304	217	SPAdes	99.25	checkm	0.13	checkm	19	tRNAscan-SE	6197	True	True	True	False	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Phocaeicola vulgatus		Bacteroidota	Bacteroidaceae	Anaerobic	BHI/mGAM	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Healthy (Subject 6 KB )	Faeces	2020-03-06	
+CLAKBH143	21f02b82935ace069e3b0693a4ea99c8	Manual review: are_contigs_less_100	5010209	180	49638	268	167723	332	SPAdes	99.25	checkm	0.47	checkm	19	tRNAscan-SE	5594;5397;4138;2749	True	True	True	False	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Phocaeicola vulgatus		Bacteroidota	Bacteroidaceae	Anaerobic	BHI/mGAM	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Healthy (Subject 4 KB)	Faeces	2020-03-05	
+CLAKBH42	0f7dadf9d6297384a57f3852ed4537b5	High-quality draft	3717592	35	285646	22	634768	152	SPAdes	100.0	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	gen. nov.	111141	Actinomycetota	Eggerthellaceae	Anaerobic	Fibre media/YCFA	1-3 days	1.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Healthy	Faeces	2019-09-05	
+CLAKBH481	fd987b3b017495cdd8987f1487d9137f	Manual review: are_contigs_less_100	4869614	103	108528	312	466268	194	SPAdes	99.25	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	False	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Phocaeicola vulgatus		Bacteroidota	Bacteroidaceae				1.0						
+CLAKBH83	d90e145275a9d85bcc1bd2344feb3d0a	High-quality draft	5018194	69	162628	29	366506	20	SPAdes	99.26	checkm	0.37	checkm	20	tRNAscan-SE	6063;2751	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Bacteroides fragilis		Bacteroidota	Bacteroidaceae	Anaerobic	WCA	1-3 days	2.0		"RWTH - Uniklinik Aachen AG Clavel
+Medizinische Mikrobiologie
+5. Etage, Flur D0, Raum 34 
+Pauwelstraße 30
+52074 Aachen 
+"	Adult Human, Healthy	Faeces	2020-02-11	
+Hiso	922540f41684b0928f5985acb03e6b10	High-quality draft	4501901	72	136286	171	270439	305	SPAdes	99.25	checkm	0.0	checkm	20	tRNAscan-SE	33145	True	True	True	True	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Phocaeicola vulgatus		Bacteroidota	Bacteroidaceae				1.0						
+HDF	89ddabab87d367a2cd7f1b8b05ea5eba	Manual review: are_contigs_less_100	5245175	139	76951	324	328933	87	SPAdes	99.25	checkm	0.0	checkm	20	tRNAscan-SE	9472;2751	True	True	True	False	True	True	True	True	True	True	2022-12-16	v6.1-3-g95da734	MiSeq	Phocaeicola vulgatus		Bacteroidota	Bacteroidaceae				1.0						
+d3	61e834f44d796bb62c642293b5fe6ca8	High-quality draft	4839377	98	137952	359	269528	85	SPAdes	99.25	checkm	0.0	checkm	20	tRNAscan-SE	0	True	True	True	True	True	True	True	True	True	True	2022-12-15	v6.1-3-g95da734	MiSeq	Phocaeicola vulgatus		Bacteroidota	Bacteroidaceae				1.0						

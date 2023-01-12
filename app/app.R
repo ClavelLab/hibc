@@ -1,6 +1,10 @@
 library(shiny)
 library(bslib)
 library(DT)
+library(tidyverse)
+
+# Load the hibc table
+hibc_data <- read_delim("2023-01-12.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE)
 
 # Define UI
 ui <- navbarPage(
@@ -24,8 +28,8 @@ ui <- navbarPage(
     )
   ),
   id = "navbar",
-  tabPanel("Overview",
-    value = "Overview",
+  tabPanel(
+    "Overview",
     column(
       width = 12, align = "center",
       tags$style(type = "text/css", "body {padding-top: 70px;}"),
@@ -73,7 +77,18 @@ ui <- navbarPage(
       ),
     )
   ),
-  tabPanel("Taxonomy"),
+  tabPanel(
+    "Taxonomy",
+    column(
+      width = 8, offset = 2, align = "center",
+      tags$style(type = "text/css", "body {padding-top: 70px;}"),
+      h2("List of the hibc isolates and the associated taxonomy", align = "center"),
+      br(),
+      fluidRow(
+        DT::dataTableOutput("taxonomy")
+      ),
+    )
+  ),
   tabPanel("Cultivation"),
   tabPanel("Genomes"),
 )
@@ -81,7 +96,22 @@ ui <- navbarPage(
 
 # Define server logic
 server <- function(input, output, session) {
-
+  # Taxonomy table
+  output$taxonomy <- DT::renderDT(
+    DT::datatable(
+      hibc_data %>%
+        select(StrainID, Species, `DSM no.`, Phylum, Family) %>%
+        arrange(Species),
+      filter = "top",
+      extensions = "Responsive",
+      selection = list(
+        mode = "single",
+        selected = "7",
+        target = "row"
+      )
+    ) %>% formatStyle(columns = "Species", fontStyle = "italic"),
+    server = TRUE
+  )
 }
 
 # Run the application
