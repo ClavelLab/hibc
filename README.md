@@ -24,9 +24,7 @@ docker run -it -d -p 3838:3838 hibc-shiny
 ### Visualisation
 
 - [ ] add an interactive scatter plot (plotly) of contamination-completion
-- [ ] add a plot for the distribution of the genome size with two possible twists:
-    - [ ] broken down by Phyla
-    - [ ] with/without plasmids
+- [ ] add a plot for the distribution of the genome size with N50
 
 ### Search
 
@@ -36,6 +34,6 @@ docker run -it -d -p 3838:3838 hibc-shiny
 
 ### misc
 
-- [ ] replace the deprecated shinyforms package by mailtoR with a template, especially in the subject.
+- [ ] replace the deprecated shinyforms package by mailtoR with a template, especially in the subject. NO TC does not want any request
 - [ ] name the tab of the website
 - [ ] IMPROVEMENT: link the media to the mediadive website identifier.
