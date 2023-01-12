@@ -108,10 +108,63 @@ ui <- navbarPage(
       fluidRow(
         DT::dataTableOutput("taxonomy")
       )
-    ),
+    )
   ),
-  tabPanel("Cultivation"),
-  tabPanel("Genomes"),
+  tabPanel(
+    "Cultivation",
+    fluidRow(
+      column(
+        width = 4, offset = 2,
+        tags$style(type = "text/css", "body {padding-top: 70px;}"),
+        h4("Cultivation of the hibc isolates"),
+        p("Browse through the metadata related to the cultivation of the isolates in the table below."),
+      ),
+      column(
+        width = 4, align = "center",
+        tags$style(type = "text/css", "body {padding-top: 70px;}"),
+        h4("Cultivation media in hibc"),
+        br(),
+        p("Placeholder for a horizontal bar chart displaying the media used")
+      )
+    ),
+    column(
+      width = 8, offset = 2, align = "center",
+      fluidRow(
+        DT::dataTableOutput("cultivation")
+      )
+    )
+  ),
+  tabPanel(
+    "Genomes",
+    column(
+      width = 8, offset = 2,
+      tags$style(type = "text/css", "body {padding-top: 70px;}"),
+      h4("Assemblies of the hibc isolates"),
+      p("Explore the genome assemblies of the isolates via the two interactive plots and the table below."),
+    ),
+    fluidRow(
+      column(
+        width = 4, offset = 2, align = "center",
+        tags$style(type = "text/css", "body {padding-top: 70px;}"),
+        h4("Cultivation media in hibc"),
+        br(),
+        p("Placeholder for a interactive plot of genome length vs N50")
+      ),
+      column(
+        width = 4, align = "center",
+        tags$style(type = "text/css", "body {padding-top: 70px;}"),
+        h4("Cultivation media in hibc"),
+        br(),
+        p("Placeholder for a interactive plot of genome length vs N50")
+      )
+    ),
+    column(
+      width = 8, offset = 2, align = "center",
+      fluidRow(
+        DT::dataTableOutput("genome")
+      )
+    )
+  )
 )
 
 
@@ -136,6 +189,30 @@ server <- function(input, output, session) {
         dom = "rtflp"
       )
     ) %>% formatStyle(columns = "Species", fontStyle = "italic"),
+    server = TRUE
+  )
+
+  # Cultivation table
+  output$cultivation <- DT::renderDT(
+    preview_hibc() %>%
+      select(StrainID, `Medium for best growth`, `Growth atm.`, `Incubation time`),
+    filter = "top",
+    extensions = "Responsive",
+    options = list(
+      dom = "rtflp"
+    ),
+    server = FALSE
+  )
+
+  # Genome table
+  output$genome <- DT::renderDT(
+    preview_hibc() %>%
+      select(StrainID, genome_length, number_contig, N50, coverage, compl_score, contam_score),
+    filter = "top",
+    extensions = "Responsive",
+    options = list(
+      dom = "rtflp"
+    ),
     server = TRUE
   )
 
