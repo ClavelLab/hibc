@@ -2,6 +2,8 @@ library(shiny)
 library(bslib)
 library(DT)
 library(tidyverse)
+library(cowplot)
+library(plotly)
 
 # Load the hibc table
 hibc_data <- read_delim("2023-01-12.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
@@ -159,18 +161,19 @@ ui <- navbarPage(
       column(
         width = 4, offset = 2, align = "center",
         tags$style(type = "text/css", "body {padding-top: 70px;}"),
-        h4("Cultivation media in hibc"),
+        h4("Completion and contamination"),
         br(),
-        p("Placeholder for a interactive plot of genome length vs N50")
+        plotlyOutput("plot_compl_contam", width = "400px", height = "400px")
       ),
       column(
         width = 4, align = "center",
         tags$style(type = "text/css", "body {padding-top: 70px;}"),
-        h4("Cultivation media in hibc"),
+        h4("Genome size and assembly fragmentation"),
         br(),
-        p("Placeholder for a interactive plot of genome length vs N50")
+        plotlyOutput("plot_N50_genome_size", width = "400px", height = "400px")
       )
     ),
+    br(),
     column(
       width = 8, offset = 2, align = "center",
       fluidRow(
@@ -270,7 +273,53 @@ server <- function(input, output, session) {
     ),
     server = TRUE
   )
-
+  # Genomes plot: completion vs contamination
+  output$plot_compl_contam <- renderPlotly({
+    checkm <- ggplot(
+      preview_hibc(),
+      aes(
+        x = compl_score, y = contam_score,
+        label = StrainID
+      )
+    ) +
+      geom_point(alpha = 0.5, size = 2, color = "#17a2b8") +
+      geom_vline(xintercept = 90, linetype = "dashed") +
+      geom_hline(yintercept = 5, linetype = "dashed") +
+      geom_rug(alpha = 0.3) +
+      scale_y_continuous(
+        breaks = scales::breaks_extended(n = 7),
+        expand = expansion(mult = .08)
+      ) +
+      scale_x_continuous(expand = expansion(mult = .08)) +
+      labs(x = "Completion (CheckM)", y = "Contamination (CheckM)") +
+      theme_cowplot()
+    ggplotly(checkm)
+  })
+  # Genomes plot: N50 vs genome size
+  output$plot_N50_genome_size <- renderPlotly({
+    p_N50 <- ggplot(
+      preview_hibc(),
+      aes(
+        x = genome_length, y = N50,
+        label = StrainID
+      )
+    ) +
+      geom_point(alpha = 0.5, size = 2, color = "#ffc107") +
+      geom_hline(yintercept = 25000, linetype = "dashed") +
+      geom_rug(alpha = 0.3) +
+      scale_x_continuous(
+        labels = scales::label_bytes(units = "MB"),
+        breaks = scales::breaks_extended(n = 7),
+        expand = expansion(mult = 0.08)
+      ) +
+      scale_y_continuous(
+        labels = scales::label_bytes(units = "kB"),
+        breaks = scales::breaks_extended(n = 7), expand = expansion(mult = 0.08)
+      ) +
+      labs(x = "Genome size", y = "N50") +
+      theme_cowplot()
+    ggplotly(p_N50)
+  })
   # Selected isolate
   output$isolate_id <- renderText({
     preview_hibc()[input$taxonomy_rows_selected, ] %>% pull("StrainID")
