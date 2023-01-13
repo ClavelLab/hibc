@@ -57,14 +57,14 @@ ui <- navbarPage(
         value_box(
           showcase = icon("bacteria", class = "fa-3x"),
           title = "Isolates:",
-          value = "224",
+          value = textOutput("no_isolates", inline = T),
           theme_color = "info",
           p("as of 2023-01-13")
         ),
         value_box(
           showcase = icon("bugs", class = "fa-3x"),
           title = "Species:",
-          value = "123",
+          value = textOutput("no_species", inline = T),
           theme_color = "warning",
           p("as of 2023-01-13")
         )
@@ -215,6 +215,19 @@ server <- function(input, output, session) {
   preview_hibc <- reactive({
     hibc_data
   })
+  # Numbers on the hibc dataset
+  output$no_isolates <- renderText({
+    preview_hibc() %>%
+      pull(StrainID) %>%
+      unique() %>%
+      length()
+  })
+  output$no_species <- renderText({
+    preview_hibc() %>%
+      pull(Species) %>%
+      unique() %>%
+      length()
+  })
   # Taxonomy table
   output$taxonomy <- DT::renderDT(
     DT::datatable(
@@ -297,6 +310,11 @@ server <- function(input, output, session) {
     spacing = "xs",
     digits = 0
   )
+  # Navigation
+  #
+  observeEvent(input$viewDetail, {
+    updateNavbarPage(session = session, inputId = "navbar", selected = "detail")
+  })
 }
 
 # Run the application
