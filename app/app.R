@@ -137,14 +137,20 @@ ui <- navbarPage(
         width = 4, offset = 2,
         tags$style(type = "text/css", "body {padding-top: 70px;}"),
         h4("Cultivation of the hibc isolates"),
-        p("Browse through the metadata related to the cultivation of the isolates in the table below."),
+        p(
+          "Browse through the metadata related to the cultivation of the isolates",
+          "in the table below and in the interactive figure on the left."
+        ),
+        p(
+          "The figure indicates the most used media for the growth of the isolates",
+          textOutput("no_media", inline = T), "The media used only once are not shown",
+          textOutput("no_media_once", inline = T)
+        )
       ),
       column(
         width = 4, align = "center",
         tags$style(type = "text/css", "body {padding-top: 70px;}"),
-        h4("Cultivation media in hibc"),
-        br(),
-        p("Placeholder for a horizontal bar chart displaying the media used")
+        plotlyOutput("plot_media", height = "400px")
       )
     ),
     column(
@@ -157,27 +163,28 @@ ui <- navbarPage(
   tabPanel(
     "Genomes",
     column(
-      width = 8, offset = 2,
+      width = 8, offset = 2, align = "center",
       tags$style(type = "text/css", "body {padding-top: 70px;}"),
       h4("Assemblies of the hibc isolates"),
       p("Explore the genome assemblies of the isolates via the two interactive plots and the table below."),
-    layout_column_wrap(
-      width = 1/2,
-      card(
-        height = 400, full_screen = T,
-        card_header("Completion and contamination"),
-        card_body_fill(
-        plotlyOutput("plot_compl_contam", height = "400px")
-        )
-      ),
-      card(
-        height = 400, full_screen = T,
-        card_header("Genome size and assembly fragmentation"),
-        card_body_fill(
-        plotlyOutput("plot_N50_genome_size", height = "400px")
+      layout_column_wrap(
+        width = 1 / 2,
+        card(
+          height = 400, full_screen = T,
+          card_header("Completion and contamination"),
+          card_body_fill(
+            plotlyOutput("plot_compl_contam", height = "400px")
+          )
+        ),
+        card(
+          height = 400, full_screen = T,
+          card_header("Genome size and assembly fragmentation"),
+          card_body_fill(
+            plotlyOutput("plot_N50_genome_size", height = "400px")
+          )
         )
       )
-    )),
+    ),
     br(),
     column(
       width = 8, offset = 2, align = "center",
@@ -223,6 +230,13 @@ server <- function(input, output, session) {
   preview_hibc <- reactive({
     hibc_data
   })
+  media <- reactive({
+    preview_hibc() %>%
+      rename(c("media" = `Medium for best growth`)) %>%
+      count(media) %>%
+      arrange(n) %>%
+      mutate(media = factor(media, media))
+  })
   # Numbers on the hibc dataset
   output$no_isolates <- renderText({
     preview_hibc() %>%
@@ -235,6 +249,17 @@ server <- function(input, output, session) {
       pull(Species) %>%
       unique() %>%
       length()
+  })
+  output$no_media <- renderText({
+    media() %>%
+      nrow() %>%
+      paste0("(n = ", ., ").")
+  })
+  output$no_media_once <- renderText({
+    media() %>%
+      filter(n == 1) %>%
+      nrow() %>%
+      paste0("(n = ", ., ").")
   })
   # Taxonomy table
   output$taxonomy <- DT::renderDT(
@@ -278,6 +303,19 @@ server <- function(input, output, session) {
     ),
     server = TRUE
   )
+
+  # Cultivation media plot
+  output$plot_media <- renderPlotly({
+    p_media <- media() %>%
+      filter(!is.na(media) & n > 1) %>%
+      ggplot(aes(x = media, y = n)) +
+      geom_segment(aes(x = media, xend = media, y = 0, yend = n)) +
+      geom_point(size = 2, color = "#28a745") +
+      coord_flip() +
+      labs(x = "", y = "Media occurrence") +
+      theme_cowplot()
+    ggplotly(p_media)
+  })
   # Genomes plot: completion vs contamination
   output$plot_compl_contam <- renderPlotly({
     checkm <- ggplot(
