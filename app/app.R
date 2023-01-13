@@ -10,13 +10,18 @@ hibc_data <- read_delim("2023-01-12.Merged_HiBC.tsv", delim = "\t", show_col_typ
 # Define UI
 ui <- navbarPage(
   lang = "en",
-  title = span(icon("bacteria"), "hibc"),
-  windowTitle = "hibc: The Human Intestinal Bacterial Collection",
+  title = span(tags$img(src = "hibc.png", height = 40), "hibc"),
+  windowTitle = "HiBC: The Human Intestinal Bacterial Collection",
   theme = bs_theme(
     version = 5,
-    bootswatch = "minty",
-    base_font = font_google("Source Sans Pro"),
-    code_font = font_google("Source Code Pro")
+    bootswatch = "sketchy",
+    # primary = "#519c00",
+    # secondary = "#F2BB05",
+    # success = "#F0F0C9",
+    # warning = "#CF5C36",
+    # info = "#555358",
+    # base_font = font_google("Source Sans Pro"),
+    # code_font = font_google("Source Code Pro")
   ) %>%
     bs_add_rules(
       ':target:before { content: "";  display: block;  height: 80px;  margin: -20px 0 0;}'
@@ -31,29 +36,29 @@ ui <- navbarPage(
   id = "navbar",
   tabPanel(
     "Overview",
+    tags$head(tags$link(rel = "shortcut icon", href = "favicon.ico")),
     column(
       width = 12, align = "center",
       tags$style(type = "text/css", "body {padding-top: 70px;}"),
-      h1("hibc: The Human Intestinal Bacterial Collection")
+      h1(tags$img(src = "hibc.png", height = 80), "HiBC: The Human Intestinal Bacterial Collection")
     ),
     column(
       width = 8, offset = 2,
       layout_column_wrap(
         width = 1 / 2,
         value_box(
-          # showcase = icon("bacteria"),
-          showcase = tags$i(class = "fas fa-bacteria", style = "font-size: 96px"),
-          title = "hibc contains",
+          showcase = icon("bacteria", class = "fa-3x"),
+          title = "Isolates:",
           value = "224",
-          theme_color = "primary",
-          p("isolates"),
+          theme_color = "info",
+          p("as of 2023-01-13")
         ),
         value_box(
-          showcase = tags$i(class = "fas fa-bugs", style = "font-size: 96px"),
-          title = "hibc contains",
+          showcase = icon("bugs", class = "fa-3x"),
+          title = "Species:",
           value = "123",
-          theme_color = "secondary",
-          p("isolates")
+          theme_color = "warning",
+          p("as of 2023-01-13")
         )
       ),
       br(),
@@ -97,7 +102,7 @@ ui <- navbarPage(
         h4("An isolate of interest?"),
         br(),
         actionButton(
-          inputId = "viewDetail", class = "go-to-top success",
+          inputId = "viewDetail", class = "btn-info go-to-top",
           label = "Select a row and click me",
           width = "150px",
         )
@@ -206,7 +211,7 @@ server <- function(input, output, session) {
   output$taxonomy <- DT::renderDT(
     DT::datatable(
       preview_hibc() %>%
-        select(StrainID, Species, `DSM no.`, Phylum, Family),
+        select(StrainID, Phylum, Family, Species, `DSM no.`),
       filter = "top",
       extensions = "Responsive",
       selection = list(
@@ -255,7 +260,7 @@ server <- function(input, output, session) {
     # The action button needs to be observed to be able to register the different row selection
     updateActionButton(
       session, "viewDetail",
-      paste(
+      label = paste(
         "Details on",
         preview_hibc()[input$taxonomy_rows_selected, ] %>%
           pull("StrainID")
