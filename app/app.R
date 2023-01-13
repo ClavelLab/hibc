@@ -57,14 +57,14 @@ ui <- navbarPage(
         value_box(
           showcase = icon("bacteria", class = "fa-3x"),
           title = "Isolates:",
-          value = textOutput("no_isolates", inline = T),
+          value = tags$span(textOutput("no_isolates", inline = T), class = "h2 mb-2"),
           theme_color = "info",
           p("as of 2023-01-13")
         ),
         value_box(
           showcase = icon("bugs", class = "fa-3x"),
           title = "Species:",
-          value = textOutput("no_species", inline = T),
+          value = tags$span(textOutput("no_species", inline = T), class = "h2 mb-2"),
           theme_color = "warning",
           p("as of 2023-01-13")
         )
