@@ -117,7 +117,7 @@ ui <- navbarPage(
         h4("An isolate of interest?"),
         br(),
         actionButton(
-          inputId = "viewDetail", class = "btn-info go-to-top",
+          inputId = "viewDetail", class = "btn-info fw-bold go-to-top",
           label = "Select a row and click me",
           width = "150px",
         )
