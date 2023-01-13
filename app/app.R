@@ -11,7 +11,7 @@ thematic_shiny(font = "auto")
 
 
 # Load the hibc table
-hibc_data <- read_delim("2023-01-12.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
+hibc_data <- read_delim("2023-01-13.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
   arrange(Species)
 
 # Define UI
@@ -142,7 +142,11 @@ ui <- navbarPage(
           "in the table below and in the interactive figure on the left."
         ),
         p(
-          "The figure indicates the most used media for the growth of the isolates",
+          "Note that when multiple cultivation media are indicated,",
+          "the media for the best growth is the left-most media."
+        ),
+        p(
+          "The figure indicates the most used media for the best growth of the isolates",
           textOutput("no_media", inline = T), "The media used only once are not shown",
           textOutput("no_media_once", inline = T)
         )
@@ -232,10 +236,10 @@ server <- function(input, output, session) {
   })
   media <- reactive({
     preview_hibc() %>%
-      rename(c("media" = `Medium for best growth`)) %>%
-      count(media) %>%
+      mutate(best_media = gsub(";.*", "", `Medium for best growth`)) %>%
+      count(best_media) %>%
       arrange(n) %>%
-      mutate(media = factor(media, media))
+      mutate(best_media = factor(best_media, best_media))
   })
   # Numbers on the hibc dataset
   output$no_isolates <- renderText({
@@ -307,12 +311,12 @@ server <- function(input, output, session) {
   # Cultivation media plot
   output$plot_media <- renderPlotly({
     p_media <- media() %>%
-      filter(!is.na(media) & n > 1) %>%
-      ggplot(aes(x = media, y = n)) +
-      geom_segment(aes(x = media, xend = media, y = 0, yend = n)) +
+      filter(!is.na(best_media) & n > 1) %>%
+      ggplot(aes(x = best_media, y = n)) +
+      geom_segment(aes(x = best_media, xend = best_media, y = 0, yend = n)) +
       geom_point(size = 2, color = "#28a745") +
       coord_flip() +
-      labs(x = "", y = "Media occurrence") +
+      labs(x = "", y = "Best media occurrence") +
       theme_cowplot()
     ggplotly(p_media)
   })
