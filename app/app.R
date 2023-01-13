@@ -27,6 +27,14 @@ ui <- navbarPage(
       ':target:before { content: "";  display: block;  height: 80px;  margin: -20px 0 0;}'
     ),
   position = "fixed-top",
+  header = list(
+    tags$head(tags$style(
+      HTML("
+      .table.dataTable tbody td.active, .table.dataTable tbody tr.active td {
+            background-color: var(--bs-success)!important;}
+      ")
+    ))
+  ),
   footer = list(
     column(hr(),
       p("hibc. Copyright Clavel Lab (2023)", ),
