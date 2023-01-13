@@ -4,6 +4,11 @@ library(DT)
 library(tidyverse)
 library(cowplot)
 library(plotly)
+library(thematic)
+library(showtext)
+
+thematic_shiny(font = "auto")
+
 
 # Load the hibc table
 hibc_data <- read_delim("2023-01-12.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
