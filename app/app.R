@@ -161,23 +161,23 @@ ui <- navbarPage(
       tags$style(type = "text/css", "body {padding-top: 70px;}"),
       h4("Assemblies of the hibc isolates"),
       p("Explore the genome assemblies of the isolates via the two interactive plots and the table below."),
-    ),
-    fluidRow(
-      column(
-        width = 4, offset = 2, align = "center",
-        tags$style(type = "text/css", "body {padding-top: 70px;}"),
-        h4("Completion and contamination"),
-        br(),
-        plotlyOutput("plot_compl_contam", width = "400px", height = "400px")
+    layout_column_wrap(
+      width = 1/2,
+      card(
+        height = 400, full_screen = T,
+        card_header("Completion and contamination"),
+        card_body_fill(
+        plotlyOutput("plot_compl_contam", height = "400px")
+        )
       ),
-      column(
-        width = 4, align = "center",
-        tags$style(type = "text/css", "body {padding-top: 70px;}"),
-        h4("Genome size and assembly fragmentation"),
-        br(),
-        plotlyOutput("plot_N50_genome_size", width = "400px", height = "400px")
+      card(
+        height = 400, full_screen = T,
+        card_header("Genome size and assembly fragmentation"),
+        card_body_fill(
+        plotlyOutput("plot_N50_genome_size", height = "400px")
+        )
       )
-    ),
+    )),
     br(),
     column(
       width = 8, offset = 2, align = "center",
