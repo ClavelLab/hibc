@@ -8,9 +8,21 @@ library(thematic)
 library(showtext)
 library(shinycssloaders)
 library(rclipboard)
+library(aws.s3)
 
 thematic_shiny(font = "auto")
 options(spinner.type = 8, spinner.color = "#28a745")
+
+# Fetch the authentification credentials for Coscine
+# src: https://appsilon.github.io/rhino/articles/how-to/manage-secrets-and-environments.html
+coscine_read <- Sys.getenv("COSCINE_READ_TOKEN")
+coscine_secret <- Sys.getenv("COSCINE_SECRET_TOKEN")
+if (coscine_read == "" | coscine_secret == "") {
+  warning(
+    "No Coscine credentials in .Renviron",
+    "Please provide COSCINE_READ_TOKEN and COSCINE_SECRET_TOKEN"
+  )
+}
 
 # Load the hibc table
 hibc_data <- read_delim("2023-01-13.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
@@ -309,7 +321,8 @@ ui <- navbarPage(
           card_body(
             uiOutput("clip_md5"),
             br(),
-            verbatimTextOutput("md5_genome"), br()
+            verbatimTextOutput("md5_genome"), br(),
+            downloadButton("download_genome", "Download the genome")
           )
         )
       )
@@ -669,6 +682,20 @@ server <- function(input, output, session) {
   observeEvent(input$btn_clip_md5, {
     showNotification("FASTA md5sum copied.", type = "default")
   })
+  output$download_genome <- downloadHandler(
+    filename = "test-download.txt",
+    content = function(file) {
+      save_object(
+        object = "coscine-sandbox.txt", file = file,
+        bucket = gsub("read_", "", coscine_read),
+        region = "", # because non-AWS
+        base_url = "coscine-s3-01.s3.fds.rwth-aachen.de:9021",
+        key = coscine_read,
+        secret = coscine_secret
+      )
+    },
+    contentType = "text/plain"
+  )
   # Navigation
   #
   observeEvent(input$viewDetail, {
