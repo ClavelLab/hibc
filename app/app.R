@@ -6,9 +6,10 @@ library(cowplot)
 library(plotly)
 library(thematic)
 library(showtext)
+library(shinycssloaders)
 
 thematic_shiny(font = "auto")
-
+options(spinner.type = 8, spinner.color = "#519c00")
 
 # Load the hibc table
 hibc_data <- read_delim("2023-01-13.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
@@ -154,7 +155,7 @@ ui <- navbarPage(
       column(
         width = 4, align = "center",
         tags$style(type = "text/css", "body {padding-top: 70px;}"),
-        plotlyOutput("plot_media", height = "400px")
+        plotlyOutput("plot_media", height = "400px") %>% withSpinner()
       )
     ),
     column(
@@ -174,17 +175,17 @@ ui <- navbarPage(
       layout_column_wrap(
         width = 1 / 2,
         card(
-          height = 400, full_screen = T,
+          height = 500, full_screen = T,
           card_header("Completion and contamination"),
           card_body_fill(
-            plotlyOutput("plot_compl_contam", height = "400px")
+            plotlyOutput("plot_compl_contam", height = "400px") %>% withSpinner()
           )
         ),
         card(
-          height = 400, full_screen = T,
+          height = 500, full_screen = T,
           card_header("Genome size and assembly fragmentation"),
           card_body_fill(
-            plotlyOutput("plot_N50_genome_size", height = "400px")
+            plotlyOutput("plot_N50_genome_size", height = "400px") %>% withSpinner()
           )
         )
       )
@@ -193,7 +194,7 @@ ui <- navbarPage(
     column(
       width = 8, offset = 2, align = "center",
       fluidRow(
-        DT::dataTableOutput("genome")
+        DT::dataTableOutput("genome") %>% withSpinner()
       )
     )
   ),
