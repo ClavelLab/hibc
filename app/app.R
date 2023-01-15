@@ -200,30 +200,72 @@ ui <- navbarPage(
   ),
   tabPanel("Details isolate",
     value = "detail",
-    fluidRow(
-      column(
-        width = 8, offset = 2,
-        h2("Details on the hibc isolate", textOutput("isolate_id", inline = T),
-          id = "isolate-details", align = "center"
+    column(
+      width = 8, offset = 2,
+      h2("Details on the HiBC isolate", textOutput("isolate_id", inline = T),
+        id = "isolate-details", align = "center"
+      ),
+      h4("Taxonomy and isolation metadata"),
+      layout_column_wrap(
+        width = "300px",
+        card(
+          class = "border-success",
+          card_header("Taxonomy", align = "center"),
+          card_body(
+            p(
+              "The taxonomy of the isolate", textOutput("details_dsm_number", inline = T),
+              "is:"
+            ),
+            uiOutput("details_taxonomy")
+          )
         ),
-
-        # h3("Interaction name:", textOutput("int_name", inline = T), align = "center"),
-        h4("Genome assembly"),
-        column(width = 10, offset = 1, tableOutput("details_assembly")),
-        # h4("Taxonomy and specificity"),
-        # tags$ul(
-        #   tags$li(textOutput("int_tax")),
-        #   tags$li(textOutput("int_specificity"))
-        # ),
-        # h4("Interaction features"),
-        # fluidRow(
-        #   column(width = 5, offset = 1, h5("Dependencies"), tableOutput("dependencies_table")),
-        #   column(width = 5, offset = 1, h5("Site"), tableOutput("site_table"))
-        # ),
-        # fluidRow(
-        #   column(width = 5, offset = 1, h5("Habitat"), tableOutput("habitat_table")),
-        #   column(width = 5, offset = 1, h5("Compounds"), tableOutput("compounds_table"))
-        # )
+        card(
+          class = "border-info", align = "center",
+          card_header("Cultivation"),
+          card_body(
+            tableOutput("details_cultivation")
+          )
+        ),
+        card(
+          class = "border-warning", align = "center",
+          card_header("Isolation"),
+          card_body(
+            tableOutput("details_isolation")
+          )
+        )
+      ),
+      h4("Genome assembly metadata"),
+      layout_column_wrap(
+        width = "300px",
+        card(
+          class = "border-success", align = "center",
+          card_header("Genome"),
+          card_body(
+            tags$ul(
+              tags$li("completion, contamination summaarised"),
+              tags$li("coverage"),
+              tags$li("quality type")
+            )
+          )
+        ),
+        card(
+          class = "border-danger", align = "center",
+          card_header("Assembly"),
+          card_body(
+            tableOutput("details_assembly")
+          )
+        ),
+        card(
+          class = "border-primary", align = "center",
+          card_header("Workflow"),
+          card_body(
+            tags$ul(
+              tags$li("workflow version and date"),
+              tags$li("assembly software"),
+              tags$li("md5sums and download button")
+            )
+          )
+        )
       )
     )
   )
@@ -389,14 +431,70 @@ server <- function(input, output, session) {
   output$contamination <- renderText({
     preview_hibc()[input$taxonomy_rows_selected, ] %>% pull("contam_score")
   })
-
-  output$details_assembly <- renderTable(
+  output$details_dsm_number <- renderText({
+    preview_hibc()[input$taxonomy_rows_selected, ] %>%
+      select(StrainID, `DSM no.`) %>%
+      mutate(text = if_else(is.na(`DSM no.`),
+        StrainID, paste0(StrainID, " (DSM", `DSM no.`, ")")
+      )) %>%
+      pull(text)
+  })
+  output$details_taxonomy <- renderUI({
+    # This function should not be ran before a row is selected.
+    req(input$taxonomy_rows_selected)
+    # Taxonomy information as list
+    tax_list <- preview_hibc() %>%
+      .[input$taxonomy_rows_selected, ] %>%
+      select(Phylum, Family, Species, `DSM no.`) %>%
+      as.list()
+    tagList(
+      tags$ul(
+        tags$li("Phylum:", tax_list[["Phylum"]]),
+        tags$ul(tags$li("Family:", tax_list[["Family"]])),
+        tags$ul(tags$ul(tags$li("Species:", tags$em(tax_list[["Species"]]))))
+      )
+    )
+  })
+  output$details_cultivation <- renderTable(
     {
       # This function should not be ran before a row is selected.
       req(input$taxonomy_rows_selected)
       #
       preview_hibc() %>%
-        select(genome_length, number_contig, N50, number_contig_below_1kb, max_contig_length) %>%
+        .[input$taxonomy_rows_selected, ] %>%
+        select(`Growth atm.`, `Medium for best growth`, `Incubation time`, `Risk Group`) %>%
+        t()
+    },
+    rownames = T,
+    colnames = F,
+    na = "",
+    hover = T,
+    spacing = "xs",
+    digits = 0
+  )
+  output$details_cultivation <- renderTable(
+    {
+      # This function should not be ran before a row is selected.
+      req(input$taxonomy_rows_selected)
+      #
+      preview_hibc() %>%
+        .[input$taxonomy_rows_selected, ] %>%
+        select(`Growth atm.`, `Medium for best growth`, `Incubation time`, `Risk Group`) %>%
+        t()
+    },
+    rownames = T,
+    colnames = F,
+    na = "",
+    hover = T,
+    spacing = "xs",
+  )
+  output$details_isolation <- renderTable(
+    {
+      # This function should not be ran before a row is selected.
+      req(input$taxonomy_rows_selected)
+      #
+      preview_hibc() %>%
+        select(`Geographic location`, `Donor type`, `Gut region`, `Date of isolation (JJJJ-MM-DD)`) %>%
         .[input$taxonomy_rows_selected, ] %>%
         t()
     },
@@ -406,6 +504,24 @@ server <- function(input, output, session) {
     hover = T,
     spacing = "xs",
     digits = 0
+  )
+  output$details_assembly <- renderTable(
+    {
+      # This function should not be ran before a row is selected.
+      req(input$taxonomy_rows_selected)
+      #
+      preview_hibc() %>%
+        select(genome_length, N50, number_contig, number_contig_below_1kb, max_contig_length) %>%
+        .[input$taxonomy_rows_selected, ] %>%
+        t()
+    },
+    rownames = T,
+    colnames = F,
+    na = "",
+    hover = T,
+    spacing = "xs",
+    digits = 0,
+    format.args = list(big.mark = " ")
   )
   # Navigation
   #
