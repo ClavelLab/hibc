@@ -205,20 +205,14 @@ ui <- navbarPage(
       h2("Details on the HiBC isolate", textOutput("isolate_id", inline = T),
         id = "isolate-details", align = "center"
       ),
-      h4("Taxonomy and isolation metadata"),
+      h4("Taxonomy"),
+      p(
+        "The isolate", textOutput("details_dsm_number", inline = T),
+        "belongs to:", uiOutput("details_taxonomy", inline = T)
+      ),
+      h4("Cultivation and isolation metadata"),
       layout_column_wrap(
         width = "300px",
-        card(
-          class = "border-success",
-          card_header("Taxonomy", align = "center"),
-          card_body(
-            p(
-              "The taxonomy of the isolate", textOutput("details_dsm_number", inline = T),
-              "is:"
-            ),
-            uiOutput("details_taxonomy")
-          )
-        ),
         card(
           class = "border-info", align = "center",
           card_header("Cultivation"),
@@ -447,12 +441,10 @@ server <- function(input, output, session) {
       .[input$taxonomy_rows_selected, ] %>%
       select(Phylum, Family, Species, `DSM no.`) %>%
       as.list()
-    tagList(
-      tags$ul(
-        tags$li("Phylum:", tax_list[["Phylum"]]),
-        tags$ul(tags$li("Family:", tax_list[["Family"]])),
-        tags$ul(tags$ul(tags$li("Species:", tags$em(tax_list[["Species"]]))))
-      )
+    tags$span(
+      tax_list[["Phylum"]], "(Phylum),",
+      tax_list[["Family"]], "(Family),",
+      tags$em(tax_list[["Species"]], class = "text-success"), "(Species)."
     )
   })
   output$details_cultivation <- renderTable(
@@ -469,24 +461,7 @@ server <- function(input, output, session) {
     colnames = F,
     na = "",
     hover = T,
-    spacing = "xs",
-    digits = 0
-  )
-  output$details_cultivation <- renderTable(
-    {
-      # This function should not be ran before a row is selected.
-      req(input$taxonomy_rows_selected)
-      #
-      preview_hibc() %>%
-        .[input$taxonomy_rows_selected, ] %>%
-        select(`Growth atm.`, `Medium for best growth`, `Incubation time`, `Risk Group`) %>%
-        t()
-    },
-    rownames = T,
-    colnames = F,
-    na = "",
-    hover = T,
-    spacing = "xs",
+    spacing = "s",
   )
   output$details_isolation <- renderTable(
     {
@@ -495,6 +470,8 @@ server <- function(input, output, session) {
       #
       preview_hibc() %>%
         select(`Geographic location`, `Donor type`, `Gut region`, `Date of isolation (JJJJ-MM-DD)`) %>%
+        rename(`Isolation date` = `Date of isolation (JJJJ-MM-DD)`) %>%
+        relocate(`Gut region`, `Donor type`, `Isolation date`, `Geographic location`) %>%
         .[input$taxonomy_rows_selected, ] %>%
         t()
     },
@@ -502,7 +479,7 @@ server <- function(input, output, session) {
     colnames = F,
     na = "",
     hover = T,
-    spacing = "xs",
+    spacing = "s",
     digits = 0
   )
   output$details_assembly <- renderTable(
