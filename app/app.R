@@ -232,19 +232,15 @@ ui <- navbarPage(
       layout_column_wrap(
         width = "300px",
         card(
-          class = "border-success", align = "center",
-          card_header("Genome"),
+          class = "border-success",
+          card_header("Genome quality", align = "center"),
           card_body(
-            tags$ul(
-              tags$li("completion, contamination summaarised"),
-              tags$li("coverage"),
-              tags$li("quality type")
-            )
+            textOutput("details_genome_quality", inline = T),
           )
         ),
         card(
           class = "border-danger", align = "center",
-          card_header("Assembly"),
+          card_header("Assembly details"),
           card_body(
             tableOutput("details_assembly")
           )
@@ -482,6 +478,23 @@ server <- function(input, output, session) {
     spacing = "s",
     digits = 0
   )
+  output$details_genome_quality <- renderText({
+    # This function should not be ran before a row is selected.
+    req(input$taxonomy_rows_selected)
+    #
+    foo <- preview_hibc() %>%
+      .[input$taxonomy_rows_selected, ] %>%
+      as.list()
+    str_glue(
+      "The genome is deemed {completion}% complete and ",
+      "{contamination}% contaminated according to {tool} estimation.\n",
+      "The coverage is {coverage}x.",
+      completion = foo[["compl_score"]],
+      contamination = foo[["contam_score"]],
+      tool = unlist(unique(foo[c("compl_software", "contam_software")])),
+      coverage = foo[["coverage"]]
+    )
+  })
   output$details_assembly <- renderTable(
     {
       # This function should not be ran before a row is selected.
