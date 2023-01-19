@@ -15,6 +15,24 @@ options(spinner.type = 8, spinner.color = "#519c00")
 hibc_data <- read_delim("2023-01-13.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
   arrange(Species)
 
+
+translate <- function(vec, translator) {
+  return(translator[vec] %>% unname())
+}
+
+qual_flags_translation <- c(
+  "are_contigs_less_100" = "more than 100 contigs",
+  "is_compl_grtr_90" = "completion below 90%",
+  "is_contam_less_5" = "contamination above 5%",
+  "is_coverage_grtr_10" = "coverage below 5x",
+  "is_N50_grtr_25kb" = "N50 below 25kb",
+  "is_max_contig_grtr_100kb" = "longest contig is below 100kb",
+  "is_trnas_grtr_18" = "tRNAs unique number is below 18",
+  "is_SSU_grtr_0" = "16S rRNA gene (SSU) was not detected",
+  "is_LSU_grtr_0" = "23S rRNA gene (LSU) was not detected",
+  "is_5S_grtr_0" = "5S rRNA gene was not detected"
+)
+
 # Define UI
 ui <- navbarPage(
   lang = "en",
@@ -482,17 +500,33 @@ server <- function(input, output, session) {
     # This function should not be ran before a row is selected.
     req(input$taxonomy_rows_selected)
     #
-    foo <- preview_hibc() %>%
+    selected_list <- preview_hibc() %>%
       .[input$taxonomy_rows_selected, ] %>%
       as.list()
+    assembly_qual <- selected_list[["assembly_qual"]] %>%
+      stringr::str_split(., "[:,]") %>%
+      unlist() %>%
+      str_trim()
+    assembly_qual_statement <- if_else(
+      length(assembly_qual) == 1,
+      str_glue("The genome is a high-quality draft"),
+      assembly_qual[-1] %>%
+        translate(translator = qual_flags_translation) %>%
+        str_flatten_comma() %>%
+        str_glue("The genome could be a high-quality draft but is has: {flags}.",
+          flags = .
+        )
+    )
     str_glue(
-      "The genome is deemed {completion}% complete and ",
-      "{contamination}% contaminated according to {tool} estimation.\n",
-      "The coverage is {coverage}x.",
-      completion = foo[["compl_score"]],
-      contamination = foo[["contam_score"]],
-      tool = unlist(unique(foo[c("compl_software", "contam_software")])),
-      coverage = foo[["coverage"]]
+      "The genome is {completion}% complete and ",
+      "{contamination}% contaminated according to {tool} estimation. ",
+      "The coverage is {coverage}x. ",
+      "{statement}",
+      completion = selected_list[["compl_score"]],
+      contamination = selected_list[["contam_score"]],
+      tool = unlist(unique(selected_list[c("compl_software", "contam_software")])),
+      coverage = selected_list[["coverage"]],
+      statement = assembly_qual_statement
     )
   })
   output$details_assembly <- renderTable(
