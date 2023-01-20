@@ -7,6 +7,7 @@ library(plotly)
 library(thematic)
 library(showtext)
 library(shinycssloaders)
+library(rclipboard)
 
 thematic_shiny(font = "auto")
 options(spinner.type = 8, spinner.color = "#28a745")
@@ -243,13 +244,13 @@ ui <- navbarPage(
           )
         )
       ),
-      h4("Genome assembly metadata"),
+      h4("Genome assembly and metadata"),
       textOutput("details_genome_quality"),
       br(),
       layout_column_wrap(
-        width = "300px",
+        width = "300px", fill = F,
         card(
-          class = "border-success", align = "center",
+          class = "border-secondary", align = "center",
           card_header("Genome quality"),
           card_body(
             tableOutput("details_tab_genome_quality")
@@ -261,16 +262,49 @@ ui <- navbarPage(
           card_body(
             tableOutput("details_assembly")
           )
+        )
+      ),
+      br(),
+      layout_column_wrap(
+        width = "300px", fill = F,
+        card(
+          class = "border-warning", align = "center",
+          card_header("Genomic features"),
+          card_body(
+            tableOutput("details_features")
+          )
         ),
         card(
           class = "border-primary", align = "center",
-          card_header("Workflow"),
+          card_header(tags$a(href = "https://git.rwth-aachen.de/clavellab/genome-assembly", "Workflow")),
           card_body(
-            tags$ul(
-              tags$li("workflow version and date"),
-              tags$li("assembly software"),
-              tags$li("md5sums and download button")
+            tableOutput("details_workflow")
+          )
+        )
+      ),
+      h4("Genome and 16S rRNA sequences"),
+      rclipboardSetup(),
+      layout_column_wrap(
+        width = "400px", align = "center",
+        card(
+          class = "border-danger", align = "center",
+          card_header("16S rRNA gene sequence"),
+          card_body(
+            uiOutput("clip_16S", align = "center"),
+            br(),
+            div(
+              align = "left",
+              verbatimTextOutput("details_16S_sequence")
             )
+          )
+        ),
+        card(
+          class = "border-info", align = "center",
+          card_header("Download FASTA"),
+          card_body(
+            uiOutput("clip_md5"),
+            br(),
+            verbatimTextOutput("md5_genome"), br()
           )
         )
       )
@@ -435,9 +469,12 @@ server <- function(input, output, session) {
     )
   })
 
-  output$contamination <- renderText({
-    preview_hibc()[input$taxonomy_rows_selected, ] %>% pull("contam_score")
+  md5_genome <- reactive({
+    preview_hibc()[input$taxonomy_rows_selected, ] %>% pull("genome_md5")
   })
+
+  output$md5_genome <- renderText(md5_genome())
+
   output$details_dsm_number <- renderText({
     preview_hibc()[input$taxonomy_rows_selected, ] %>%
       select(StrainID, `DSM no.`) %>%
@@ -554,6 +591,79 @@ server <- function(input, output, session) {
     digits = 0,
     format.args = list(big.mark = " ")
   )
+  output$details_workflow <- renderTable(
+    {
+      # This function should not be ran before a row is selected.
+      req(input$taxonomy_rows_selected)
+      #
+      preview_hibc() %>%
+        select(workflow_version, assembly_date, sequencer, assembly_software) %>%
+        .[input$taxonomy_rows_selected, ] %>%
+        t()
+    },
+    rownames = T,
+    colnames = F,
+    na = "",
+    hover = T,
+    spacing = "xs",
+    digits = 0,
+    align = "lr",
+    format.args = list(big.mark = " ")
+  )
+  output$details_features <- renderTable(
+    {
+      # This function should not be ran before a row is selected.
+      req(input$taxonomy_rows_selected)
+      #
+      preview_hibc() %>%
+        .[input$taxonomy_rows_selected, ] %>%
+        select(plasmid_length, trnas, trna_ext_software) %>%
+        mutate(plasmid_length = str_split_1(plasmid_length, ";") %>%
+          sapply(., function(x) prettyNum(x, big.mark = " "), USE.NAMES = F) %>%
+          str_glue("{size} nt", size = .) %>%
+          str_flatten_comma(last = " and ")) %>%
+        t()
+    },
+    rownames = T,
+    colnames = F,
+    na = "",
+    hover = T,
+    spacing = "xs",
+    digits = 0,
+    align = "lr",
+    format.args = list(big.mark = " ")
+  )
+  seq16S <- reactive({
+    # This function should not be ran before a row is selected.
+    req(input$taxonomy_rows_selected)
+    #
+    preview_hibc() %>%
+      .[input$taxonomy_rows_selected, ] %>%
+      select(StrainID, Species, `16S sequence`) %>%
+      str_glue_data(">{StrainID}_16S_Sanger {Species}\n{`16S sequence`}")
+  })
+  output$details_16S_sequence <- renderText({
+    seq16S()
+  })
+  # Copy clipboard buttons
+  output$clip_16S <- renderUI({
+    rclipButton("btn_clip_16S",
+      label = "Copy sequence", icon = icon("clipboard"),
+      class = "btn-danger", clipText = seq16S()
+    )
+  })
+  output$clip_md5 <- renderUI({
+    rclipButton("btn_clip_md5",
+      label = "Copy FASTA md5sum", icon = icon("clipboard"),
+      class = "btn-secondary", clipText = md5_genome()
+    )
+  })
+  observeEvent(input$btn_clip_16S, {
+    showNotification("16S rRNA sequence copied.", type = "default")
+  })
+  observeEvent(input$btn_clip_md5, {
+    showNotification("FASTA md5sum copied.", type = "default")
+  })
   # Navigation
   #
   observeEvent(input$viewDetail, {
