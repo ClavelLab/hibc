@@ -9,7 +9,7 @@ library(showtext)
 library(shinycssloaders)
 
 thematic_shiny(font = "auto")
-options(spinner.type = 8, spinner.color = "#519c00")
+options(spinner.type = 8, spinner.color = "#28a745")
 
 # Load the hibc table
 hibc_data <- read_delim("2023-01-13.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
@@ -36,18 +36,19 @@ qual_flags_translation <- c(
 # Define UI
 ui <- navbarPage(
   lang = "en",
-  title = span(tags$img(src = "hibc.png", height = 40), "hibc"),
+  title = span(tags$img(src = "hibc.png", height = 40), "HiBC"),
   windowTitle = "HiBC: The Human Intestinal Bacterial Collection",
   theme = bs_theme(
     version = 5,
-    bootswatch = "sketchy",
-    # primary = "#519c00",
-    # secondary = "#F2BB05",
-    # success = "#F0F0C9",
-    # warning = "#CF5C36",
-    # info = "#555358",
-    # base_font = font_google("Source Sans Pro"),
-    # code_font = font_google("Source Code Pro")
+    bootswatch = "litera",
+    primary = "#28a745",
+    secondary = "#F0F0C9",
+    success = "#28a745",
+    warning = "#ffc107",
+    danger = "#dc3545",
+    info = "#17a2b8",
+    base_font = font_google("Atkinson Hyperlegible"),
+    code_font = font_google("Source Code Pro")
   ) %>%
     bs_add_rules(
       ':target:before { content: "";  display: block;  height: 80px;  margin: -20px 0 0;}'
@@ -63,7 +64,7 @@ ui <- navbarPage(
   ),
   footer = list(
     column(hr(),
-      p("hibc. Copyright Clavel Lab (2023)", ),
+      p("HiBC. Copyright Clavel Lab (2023)", ),
       align = "center", width = 12
     )
   ),
@@ -97,24 +98,30 @@ ui <- navbarPage(
       ),
       br(),
       fluidRow(
-        h2("About hibc", align = "center"),
-        p(
-          "This is a collection of bacterial strains, isolated from the human gut for which 16S rRNA gene sequences, genome sequences and cultivation conditions are made available to the research community.",
-          "Many of these isolates are novel at different taxonomic rank."
+        column(
+          width = 6,
+          h2("About HiBC", align = "center"),
+          p(
+            "This is a collection of bacterial strains, isolated from the human gut for which 16S rRNA gene sequences, genome sequences and cultivation conditions are made available to the research community.",
+            "Many of these isolates are novel at different taxonomic rank."
+          ),
+          p(
+            "If you make use of the HiBC resource, please cite our work as:",
+            tags$blockquote("Hitch TCA and Masson J et al. (2023)", "The Human Intestinal Bacterial Collection. Preprint")
+          )
         ),
-        h2("How to navigate the resource", align = "center"),
-        p("We provide different lenses through which researchers can explore interactively the hibc:"),
-        tags$ul(
-          tags$li("the taxonomy of isolates"),
-          tags$li("the cultivation metadata of the isolates"),
-          tags$li("the genomes metadata of the isolates")
+        column(
+          width = 6,
+          h2("How to navigate the resource", align = "center"),
+          p("We provide different lenses through which researchers can explore interactively the HiBC:"),
+          tags$ul(
+            tags$li("the taxonomy of isolates"),
+            tags$li("the cultivation metadata of the isolates"),
+            tags$li("the genomes metadata of the isolates")
+          ),
+          align = "left"
         ),
-        p(
-          "If you make use of the hibc resource, please cite our work as:",
-          tags$blockquote("Hitch TCA and Masson J et al.")
-        ),
-        align = "left"
-      ),
+      )
     )
   ),
   tabPanel(
@@ -123,7 +130,7 @@ ui <- navbarPage(
       column(
         width = 4, offset = 2,
         tags$style(type = "text/css", "body {padding-top: 70px;}"),
-        h4("Taxonomy of the hibc isolates"),
+        h4("Taxonomy of the HiBC isolates"),
         p("Browse through the complete list of the isolates in the table below."),
         p(
           "If you want to have more information on a specific isolate,",
@@ -155,7 +162,7 @@ ui <- navbarPage(
       column(
         width = 4, offset = 2,
         tags$style(type = "text/css", "body {padding-top: 70px;}"),
-        h4("Cultivation of the hibc isolates"),
+        h4("Cultivation of the HiBC isolates"),
         p(
           "Browse through the metadata related to the cultivation of the isolates",
           "in the table below and in the interactive figure on the left."
@@ -188,7 +195,7 @@ ui <- navbarPage(
     column(
       width = 8, offset = 2, align = "center",
       tags$style(type = "text/css", "body {padding-top: 70px;}"),
-      h4("Assemblies of the hibc isolates"),
+      h4("Assemblies of the HiBC isolates"),
       p("Explore the genome assemblies of the isolates via the two interactive plots and the table below."),
       layout_column_wrap(
         width = 1 / 2,
