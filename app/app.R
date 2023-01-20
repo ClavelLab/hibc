@@ -237,7 +237,7 @@ ui <- navbarPage(
       ),
       h4("Cultivation and isolation metadata"),
       layout_column_wrap(
-        width = "300px",
+        width = "300px", fill = F,
         card(
           class = "border-info", align = "center",
           card_header("Cultivation"),
@@ -254,13 +254,15 @@ ui <- navbarPage(
         )
       ),
       h4("Genome assembly metadata"),
+      textOutput("details_genome_quality"),
+      br(),
       layout_column_wrap(
         width = "300px",
         card(
-          class = "border-success",
-          card_header("Genome quality", align = "center"),
+          class = "border-success", align = "center",
+          card_header("Genome quality"),
           card_body(
-            textOutput("details_genome_quality", inline = T),
+            tableOutput("details_tab_genome_quality")
           )
         ),
         card(
@@ -507,14 +509,14 @@ server <- function(input, output, session) {
     # This function should not be ran before a row is selected.
     req(input$taxonomy_rows_selected)
     #
-    selected_list <- preview_hibc() %>%
+    assembly_qual <- preview_hibc() %>%
       .[input$taxonomy_rows_selected, ] %>%
-      as.list()
-    assembly_qual <- selected_list[["assembly_qual"]] %>%
+      pull("assembly_qual") %>%
       stringr::str_split(., "[:,]") %>%
       unlist() %>%
       str_trim()
-    assembly_qual_statement <- if_else(
+    # Return the adequate statement
+    if_else(
       length(assembly_qual) == 1,
       str_glue("The genome is a high-quality draft"),
       assembly_qual[-1] %>%
@@ -524,25 +526,33 @@ server <- function(input, output, session) {
           flags = .
         )
     )
-    str_glue(
-      "The genome is {completion}% complete and ",
-      "{contamination}% contaminated according to {tool} estimation. ",
-      "The coverage is {coverage}x. ",
-      "{statement}",
-      completion = selected_list[["compl_score"]],
-      contamination = selected_list[["contam_score"]],
-      tool = unlist(unique(selected_list[c("compl_software", "contam_software")])),
-      coverage = selected_list[["coverage"]],
-      statement = assembly_qual_statement
-    )
   })
+  output$details_tab_genome_quality <- renderTable(
+    {
+      # This function should not be ran before a row is selected.
+      req(input$taxonomy_rows_selected)
+      #
+      preview_hibc() %>%
+        select(coverage, compl_score, compl_software, contam_score, contam_software) %>%
+        .[input$taxonomy_rows_selected, ] %>%
+        t()
+    },
+    rownames = T,
+    colnames = F,
+    na = "",
+    hover = T,
+    spacing = "xs",
+    digits = 0,
+    align = "lr",
+    format.args = list(big.mark = " ")
+  )
   output$details_assembly <- renderTable(
     {
       # This function should not be ran before a row is selected.
       req(input$taxonomy_rows_selected)
       #
       preview_hibc() %>%
-        select(genome_length, N50, number_contig, number_contig_below_1kb, max_contig_length) %>%
+        select(genome_length, max_contig_length, N50, number_contig, number_contig_below_1kb) %>%
         .[input$taxonomy_rows_selected, ] %>%
         t()
     },
