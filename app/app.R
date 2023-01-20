@@ -64,7 +64,7 @@ ui <- navbarPage(
   ),
   footer = list(
     column(hr(),
-      p("HiBC. Copyright Clavel Lab (2023)", ),
+      "HiBC. Copyright Clavel Lab (2023)",
       align = "center", width = 12
     )
   ),
@@ -101,19 +101,16 @@ ui <- navbarPage(
         column(
           width = 6,
           h2("About HiBC", align = "center"),
-          p(
-            "This is a collection of bacterial strains, isolated from the human gut for which 16S rRNA gene sequences, genome sequences and cultivation conditions are made available to the research community.",
-            "Many of these isolates are novel at different taxonomic rank."
-          ),
-          p(
-            "If you make use of the HiBC resource, please cite our work as:",
-            tags$blockquote("Hitch TCA and Masson J et al. (2023)", "The Human Intestinal Bacterial Collection. Preprint")
-          )
+          "This is a collection of bacterial strains, isolated from the human gut for which 16S rRNA gene sequences, genome sequences and cultivation conditions are made available to the research community.",
+          "Many of these isolates are novel at different taxonomic rank.",
+          br(), br(),
+          "If you make use of the HiBC resource, please cite our work as:",
+          tags$blockquote("Hitch TCA and Masson J et al. (2023)", "The Human Intestinal Bacterial Collection. Preprint")
         ),
         column(
           width = 6,
           h2("How to navigate the resource", align = "center"),
-          p("We provide different lenses through which researchers can explore interactively the HiBC:"),
+          "We provide different lenses through which researchers can explore interactively the HiBC:",
           tags$ul(
             tags$li("the taxonomy of isolates"),
             tags$li("the cultivation metadata of the isolates"),
@@ -131,11 +128,10 @@ ui <- navbarPage(
         width = 4, offset = 2,
         tags$style(type = "text/css", "body {padding-top: 70px;}"),
         h4("Taxonomy of the HiBC isolates"),
-        p("Browse through the complete list of the isolates in the table below."),
-        p(
-          "If you want to have more information on a specific isolate,",
-          "please select your isolate in the table and click on the button on the right.",
-        ),
+        "Browse through the complete list of the isolates in the table below.",
+        br(), br(),
+        "If you want to have more information on a specific isolate,",
+        "please select your isolate in the table and click on the button on the right.",
       ),
       column(
         width = 4, align = "center",
@@ -163,19 +159,15 @@ ui <- navbarPage(
         width = 4, offset = 2,
         tags$style(type = "text/css", "body {padding-top: 70px;}"),
         h4("Cultivation of the HiBC isolates"),
-        p(
-          "Browse through the metadata related to the cultivation of the isolates",
-          "in the table below and in the interactive figure on the left."
-        ),
-        p(
-          "Note that when multiple cultivation media are indicated,",
-          "the media for the best growth is the left-most media."
-        ),
-        p(
-          "The figure indicates the most used media for the best growth of the isolates",
-          textOutput("no_media", inline = T), "The media used only once are not shown",
-          textOutput("no_media_once", inline = T)
-        )
+        "Browse through the metadata related to the cultivation of the isolates",
+        "in the table below and in the interactive figure on the left.",
+        br(), br(),
+        "Note that when multiple cultivation media are indicated,",
+        "the media for the best growth is the left-most media.",
+        br(), br(),
+        "The figure indicates the most used media for the best growth of the isolates",
+        textOutput("no_media", inline = T), "The media used only once are not shown",
+        textOutput("no_media_once", inline = T)
       ),
       column(
         width = 4, align = "center",
@@ -196,7 +188,7 @@ ui <- navbarPage(
       width = 8, offset = 2, align = "center",
       tags$style(type = "text/css", "body {padding-top: 70px;}"),
       h4("Assemblies of the HiBC isolates"),
-      p("Explore the genome assemblies of the isolates via the two interactive plots and the table below."),
+      "Explore the genome assemblies of the isolates via the two interactive plots and the table below.",
       layout_column_wrap(
         width = 1 / 2,
         card(
@@ -231,10 +223,8 @@ ui <- navbarPage(
         id = "isolate-details", align = "center"
       ),
       h4("Taxonomy"),
-      p(
-        "The isolate", textOutput("details_dsm_number", inline = T),
-        "belongs to:", uiOutput("details_taxonomy", inline = T)
-      ),
+      "The isolate", textOutput("details_dsm_number", inline = T),
+      "belongs to:", uiOutput("details_taxonomy", inline = T),
       h4("Cultivation and isolation metadata"),
       layout_column_wrap(
         width = "300px", fill = F,
