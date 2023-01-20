@@ -111,11 +111,15 @@ ui <- navbarPage(
         column(
           width = 6,
           h2("How to navigate the resource", align = "center"),
-          "We provide different lenses through which researchers can explore interactively the HiBC:",
+          "We provide different lenses (i.e., tabs at the top of the page) through which researchers can explore interactively the HiBC:",
           tags$ul(
             tags$li("the taxonomy of isolates"),
             tags$li("the cultivation metadata of the isolates"),
             tags$li("the genomes metadata of the isolates")
+          ),
+          helpText(
+            "Tip: You can start by clicking on the Taxonomy tab,",
+            "select an isolate in the table there, and click on the Details tab."
           ),
           align = "left"
         ),
@@ -190,6 +194,7 @@ ui <- navbarPage(
       tags$style(type = "text/css", "body {padding-top: 70px;}"),
       h4("Assemblies of the HiBC isolates"),
       "Explore the genome assemblies of the isolates via the two interactive plots and the table below.",
+      br(), br(),
       layout_column_wrap(
         width = 1 / 2,
         card(
