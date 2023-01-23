@@ -3,7 +3,7 @@ ARG R_REPOS="https://cran.microsoft.com/snapshot/2023-01-18/"
 
 FROM rocker/shiny-verse:4.2
 
-RUN install2.r --error --skipinstalled cowplot devtools shiny DT plotly bslib thematic showtext shinycssloaders rclipboard \
+RUN install2.r --error --skipinstalled cowplot devtools shiny DT plotly bslib thematic showtext shinycssloaders rclipboard aws.s3 \
     && rm -Rf /tmp/downloaded_packages
 
 RUN mkdir /app/

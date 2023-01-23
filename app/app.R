@@ -322,7 +322,7 @@ ui <- navbarPage(
             uiOutput("clip_md5"),
             br(),
             verbatimTextOutput("md5_genome"), br(),
-            downloadButton("download_genome", "Download the genome")
+            downloadButton("download_genome", "Download the genome", class = "btn-info")
           )
         )
       )
@@ -682,11 +682,15 @@ server <- function(input, output, session) {
   observeEvent(input$btn_clip_md5, {
     showNotification("FASTA md5sum copied.", type = "default")
   })
+  genome_filename <- reactive(
+    preview_hibc() %>% .[input$taxonomy_rows_selected, ] %>%
+      str_glue_data("{StrainID}.genome.fa.gz")
+  )
   output$download_genome <- downloadHandler(
-    filename = "test-download.txt",
+    filename = genome_filename(),
     content = function(file) {
       save_object(
-        object = "coscine-sandbox.txt", file = file,
+        object = genome_filename, file = file,
         bucket = gsub("read_", "", coscine_read),
         region = "", # because non-AWS
         base_url = "coscine-s3-01.s3.fds.rwth-aachen.de:9021",
