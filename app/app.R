@@ -15,8 +15,8 @@ options(spinner.type = 8, spinner.color = "#28a745")
 
 # Fetch the authentification credentials for Coscine
 # src: https://appsilon.github.io/rhino/articles/how-to/manage-secrets-and-environments.html
-coscine_read <- Sys.getenv("COSCINE_READ_TOKEN")
-coscine_secret <- Sys.getenv("COSCINE_SECRET_TOKEN")
+coscine_read <- Sys.getenv("COSCINE_READ")
+coscine_secret <- Sys.getenv("COSCINE_SECRET")
 if (coscine_read == "" | coscine_secret == "") {
   warning(
     "No Coscine credentials in .Renviron",
@@ -321,7 +321,7 @@ ui <- navbarPage(
           card_body(
             uiOutput("clip_md5"),
             br(),
-            verbatimTextOutput("md5_genome"), br(),
+            verbatimTextOutput("md5_genome"),
             downloadButton("download_genome", "Download the genome", class = "btn-info")
           )
         )
@@ -690,7 +690,7 @@ server <- function(input, output, session) {
     filename = genome_filename(),
     content = function(file) {
       save_object(
-        object = genome_filename, file = file,
+        object = genome_filename(), file = file,
         bucket = gsub("read_", "", coscine_read),
         region = "", # because non-AWS
         base_url = "coscine-s3-01.s3.fds.rwth-aachen.de:9021",
