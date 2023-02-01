@@ -77,7 +77,10 @@ ui <- navbarPage(
   ),
   footer = list(
     column(hr(),
-      "HiBC. Copyright Clavel Lab (2023)",
+      a(href = "https://hibc.otc.coscine.dev/", "HiBC."),
+      "Copyright",
+      a(href = "https://www.ukaachen.de/en/clinics-institutes/institute-of-medical-microbiology/research/ag-clavel/", "AG Clavel"),
+      "(2023)",
       align = "center", width = 12
     )
   ),
@@ -135,7 +138,17 @@ ui <- navbarPage(
           ),
           align = "left"
         ),
-      )
+      ),
+      h2("Disclaimer", align = "center"),
+      "If you make use of the HiBC, please cite our work as:",
+      tags$blockquote(
+        "Hitch, T.C.A., Masson J. et al. & Clavel T.",
+        "The Human Intestinal Bacterial Collection,",
+        "1 Feb. 2023,", a(href = "https://hibc.otc.coscine.dev", "https://hibc.otc.coscine.dev")
+      ),
+      "By downloading any of the HiBC data, you agree", tags$strong("not"), "to submit the data to any public database",
+      "(e.g., NCBI, EBI) on your behalf or on the behalf of AG Clavel, as the ownership of all data on",
+      "this website belongs to AG Clavel before submission to a public database."
     )
   ),
   tabPanel(
