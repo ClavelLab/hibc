@@ -114,11 +114,11 @@ ui <- navbarPage(
         column(
           width = 6,
           h2("About HiBC", align = "center"),
-          "This is a collection of bacterial strains, isolated from the human gut for which 16S rRNA gene sequences, genome sequences and cultivation conditions are made available to the research community.",
-          "Many of these isolates are novel at different taxonomic rank.",
-          br(), br(),
-          "If you make use of the HiBC resource, please cite our work as:",
-          tags$blockquote("Hitch TCA and Masson J et al. (2023)", "The Human Intestinal Bacterial Collection. Preprint")
+          "The Human intestinal Bacterial Collection (HiBC) is a collection of bacterial strains,",
+          "isolated from the human gut for which 16S rRNA gene sequences, genome sequences and cultivation",
+          "conditions are made available to the research community.",
+          "In addition to previously described taxa, we include strains that represent novel strains",
+          "which either have been, or will be, described in the future."
         ),
         column(
           width = 6,
@@ -176,15 +176,10 @@ ui <- navbarPage(
         width = 4, offset = 2,
         tags$style(type = "text/css", "body {padding-top: 70px;}"),
         h4("Cultivation of the HiBC isolates"),
-        "Browse through the metadata related to the cultivation of the isolates",
-        "in the table below and in the interactive figure on the left.",
-        br(), br(),
-        "Note that when multiple cultivation media are indicated,",
-        "the media for the best growth is the left-most media.",
-        br(), br(),
-        "The figure indicates the most used media for the best growth of the isolates",
-        textOutput("no_media", inline = T), "The media used only once are not shown",
-        textOutput("no_media_once", inline = T)
+        "On this tab we detail the cultivation conditions required to best grow each HiBC isolate.",
+        "The graph on the right highlights the", textOutput("no_media", inline = T),
+        "media most frequently identified as the best media to grow individual strains.",
+        "A further", textOutput("no_media_once", inline = T), "media were observed only once.",
       ),
       column(
         width = 4, align = "center",
@@ -341,7 +336,8 @@ server <- function(input, output, session) {
       mutate(best_media = gsub(";.*", "", `Medium for best growth`)) %>%
       count(best_media) %>%
       arrange(n) %>%
-      mutate(best_media = factor(best_media, best_media))
+      mutate(best_media = factor(best_media, best_media)) %>%
+      drop_na(best_media)
   })
   # Numbers on the hibc dataset
   output$no_isolates <- renderText({
@@ -358,14 +354,13 @@ server <- function(input, output, session) {
   })
   output$no_media <- renderText({
     media() %>%
-      nrow() %>%
-      paste0("(n = ", ., ").")
+      filter(n > 1) %>%
+      nrow()
   })
   output$no_media_once <- renderText({
     media() %>%
       filter(n == 1) %>%
-      nrow() %>%
-      paste0("(n = ", ., ").")
+      nrow()
   })
   # Taxonomy table
   output$taxonomy <- DT::renderDT(
