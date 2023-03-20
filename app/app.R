@@ -25,7 +25,7 @@ if (coscine_read == "" | coscine_secret == "") {
 }
 
 # Load the hibc table
-hibc_data <- read_delim("2023-01-13.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
+hibc_data <- read_delim("2023-03-20.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
   arrange(Species)
 
 
