@@ -25,7 +25,7 @@ if (coscine_read == "" | coscine_secret == "") {
 }
 
 # Load the hibc table
-hibc_data <- read_delim("2023-03-20.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
+hibc_data <- read_delim("2023-04-19.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
   arrange(Species)
 
 
@@ -346,7 +346,7 @@ server <- function(input, output, session) {
   })
   media <- reactive({
     preview_hibc() %>%
-      mutate(best_media = gsub(";.*", "", `Medium for best growth`)) %>%
+      mutate(best_media = gsub(";.*", "", `Recommended medium for growth`)) %>%
       count(best_media) %>%
       arrange(n) %>%
       mutate(best_media = factor(best_media, best_media)) %>%
@@ -397,7 +397,7 @@ server <- function(input, output, session) {
   # Cultivation table
   output$cultivation <- DT::renderDT(
     preview_hibc() %>%
-      select(StrainID, `Medium for best growth`, `Growth atm.`, `Incubation time`),
+      select(StrainID, `Recommended medium for growth`, `Growth atm.`, `Incubation time`),
     filter = "top",
     extensions = "Responsive",
     options = list(
@@ -530,7 +530,7 @@ server <- function(input, output, session) {
       #
       preview_hibc() %>%
         .[input$taxonomy_rows_selected, ] %>%
-        select(`Growth atm.`, `Medium for best growth`, `Incubation time`, `Risk Group`) %>%
+        select(`Growth atm.`, `Recommended medium for growth`, `Incubation time`, `Risk Group`) %>%
         t()
     },
     rownames = T,
@@ -545,9 +545,12 @@ server <- function(input, output, session) {
       req(input$taxonomy_rows_selected)
       #
       preview_hibc() %>%
-        select(`Geographic location`, `Donor type`, `Gut region`, `Date of isolation (JJJJ-MM-DD)`) %>%
+        select(`Geographic location`, `Host age class`,
+               `Host disease status`,`Sample material`,
+               `Date of isolation (JJJJ-MM-DD)`) %>%
         rename(`Isolation date` = `Date of isolation (JJJJ-MM-DD)`) %>%
-        relocate(`Gut region`, `Donor type`, `Isolation date`, `Geographic location`) %>%
+        relocate(`Host age class`,`Host disease status`,`Sample material`,
+                 `Isolation date`, `Geographic location`) %>%
         .[input$taxonomy_rows_selected, ] %>%
         t()
     },
