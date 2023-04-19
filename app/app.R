@@ -301,7 +301,7 @@ ui <- navbarPage(
         ),
         card(
           class = "border-primary", align = "center",
-          card_header(tags$a(href = "https://git.rwth-aachen.de/clavellab/genome-assembly", "Workflow")),
+          card_header(tags$a(href = "https://github.com/ClavelLab/genome-assembly", "Workflow")),
           card_body(
             tableOutput("details_workflow")
           )
