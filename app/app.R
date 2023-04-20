@@ -49,7 +49,9 @@ qual_flags_translation <- c(
 # Define UI
 ui <- navbarPage(
   lang = "en",
-  title = span(tags$img(src = "hibc.png", height = 40), "HiBC"),
+  title = span(tags$a(href = "https://hibc.otc.coscine.dev/",
+                      class = "text-reset text-decoration-none",
+                      tags$img(src = "hibc.png", height = 40), "HiBC")),
   windowTitle = "HiBC: The Human Intestinal Bacterial Collection",
   theme = bs_theme(
     version = 5,
