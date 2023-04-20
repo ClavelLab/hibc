@@ -25,7 +25,7 @@ if (coscine_read == "" | coscine_secret == "") {
 }
 
 # Load the hibc table
-hibc_data <- read_delim("2023-04-19.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
+hibc_data <- read_delim("2023-04-20.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
   arrange(Species)
 
 
@@ -102,14 +102,14 @@ ui <- navbarPage(
           title = "Isolates:",
           value = tags$span(textOutput("no_isolates", inline = T), class = "h2 mb-2"),
           theme_color = "info",
-          p("as of 2023-01-13")
+          p("as of 2023-04-20")
         ),
         value_box(
           showcase = icon("bugs", class = "fa-3x"),
           title = "Species:",
           value = tags$span(textOutput("no_species", inline = T), class = "h2 mb-2"),
           theme_color = "warning",
-          p("as of 2023-01-13")
+          p("as of 2023-04-20")
         )
       ),
       br(),
@@ -546,10 +546,9 @@ server <- function(input, output, session) {
       #
       preview_hibc() %>%
         select(`Geographic location`, `Host age class`,
-               `Host disease status`,`Sample material`,
-               `Date of isolation (JJJJ-MM-DD)`) %>%
+               `Sample material`,`Date of isolation (JJJJ-MM-DD)`) %>%
         rename(`Isolation date` = `Date of isolation (JJJJ-MM-DD)`) %>%
-        relocate(`Host age class`,`Host disease status`,`Sample material`,
+        relocate(`Host age class`, `Sample material`,
                  `Isolation date`, `Geographic location`) %>%
         .[input$taxonomy_rows_selected, ] %>%
         t()
