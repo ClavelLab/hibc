@@ -479,6 +479,15 @@ server <- function(input, output, session) {
       theme_cowplot()
     ggplotly(p_N50)
   })
+  
+  # Hide the tab when no isolate is selected
+  observeEvent(0,{
+    hideTab(inputId = "navbar", target = "detail")
+  })
+  observeEvent(input$taxonomy_rows_selected, {
+    showTab(inputId = "navbar", target = "detail")
+  })
+  
   # Selected isolate
   output$isolate_id <- renderText({
     preview_hibc()[input$taxonomy_rows_selected, ] %>% pull("StrainID")
