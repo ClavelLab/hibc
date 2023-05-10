@@ -49,9 +49,11 @@ qual_flags_translation <- c(
 # Define UI
 ui <- navbarPage(
   lang = "en",
-  title = span(tags$a(href = "https://hibc.otc.coscine.dev/",
-                      class = "text-reset text-decoration-none",
-                      tags$img(src = "hibc.png", height = 40), "HiBC")),
+  title = span(tags$a(
+    href = "https://hibc.otc.coscine.dev/",
+    class = "text-reset text-decoration-none",
+    tags$img(src = "hibc.png", height = 40), "HiBC"
+  )),
   windowTitle = "HiBC: Human Intestinal Bacterial Collection",
   theme = bs_theme(
     version = 5,
@@ -79,7 +81,7 @@ ui <- navbarPage(
   ),
   footer = list(
     column(hr(),
-      a(href = "https://hibc.otc.coscine.dev/", "HiBC", .noWS = "after"),".",
+      a(href = "https://hibc.otc.coscine.dev/", "HiBC", .noWS = "after"), ".",
       "Copyright",
       a(href = "https://www.ukaachen.de/en/clinics-institutes/institute-of-medical-microbiology/research/ag-clavel/", "AG Clavel"),
       "(2023)",
@@ -146,24 +148,24 @@ ui <- navbarPage(
       fluidRow(
         column(
           width = 6,
-      h2("Strain availability", align = "center"),
-      "We strive to have our strains deposited in international collections and corresponding collection",
-      "numbers are provided whenever available. However, due to chronic underfunding of culture collections,",
-      "this is a continuous process and updates will be released whenever relevant.",
-      "In the case of strains not yet available, we do our best to provide our strains on request,",
-      "without guarantee of time due to the difficulty of funding staff for service purposes.",
+          h2("Strain availability", align = "center"),
+          "We strive to have our strains deposited in international collections and corresponding collection",
+          "numbers are provided whenever available. However, due to chronic underfunding of culture collections,",
+          "this is a continuous process and updates will be released whenever relevant.",
+          "In the case of strains not yet available, we do our best to provide our strains on request,",
+          "without guarantee of time due to the difficulty of funding staff for service purposes.",
         ),
-      column(
-        width = 6,
-        h2("Data availability", align = "center"),
-      "We aim to produce research data that follows the FAIR principles (Findable, Accessible, Interoperable, Reusable;",
-        a(href = "http://www.nature.com/articles/sdata201618","Wilkinson et al. 2016",.noWS = "after"),
-      "). Therefore, we collect standardized metadata regarding the culture and isolation, sequencing, genome",
-      "assembly process and the biological sequences. We are supported in that process by the",
-      a(href = "https://nfdi4microbiota.de", "NFDI4Microbiota"),
-      "a German consortium of the National Research Data Infrastructure that supports and train the microbiology",
-      "community for better research data production and management."
-      )
+        column(
+          width = 6,
+          h2("Data availability", align = "center"),
+          "We aim to produce research data that follows the FAIR principles (Findable, Accessible, Interoperable, Reusable;",
+          a(href = "http://www.nature.com/articles/sdata201618", "Wilkinson et al. 2016", .noWS = "after"),
+          "). Therefore, we collect standardized metadata regarding the culture and isolation, sequencing, genome",
+          "assembly process and the biological sequences. We are supported in that process by the",
+          a(href = "https://nfdi4microbiota.de", "NFDI4Microbiota"),
+          "a German consortium of the National Research Data Infrastructure that supports and train the microbiology",
+          "community for better research data production and management."
+        )
       ),
       h2("Disclaimer", align = "center"),
       "If you make use of HiBC, please cite our work as:",
@@ -503,15 +505,15 @@ server <- function(input, output, session) {
       theme_cowplot()
     ggplotly(p_N50)
   })
-  
+
   # Hide the tab when no isolate is selected
-  observeEvent(0,{
+  observeEvent(0, {
     hideTab(inputId = "navbar", target = "detail")
   })
   observeEvent(input$taxonomy_rows_selected, {
     showTab(inputId = "navbar", target = "detail")
   })
-  
+
   # Selected isolate
   output$isolate_id <- renderText({
     preview_hibc()[input$taxonomy_rows_selected, ] %>% pull("StrainID")
@@ -580,11 +582,15 @@ server <- function(input, output, session) {
       req(input$taxonomy_rows_selected)
       #
       preview_hibc() %>%
-        select(`Geographic location`, `Host age class`,
-               `Sample material`,`Date of isolation (JJJJ-MM-DD)`) %>%
+        select(
+          `Geographic location`, `Host age class`,
+          `Sample material`, `Date of isolation (JJJJ-MM-DD)`
+        ) %>%
         rename(`Isolation date` = `Date of isolation (JJJJ-MM-DD)`) %>%
-        relocate(`Host age class`, `Sample material`,
-                 `Isolation date`, `Geographic location`) %>%
+        relocate(
+          `Host age class`, `Sample material`,
+          `Isolation date`, `Geographic location`
+        ) %>%
         .[input$taxonomy_rows_selected, ] %>%
         t()
     },
