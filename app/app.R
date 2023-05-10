@@ -52,7 +52,7 @@ ui <- navbarPage(
   title = span(tags$a(href = "https://hibc.otc.coscine.dev/",
                       class = "text-reset text-decoration-none",
                       tags$img(src = "hibc.png", height = 40), "HiBC")),
-  windowTitle = "HiBC: The Human Intestinal Bacterial Collection",
+  windowTitle = "HiBC: Human Intestinal Bacterial Collection",
   theme = bs_theme(
     version = 5,
     bootswatch = "litera",
@@ -79,7 +79,7 @@ ui <- navbarPage(
   ),
   footer = list(
     column(hr(),
-      a(href = "https://hibc.otc.coscine.dev/", "HiBC."),
+      a(href = "https://hibc.otc.coscine.dev/", "HiBC", .noWS = "after"),".",
       "Copyright",
       a(href = "https://www.ukaachen.de/en/clinics-institutes/institute-of-medical-microbiology/research/ag-clavel/", "AG Clavel"),
       "(2023)",
@@ -93,7 +93,7 @@ ui <- navbarPage(
     column(
       width = 12, align = "center",
       tags$style(type = "text/css", "body {padding-top: 70px;}"),
-      h1(tags$img(src = "hibc.png", height = 80), "HiBC: The Human Intestinal Bacterial Collection")
+      h1(tags$img(src = "hibc.png", height = 80), "HiBC: Human Intestinal Bacterial Collection")
     ),
     column(
       width = 8, offset = 2,
@@ -120,33 +120,57 @@ ui <- navbarPage(
           width = 6,
           h2("About HiBC", align = "center"),
           "The Human intestinal Bacterial Collection (HiBC) is a collection of bacterial strains,",
-          "isolated from the human gut for which 16S rRNA gene sequences, genome sequences and cultivation",
+          "isolated from the human gut for which 16S rRNA gene sequences, genome sequences and culture",
           "conditions are made available to the research community.",
-          "In addition to previously described taxa, we include strains that represent novel strains",
-          "which either have been, or will be, described in the future."
+          "In addition to previously described bacteria, we include strains that represent novel species",
+          "which have been taxonomically described and validly named, or will be in the future.",
+          "This collection will be updated regularly."
         ),
         column(
           width = 6,
           h2("How to navigate the resource", align = "center"),
-          "We provide different lenses (i.e., tabs at the top of the page) through which researchers can explore interactively the HiBC:",
+          "We provide different layers of information accessible via corresponding tabs at the top of the page; with this, users can explore the current content HiBC:",
           tags$ul(
-            tags$li("the taxonomy of isolates"),
-            tags$li("the cultivation metadata of the isolates"),
-            tags$li("the genomes metadata of the isolates")
+            tags$li("taxonomy of the isolates"),
+            tags$li("cultivation metadata"),
+            tags$li("16S rRNA gene and genome sequences")
           ),
           helpText(
             "Tip: You can start by clicking on the Taxonomy tab,",
-            "select an isolate in the table there, and click on the Details tab."
+            "select an isolate in the table there, and click on the Details button on the top-right corner."
           ),
           align = "left"
         ),
       ),
+      br(),
+      fluidRow(
+        column(
+          width = 6,
+      h2("Strain availability", align = "center"),
+      "We strive to have our strains deposited in international collections and corresponding collection",
+      "numbers are provided whenever available. However, due to chronic underfunding of culture collections,",
+      "this is a continuous process and updates will be released whenever relevant.",
+      "In the case of strains not yet available, we do our best to provide our strains on request,",
+      "without guarantee of time due to the difficulty of funding staff for service purposes.",
+        ),
+      column(
+        width = 6,
+        h2("Data availability", align = "center"),
+      "We aim to produce research data that follows the FAIR principles (Findable, Accessible, Interoperable, Reusable;",
+        a(href = "http://www.nature.com/articles/sdata201618","Wilkinson et al. 2016",.noWS = "after"),
+      "). Therefore, we collect standardized metadata regarding the culture and isolation, sequencing, genome",
+      "assembly process and the biological sequences. We are supported in that process by the",
+      a(href = "https://nfdi4microbiota.de", "NFDI4Microbiota"),
+      "a German consortium of the National Research Data Infrastructure that supports and train the microbiology",
+      "community for better research data production and management."
+      )
+      ),
       h2("Disclaimer", align = "center"),
-      "If you make use of the HiBC, please cite our work as:",
+      "If you make use of HiBC, please cite our work as:",
       tags$blockquote(
         "Hitch, T.C.A., Masson J. et al. & Clavel T.",
         "The Human Intestinal Bacterial Collection,",
-        "1 Feb. 2023,", a(href = "https://hibc.otc.coscine.dev", "https://hibc.otc.coscine.dev")
+        "20 Apr. 2023,", a(href = "https://hibc.otc.coscine.dev", "https://hibc.otc.coscine.dev")
       ),
       "By downloading any of the HiBC data, you agree", tags$strong("not"), "to submit the data to any public database",
       "(e.g., NCBI, EBI) on your behalf or on the behalf of AG Clavel, as the ownership of all data on",
