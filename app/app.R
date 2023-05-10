@@ -474,7 +474,7 @@ server <- function(input, output, session) {
       preview_hibc(),
       aes(
         x = compl_score, y = contam_score,
-        label = StrainID
+        label = StrainID, text = paste("Species:", Species)
       )
     ) +
       geom_point(alpha = 0.5, size = 2, color = "#17a2b8") +
@@ -496,7 +496,7 @@ server <- function(input, output, session) {
       preview_hibc(),
       aes(
         x = genome_length, y = N50,
-        label = StrainID
+        label = StrainID, text = paste("Species:", Species)
       )
     ) +
       geom_point(alpha = 0.5, size = 2, color = "#ffc107") +
