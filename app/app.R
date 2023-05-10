@@ -187,6 +187,7 @@ ui <- navbarPage(
         tags$style(type = "text/css", "body {padding-top: 70px;}"),
         h4("Taxonomy of the HiBC isolates"),
         "Browse through the complete list of the isolates in the table below.",
+        "Use the buttons beneath the table to copy or download the", tags$em("displayed"), "values.",
         br(), br(),
         "If you want to have more information on a specific isolate,",
         "please select your isolate in the table and click on the button on the right.",
@@ -221,6 +222,8 @@ ui <- navbarPage(
         "The graph on the right highlights the", textOutput("no_media", inline = T),
         "media most frequently identified as the best media to grow individual strains.",
         "A further", textOutput("no_media_once", inline = T), "media were observed only once.",
+        br(), br(),
+        "Use the buttons beneath the table to copy or download the", tags$em("displayed"), "values.",
       ),
       column(
         width = 4, align = "center",
@@ -242,6 +245,7 @@ ui <- navbarPage(
       tags$style(type = "text/css", "body {padding-top: 70px;}"),
       h4("Assemblies of the HiBC isolates"),
       "Explore the genome assemblies of the isolates via the two interactive plots and the table below.",
+      "Use the buttons beneath the table to copy or download the", tags$em("displayed"), "values.",
       br(), br(),
       layout_column_wrap(
         width = 1 / 2,
@@ -409,17 +413,19 @@ server <- function(input, output, session) {
       preview_hibc() %>%
         select(StrainID, Phylum, Family, Species, `DSM no.`),
       filter = "top",
-      extensions = "Responsive",
+      extensions = c("Responsive", "Buttons"),
       selection = list(
         mode = "single",
         selected = "7",
         target = "row"
       ),
       options = list(
-        dom = "rtflp"
+        dom = "rtBflp",
+        buttons =
+          list("copy", "csv", "excel")
       )
     ) %>% formatStyle(columns = "Species", fontStyle = "italic"),
-    server = TRUE
+    server = T
   )
 
   # Cultivation table
@@ -427,9 +433,11 @@ server <- function(input, output, session) {
     preview_hibc() %>%
       select(StrainID, `Recommended medium for growth`, `Growth atm.`, `Incubation time`),
     filter = "top",
-    extensions = "Responsive",
+    extensions = c("Responsive", "Buttons"),
     options = list(
-      dom = "rtflp"
+      dom = "rtBflp",
+      buttons =
+        list("copy", "csv", "excel")
     ),
     server = FALSE
   )
@@ -439,9 +447,11 @@ server <- function(input, output, session) {
     preview_hibc() %>%
       select(StrainID, genome_length, number_contig, N50, coverage, compl_score, contam_score),
     filter = "top",
-    extensions = "Responsive",
+    extensions = c("Responsive", "Buttons"),
     options = list(
-      dom = "rtflp"
+      dom = "rtBflp",
+      buttons =
+        list("copy", "csv", "excel")
     ),
     server = TRUE
   )
