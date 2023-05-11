@@ -9,6 +9,40 @@ library(showtext)
 library(shinycssloaders)
 library(rclipboard)
 library(aws.s3)
+library(conductor)
+
+conductor <- Conductor$
+  new()$
+  step(
+  el = "#hibc_values",
+  title = "Welcome to HiBC!",
+  text = "Use the arrows keys or the buttons below to navigate the tour.",
+  buttons = list(
+    list(
+      action = "next",
+      text = "Next"
+    )
+  )
+)$
+  step(
+  "Which bacteria make up HiBC?",
+  "Find the list of isolates there!",
+  "Taxonomy"
+)$
+  step(
+  "h2",
+  title = "This is some text",
+  text = "Only the first p tag is highlighted.",
+  tab = "Overview",
+  tabId = "navbar"
+)$
+  step(
+  "#tax_tab",
+  title = "Taxonomy table is here",
+  text = "how nice to filter stuff",
+  tab = "Taxonomy",
+  tabId = "navbar"
+)
 
 thematic_shiny(font = "auto")
 options(spinner.type = 8, spinner.color = "#28a745")
@@ -76,8 +110,35 @@ ui <- navbarPage(
       HTML("
       .table.dataTable tbody td.active, .table.dataTable tbody tr.active td {
             background-color: var(--bs-success)!important;}
-      ")
-    ))
+      "),
+      HTML("
+        .shepherd-header {
+          background-color: #17a2b8 !important;
+        }
+        .shepherd-element {
+          background-color: white;
+        }
+        .shepherd-title {
+          color: white
+        }
+        .shepherd-text {
+          color: black
+        }
+        .shepherd-button {
+          background-color: #28a745 ;
+        }
+        .shepherd-button:hover {
+          background-color: #ffc107 !important ;
+        }
+        .shepherd-button-secondary {
+          background-color: #17a2b8 ;
+        }
+        .shepherd-arrow:before {
+          background-color: #17a2b8 !important;
+        }
+           ")
+    )),
+    use_conductor()
   ),
   footer = list(
     column(hr(),
@@ -100,6 +161,7 @@ ui <- navbarPage(
     column(
       width = 8, offset = 2,
       layout_column_wrap(
+        id = "hibc_values",
         width = 1 / 2,
         value_box(
           showcase = icon("bacteria", class = "fa-3x"),
@@ -206,7 +268,7 @@ ui <- navbarPage(
     ),
     column(
       width = 8, offset = 2, align = "center",
-      fluidRow(
+      fluidRow(id = "tax_tab",
         DT::dataTableOutput("taxonomy")
       )
     )
@@ -373,6 +435,7 @@ ui <- navbarPage(
 
 # Define server logic
 server <- function(input, output, session) {
+  conductor$init()$start()
   preview_hibc <- reactive({
     hibc_data
   })
