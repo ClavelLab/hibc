@@ -9,6 +9,118 @@ library(showtext)
 library(shinycssloaders)
 library(rclipboard)
 library(aws.s3)
+library(conductor)
+
+conductor <- Conductor$
+  new(exitOnEsc = TRUE)$
+  step(
+  title = "HiBC's guided tour",
+  text = "Use the arrows keys or the buttons below to navigate the tour. Press ESC to exit the tour.",
+  buttons = list(
+    list(
+      action = "next",
+      text = "Next"
+    )
+  )
+)$
+  step(
+  title = NULL,
+  "Find the list of bacterial isolates here!",
+  "[data-value='Taxonomy']",
+  tab = "Overview",
+  tabId = "navbar"
+)$
+  step(
+  "#tax_tab",
+  title = NULL,
+  text = "Dive into the taxonomy by using filters and search.",
+  tab = "Taxonomy",
+  tabId = "navbar",
+  position = "top"
+)$
+  step(
+  "div.dt-buttons", # btn-group flex-wrap",
+  title = NULL,
+  text = "The current subset table can be exported for later use!",
+  tab = "Taxonomy",
+  tabId = "navbar"
+)$
+  step(
+  title = NULL,
+  "Likewise, explore the cultivation metadata (with plot).",
+  "[data-value='Cultivation']",
+  tab = "Taxonomy",
+  tabId = "navbar",
+  canClickTarget = FALSE
+)$
+  step(
+  title = NULL,
+  "And the genome assembly metadata (with plots).",
+  "[data-value='Genomes']",
+  tab = "Taxonomy",
+  tabId = "navbar",
+  canClickTarget = FALSE
+)$
+  step(
+  "#viewDetail",
+  title = NULL,
+  text = "Curious about a strain in particular? Select it in the table and click on the button!",
+  tab = "Taxonomy",
+  tabId = "navbar",
+  canClickTarget = FALSE
+)$
+  step(
+  "[data-value='detail']",
+  title = NULL,
+  text = "Or select it in the table and click on the tab here!",
+  tab = "Taxonomy",
+  tabId = "navbar",
+  canClickTarget = FALSE
+)$
+  step(
+  el = "#isolate-details",
+  title = NULL,
+  text = "Skim through the extra metadata of your selected isolate",
+  tab = "detail",
+  tabId = "navbar"
+)$
+  step(
+  "#downloadSequences",
+  title = NULL,
+  text = "Sequences of this isolate are directly accessible below",
+  tab = "detail",
+  tabId = "navbar",
+  canClickTarget = FALSE
+)$
+  step(
+  title = NULL,
+  "There is more than one isolate, so feel free to explore!",
+  "#hibc_values",
+  tab = "Overview",
+  tabId = "navbar"
+)$
+  step(
+  "#downloadBulk",
+  title = NULL,
+  text = "If you are interested in all of them, use the buttons to download all the HiBC datasets",
+  tab = "Overview",
+  tabId = "navbar",
+  canClickTarget = FALSE,
+  position = "top"
+)$
+  step(
+  "#disclaimer",
+  title = "Thanks for your attention",
+  text = "Don't forget to use data responsibly!",
+  position = "top",
+  buttons = list(
+    list(
+      action = "next",
+      text = "Finish"
+    )
+  )
+)
+
 
 thematic_shiny(font = "auto")
 options(spinner.type = 8, spinner.color = "#28a745")
@@ -49,10 +161,12 @@ qual_flags_translation <- c(
 # Define UI
 ui <- navbarPage(
   lang = "en",
-  title = span(tags$a(href = "https://hibc.otc.coscine.dev/",
-                      class = "text-reset text-decoration-none",
-                      tags$img(src = "hibc.png", height = 40), "HiBC")),
-  windowTitle = "HiBC: The Human Intestinal Bacterial Collection",
+  title = span(tags$a(
+    href = "https://hibc.otc.coscine.dev/",
+    class = "text-reset text-decoration-none",
+    tags$img(src = "hibc.png", height = 40), "HiBC"
+  )),
+  windowTitle = "HiBC: Human Intestinal Bacterial Collection",
   theme = bs_theme(
     version = 5,
     bootswatch = "litera",
@@ -74,12 +188,23 @@ ui <- navbarPage(
       HTML("
       .table.dataTable tbody td.active, .table.dataTable tbody tr.active td {
             background-color: var(--bs-success)!important;}
-      ")
-    ))
+      "),
+      HTML("
+        .shepherd-button {
+          background-color: #28a745 ;
+        }
+        .shepherd-button:hover {
+          background-color: #ffc107 !important ;
+        }
+        .shepherd-button-secondary {
+          background-color: #17a2b8 ;
+        }")
+    )),
+    use_conductor()
   ),
   footer = list(
     column(hr(),
-      a(href = "https://hibc.otc.coscine.dev/", "HiBC."),
+      a(href = "https://hibc.otc.coscine.dev/", "HiBC", .noWS = "after"), ".",
       "Copyright",
       a(href = "https://www.ukaachen.de/en/clinics-institutes/institute-of-medical-microbiology/research/ag-clavel/", "AG Clavel"),
       "(2023)",
@@ -93,11 +218,12 @@ ui <- navbarPage(
     column(
       width = 12, align = "center",
       tags$style(type = "text/css", "body {padding-top: 70px;}"),
-      h1(tags$img(src = "hibc.png", height = 80), "HiBC: The Human Intestinal Bacterial Collection")
+      h1(tags$img(src = "hibc.png", height = 80), "HiBC: Human Intestinal Bacterial Collection")
     ),
     column(
       width = 8, offset = 2,
       layout_column_wrap(
+        id = "hibc_values",
         width = 1 / 2,
         value_box(
           showcase = icon("bacteria", class = "fa-3x"),
@@ -120,37 +246,88 @@ ui <- navbarPage(
           width = 6,
           h2("About HiBC", align = "center"),
           "The Human intestinal Bacterial Collection (HiBC) is a collection of bacterial strains,",
-          "isolated from the human gut for which 16S rRNA gene sequences, genome sequences and cultivation",
+          "isolated from the human gut for which 16S rRNA gene sequences, genome sequences and culture",
           "conditions are made available to the research community.",
-          "In addition to previously described taxa, we include strains that represent novel strains",
-          "which either have been, or will be, described in the future."
+          "In addition to previously described bacteria, we include strains that represent novel species",
+          "which have been taxonomically described and validly named, or will be in the future.",
+          "This collection will be updated regularly."
         ),
         column(
           width = 6,
           h2("How to navigate the resource", align = "center"),
-          "We provide different lenses (i.e., tabs at the top of the page) through which researchers can explore interactively the HiBC:",
+          "We provide different layers of information accessible via corresponding tabs at the top of the page; with this, users can explore the current content HiBC:",
           tags$ul(
-            tags$li("the taxonomy of isolates"),
-            tags$li("the cultivation metadata of the isolates"),
-            tags$li("the genomes metadata of the isolates")
+            tags$li("taxonomy of the isolates"),
+            tags$li("cultivation metadata"),
+            tags$li("16S rRNA gene and genome sequences")
           ),
-          helpText(
-            "Tip: You can start by clicking on the Taxonomy tab,",
-            "select an isolate in the table there, and click on the Details tab."
-          ),
-          align = "left"
+          align = "left",
+          div(
+            actionButton(
+              inputId = "startTour", class = "btn-success fw-bold",
+              label = "Take a guided tour!", icon = icon("redo"),
+              width = "200px",
+            ),
+            align = "center"
+          )
         ),
       ),
-      h2("Disclaimer", align = "center"),
-      "If you make use of the HiBC, please cite our work as:",
-      tags$blockquote(
-        "Hitch, T.C.A., Masson J. et al. & Clavel T.",
-        "The Human Intestinal Bacterial Collection,",
-        "1 Feb. 2023,", a(href = "https://hibc.otc.coscine.dev", "https://hibc.otc.coscine.dev")
+      br(),
+      fluidRow(
+        column(
+          width = 6,
+          h2("Strain availability", align = "center"),
+          "We strive to have our strains deposited in international collections and corresponding collection",
+          "numbers are provided whenever available. However, due to chronic underfunding of culture collections,",
+          "this is a continuous process and updates will be released whenever relevant.",
+          "In the case of strains not yet available, we do our best to provide our strains on request,",
+          "without guarantee of time due to the difficulty of funding staff for service purposes.",
+        ),
+        column(
+          width = 6,
+          h2("Data availability", align = "center"),
+          "We aim to produce research data that follows the FAIR principles (Findable, Accessible, Interoperable, Reusable;",
+          a(href = "http://www.nature.com/articles/sdata201618", "Wilkinson et al. 2016", .noWS = "after"),
+          "). Therefore, we collect standardized metadata regarding the culture and isolation, sequencing, genome",
+          "assembly process and the biological sequences. We are supported in that process by the",
+          a(href = "https://nfdi4microbiota.de", "NFDI4Microbiota"),
+          "a German consortium of the National Research Data Infrastructure that supports and train the microbiology",
+          "community for better research data production and management."
+        )
       ),
-      "By downloading any of the HiBC data, you agree", tags$strong("not"), "to submit the data to any public database",
-      "(e.g., NCBI, EBI) on your behalf or on the behalf of AG Clavel, as the ownership of all data on",
-      "this website belongs to AG Clavel before submission to a public database."
+      fluidRow(
+        column(
+          width = 6,
+          div(
+            id = "downloadBulk",
+            h2("Get HiBC datasets", align = "center"),
+            p(
+              tags$ul(
+                style = "line-height: 400%",
+                tags$li(icon("barcode"), "HiBC 16S rRNA gene sequences", downloadButton("dl16S")),
+                tags$li(icon("dna"), "HiBC genomes sequences", downloadButton("dlGenomes")),
+                tags$li(icon("file"), "HiBC metadata", downloadButton("dlMetadata"))
+              )
+            )
+          )
+        ),
+        column(
+          width = 6,
+          div(
+            id = "disclaimer",
+            h2("Disclaimer", align = "center"),
+            "If you make use of HiBC, please cite our work as:",
+            tags$blockquote(
+              "Hitch, T.C.A., Masson J. et al. & Clavel T.",
+              "The Human Intestinal Bacterial Collection,",
+              "20 Apr. 2023,", a(href = "https://hibc.otc.coscine.dev", "https://hibc.otc.coscine.dev")
+            ),
+            "By downloading any of the HiBC data, you agree", tags$strong("not"), "to submit the data to any public database",
+            "(e.g., NCBI, EBI) on your behalf or on the behalf of AG Clavel, as the ownership of all data on",
+            "this website belongs to AG Clavel before submission to a public database."
+          )
+        )
+      )
     )
   ),
   tabPanel(
@@ -161,6 +338,7 @@ ui <- navbarPage(
         tags$style(type = "text/css", "body {padding-top: 70px;}"),
         h4("Taxonomy of the HiBC isolates"),
         "Browse through the complete list of the isolates in the table below.",
+        "Use the buttons beneath the table to copy or download the", tags$em("displayed"), "values.",
         br(), br(),
         "If you want to have more information on a specific isolate,",
         "please select your isolate in the table and click on the button on the right.",
@@ -180,6 +358,7 @@ ui <- navbarPage(
     column(
       width = 8, offset = 2, align = "center",
       fluidRow(
+        id = "tax_tab",
         DT::dataTableOutput("taxonomy")
       )
     )
@@ -195,6 +374,8 @@ ui <- navbarPage(
         "The graph on the right highlights the", textOutput("no_media", inline = T),
         "media most frequently identified as the best media to grow individual strains.",
         "A further", textOutput("no_media_once", inline = T), "media were observed only once.",
+        br(), br(),
+        "Use the buttons beneath the table to copy or download the", tags$em("displayed"), "values.",
       ),
       column(
         width = 4, align = "center",
@@ -216,18 +397,19 @@ ui <- navbarPage(
       tags$style(type = "text/css", "body {padding-top: 70px;}"),
       h4("Assemblies of the HiBC isolates"),
       "Explore the genome assemblies of the isolates via the two interactive plots and the table below.",
+      "Use the buttons beneath the table to copy or download the", tags$em("displayed"), "values.",
       br(), br(),
       layout_column_wrap(
         width = 1 / 2,
         card(
-          height = 500, full_screen = T,
+          height = 500, full_screen = F,
           card_header("Completion and contamination"),
           card_body_fill(
             plotlyOutput("plot_compl_contam", height = "400px") %>% withSpinner()
           )
         ),
         card(
-          height = 500, full_screen = T,
+          height = 500, full_screen = F,
           card_header("Genome size and assembly fragmentation"),
           card_body_fill(
             plotlyOutput("plot_N50_genome_size", height = "400px") %>% withSpinner()
@@ -312,6 +494,7 @@ ui <- navbarPage(
       h4("Genome and 16S rRNA sequences"),
       rclipboardSetup(),
       layout_column_wrap(
+        id = "downloadSequences",
         width = "400px", align = "center",
         card(
           class = "border-danger", align = "center",
@@ -343,6 +526,9 @@ ui <- navbarPage(
 
 # Define server logic
 server <- function(input, output, session) {
+  observeEvent(input$startTour, {
+    conductor$init()$start()
+  })
   preview_hibc <- reactive({
     hibc_data
   })
@@ -383,17 +569,19 @@ server <- function(input, output, session) {
       preview_hibc() %>%
         select(StrainID, Phylum, Family, Species, `DSM no.`),
       filter = "top",
-      extensions = "Responsive",
+      extensions = c("Responsive", "Buttons"),
       selection = list(
         mode = "single",
         selected = "7",
         target = "row"
       ),
       options = list(
-        dom = "rtflp"
+        dom = "rtBflp",
+        buttons =
+          list("copy", "csv", "excel")
       )
     ) %>% formatStyle(columns = "Species", fontStyle = "italic"),
-    server = TRUE
+    server = T
   )
 
   # Cultivation table
@@ -401,9 +589,11 @@ server <- function(input, output, session) {
     preview_hibc() %>%
       select(StrainID, `Recommended medium for growth`, `Growth atm.`, `Incubation time`),
     filter = "top",
-    extensions = "Responsive",
+    extensions = c("Responsive", "Buttons"),
     options = list(
-      dom = "rtflp"
+      dom = "rtBflp",
+      buttons =
+        list("copy", "csv", "excel")
     ),
     server = FALSE
   )
@@ -413,9 +603,11 @@ server <- function(input, output, session) {
     preview_hibc() %>%
       select(StrainID, genome_length, number_contig, N50, coverage, compl_score, contam_score),
     filter = "top",
-    extensions = "Responsive",
+    extensions = c("Responsive", "Buttons"),
     options = list(
-      dom = "rtflp"
+      dom = "rtBflp",
+      buttons =
+        list("copy", "csv", "excel")
     ),
     server = TRUE
   )
@@ -438,7 +630,7 @@ server <- function(input, output, session) {
       preview_hibc(),
       aes(
         x = compl_score, y = contam_score,
-        label = StrainID
+        label = StrainID, text = paste("Species:", Species)
       )
     ) +
       geom_point(alpha = 0.5, size = 2, color = "#17a2b8") +
@@ -460,7 +652,7 @@ server <- function(input, output, session) {
       preview_hibc(),
       aes(
         x = genome_length, y = N50,
-        label = StrainID
+        label = StrainID, text = paste("Species:", Species)
       )
     ) +
       geom_point(alpha = 0.5, size = 2, color = "#ffc107") +
@@ -479,6 +671,15 @@ server <- function(input, output, session) {
       theme_cowplot()
     ggplotly(p_N50)
   })
+
+  # Hide the tab when no isolate is selected
+  observeEvent(0, {
+    hideTab(inputId = "navbar", target = "detail")
+  })
+  observeEvent(input$taxonomy_rows_selected, {
+    showTab(inputId = "navbar", target = "detail")
+  })
+
   # Selected isolate
   output$isolate_id <- renderText({
     preview_hibc()[input$taxonomy_rows_selected, ] %>% pull("StrainID")
@@ -547,11 +748,15 @@ server <- function(input, output, session) {
       req(input$taxonomy_rows_selected)
       #
       preview_hibc() %>%
-        select(`Geographic location`, `Host age class`,
-               `Sample material`,`Date of isolation (JJJJ-MM-DD)`) %>%
+        select(
+          `Geographic location`, `Host age class`,
+          `Sample material`, `Date of isolation (JJJJ-MM-DD)`
+        ) %>%
         rename(`Isolation date` = `Date of isolation (JJJJ-MM-DD)`) %>%
-        relocate(`Host age class`, `Sample material`,
-                 `Isolation date`, `Geographic location`) %>%
+        relocate(
+          `Host age class`, `Sample material`,
+          `Isolation date`, `Geographic location`
+        ) %>%
         .[input$taxonomy_rows_selected, ] %>%
         t()
     },
