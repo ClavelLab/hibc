@@ -12,7 +12,7 @@ library(aws.s3)
 library(conductor)
 
 conductor <- Conductor$
-  new(  exitOnEsc = TRUE)$
+  new(exitOnEsc = TRUE)$
   step(
   title = "HiBC's guided tour",
   text = "Use the arrows keys or the buttons below to navigate the tour. Press ESC to exit the tour.",
@@ -24,9 +24,8 @@ conductor <- Conductor$
   )
 )$
   step(
-  title=NULL,
-  "Find the list of bacterial isolates there!",
-  # "#navbar li:nth-child(2)",
+  title = NULL,
+  "Find the list of bacterial isolates here!",
   "[data-value='Taxonomy']",
   tab = "Overview",
   tabId = "navbar"
@@ -34,71 +33,93 @@ conductor <- Conductor$
   step(
   "#tax_tab",
   title = NULL,
-  text = "Dive into the taxonomy and filter the table",
+  text = "Dive into the taxonomy by using filters and search.",
   tab = "Taxonomy",
   tabId = "navbar",
   position = "top"
 )$
   step(
-    "div.dt-buttons", # btn-group flex-wrap",
-    title = NULL,
-    text = "The current subset table can be exported for later use!",
-    tab = "Taxonomy",
-    tabId = "navbar"
-  )$
+  "div.dt-buttons", # btn-group flex-wrap",
+  title = NULL,
+  text = "The current subset table can be exported for later use!",
+  tab = "Taxonomy",
+  tabId = "navbar"
+)$
   step(
-    title=NULL,
-    "Explore similarly the cultivation metadata",
-    "[data-value='Cultivation']",
-    tab = "Taxonomy",
-    tabId = "navbar"
-  )$
+  title = NULL,
+  "Likewise, explore the cultivation metadata (with plot).",
+  "[data-value='Cultivation']",
+  tab = "Taxonomy",
+  tabId = "navbar",
+  canClickTarget = FALSE
+)$
   step(
-    title=NULL,
-    "And the genome assembly metadata.",
-    "[data-value='Genomes']",
-    tab = "Taxonomy",
-    tabId = "navbar"
-  )$
+  title = NULL,
+  "And the genome assembly metadata (with plots).",
+  "[data-value='Genomes']",
+  tab = "Taxonomy",
+  tabId = "navbar",
+  canClickTarget = FALSE
+)$
   step(
-    "#viewDetail",
-    title = NULL,
-    text = "Curious about a strain in particular? Select it in the table and click on the button!",
-    tab = "Taxonomy",
-    tabId = "navbar"
-  )$
+  "#viewDetail",
+  title = NULL,
+  text = "Curious about a strain in particular? Select it in the table and click on the button!",
+  tab = "Taxonomy",
+  tabId = "navbar",
+  canClickTarget = FALSE
+)$
   step(
-    el = "#isolate-details",
-    title = NULL,
-    text = "Skim through the extra metadata of your selected isolate",
-    tab = "detail",
-    tabId = "navbar"
-  )$
+  "[data-value='detail']",
+  title = NULL,
+  text = "Or select it in the table and click on the tab here!",
+  tab = "Taxonomy",
+  tabId = "navbar",
+  canClickTarget = FALSE
+)$
   step(
-    "#downloadSequences",
-    title = NULL,
-    text = "Sequences of this isolate are directly accessible below",
-    tab = "detail",
-    tabId = "navbar"
-  )$
+  el = "#isolate-details",
+  title = NULL,
+  text = "Skim through the extra metadata of your selected isolate",
+  tab = "detail",
+  tabId = "navbar"
+)$
   step(
-    "#downloadBulk",
-    title = NULL,
-    text = "To download all the HiBC, use the buttons below!",
-    tab = "Overview",
-    tabId = "navbar"
-    )$
+  "#downloadSequences",
+  title = NULL,
+  text = "Sequences of this isolate are directly accessible below",
+  tab = "detail",
+  tabId = "navbar",
+  canClickTarget = FALSE
+)$
   step(
-    "#disclaimer",
-    title = "Thanks for your attention",
-    text = "Don't forget to use data responsibly!",
-    buttons = list(
-      list(
-        action = "next",
-        text = "Finish"
-      )
+  title = NULL,
+  "There is more than one isolate, so feel free to explore!",
+  "#hibc_values",
+  tab = "Overview",
+  tabId = "navbar"
+)$
+  step(
+  "#downloadBulk",
+  title = NULL,
+  text = "If you are interested in all of them, use the buttons to download all the HiBC datasets",
+  tab = "Overview",
+  tabId = "navbar",
+  canClickTarget = FALSE,
+  position = "top"
+)$
+  step(
+  "#disclaimer",
+  title = "Thanks for your attention",
+  text = "Don't forget to use data responsibly!",
+  position = "top",
+  buttons = list(
+    list(
+      action = "next",
+      text = "Finish"
     )
   )
+)
 
 
 thematic_shiny(font = "auto")
@@ -178,32 +199,6 @@ ui <- navbarPage(
         .shepherd-button-secondary {
           background-color: #17a2b8 ;
         }")
-      # HTML("
-      #   .shepherd-header {
-      #     background-color: #17a2b8 !important;
-      #   }
-      #   .shepherd-element {
-      #     background-color: white;
-      #   }
-      #   .shepherd-title {
-      #     color: white
-      #   }
-      #   .shepherd-text {
-      #     color: black
-      #   }
-      #   .shepherd-button {
-      #     background-color: #28a745 ;
-      #   }
-      #   .shepherd-button:hover {
-      #     background-color: #ffc107 !important ;
-      #   }
-      #   .shepherd-button-secondary {
-      #     background-color: #17a2b8 ;
-      #   }
-      #   .shepherd-arrow:before {
-      #     background-color: #17a2b8;
-      #   }
-      #      ")
     )),
     use_conductor()
   ),
@@ -269,10 +264,12 @@ ui <- navbarPage(
           align = "left",
           div(
             actionButton(
-            inputId = "startTour", class = "btn-secondary fw-bold",
-            label = "Take a guided tour!", icon = icon("redo"),
-            width = "200px",
-          ), align = "center")
+              inputId = "startTour", class = "btn-success fw-bold",
+              label = "Take a guided tour!", icon = icon("redo"),
+              width = "200px",
+            ),
+            align = "center"
+          )
         ),
       ),
       br(),
@@ -295,38 +292,41 @@ ui <- navbarPage(
           "assembly process and the biological sequences. We are supported in that process by the",
           a(href = "https://nfdi4microbiota.de", "NFDI4Microbiota"),
           "a German consortium of the National Research Data Infrastructure that supports and train the microbiology",
-          "community for better research data production and management.",
-          div(id = "downloadBulk",
-              h5("Download"),
-              downloadButton("dl16S", label = "HiBC 16S rRNA sequences", icon = icon("barcode"), class = "btn-primary"),
-             downloadButton("dlGenomes", label = "HiBC genomes sequences", icon = icon("dna"), class = "btn-info"),
-             downloadButton("dlMetadata", label = "HiBC metadata",icon = icon("file"),class = "btn-warning")
-          #     tags$ul(
-          #       tags$li(downloadButton("dl16S", label = "HiBC 16S rRNA sequences", icon = icon("barcode"), class = "btn-primary")),
-          #       tags$li(downloadButton("dlGenomes", label = "HiBC genomes sequences", icon = icon("dna"), class = "btn-info")),
-          #       tags$li(downloadButton("dlMetadata", label = "HiBC metadata",icon = icon("file"),class = "btn-warning"))
-          # )
-          )
-              # downloadButton("dl16S", label = "Download HiBC 16S rRNA sequences", class = "btn-error",
-              #                icon = icon("barcode")),br(),
-              # downloadButton("dlGenomes", label = "Download HiBC genomes sequences", class = "btn-primary",
-              #                icon = icon("dna")),br(),
-              # downloadButton("dlMetadata", label = "Download HiBC metadata",class = "btn-info",
-              #                icon = icon("file")),br()
-              # )
+          "community for better research data production and management."
         )
       ),
-      div(id = "disclaimer",
-      h2("Disclaimer", align = "center"),
-      "If you make use of HiBC, please cite our work as:",
-      tags$blockquote(
-        "Hitch, T.C.A., Masson J. et al. & Clavel T.",
-        "The Human Intestinal Bacterial Collection,",
-        "20 Apr. 2023,", a(href = "https://hibc.otc.coscine.dev", "https://hibc.otc.coscine.dev")
-      ),
-      "By downloading any of the HiBC data, you agree", tags$strong("not"), "to submit the data to any public database",
-      "(e.g., NCBI, EBI) on your behalf or on the behalf of AG Clavel, as the ownership of all data on",
-      "this website belongs to AG Clavel before submission to a public database."
+      fluidRow(
+        column(
+          width = 6,
+          div(
+            id = "downloadBulk",
+            h2("Get HiBC datasets", align = "center"),
+            p(
+              tags$ul(
+                style = "line-height: 400%",
+                tags$li(icon("barcode"), "HiBC 16S rRNA gene sequences", downloadButton("dl16S")),
+                tags$li(icon("dna"), "HiBC genomes sequences", downloadButton("dlGenomes")),
+                tags$li(icon("file"), "HiBC metadata", downloadButton("dlMetadata"))
+              )
+            )
+          )
+        ),
+        column(
+          width = 6,
+          div(
+            id = "disclaimer",
+            h2("Disclaimer", align = "center"),
+            "If you make use of HiBC, please cite our work as:",
+            tags$blockquote(
+              "Hitch, T.C.A., Masson J. et al. & Clavel T.",
+              "The Human Intestinal Bacterial Collection,",
+              "20 Apr. 2023,", a(href = "https://hibc.otc.coscine.dev", "https://hibc.otc.coscine.dev")
+            ),
+            "By downloading any of the HiBC data, you agree", tags$strong("not"), "to submit the data to any public database",
+            "(e.g., NCBI, EBI) on your behalf or on the behalf of AG Clavel, as the ownership of all data on",
+            "this website belongs to AG Clavel before submission to a public database."
+          )
+        )
       )
     )
   ),
@@ -357,7 +357,8 @@ ui <- navbarPage(
     ),
     column(
       width = 8, offset = 2, align = "center",
-      fluidRow(id = "tax_tab",
+      fluidRow(
+        id = "tax_tab",
         DT::dataTableOutput("taxonomy")
       )
     )
@@ -492,7 +493,8 @@ ui <- navbarPage(
       ),
       h4("Genome and 16S rRNA sequences"),
       rclipboardSetup(),
-      layout_column_wrap(id = "downloadSequences",
+      layout_column_wrap(
+        id = "downloadSequences",
         width = "400px", align = "center",
         card(
           class = "border-danger", align = "center",
@@ -524,7 +526,7 @@ ui <- navbarPage(
 
 # Define server logic
 server <- function(input, output, session) {
-  observeEvent(input$startTour,{
+  observeEvent(input$startTour, {
     conductor$init()$start()
   })
   preview_hibc <- reactive({
