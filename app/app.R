@@ -179,9 +179,6 @@ ui <- navbarPage(
     info = "#17a2b8",
     base_font = font_google("Atkinson Hyperlegible"),
     code_font = font_google("Source Code Pro")
-    # ) %>%
-    #   bs_add_rules(
-    #     ':target:before { content: "";  display: block;  height: 80px;  margin: -20px 0 0;}'
   ),
   position = "static-top",
   header = list(
@@ -232,7 +229,6 @@ ui <- navbarPage(
     tags$head(tags$link(rel = "shortcut icon", href = "favicon.ico")),
     column(
       width = 12, align = "center",
-      tags$style(type = "text/css", "body {padding-top: 0px;}"),
       h1(tags$img(src = "hibc.png", height = 80, class = "mx-auto d-none d-md-inline"), "HiBC: Human Intestinal Bacterial Collection")
     ),
     column(
@@ -357,7 +353,6 @@ ui <- navbarPage(
     fluidRow(
       column(
         width = 4, offset = 2,
-        tags$style(type = "text/css", "body {padding-top: 0px;}"),
         h4("Taxonomy of the HiBC isolates"),
         "Browse through the complete list of the isolates in the table below.",
         "Use the buttons beneath the table to copy or download the", tags$em("displayed"), "values.",
@@ -367,7 +362,6 @@ ui <- navbarPage(
       ),
       column(
         width = 4, align = "center",
-        tags$style(type = "text/css", "body {padding-top: 0px;}"),
         h4("An isolate of interest?"),
         br(),
         actionButton(
@@ -390,7 +384,6 @@ ui <- navbarPage(
     fluidRow(
       column(
         width = 4, offset = 2,
-        tags$style(type = "text/css", "body {padding-top: 0px;}"),
         h4("Cultivation of the HiBC isolates"),
         "On this tab we detail the cultivation conditions required to best grow each HiBC isolate.",
         "The graph on the right highlights the", textOutput("no_media", inline = T),
@@ -401,7 +394,6 @@ ui <- navbarPage(
       ),
       column(
         width = 4, align = "center",
-        tags$style(type = "text/css", "body {padding-top: 0px;}"),
         plotlyOutput("plot_media", height = "400px") %>% withSpinner()
       )
     ),
@@ -416,7 +408,6 @@ ui <- navbarPage(
     "Genomes",
     column(
       width = 8, offset = 2, align = "center",
-      tags$style(type = "text/css", "body {padding-top: 0px;}"),
       h4("Assemblies of the HiBC isolates"),
       "Explore the genome assemblies of the isolates via the two interactive plots and the table below.", br(),
       "Use the buttons beneath the table to copy or download the", tags$em("displayed"), "values.",
