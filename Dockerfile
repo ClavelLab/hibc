@@ -6,6 +6,8 @@ FROM rocker/shiny-verse:4.2
 RUN install2.r --error --skipinstalled cowplot devtools shiny DT plotly bslib thematic showtext shinycssloaders rclipboard aws.s3 conductor \
     && rm -Rf /tmp/downloaded_packages
 
+RUN installGithub.r ColinFay/glouton
+
 RUN mkdir /app/
 
 COPY app/ /app/

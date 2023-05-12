@@ -9,7 +9,13 @@ library(showtext)
 library(shinycssloaders)
 library(rclipboard)
 library(aws.s3)
+library(glouton)
 library(conductor)
+
+# src: https://cicerone.john-coene.com/examples/glouton.html
+js <- "$(document).on('shiny:connected', function(event) {
+  Shiny.onInputChange('loaded', true)
+});"
 
 conductor <- Conductor$
   new(exitOnEsc = TRUE)$
@@ -206,7 +212,9 @@ ui <- navbarPage(
           background-color: #17a2b8 ;
         }")
     )),
-    use_conductor()
+    use_glouton(),
+    use_conductor(),
+    tags$script(js)
   ),
   footer = list(
     column(hr(),
@@ -540,6 +548,16 @@ ui <- navbarPage(
 
 # Define server logic
 server <- function(input, output, session) {
+  observeEvent(input$loaded, {
+    # get cookie
+    visited <- fetch_cookies()
+    # if null set cookie
+    # otherwise show guide
+    if (is.null(visited$visited_site)) {
+      add_cookie("visited_site", "yes")
+      conductor$init()$start()
+    }
+  })
   observeEvent(input$startTour, {
     conductor$init()$start()
   })
