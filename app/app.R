@@ -310,9 +310,18 @@ ui <- navbarPage(
             p(
               tags$ul(
                 style = "line-height: 400%",
-                tags$li(icon("barcode"), "HiBC 16S rRNA gene sequences", downloadButton("dl16S")),
-                tags$li(icon("dna"), "HiBC genomes sequences", downloadButton("dlGenomes")),
-                tags$li(icon("file"), "HiBC metadata", downloadButton("dlMetadata"))
+                tags$li(
+                  icon("barcode"), "HiBC 16S rRNA gene sequences",
+                  actionButton("download_16S", label = "Coming soon", icon = icon("digging"))
+                ),
+                tags$li(
+                  icon("dna"), "HiBC genomes sequences",
+                  actionButton("download_genomes", label = "Coming soon", icon = icon("digging"))
+                ),
+                tags$li(
+                  icon("file"), "HiBC metadata",
+                  downloadButton("download_metadata", class = "btn-warning")
+                )
               )
             )
           )
@@ -923,6 +932,45 @@ server <- function(input, output, session) {
     },
     contentType = "text/plain"
   )
+  output$download_metadata <- downloadHandler(
+    filename = "20230420_HiBC_metadata.tsv",
+    content = function(file) {
+      preview_hibc() %>%
+        rename(`Isolation date` = `Date of isolation (JJJJ-MM-DD)`) %>%
+        select(
+          StrainID, Phylum, Family, Species, `DSM no.`,
+          `Recommended medium for growth`, `Growth atm.`, `Incubation time`, `Risk Group`,
+          `Geographic location`, `Host age class`,
+          `Sample material`, `Isolation date`,
+          genome_md5, assembly_qual,
+          coverage, compl_score, compl_software, contam_score, contam_software,
+          genome_length, max_contig_length, N50, number_contig, number_contig_below_1kb,
+          plasmid_length, trnas, trna_ext_software,
+          workflow_version, assembly_date, sequencer, assembly_software
+        ) %>%
+        relocate(
+          StrainID, Phylum, Family, Species, `DSM no.`,
+          `Recommended medium for growth`, `Growth atm.`, `Incubation time`, `Risk Group`,
+          `Geographic location`, `Host age class`,
+          `Sample material`, `Isolation date`,
+          genome_md5, assembly_qual,
+          coverage, compl_score, compl_software, contam_score, contam_software,
+          genome_length, max_contig_length, N50, number_contig, number_contig_below_1kb,
+          plasmid_length, trnas, trna_ext_software,
+          workflow_version, assembly_date, sequencer, assembly_software
+        ) %>%
+        write_tsv(file)
+    }, contentType = "text/tsv"
+  )
+  no_dataset_modal <- modalDialog(
+    title = "Sorry for the inconvenience!",
+    "We are finalizing this dataset at the moment and prefer to share it once properly curated.\n",
+    "Please be patient and stay tuned!",
+    footer = modalButton("Got it!"),
+    easyClose = TRUE
+  )
+  observeEvent(input$download_16S, showModal(no_dataset_modal))
+  observeEvent(input$download_genomes, showModal(no_dataset_modal))
   # Navigation
   #
   observeEvent(input$viewDetail, {
