@@ -21,11 +21,12 @@ conductor <- Conductor$
       action = "next",
       text = "Next"
     )
-  )
+  ),
+  cancelIcon = list(enabled = TRUE, NULL)
 )$
   step(
   title = NULL,
-  "Find the list of bacterial isolates here!",
+  text = "Find the list of bacterial isolates here!",
   "[data-value='Taxonomy']",
   tab = "Overview",
   tabId = "navbar"
@@ -93,16 +94,9 @@ conductor <- Conductor$
   canClickTarget = FALSE
 )$
   step(
-  title = NULL,
-  "There is more than one isolate, so feel free to explore!",
-  "#hibc_values",
-  tab = "Overview",
-  tabId = "navbar"
-)$
-  step(
   "#downloadBulk",
   title = NULL,
-  text = "If you are interested in all of them, use the buttons to download all the HiBC datasets",
+  text = "If you are interested in all isolates, use the buttons to download all the HiBC datasets",
   tab = "Overview",
   tabId = "navbar",
   canClickTarget = FALSE,
@@ -110,15 +104,16 @@ conductor <- Conductor$
 )$
   step(
   "#disclaimer",
-  title = "Thanks for your attention",
-  text = "Don't forget to use data responsibly!",
+  title = "End of the tour!",
+  text = "Thanks for your attention. Don't forget to use data responsibly!",
   position = "top",
   buttons = list(
     list(
       action = "next",
       text = "Finish"
     )
-  )
+  ),
+  cancelIcon = list(enabled = TRUE, NULL)
 )
 
 
@@ -190,6 +185,17 @@ ui <- navbarPage(
             background-color: var(--bs-success)!important;}
       "),
       HTML("
+        .shepherd-title {
+          padding-left: 2.5rem
+        }
+
+        .shepherd-cancel-icon > span {
+          border-radius: 50%;
+          background-color: none;
+          opacity: 0.8;
+          display: block;
+          width: 2.8rem !important;
+        }
         .shepherd-button {
           background-color: #28a745 ;
         }
@@ -265,7 +271,7 @@ ui <- navbarPage(
           div(
             actionButton(
               inputId = "startTour", class = "btn-success fw-bold",
-              label = "Take a guided tour!", icon = icon("redo"),
+              label = "Follow the guided tour!", icon = icon("redo"),
               width = "200px",
             ),
             align = "center"
@@ -396,7 +402,7 @@ ui <- navbarPage(
       width = 8, offset = 2, align = "center",
       tags$style(type = "text/css", "body {padding-top: 70px;}"),
       h4("Assemblies of the HiBC isolates"),
-      "Explore the genome assemblies of the isolates via the two interactive plots and the table below.",
+      "Explore the genome assemblies of the isolates via the two interactive plots and the table below.", br(),
       "Use the buttons beneath the table to copy or download the", tags$em("displayed"), "values.",
       br(), br(),
       layout_column_wrap(
