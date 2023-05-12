@@ -319,15 +319,15 @@ ui <- navbarPage(
               tags$ul(
                 style = "line-height: 400%",
                 tags$li(
-                  icon("barcode"), "HiBC 16S rRNA gene sequences",
+                  icon("barcode"), "16S rRNA gene sequences",
                   actionButton("download_16S", label = "Coming soon", icon = icon("digging"))
                 ),
                 tags$li(
-                  icon("dna"), "HiBC genomes sequences",
+                  icon("dna"), "Genomes sequences",
                   actionButton("download_genomes", label = "Coming soon", icon = icon("digging"))
                 ),
                 tags$li(
-                  icon("file"), "HiBC metadata",
+                  icon("file"), "Metadata table",
                   downloadButton("download_metadata", class = "btn-warning")
                 )
               )
@@ -981,7 +981,7 @@ server <- function(input, output, session) {
   )
   no_dataset_modal <- modalDialog(
     title = "Sorry for the inconvenience!",
-    "We are finalizing this dataset at the moment and prefer to share it once properly curated.\n",
+    "We are finalizing this dataset at the moment and prefer to share it once properly curated.",br(),br(),
     "Please be patient and stay tuned!",
     footer = modalButton("Got it!"),
     easyClose = TRUE
