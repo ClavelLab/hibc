@@ -179,11 +179,11 @@ ui <- navbarPage(
     info = "#17a2b8",
     base_font = font_google("Atkinson Hyperlegible"),
     code_font = font_google("Source Code Pro")
-  ) %>%
-    bs_add_rules(
-      ':target:before { content: "";  display: block;  height: 80px;  margin: -20px 0 0;}'
-    ),
-  position = "fixed-top",
+    # ) %>%
+    #   bs_add_rules(
+    #     ':target:before { content: "";  display: block;  height: 80px;  margin: -20px 0 0;}'
+  ),
+  position = "static-top",
   header = list(
     tags$head(tags$style(
       HTML("
@@ -226,13 +226,14 @@ ui <- navbarPage(
     )
   ),
   id = "navbar",
+  collapsible = FALSE,
   tabPanel(
     "Overview",
     tags$head(tags$link(rel = "shortcut icon", href = "favicon.ico")),
     column(
       width = 12, align = "center",
-      tags$style(type = "text/css", "body {padding-top: 70px;}"),
-      h1(tags$img(src = "hibc.png", height = 80), "HiBC: Human Intestinal Bacterial Collection")
+      tags$style(type = "text/css", "body {padding-top: 0px;}"),
+      h1(tags$img(src = "hibc.png", height = 80, class = "mx-auto d-none d-md-inline"), "HiBC: Human Intestinal Bacterial Collection")
     ),
     column(
       width = 8, offset = 2,
@@ -314,22 +315,23 @@ ui <- navbarPage(
           width = 6,
           div(
             id = "downloadBulk",
-            h2("Get HiBC datasets", align = "center"),
-            p(
-              tags$ul(
-                style = "line-height: 400%",
-                tags$li(
-                  icon("barcode"), "16S rRNA gene sequences",
-                  actionButton("download_16S", label = "Coming soon", icon = icon("digging"))
-                ),
-                tags$li(
-                  icon("dna"), "Genomes sequences",
-                  actionButton("download_genomes", label = "Coming soon", icon = icon("digging"))
-                ),
-                tags$li(
-                  icon("file"), "Metadata table",
-                  downloadButton("download_metadata", class = "btn-warning")
-                )
+            h2("Get HiBC datasets", align = "center"), br(), br(),
+            layout_column_wrap(
+              width = 1 / 3,
+              card(
+                align = "center",
+                card_header(icon("barcode"), "16S rRNA gene sequences"),
+                actionButton("download_16S", label = "Coming soon", icon = icon("digging"))
+              ),
+              card(
+                align = "center",
+                card_header(icon("dna"), "Genomes sequences"),
+                actionButton("download_genomes", label = "Coming soon", icon = icon("digging"))
+              ),
+              card(
+                align = "center",
+                card_header(icon("file"), "Isolates and genomes metadata"),
+                downloadButton("download_metadata", class = "btn-warning")
               )
             )
           )
@@ -339,12 +341,10 @@ ui <- navbarPage(
           div(
             id = "disclaimer",
             h2("Disclaimer", align = "center"),
-            "If you make use of HiBC, please temporarily cite our work as a website in the", a(href= "https://apastyle.apa.org/","APA style",.noWS = "after"),":",
-            tags$blockquote(
-              "Thomas C. A. Hitch, Johannes M. Masson, Charlie Pauvert, Johanna Bosch, Afrizal Afrizal, Nicole Treichel, Jonathan Hartman, Lukas C. Bossert and Thomas Clavel",
-              "(n.d.). \"The Human Intestinal Bacterial Collection Website\".",
-              "Retrieved", format(Sys.Date(), "%b %d, %Y"),"from", a(href = "https://hibc.otc.coscine.dev", "https://hibc.otc.coscine.dev")
-            ),
+            "If you make use of HiBC, please temporarily cite our work as a website in the", a(href = "https://apastyle.apa.org/", "APA style", .noWS = "after"), ":", br(), br(),
+            "Thomas C. A. Hitch, Johannes M. Masson, Charlie Pauvert, Johanna Bosch, Afrizal Afrizal, Nicole Treichel, Jonathan Hartman, Lukas C. Bossert and Thomas Clavel",
+            "(n.d.).", tags$em("The Human Intestinal Bacterial Collection Website", .noWS = "after"), ".",
+            "Retrieved", format(Sys.Date(), "%b %d, %Y"), "from", a(href = "https://hibc.otc.coscine.dev", "https://hibc.otc.coscine.dev", .noWS = "after"), ".", br(), br(),
             "By downloading any of the HiBC data, you agree", tags$strong("not"), "to submit the data to any public database",
             "(e.g., NCBI, EMBL-EBI) on your behalf or on the behalf of AG Clavel."
           )
@@ -357,7 +357,7 @@ ui <- navbarPage(
     fluidRow(
       column(
         width = 4, offset = 2,
-        tags$style(type = "text/css", "body {padding-top: 70px;}"),
+        tags$style(type = "text/css", "body {padding-top: 0px;}"),
         h4("Taxonomy of the HiBC isolates"),
         "Browse through the complete list of the isolates in the table below.",
         "Use the buttons beneath the table to copy or download the", tags$em("displayed"), "values.",
@@ -367,7 +367,7 @@ ui <- navbarPage(
       ),
       column(
         width = 4, align = "center",
-        tags$style(type = "text/css", "body {padding-top: 70px;}"),
+        tags$style(type = "text/css", "body {padding-top: 0px;}"),
         h4("An isolate of interest?"),
         br(),
         actionButton(
@@ -390,7 +390,7 @@ ui <- navbarPage(
     fluidRow(
       column(
         width = 4, offset = 2,
-        tags$style(type = "text/css", "body {padding-top: 70px;}"),
+        tags$style(type = "text/css", "body {padding-top: 0px;}"),
         h4("Cultivation of the HiBC isolates"),
         "On this tab we detail the cultivation conditions required to best grow each HiBC isolate.",
         "The graph on the right highlights the", textOutput("no_media", inline = T),
@@ -401,7 +401,7 @@ ui <- navbarPage(
       ),
       column(
         width = 4, align = "center",
-        tags$style(type = "text/css", "body {padding-top: 70px;}"),
+        tags$style(type = "text/css", "body {padding-top: 0px;}"),
         plotlyOutput("plot_media", height = "400px") %>% withSpinner()
       )
     ),
@@ -416,7 +416,7 @@ ui <- navbarPage(
     "Genomes",
     column(
       width = 8, offset = 2, align = "center",
-      tags$style(type = "text/css", "body {padding-top: 70px;}"),
+      tags$style(type = "text/css", "body {padding-top: 0px;}"),
       h4("Assemblies of the HiBC isolates"),
       "Explore the genome assemblies of the isolates via the two interactive plots and the table below.", br(),
       "Use the buttons beneath the table to copy or download the", tags$em("displayed"), "values.",
@@ -981,7 +981,7 @@ server <- function(input, output, session) {
   )
   no_dataset_modal <- modalDialog(
     title = "Sorry for the inconvenience!",
-    "We are finalizing this dataset at the moment and prefer to share it once properly curated.",br(),br(),
+    "We are finalizing this dataset at the moment and prefer to share it once properly curated.", br(), br(),
     "Please be patient and stay tuned!",
     footer = modalButton("Got it!"),
     easyClose = TRUE
