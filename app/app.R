@@ -128,12 +128,16 @@ options(spinner.type = 8, spinner.color = "#28a745")
 
 # Fetch the authentification credentials for Coscine
 # src: https://appsilon.github.io/rhino/articles/how-to/manage-secrets-and-environments.html
-coscine_read <- Sys.getenv("COSCINE_READ")
-coscine_secret <- Sys.getenv("COSCINE_SECRET")
-if (coscine_read == "" | coscine_secret == "") {
+coscine_genome_read <- Sys.getenv("COSCINE_GENOME_READ")
+coscine_genome_secret <- Sys.getenv("COSCINE_GENOME_SECRET")
+coscine_16S_read <- Sys.getenv("COSCINE_16S_READ")
+coscine_16S_secret <- Sys.getenv("COSCINE_16S_SECRET")
+if (coscine_genome_read == "" | coscine_genome_secret == "" |
+    coscine_16S_read == "" | coscine_16S_secret == "") {
   warning(
     "No Coscine credentials in .Renviron",
-    "Please provide COSCINE_READ_TOKEN and COSCINE_SECRET_TOKEN"
+    "Please provide COSCINE_GENOME_READ, COSCINE_GENOME_SECRET,",
+    "COSCINE_16S_READ, COSCINE_16S_SECRET tokens"
   )
 }
 
@@ -931,11 +935,11 @@ server <- function(input, output, session) {
     content = function(file) {
       save_object(
         object = genome_filename(), file = file,
-        bucket = gsub("read_", "", coscine_read),
+        bucket = gsub("read_", "", coscine_genome_read),
         region = "", # because non-AWS
         base_url = "coscine-s3-01.s3.fds.rwth-aachen.de:9021",
-        key = coscine_read,
-        secret = coscine_secret
+        key = coscine_genome_read,
+        secret = coscine_genome_secret
       )
     },
     contentType = "text/plain"
