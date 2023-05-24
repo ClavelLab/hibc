@@ -932,7 +932,7 @@ server <- function(input, output, session) {
       str_glue_data("{StrainID}_16S_Sanger.fna")
   )
   output$download_selected_16S <- downloadHandler(
-    filename = sixteen_s_filename(),
+    filename = function() sixteen_s_filename(),
     content = function(file) {
       # Test if file exists
       does_seq_exists<-head_object(
@@ -964,7 +964,7 @@ server <- function(input, output, session) {
       str_glue_data("{StrainID}.genome.fa.gz")
   )
   output$download_genome <- downloadHandler(
-    filename = genome_filename(),
+    filename = function() genome_filename(),
     content = function(file) {
       save_object(
         object = genome_filename(), file = file,
