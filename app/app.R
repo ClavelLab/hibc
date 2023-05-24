@@ -332,8 +332,14 @@ ui <- navbarPage(
               card(
                 align = "center",
                 card_header(icon("dna"), "Genomes sequences"),
-                actionButton("download_genomes", label = "Coming soon", icon = icon("digging"))
-              ),
+                a(href = "https://doi.org/10.5281/zenodo.7966739", "Zenodo", target = "_blank"),br(),br(),
+                tags$button(
+                  class = "btn btn-warning",
+                  icon("download"),
+                  a(class = "text-reset text-decoration-none", target = "_blank",
+                    href="https://zenodo.org/record/7966739/files/HiBC_Genome_sequences_20230524.zip?download=1",
+                    "Download")
+                )              ),
               card(
                 align = "center",
                 card_header(icon("file"), "Isolates and genomes metadata"),
@@ -978,14 +984,6 @@ server <- function(input, output, session) {
         write_tsv(file)
     }, contentType = "text/tsv"
   )
-  no_dataset_modal <- modalDialog(
-    title = "Sorry for the inconvenience!",
-    "We are finalizing this dataset at the moment and prefer to share it once properly curated.", br(), br(),
-    "Please be patient and stay tuned!",
-    footer = modalButton("Got it!"),
-    easyClose = TRUE
-  )
-  observeEvent(input$download_genomes, showModal(no_dataset_modal))
   # Navigation
   #
   observeEvent(input$viewDetail, {
