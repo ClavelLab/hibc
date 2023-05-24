@@ -320,11 +320,11 @@ ui <- navbarPage(
               card(
                 align = "center",
                 card_header(icon("barcode"), "16S rRNA gene sequences"),
-                a(href = "https://doi.org/10.5281/zenodo.7966230", "Zenodo"),br(),br(),
+                a(href = "https://doi.org/10.5281/zenodo.7966230", "Zenodo", target = "_blank"),br(),br(),
                 tags$button(
                   class = "btn btn-warning",
                   icon("download"),
-                  a(class = "text-reset text-decoration-none",
+                  a(class = "text-reset text-decoration-none", target = "_blank",
                     href="https://zenodo.org/record/7966230/files/HiBC_16S_rRNA_gene_sequences_20230524.zip?download=1",
                     "Download")
                 )
@@ -337,6 +337,7 @@ ui <- navbarPage(
               card(
                 align = "center",
                 card_header(icon("file"), "Isolates and genomes metadata"),
+                a(href = "https://doi.org/10.5281/zenodo.7966674", "Zenodo", target = "_blank"),br(),br(),
                 downloadButton("download_metadata", class = "btn-warning")
               )
             )
