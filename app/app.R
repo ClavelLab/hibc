@@ -522,7 +522,8 @@ ui <- navbarPage(
             div(
               align = "left",
               verbatimTextOutput("details_16S_sequence")
-            )
+            ),
+            downloadButton("download_selected_16S", "Download the 16S rRNA sequence", class = "btn-danger")
           )
         ),
         card(
@@ -926,6 +927,38 @@ server <- function(input, output, session) {
   observeEvent(input$btn_clip_md5, {
     showNotification("FASTA md5sum copied.", type = "default")
   })
+  sixteen_s_filename <- reactive(
+    preview_hibc() %>% .[input$taxonomy_rows_selected, ] %>%
+      str_glue_data("{StrainID}_16S_Sanger.fna")
+  )
+  output$download_selected_16S <- downloadHandler(
+    filename = sixteen_s_filename(),
+    content = function(file) {
+      # Test if file exists
+      does_seq_exists<-head_object(
+        sixteen_s_filename(),
+        bucket = gsub("read_", "", coscine_16S_read),
+        region = "", # because non-AWS
+        base_url = "coscine-s3-01.s3.fds.rwth-aachen.de:9021",
+        key = coscine_16S_read,
+        secret = coscine_16S_secret
+      )
+      if(isTRUE(does_seq_exists)){
+        existing_sequence <- sixteen_s_filename()
+      } else {
+        existing_sequence <- gsub("Sanger","Genome", sixteen_s_filename())
+      }
+      save_object(
+        object = existing_sequence, file = file,
+        bucket = gsub("read_", "", coscine_16S_read),
+        region = "", # because non-AWS
+        base_url = "coscine-s3-01.s3.fds.rwth-aachen.de:9021",
+        key = coscine_16S_read,
+        secret = coscine_16S_secret
+      )
+    },
+    contentType = "text/plain"
+  )
   genome_filename <- reactive(
     preview_hibc() %>% .[input$taxonomy_rows_selected, ] %>%
       str_glue_data("{StrainID}.genome.fa.gz")
