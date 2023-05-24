@@ -981,8 +981,6 @@ server <- function(input, output, session) {
     title = "Sorry for the inconvenience!",
     "We are finalizing this dataset at the moment and prefer to share it once properly curated.", br(), br(),
     "Please be patient and stay tuned!",
-    a(href="https://zenodo.org/record/7966230/files/HiBC_16S_rRNA_gene_sequences_20230524.zip?download=1",target="_blank","download link"),
-    a(href="https://zenodo.org/record/7966230","https://zenodo.org/record/7966230"),
     footer = modalButton("Got it!"),
     easyClose = TRUE
   )
