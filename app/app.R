@@ -517,23 +517,17 @@ ui <- navbarPage(
           class = "border-danger", align = "center",
           card_header("16S rRNA gene sequence"),
           card_body(
-            uiOutput("clip_16S", align = "center"),
-            br(),
-            div(
-              align = "left",
-              verbatimTextOutput("details_16S_sequence")
-            ),
-            downloadButton("download_selected_16S", "Download the 16S rRNA sequence", class = "btn-danger")
+            downloadButton("download_selected_16S", "Download", class = "btn-danger")
           )
         ),
         card(
           class = "border-info", align = "center",
-          card_header("Download FASTA"),
+          card_header("Genome sequence"),
           card_body(
             uiOutput("clip_md5"),
             br(),
             verbatimTextOutput("md5_genome"),
-            downloadButton("download_genome", "Download the genome", class = "btn-info")
+            downloadButton("download_genome", "Download", class = "btn-info")
           )
         )
       )
@@ -896,36 +890,14 @@ server <- function(input, output, session) {
     align = "lr",
     format.args = list(big.mark = " ")
   )
-  seq16S <- reactive({
-    # This function should not be ran before a row is selected.
-    req(input$taxonomy_rows_selected)
-    #
-    preview_hibc() %>%
-      .[input$taxonomy_rows_selected, ] %>%
-      select(StrainID, Species, `16S sequence`) %>%
-      str_glue_data(">{StrainID}_16S_Sanger {Species}\n{`16S sequence`}")
-  })
-  output$details_16S_sequence <- renderText({
-    seq16S()
-  })
-  # Copy clipboard buttons
-  output$clip_16S <- renderUI({
-    rclipButton("btn_clip_16S",
-      label = "Copy sequence", icon = icon("clipboard"),
-      class = "btn-danger", clipText = seq16S()
-    )
-  })
   output$clip_md5 <- renderUI({
     rclipButton("btn_clip_md5",
-      label = "Copy FASTA md5sum", icon = icon("clipboard"),
+      label = "Copy Genome md5sum", icon = icon("clipboard"),
       class = "btn-secondary", clipText = md5_genome()
     )
   })
-  observeEvent(input$btn_clip_16S, {
-    showNotification("16S rRNA sequence copied.", type = "default")
-  })
   observeEvent(input$btn_clip_md5, {
-    showNotification("FASTA md5sum copied.", type = "default")
+    showNotification("FASTA md5sum copied", type = "default")
   })
   sixteen_s_filename <- reactive(
     preview_hibc() %>% .[input$taxonomy_rows_selected, ] %>%
