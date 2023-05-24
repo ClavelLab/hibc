@@ -7,7 +7,6 @@ library(plotly)
 library(thematic)
 library(showtext)
 library(shinycssloaders)
-library(rclipboard)
 library(aws.s3)
 library(glouton)
 library(conductor)
@@ -509,26 +508,18 @@ ui <- navbarPage(
         )
       ),
       h4("Genome and 16S rRNA sequences"),
-      rclipboardSetup(),
       layout_column_wrap(
         id = "downloadSequences",
         width = "400px", align = "center",
         card(
           class = "border-danger", align = "center",
-          card_header("16S rRNA gene sequence"),
-          card_body(
-            downloadButton("download_selected_16S", "Download", class = "btn-danger")
-          )
+          card_header(icon("barcode"), "16S rRNA gene sequence"),
+          downloadButton("download_selected_16S", "Download", class = "btn-danger")
         ),
         card(
           class = "border-info", align = "center",
-          card_header("Genome sequence"),
-          card_body(
-            uiOutput("clip_md5"),
-            br(),
-            verbatimTextOutput("md5_genome"),
-            downloadButton("download_genome", "Download", class = "btn-info")
-          )
+          card_header(icon("dna"), "Genome sequence"),
+          downloadButton("download_genome", "Download", class = "btn-info")
         )
       )
     )
