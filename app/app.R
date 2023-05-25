@@ -132,7 +132,7 @@ coscine_genome_secret <- Sys.getenv("COSCINE_GENOME_SECRET")
 coscine_16S_read <- Sys.getenv("COSCINE_16S_READ")
 coscine_16S_secret <- Sys.getenv("COSCINE_16S_SECRET")
 if (coscine_genome_read == "" | coscine_genome_secret == "" |
-    coscine_16S_read == "" | coscine_16S_secret == "") {
+  coscine_16S_read == "" | coscine_16S_secret == "") {
   warning(
     "No Coscine credentials in .Renviron",
     "Please provide COSCINE_GENOME_READ, COSCINE_GENOME_SECRET,",
@@ -320,30 +320,35 @@ ui <- navbarPage(
               card(
                 align = "center",
                 card_header(icon("barcode"), "16S rRNA gene sequences"),
-                a(href = "https://doi.org/10.5281/zenodo.7966230", "Zenodo", target = "_blank"),br(),br(),
+                a(href = "https://doi.org/10.5281/zenodo.7966230", "Zenodo", target = "_blank"), br(), br(),
                 tags$button(
                   class = "btn btn-warning",
                   icon("download"),
-                  a(class = "text-reset text-decoration-none", target = "_blank",
-                    href="https://zenodo.org/record/7966230/files/HiBC_16S_rRNA_gene_sequences_20230524.zip?download=1",
-                    "Download")
+                  a(
+                    class = "text-reset text-decoration-none", target = "_blank",
+                    href = "https://zenodo.org/record/7966230/files/HiBC_16S_rRNA_gene_sequences_20230524.zip?download=1",
+                    "Download"
+                  )
                 )
               ),
               card(
                 align = "center",
                 card_header(icon("dna"), "Genomes sequences"),
-                a(href = "https://doi.org/10.5281/zenodo.7966739", "Zenodo", target = "_blank"),br(),br(),
+                a(href = "https://doi.org/10.5281/zenodo.7966739", "Zenodo", target = "_blank"), br(), br(),
                 tags$button(
                   class = "btn btn-warning",
                   icon("download"),
-                  a(class = "text-reset text-decoration-none", target = "_blank",
-                    href="https://zenodo.org/record/7966739/files/HiBC_Genome_sequences_20230524.zip?download=1",
-                    "Download")
-                )              ),
+                  a(
+                    class = "text-reset text-decoration-none", target = "_blank",
+                    href = "https://zenodo.org/record/7966739/files/HiBC_Genome_sequences_20230524.zip?download=1",
+                    "Download"
+                  )
+                )
+              ),
               card(
                 align = "center",
                 card_header(icon("file"), "Isolates and genomes metadata"),
-                a(href = "https://doi.org/10.5281/zenodo.7966674", "Zenodo", target = "_blank"),br(),br(),
+                a(href = "https://doi.org/10.5281/zenodo.7966674", "Zenodo", target = "_blank"), br(), br(),
                 downloadButton("download_metadata", class = "btn-warning")
               )
             )
@@ -906,13 +911,14 @@ server <- function(input, output, session) {
   })
   sixteen_s_filename <- reactive(
     preview_hibc() %>% .[input$taxonomy_rows_selected, ] %>%
-      str_glue_data("{StrainID}_16S_Sanger.fna")
+      str_glue_data("{StrainID}_16S_Sanger.fna") %>%
+      str_replace("CLAKBH481", "CLAKBH48.1")
   )
   output$download_selected_16S <- downloadHandler(
     filename = function() sixteen_s_filename(),
     content = function(file) {
       # Test if file exists
-      does_seq_exists<-head_object(
+      does_seq_exists <- head_object(
         sixteen_s_filename(),
         bucket = gsub("read_", "", coscine_16S_read),
         region = "", # because non-AWS
@@ -920,10 +926,10 @@ server <- function(input, output, session) {
         key = coscine_16S_read,
         secret = coscine_16S_secret
       )
-      if(isTRUE(does_seq_exists)){
+      if (isTRUE(does_seq_exists)) {
         existing_sequence <- sixteen_s_filename()
       } else {
-        existing_sequence <- gsub("Sanger","Genome", sixteen_s_filename())
+        existing_sequence <- gsub("Sanger", "Genome", sixteen_s_filename())
       }
       save_object(
         object = existing_sequence, file = file,
@@ -938,7 +944,9 @@ server <- function(input, output, session) {
   )
   genome_filename <- reactive(
     preview_hibc() %>% .[input$taxonomy_rows_selected, ] %>%
-      str_glue_data("{StrainID}.combined.fa.gz")
+      str_glue_data("{StrainID}.combined.fa.gz") %>%
+      str_replace("Hiso", "H-iso") %>%
+      str_replace("CLAKBH481", "CLAKBH48")
   )
   output$download_genome <- downloadHandler(
     filename = function() genome_filename(),
