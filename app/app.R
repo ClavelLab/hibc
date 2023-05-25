@@ -938,7 +938,7 @@ server <- function(input, output, session) {
   )
   genome_filename <- reactive(
     preview_hibc() %>% .[input$taxonomy_rows_selected, ] %>%
-      str_glue_data("{StrainID}.genome.fa.gz")
+      str_glue_data("{StrainID}.combined.fa.gz")
   )
   output$download_genome <- downloadHandler(
     filename = function() genome_filename(),
