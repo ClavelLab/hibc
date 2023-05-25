@@ -16,7 +16,7 @@ container:
   script:
     - mkdir -p /kaniko/.docker
     - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
-    - /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/Dockerfile --build-arg COSCINE_READ=$COSCINE_READ --build-arg COSCINE_SECRET=$COSCINE_SECRET --destination $CI_REGISTRY/$CI_PROJECT_PATH/main:latest
+    - /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/Dockerfile --build-arg COSCINE_16S_READ=$COSCINE_16S_READ --build-arg COSCINE_16S_SECRET=$COSCINE_16S_SECRET --build-arg COSCINE_GENOME_READ=$COSCINE_GENOME_READ --build-arg COSCINE_GENOME_SECRET=$COSCINE_GENOME_SECRET --destination $CI_REGISTRY/$CI_PROJECT_PATH/main:latest
   rules:
   - !reference [.default_rules, rules]
 
