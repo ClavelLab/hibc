@@ -162,6 +162,14 @@ qual_flags_translation <- c(
   "is_5S_grtr_0" = "5S rRNA gene was not detected"
 )
 
+
+# Setup the font (once) with library(gfonts)
+# gfonts::setup_font(
+#   id = "atkinson-hyperlegible",
+#   output_dir = "www",
+#   variants = "regular"
+# )
+
 # Define UI
 ui <- navbarPage(
   lang = "en",
@@ -179,13 +187,14 @@ ui <- navbarPage(
     success = "#28a745",
     warning = "#ffc107",
     danger = "#dc3545",
-    info = "#17a2b8",
-    base_font = font_google("Atkinson Hyperlegible"),
-    code_font = font_google("Source Code Pro")
+    info = "#17a2b8"
   ),
   position = "static-top",
   header = list(
-    tags$head(tags$style(
+    tags$head( # Link the font CSS manually as gfonts::use_font() does not work
+      tags$link(rel = "stylesheet", type = "text/css", href = "css/atkinson-hyperlegible.css"),
+      tags$style(
+        HTML("body {font-family: 'Atkinson Hyperlegible';}"),
       HTML("
       .table.dataTable tbody td.active, .table.dataTable tbody tr.active td {
             background-color: var(--bs-success)!important;}
