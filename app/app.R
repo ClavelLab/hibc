@@ -122,6 +122,27 @@ conductor <- Conductor$
 )
 
 
+# Matomo tracking snippet from piwik.cebitec.uni-bielefeld.de
+matomo <- "var _paq = window._paq = window._paq || [];
+/* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+  (function() {
+    var u=\"https://piwik.cebitec.uni-bielefeld.de/\";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '19']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+
+// Event Tracking Code from https://shiny.posit.co/r/articles/improve/usage-metrics/
+$(document).on('shiny:inputchanged', function(event) {
+  if (event.name === 'bins' || event.name === 'col') {
+    _paq.push(['trackEvent', 'input',
+      'updates', event.name, event.value]);
+  }
+});"
+
 thematic_shiny(font = "auto")
 options(spinner.type = 8, spinner.color = "#28a745")
 
@@ -223,7 +244,8 @@ ui <- navbarPage(
     )),
     use_glouton(),
     use_conductor(),
-    tags$script(js)
+    tags$script(js),
+    tags$script(matomo)
   ),
   footer = list(
     column(hr(),
