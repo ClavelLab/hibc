@@ -263,9 +263,6 @@ ui <- navbarPage(
     tags$head(tags$link(rel = "shortcut icon", href = "favicon.ico")),
     column(
       width = 12, align = "center",
-      tags$div(
-        "We are experiencing issues with the selective download of specific genomes or sequences. Please bear with us while we troubleshoot!",
-        class="alert alert-danger"),
       h1(tags$img(src = "hibc.png", height = 80, class = "mx-auto d-none d-md-inline"), "HiBC: Human Intestinal Bacterial Collection")
     ),
     column(
