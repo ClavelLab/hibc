@@ -630,7 +630,12 @@ server <- function(input, output, session) {
   output$taxonomy <- DT::renderDT(
     DT::datatable(
       preview_hibc() %>%
-        select(StrainID, Phylum, Family, Species, `DSM no.`),
+        select(StrainID, Phylum, Family, Species, `StrainInfo doi`) %>% 
+        mutate(`StrainInfo doi` = sapply(`StrainInfo doi`, function(doi){
+          tags$a(href = paste0("https://doi.org/",doi),doi,
+                 target = "_blank", rel = "noopener noreferrer") %>% 
+            as.character()
+        })),
       filter = "top",
       extensions = c("Responsive", "Buttons"),
       selection = list(
@@ -642,9 +647,9 @@ server <- function(input, output, session) {
         dom = "rtBflp",
         buttons =
           list("copy", "csv", "excel")
-      )
+      ), escape = FALSE
     ) %>% formatStyle(columns = "Species", fontStyle = "italic"),
-    server = T
+    server = T, escape = FALSE
   )
 
   # Cultivation table
