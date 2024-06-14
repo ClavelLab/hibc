@@ -162,7 +162,7 @@ if (coscine_genome_read == "" | coscine_genome_secret == "" |
 }
 
 # Load the hibc table
-hibc_data <- read_delim("2023-04-20.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
+hibc_data <- read_delim("2024-06-14.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
   arrange(Species)
 
 
@@ -252,7 +252,7 @@ ui <- navbarPage(
       a(href = "https://hibc.rwth-aachen.de", "HiBC", .noWS = "after"), ".",
       "Copyright",
       a(href = "https://www.ukaachen.de/en/clinics-institutes/institute-of-medical-microbiology/research/ag-clavel/", "AG Clavel"),
-      "(2023)",
+      "(2024)",
       align = "center", width = 12
     )
   ),
@@ -275,14 +275,14 @@ ui <- navbarPage(
           title = "Isolates:",
           value = tags$span(textOutput("no_isolates", inline = T), class = "h2 mb-2"),
           theme_color = "info",
-          p("as of 2023-04-20")
+          p("as of 2024-06-14")
         ),
         value_box(
           showcase = icon("bugs", class = "fa-3x"),
           title = "Species:",
           value = tags$span(textOutput("no_species", inline = T), class = "h2 mb-2"),
           theme_color = "warning",
-          p("as of 2023-04-20")
+          p("as of 2024-06-14")
         )
       ),
       br(),
