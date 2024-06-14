@@ -195,7 +195,7 @@ qual_flags_translation <- c(
 ui <- navbarPage(
   lang = "en",
   title = span(tags$a(
-    href = "https://hibc.otc.coscine.dev/",
+    href = "https://hibc.rwth-aachen.de",
     class = "text-reset text-decoration-none",
     tags$img(src = "hibc.png", height = 40), "HiBC"
   )),
@@ -249,7 +249,7 @@ ui <- navbarPage(
   ),
   footer = list(
     column(hr(),
-      a(href = "https://hibc.otc.coscine.dev/", "HiBC", .noWS = "after"), ".",
+      a(href = "https://hibc.rwth-aachen.de", "HiBC", .noWS = "after"), ".",
       "Copyright",
       a(href = "https://www.ukaachen.de/en/clinics-institutes/institute-of-medical-microbiology/research/ag-clavel/", "AG Clavel"),
       "(2023)",
