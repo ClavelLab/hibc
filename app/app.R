@@ -470,14 +470,14 @@ ui <- navbarPage(
         card(
           height = 500, full_screen = F,
           card_header("Completion and contamination"),
-          card_body_fill(
+          card_body(
             plotlyOutput("plot_compl_contam", height = "400px") %>% withSpinner()
           )
         ),
         card(
           height = 500, full_screen = F,
           card_header("Genome size and assembly fragmentation"),
-          card_body_fill(
+          card_body(
             plotlyOutput("plot_N50_genome_size", height = "400px") %>% withSpinner()
           )
         )
