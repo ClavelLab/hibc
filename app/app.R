@@ -499,8 +499,8 @@ ui <- navbarPage(
         id = "isolate-details", align = "center"
       ),
       h4("Taxonomy"),
-      "The isolate", textOutput("details_dsm_number", inline = T),
-      "belongs to:", uiOutput("details_taxonomy", inline = T),
+      "The isolate", uiOutput("details_straininfo", inline = T),
+      "belongs to:", uiOutput("details_taxonomy", inline = T),tags$br(),tags$br(),
       h4("Cultivation and isolation metadata"),
       layout_column_wrap(
         width = "300px", fill = F,
@@ -773,13 +773,15 @@ server <- function(input, output, session) {
 
   output$md5_genome <- renderText(md5_genome())
 
-  output$details_dsm_number <- renderText({
-    preview_hibc()[input$taxonomy_rows_selected, ] %>%
-      select(StrainID, `DSM no.`) %>%
-      mutate(text = if_else(is.na(`DSM no.`),
-        StrainID, paste0(StrainID, " (DSM", `DSM no.`, ")")
-      )) %>%
-      pull(text)
+  output$details_straininfo <- renderUI({
+    # This function should not be ran before a row is selected.
+    req(input$taxonomy_rows_selected)
+    straininfo <- preview_hibc()[input$taxonomy_rows_selected, ] %>%
+      select(StrainID, `StrainInfo doi`) %>% deframe()
+    tagList(names(straininfo), "(",
+            tags$a(href = paste0("https://doi.org/",straininfo),straininfo,
+             target = "_blank", rel = "noopener noreferrer", .noWS = c("outside")),")"
+    )
   })
   output$details_taxonomy <- renderUI({
     # This function should not be ran before a row is selected.
@@ -787,7 +789,7 @@ server <- function(input, output, session) {
     # Taxonomy information as list
     tax_list <- preview_hibc() %>%
       .[input$taxonomy_rows_selected, ] %>%
-      select(Phylum, Family, Species, `DSM no.`) %>%
+      select(Phylum, Family, Species) %>%
       as.list()
     tags$span(
       tax_list[["Phylum"]], "(Phylum),",
