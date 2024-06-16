@@ -593,12 +593,7 @@ server <- function(input, output, session) {
     conductor$init()$start()
   })
   preview_hibc <- reactive({
-    hibc_data %>%
-      mutate(StrainInfoLink = sapply(`StrainInfo doi`, function(doi){
-        tags$a(href = paste0("https://doi.org/",doi),doi,
-               target = "_blank", rel = "noopener noreferrer") %>%
-          as.character()
-      }))
+    hibc_data
   })
   media <- reactive({
     preview_hibc() %>%
@@ -635,8 +630,12 @@ server <- function(input, output, session) {
   output$taxonomy <- DT::renderDT(
     DT::datatable(
       preview_hibc() %>%
-        select(StrainID, Phylum, Family, Species, StrainInfoLink) %>%
-        rename(`StrainInfo doi`=StrainInfoLink),
+        select(StrainID, Phylum, Family, Species, `StrainInfo doi`) %>% 
+        mutate(`StrainInfo doi` = sapply(`StrainInfo doi`, function(doi){
+          tags$a(href = paste0("https://doi.org/",doi),doi,
+                 target = "_blank", rel = "noopener noreferrer") %>% 
+            as.character()
+        })),
       escape = 1:4,
       filter = "top",
       extensions = c("Responsive", "Buttons"),
