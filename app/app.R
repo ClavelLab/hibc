@@ -636,6 +636,7 @@ server <- function(input, output, session) {
                  target = "_blank", rel = "noopener noreferrer") %>% 
             as.character()
         })),
+      escape = 1:4,
       filter = "top",
       extensions = c("Responsive", "Buttons"),
       selection = list(
@@ -647,9 +648,9 @@ server <- function(input, output, session) {
         dom = "rtBflp",
         buttons =
           list("copy", "csv", "excel")
-      ), escape = FALSE
+      )
     ) %>% formatStyle(columns = "Species", fontStyle = "italic"),
-    server = T, escape = FALSE
+    server = T
   )
 
   # Cultivation table
