@@ -275,14 +275,14 @@ ui <- navbarPage(
           title = "Isolates:",
           value = tags$span(textOutput("no_isolates", inline = T), class = "h2 mb-2"),
           theme_color = "info",
-          p("as of 2024-06-14")
+          p("as of 2024-06-16")
         ),
         value_box(
           showcase = icon("bugs", class = "fa-3x"),
           title = "Species:",
           value = tags$span(textOutput("no_species", inline = T), class = "h2 mb-2"),
           theme_color = "warning",
-          p("as of 2024-06-14")
+          p("as of 2024-06-16")
         )
       ),
       br(),
@@ -903,7 +903,7 @@ server <- function(input, output, session) {
       req(input$taxonomy_rows_selected)
       #
       preview_hibc() %>%
-        select(workflow_version, assembly_date, sequencer, assembly_software) %>%
+        select(workflow_version, assembly_date, sequencing_technology, assembly_software) %>%
         .[input$taxonomy_rows_selected, ] %>%
         t()
     },
@@ -1002,12 +1002,12 @@ server <- function(input, output, session) {
     contentType = "text/plain"
   )
   output$download_metadata <- downloadHandler(
-    filename = "20230420_HiBC_metadata.tsv",
+    filename = "2024-06-16_HiBC_metadata.tsv",
     content = function(file) {
       preview_hibc() %>%
         rename(`Isolation date` = `Date of isolation (JJJJ-MM-DD)`) %>%
         select(
-          StrainID, Phylum, Family, Species, `DSM no.`,
+          StrainID, Phylum, Family, Species, `StrainInfo doi`,
           `Recommended medium for growth`, `Growth atm.`, `Incubation time`, `Risk Group`,
           `Geographic location`, `Host age class`,
           `Sample material`, `Isolation date`,
@@ -1015,10 +1015,10 @@ server <- function(input, output, session) {
           coverage, compl_score, compl_software, contam_score, contam_software,
           genome_length, max_contig_length, N50, number_contig, number_contig_below_1kb,
           plasmid_length, trnas, trna_ext_software,
-          workflow_version, assembly_date, sequencer, assembly_software
+          workflow_version, assembly_date, sequencing_technology, assembly_software
         ) %>%
         relocate(
-          StrainID, Phylum, Family, Species, `DSM no.`,
+          StrainID, Phylum, Family, Species, `StrainInfo doi`,
           `Recommended medium for growth`, `Growth atm.`, `Incubation time`, `Risk Group`,
           `Geographic location`, `Host age class`,
           `Sample material`, `Isolation date`,
@@ -1026,7 +1026,7 @@ server <- function(input, output, session) {
           coverage, compl_score, compl_software, contam_score, contam_software,
           genome_length, max_contig_length, N50, number_contig, number_contig_below_1kb,
           plasmid_length, trnas, trna_ext_software,
-          workflow_version, assembly_date, sequencer, assembly_software
+          workflow_version, assembly_date, sequencing_technology, assembly_software
         ) %>%
         write_tsv(file)
     }, contentType = "text/tsv"
