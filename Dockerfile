@@ -11,6 +11,8 @@ RUN installGithub.r --update FALSE ColinFay/glouton
 RUN mkdir /app/
 
 COPY app/ /app/
+RUN rm /app/.Rprofile
+RUN rm /app/.Renviron
 
 WORKDIR /app/
 
