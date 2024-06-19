@@ -959,8 +959,8 @@ server <- function(input, output, session) {
   })
   sixteen_s_filename <- reactive(
     preview_hibc() %>% .[input$taxonomy_rows_selected, ] %>%
-      str_glue_data("{StrainID}_16S_Sanger.fna") %>%
-      str_replace("CLAKBH481", "CLAKBH48.1")
+      str_glue_data("{StrainID}_16S_Genome.fna") %>%
+      str_remove_all("[- ]")
   )
   output$download_selected_16S <- downloadHandler(
     filename = function() sixteen_s_filename(),
@@ -977,7 +977,7 @@ server <- function(input, output, session) {
       if (isTRUE(does_seq_exists)) {
         existing_sequence <- sixteen_s_filename()
       } else {
-        existing_sequence <- gsub("Sanger", "Genome", sixteen_s_filename())
+        existing_sequence <- gsub("Genome", "Sanger", sixteen_s_filename())
       }
       save_object(
         object = existing_sequence, file = file,
@@ -993,8 +993,7 @@ server <- function(input, output, session) {
   genome_filename <- reactive(
     preview_hibc() %>% .[input$taxonomy_rows_selected, ] %>%
       str_glue_data("{StrainID}.combined.fa.gz") %>%
-      str_replace("Hiso", "H-iso") %>%
-      str_replace("CLAKBH481", "CLAKBH48")
+      str_remove_all("[- ]")
   )
   output$download_genome <- downloadHandler(
     filename = function() genome_filename(),
