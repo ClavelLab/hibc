@@ -944,8 +944,8 @@ server <- function(input, output, session) {
   )
   sixteen_s_filename <- reactive(
     preview_hibc() %>% .[input$taxonomy_rows_selected, ] %>%
-      str_glue_data("{StrainID}_16S_Genome.fna") %>%
-      str_remove_all("[- ]")
+      mutate(StrainID = str_remove_all(StrainID, "[- _]")) %>% 
+      str_glue_data("{StrainID}_16S_Genome.fna")
   )
   output$download_selected_16S <- downloadHandler(
     filename = function() sixteen_s_filename(),
@@ -977,8 +977,8 @@ server <- function(input, output, session) {
   )
   genome_filename <- reactive(
     preview_hibc() %>% .[input$taxonomy_rows_selected, ] %>%
-      str_glue_data("{StrainID}.combined.fa.gz") %>%
-      str_remove_all("[- ]")
+      mutate(StrainID = str_remove_all(StrainID, "[- _]")) %>% 
+      str_glue_data("{StrainID}.combined.fa.gz")
   )
   output$download_genome <- downloadHandler(
     filename = function() genome_filename(),
