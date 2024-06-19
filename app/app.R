@@ -162,7 +162,7 @@ if (coscine_genome_read == "" | coscine_genome_secret == "" |
 }
 
 # Load the hibc table
-hibc_data <- read_delim("2023-04-20.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
+hibc_data <- read_delim("2024-06-19.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
   arrange(Species)
 
 
@@ -195,7 +195,7 @@ qual_flags_translation <- c(
 ui <- navbarPage(
   lang = "en",
   title = span(tags$a(
-    href = "https://hibc.otc.coscine.dev/",
+    href = "https://hibc.rwth-aachen.de",
     class = "text-reset text-decoration-none",
     tags$img(src = "hibc.png", height = 40), "HiBC"
   )),
@@ -215,11 +215,10 @@ ui <- navbarPage(
     tags$head( # Link the font CSS manually as gfonts::use_font() does not work
       tags$link(rel = "stylesheet", type = "text/css", href = "css/atkinson-hyperlegible.css"),
       tags$style(
-        HTML("body {font-family: 'Atkinson Hyperlegible';}"),
-      HTML("
-      .table.dataTable tbody td.active, .table.dataTable tbody tr.active td {
-            background-color: var(--bs-success)!important;}
-      "),
+        HTML("body, p {font-family: 'Atkinson Hyperlegible';}"),
+        HTML("table.dataTable tr.selected td, table.dataTable tr.selected {
+            box-shadow: inset 0 0 0 9999px var(--bs-success) !important;
+          }"),
       HTML("
         .shepherd-title {
           padding-left: 2.5rem
@@ -249,10 +248,10 @@ ui <- navbarPage(
   ),
   footer = list(
     column(hr(),
-      a(href = "https://hibc.otc.coscine.dev/", "HiBC", .noWS = "after"), ".",
+      a(href = "https://hibc.rwth-aachen.de", "HiBC", .noWS = "after"), ".",
       "Copyright",
       a(href = "https://www.ukaachen.de/en/clinics-institutes/institute-of-medical-microbiology/research/ag-clavel/", "AG Clavel"),
-      "(2023)",
+      "(2024)",
       align = "center", width = 12
     )
   ),
@@ -275,14 +274,14 @@ ui <- navbarPage(
           title = "Isolates:",
           value = tags$span(textOutput("no_isolates", inline = T), class = "h2 mb-2"),
           theme_color = "info",
-          p("as of 2023-04-20")
+          p("as of 2024-06-16")
         ),
         value_box(
           showcase = icon("bugs", class = "fa-3x"),
           title = "Species:",
           value = tags$span(textOutput("no_species", inline = T), class = "h2 mb-2"),
           theme_color = "warning",
-          p("as of 2023-04-20")
+          p("as of 2024-06-16")
         )
       ),
       br(),
@@ -351,12 +350,14 @@ ui <- navbarPage(
               card(
                 align = "center",
                 card_header(icon("barcode"), "16S rRNA gene sequences"),
-                a(href = "https://doi.org/10.5281/zenodo.7966230", "Zenodo", target = "_blank"), br(), br(),
+                a(href = "https://doi.org/10.5281/zenodo.7966230", "Zenodo", target = "_blank",
+                  rel = "noopener noreferrer"), br(), br(),
                 tags$button(
                   class = "btn btn-warning",
                   icon("download"),
                   a(
                     class = "text-reset text-decoration-none", target = "_blank",
+                    rel = "noopener noreferrer",
                     href = "https://zenodo.org/record/7966230/files/HiBC_16S_rRNA_gene_sequences_20230524.zip?download=1",
                     "Download"
                   )
@@ -365,12 +366,14 @@ ui <- navbarPage(
               card(
                 align = "center",
                 card_header(icon("dna"), "Genomes sequences"),
-                a(href = "https://doi.org/10.5281/zenodo.7966739", "Zenodo", target = "_blank"), br(), br(),
+                a(href = "https://doi.org/10.5281/zenodo.7966739", "Zenodo", target = "_blank",
+                  rel = "noopener noreferrer"), br(), br(),
                 tags$button(
                   class = "btn btn-warning",
                   icon("download"),
                   a(
                     class = "text-reset text-decoration-none", target = "_blank",
+                    rel = "noopener noreferrer",
                     href = "https://zenodo.org/record/7966739/files/HiBC_Genome_sequences_20230524.zip?download=1",
                     "Download"
                   )
@@ -379,7 +382,8 @@ ui <- navbarPage(
               card(
                 align = "center",
                 card_header(icon("file"), "Isolates and genomes metadata"),
-                a(href = "https://doi.org/10.5281/zenodo.7966674", "Zenodo", target = "_blank"), br(), br(),
+                a(href = "https://doi.org/10.5281/zenodo.7966674", "Zenodo", target = "_blank",
+                  rel = "noopener noreferrer"), br(), br(),
                 downloadButton("download_metadata", class = "btn-warning")
               )
             )
@@ -410,6 +414,11 @@ ui <- navbarPage(
         "Browse through the complete list of the isolates in the table below.",
         "Use the buttons beneath the table to copy or download the", tags$em("displayed"), "values.",
         br(), br(),
+        "The isolates are uniquely identified by a digital object identifier (doi)",
+        "issued by",
+        tags$a(href = "https://straininfo.dsmz.de/", "StrainInfo", target = "_blank", rel = "noopener noreferrer"),
+        "that provides resolution of microbial strain identifiers from different culture collections.",
+        br(),br(),
         "If you want to have more information on a specific isolate,",
         "please select your isolate in the table and click on the button on the right.",
       ),
@@ -470,14 +479,14 @@ ui <- navbarPage(
         card(
           height = 500, full_screen = F,
           card_header("Completion and contamination"),
-          card_body_fill(
+          card_body(
             plotlyOutput("plot_compl_contam", height = "400px") %>% withSpinner()
           )
         ),
         card(
           height = 500, full_screen = F,
           card_header("Genome size and assembly fragmentation"),
-          card_body_fill(
+          card_body(
             plotlyOutput("plot_N50_genome_size", height = "400px") %>% withSpinner()
           )
         )
@@ -499,8 +508,8 @@ ui <- navbarPage(
         id = "isolate-details", align = "center"
       ),
       h4("Taxonomy"),
-      "The isolate", textOutput("details_dsm_number", inline = T),
-      "belongs to:", uiOutput("details_taxonomy", inline = T),
+      "The isolate", uiOutput("details_straininfo", inline = T),
+      "belongs to:", uiOutput("details_taxonomy", inline = T),tags$br(),tags$br(),
       h4("Cultivation and isolation metadata"),
       layout_column_wrap(
         width = "300px", fill = F,
@@ -630,7 +639,13 @@ server <- function(input, output, session) {
   output$taxonomy <- DT::renderDT(
     DT::datatable(
       preview_hibc() %>%
-        select(StrainID, Phylum, Family, Species, `DSM no.`),
+        select(StrainID, Phylum, Family, Species, `StrainInfo doi`) %>% 
+        mutate(`StrainInfo doi` = sapply(`StrainInfo doi`, function(doi){
+          tags$a(href = paste0("https://doi.org/",doi),doi,
+                 target = "_blank", rel = "noopener noreferrer") %>% 
+            as.character()
+        })),
+      escape = 1:4,
       filter = "top",
       extensions = c("Responsive", "Buttons"),
       selection = list(
@@ -761,19 +776,15 @@ server <- function(input, output, session) {
     )
   })
 
-  md5_genome <- reactive({
-    preview_hibc()[input$taxonomy_rows_selected, ] %>% pull("genome_md5")
-  })
-
-  output$md5_genome <- renderText(md5_genome())
-
-  output$details_dsm_number <- renderText({
-    preview_hibc()[input$taxonomy_rows_selected, ] %>%
-      select(StrainID, `DSM no.`) %>%
-      mutate(text = if_else(is.na(`DSM no.`),
-        StrainID, paste0(StrainID, " (DSM", `DSM no.`, ")")
-      )) %>%
-      pull(text)
+  output$details_straininfo <- renderUI({
+    # This function should not be ran before a row is selected.
+    req(input$taxonomy_rows_selected)
+    straininfo <- preview_hibc()[input$taxonomy_rows_selected, ] %>%
+      select(StrainID, `StrainInfo doi`) %>% deframe()
+    tagList(names(straininfo), "(",
+            tags$a(href = paste0("https://doi.org/",straininfo),straininfo,
+             target = "_blank", rel = "noopener noreferrer", .noWS = c("outside")),")"
+    )
   })
   output$details_taxonomy <- renderUI({
     # This function should not be ran before a row is selected.
@@ -781,7 +792,7 @@ server <- function(input, output, session) {
     # Taxonomy information as list
     tax_list <- preview_hibc() %>%
       .[input$taxonomy_rows_selected, ] %>%
-      select(Phylum, Family, Species, `DSM no.`) %>%
+      select(Phylum, Family, Species) %>%
       as.list()
     tags$span(
       tax_list[["Phylum"]], "(Phylum),",
@@ -895,7 +906,7 @@ server <- function(input, output, session) {
       req(input$taxonomy_rows_selected)
       #
       preview_hibc() %>%
-        select(workflow_version, assembly_date, sequencer, assembly_software) %>%
+        select(workflow_version, assembly_date, sequencing_technology, assembly_software) %>%
         .[input$taxonomy_rows_selected, ] %>%
         t()
     },
@@ -931,19 +942,10 @@ server <- function(input, output, session) {
     align = "lr",
     format.args = list(big.mark = " ")
   )
-  output$clip_md5 <- renderUI({
-    rclipButton("btn_clip_md5",
-      label = "Copy Genome md5sum", icon = icon("clipboard"),
-      class = "btn-secondary", clipText = md5_genome()
-    )
-  })
-  observeEvent(input$btn_clip_md5, {
-    showNotification("FASTA md5sum copied", type = "default")
-  })
   sixteen_s_filename <- reactive(
     preview_hibc() %>% .[input$taxonomy_rows_selected, ] %>%
-      str_glue_data("{StrainID}_16S_Sanger.fna") %>%
-      str_replace("CLAKBH481", "CLAKBH48.1")
+      mutate(StrainID = str_remove_all(StrainID, "[- _]")) %>% 
+      str_glue_data("{StrainID}_16S_Genome.fna")
   )
   output$download_selected_16S <- downloadHandler(
     filename = function() sixteen_s_filename(),
@@ -960,7 +962,7 @@ server <- function(input, output, session) {
       if (isTRUE(does_seq_exists)) {
         existing_sequence <- sixteen_s_filename()
       } else {
-        existing_sequence <- gsub("Sanger", "Genome", sixteen_s_filename())
+        existing_sequence <- gsub("Genome", "Sanger", sixteen_s_filename())
       }
       save_object(
         object = existing_sequence, file = file,
@@ -975,9 +977,8 @@ server <- function(input, output, session) {
   )
   genome_filename <- reactive(
     preview_hibc() %>% .[input$taxonomy_rows_selected, ] %>%
-      str_glue_data("{StrainID}.combined.fa.gz") %>%
-      str_replace("Hiso", "H-iso") %>%
-      str_replace("CLAKBH481", "CLAKBH48")
+      mutate(StrainID = str_remove_all(StrainID, "[- _]")) %>% 
+      str_glue_data("{StrainID}.combined.fa.gz")
   )
   output$download_genome <- downloadHandler(
     filename = function() genome_filename(),
@@ -994,12 +995,12 @@ server <- function(input, output, session) {
     contentType = "text/plain"
   )
   output$download_metadata <- downloadHandler(
-    filename = "20230420_HiBC_metadata.tsv",
+    filename = "2024-06-19_HiBC_metadata.tsv",
     content = function(file) {
       preview_hibc() %>%
         rename(`Isolation date` = `Date of isolation (JJJJ-MM-DD)`) %>%
         select(
-          StrainID, Phylum, Family, Species, `DSM no.`,
+          StrainID, Phylum, Family, Species, `StrainInfo doi`,
           `Recommended medium for growth`, `Growth atm.`, `Incubation time`, `Risk Group`,
           `Geographic location`, `Host age class`,
           `Sample material`, `Isolation date`,
@@ -1007,10 +1008,10 @@ server <- function(input, output, session) {
           coverage, compl_score, compl_software, contam_score, contam_software,
           genome_length, max_contig_length, N50, number_contig, number_contig_below_1kb,
           plasmid_length, trnas, trna_ext_software,
-          workflow_version, assembly_date, sequencer, assembly_software
+          workflow_version, assembly_date, sequencing_technology, assembly_software
         ) %>%
         relocate(
-          StrainID, Phylum, Family, Species, `DSM no.`,
+          StrainID, Phylum, Family, Species, `StrainInfo doi`,
           `Recommended medium for growth`, `Growth atm.`, `Incubation time`, `Risk Group`,
           `Geographic location`, `Host age class`,
           `Sample material`, `Isolation date`,
@@ -1018,7 +1019,7 @@ server <- function(input, output, session) {
           coverage, compl_score, compl_software, contam_score, contam_software,
           genome_length, max_contig_length, N50, number_contig, number_contig_below_1kb,
           plasmid_length, trnas, trna_ext_software,
-          workflow_version, assembly_date, sequencer, assembly_software
+          workflow_version, assembly_date, sequencing_technology, assembly_software
         ) %>%
         write_tsv(file)
     }, contentType = "text/tsv"
