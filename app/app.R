@@ -776,12 +776,6 @@ server <- function(input, output, session) {
     )
   })
 
-  md5_genome <- reactive({
-    preview_hibc()[input$taxonomy_rows_selected, ] %>% pull("genome_md5")
-  })
-
-  output$md5_genome <- renderText(md5_genome())
-
   output$details_straininfo <- renderUI({
     # This function should not be ran before a row is selected.
     req(input$taxonomy_rows_selected)
@@ -948,15 +942,6 @@ server <- function(input, output, session) {
     align = "lr",
     format.args = list(big.mark = " ")
   )
-  output$clip_md5 <- renderUI({
-    rclipButton("btn_clip_md5",
-      label = "Copy Genome md5sum", icon = icon("clipboard"),
-      class = "btn-secondary", clipText = md5_genome()
-    )
-  })
-  observeEvent(input$btn_clip_md5, {
-    showNotification("FASTA md5sum copied", type = "default")
-  })
   sixteen_s_filename <- reactive(
     preview_hibc() %>% .[input$taxonomy_rows_selected, ] %>%
       str_glue_data("{StrainID}_16S_Genome.fna") %>%
