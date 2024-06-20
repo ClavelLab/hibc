@@ -353,7 +353,7 @@ ui <- navbarPage(
               card(
                 align = "center",
                 card_header(icon("barcode"), "16S rRNA gene sequences"),
-                a(href = "https://doi.org/10.5281/zenodo.7966230", "Zenodo", target = "_blank",
+                a(href = "https://doi.org/10.5281/zenodo.12180259", "Zenodo", target = "_blank",
                   rel = "noopener noreferrer"), br(), br(),
                 tags$button(
                   class = "btn btn-warning",
@@ -361,7 +361,7 @@ ui <- navbarPage(
                   a(
                     class = "text-reset text-decoration-none", target = "_blank",
                     rel = "noopener noreferrer",
-                    href = "https://zenodo.org/record/7966230/files/HiBC_16S_rRNA_gene_sequences_20230524.zip?download=1",
+                    href = "https://zenodo.org/record/12180259/files/HiBC_16S_rRNA_gene_sequences_20240620.zip?download=1",
                     "Download"
                   )
                 )
@@ -369,7 +369,7 @@ ui <- navbarPage(
               card(
                 align = "center",
                 card_header(icon("dna"), "Genomes sequences"),
-                a(href = "https://doi.org/10.5281/zenodo.7966739", "Zenodo", target = "_blank",
+                a(href = "https://doi.org/10.5281/zenodo.12180083", "Zenodo", target = "_blank",
                   rel = "noopener noreferrer"), br(), br(),
                 tags$button(
                   class = "btn btn-warning",
@@ -377,7 +377,7 @@ ui <- navbarPage(
                   a(
                     class = "text-reset text-decoration-none", target = "_blank",
                     rel = "noopener noreferrer",
-                    href = "https://zenodo.org/record/7966739/files/HiBC_Genome_sequences_20230524.zip?download=1",
+                    href = "https://zenodo.org/record/12180083/files/HiBC_Genome_sequences_20240620.zip?download=1",
                     "Download"
                   )
                 )
@@ -385,7 +385,7 @@ ui <- navbarPage(
               card(
                 align = "center",
                 card_header(icon("file"), "Isolates and genomes metadata"),
-                a(href = "https://doi.org/10.5281/zenodo.7966674", "Zenodo", target = "_blank",
+                a(href = "https://doi.org/10.5281/zenodo.12180506", "Zenodo", target = "_blank",
                   rel = "noopener noreferrer"), br(), br(),
                 downloadButton("download_metadata", class = "btn-warning")
               )
