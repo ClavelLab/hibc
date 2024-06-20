@@ -349,7 +349,7 @@ ui <- navbarPage(
             id = "downloadBulk",
             h2("Get HiBC datasets", align = "center"), br(), br(),
             layout_column_wrap(
-              width = 1 / 3,
+              width = 1 / 2,
               card(
                 align = "center",
                 card_header(icon("barcode"), "16S rRNA gene sequences"),
@@ -378,6 +378,25 @@ ui <- navbarPage(
                     class = "text-reset text-decoration-none", target = "_blank",
                     rel = "noopener noreferrer",
                     href = "https://zenodo.org/records/12180083/files/HiBC_Genome_sequences_20240620.zip?download=1",
+                    "Download"
+                  )
+                )
+              )
+              ),
+            layout_column_wrap(
+              width = 1 / 2,
+              card(
+                align = "center",
+                card_header(icon("circle"), "Plasmids sequences"),
+                a(href = "https://doi.org/10.5281/zenodo.12187897", "Zenodo", target = "_blank",
+                  rel = "noopener noreferrer"), br(), br(),
+                tags$button(
+                  class = "btn btn-warning",
+                  icon("download"),
+                  a(
+                    class = "text-reset text-decoration-none", target = "_blank",
+                    rel = "noopener noreferrer",
+                    href = "https://zenodo.org/records/12187897/files/HiBC_Plasmids_sequences_20240620.zip?download=1",
                     "Download"
                   )
                 )
