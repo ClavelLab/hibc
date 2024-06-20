@@ -219,6 +219,9 @@ ui <- navbarPage(
         HTML("table.dataTable tr.selected td, table.dataTable tr.selected {
             box-shadow: inset 0 0 0 9999px var(--bs-success) !important;
           }"),
+        HTML(".table.dataTable tbody td.active, .table.dataTable tbody tr.active td {
+            background-color: var(--bs-success)!important;
+          }"),
       HTML("
         .shepherd-title {
           padding-left: 2.5rem
