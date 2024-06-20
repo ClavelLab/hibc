@@ -1,7 +1,7 @@
 # Versions pinned as CRAN snapshot as of 2023-01-18
-ARG R_REPOS="https://cran.microsoft.com/snapshot/2023-01-18/"
+ARG R_REPOS="https://packagemanager.posit.co/cran/__linux__/jammy/2024-06-19/"
 
-FROM rocker/shiny-verse:4.2
+FROM rocker/shiny-verse:4.3
 
 RUN install2.r --error --skipinstalled cowplot devtools shiny DT plotly bslib thematic showtext shinycssloaders aws.s3 conductor \
     && rm -Rf /tmp/downloaded_packages
