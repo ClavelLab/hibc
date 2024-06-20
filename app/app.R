@@ -162,7 +162,7 @@ if (coscine_genome_read == "" | coscine_genome_secret == "" |
 }
 
 # Load the hibc table
-hibc_data <- read_delim("2024-06-19.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
+hibc_data <- read_delim("2024-06-20.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
   arrange(Species)
 
 
@@ -995,7 +995,7 @@ server <- function(input, output, session) {
     contentType = "text/plain"
   )
   output$download_metadata <- downloadHandler(
-    filename = "2024-06-19_HiBC_metadata.tsv",
+    filename = "2024-06-20_HiBC_metadata.tsv",
     content = function(file) {
       preview_hibc() %>%
         rename(`Isolation date` = `Date of isolation (JJJJ-MM-DD)`) %>%
