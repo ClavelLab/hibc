@@ -400,7 +400,7 @@ ui <- navbarPage(
             "If you make use of HiBC, please temporarily cite our work as a website in the", a(href = "https://apastyle.apa.org/", "APA style", .noWS = "after"), ":", br(), br(),
             "Thomas C. A. Hitch, Johannes M. Masson, Charlie Pauvert, Johanna Bosch, Afrizal Afrizal, Nicole Treichel, Jonathan Hartman, Lukas C. Bossert and Thomas Clavel",
             "(n.d.).", tags$em("The Human Intestinal Bacterial Collection Website", .noWS = "after"), ".",
-            "Retrieved", format(Sys.Date(), "%b %d, %Y"), "from", a(href = "https://hibc.otc.coscine.dev", "https://hibc.otc.coscine.dev", .noWS = "after"), ".", br(), br(),
+            "Retrieved", format(Sys.Date(), "%b %d, %Y"), "from", a(href = "https://hibc.rwth-aachen.de", "https://hibc.rwth-aachen.de", .noWS = "after"), ".", br(), br(),
             "By downloading any of the HiBC data, you agree", tags$strong("not"), "to submit the data to any public database",
             "(e.g., NCBI, EMBL-EBI) on your behalf or on the behalf of AG Clavel."
           )
