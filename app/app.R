@@ -361,7 +361,7 @@ ui <- navbarPage(
                   a(
                     class = "text-reset text-decoration-none", target = "_blank",
                     rel = "noopener noreferrer",
-                    href = "https://zenodo.org/record/12180259/files/HiBC_16S_rRNA_gene_sequences_20240620.zip?download=1",
+                    href = "https://zenodo.org/records/12180259/files/HiBC_16S_rRNA_gene_sequences_20240620.zip?download=1",
                     "Download"
                   )
                 )
@@ -377,7 +377,7 @@ ui <- navbarPage(
                   a(
                     class = "text-reset text-decoration-none", target = "_blank",
                     rel = "noopener noreferrer",
-                    href = "https://zenodo.org/record/12180083/files/HiBC_Genome_sequences_20240620.zip?download=1",
+                    href = "https://zenodo.org/records/12180083/files/HiBC_Genome_sequences_20240620.zip?download=1",
                     "Download"
                   )
                 )
