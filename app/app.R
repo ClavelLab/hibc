@@ -416,12 +416,15 @@ ui <- navbarPage(
           div(
             id = "disclaimer",
             h2("Disclaimer", align = "center"),
-            "If you make use of HiBC, please temporarily cite our work as a website in the", a(href = "https://apastyle.apa.org/", "APA style", .noWS = "after"), ":", br(), br(),
-            "Thomas C. A. Hitch, Johannes M. Masson, Charlie Pauvert, Johanna Bosch, Afrizal Afrizal, Nicole Treichel, Jonathan Hartman, Lukas C. Bossert and Thomas Clavel",
-            "(n.d.).", tags$em("The Human Intestinal Bacterial Collection Website", .noWS = "after"), ".",
-            "Retrieved", format(Sys.Date(), "%b %d, %Y"), "from", a(href = "https://hibc.rwth-aachen.de", "https://hibc.rwth-aachen.de", .noWS = "after"), ".", br(), br(),
-            "By downloading any of the HiBC data, you agree", tags$strong("not"), "to submit the data to any public database",
-            "(e.g., NCBI, EMBL-EBI) on your behalf or on the behalf of AG Clavel."
+            "If you make use of HiBC, please cite our preprint as follows:", br(), br(),
+            p(style="line-height: 1.35; margin-left: 2em; text-indent:-2em;",
+              HTML("Thomas&nbsp;C.&nbsp;A.&nbsp;Hitch, Johannes&nbsp;M.&nbsp;Masson, Charlie&nbsp;Pauvert, Johanna&nbsp;Bosch, Selina&nbsp;Nüchtern, Nicole&nbsp;Treichel, Marko&nbsp;Baloh, Soheila&nbsp;Razavi, Afrizal&nbsp;Afrizal, Ntana&nbsp;Kousetzi, Andrea&nbsp;M.&nbsp;Aguirre, David&nbsp;Wylensek, Amy&nbsp;Coates, Susan&nbsp;A.&nbsp;V.&nbsp;Jennings, Atscharah&nbsp;Panyot, Alina&nbsp;Viehof, Matthias&nbsp;A.&nbsp;Schmitz, Maximilian&nbsp;Stuhrmann, Evelyn&nbsp;C.&nbsp;Deis, Kevin&nbsp;Bisdorf, Thorsten&nbsp;Cramer, Artur&nbsp;Lissin, Isabel&nbsp;Schober, Julius&nbsp;Witte, Thomas&nbsp;Riedel, Marie&nbsp;Wende, Katrin&nbsp;A.&nbsp;Winter, Alessandra&nbsp;Riva, Stefanie&nbsp;Trinh, Laura&nbsp;Mitchell, Jonathan&nbsp;Hartman, David&nbsp;Berry, Jochen&nbsp;Seitz, Lukas&nbsp;C.&nbsp;Bossert, Thorsten&nbsp;Allers, Till&nbsp;Strowig, Birte&nbsp;Abt, Lorenz&nbsp;C.&nbsp;Reimer, Jörg&nbsp;Overmann, Thomas&nbsp;Clavel"),
+            "(2024).",
+            "\"Broad diversity of human gut bacteria accessible via a traceable strain deposition system\".",
+            tags$em("bioRxiv", .noWS = "after"), ".",
+            "2024.06.20.599854. doi: ",
+            a(href = "https://doi.org/10.1101/2024.06.20.599854", "10.1101/2024.06.20.599854", .noWS = "after")
+            )
           )
         )
       )
