@@ -347,12 +347,13 @@ ui <- navbarPage(
           "community for better research data production and management."
         )
       ),
+      br(),
       fluidRow(
         column(
           width = 6,
           div(
             id = "downloadBulk",
-            h2("Get HiBC datasets", align = "center"), br(), br(),
+            h2("Get HiBC datasets", align = "center"),
             layout_column_wrap(
               width = 1 / 2,
               card(
@@ -422,7 +423,7 @@ ui <- navbarPage(
             id = "disclaimer",
             h2("Disclaimer", align = "center"),
             "If you make use of HiBC, please cite our preprint as follows:", br(), br(),
-            p(style="line-height: 1.35; margin-left: 2em; text-indent:-2em;",
+            p(style="margin-left: 2em; text-indent:-2em;",
               HTML("Thomas&nbsp;C.&nbsp;A.&nbsp;Hitch, Johannes&nbsp;M.&nbsp;Masson, Charlie&nbsp;Pauvert, Johanna&nbsp;Bosch, Selina&nbsp;Nüchtern, Nicole&nbsp;Treichel, Marko&nbsp;Baloh, Soheila&nbsp;Razavi, Afrizal&nbsp;Afrizal, Ntana&nbsp;Kousetzi, Andrea&nbsp;M.&nbsp;Aguirre, David&nbsp;Wylensek, Amy&nbsp;Coates, Susan&nbsp;A.&nbsp;V.&nbsp;Jennings, Atscharah&nbsp;Panyot, Alina&nbsp;Viehof, Matthias&nbsp;A.&nbsp;Schmitz, Maximilian&nbsp;Stuhrmann, Evelyn&nbsp;C.&nbsp;Deis, Kevin&nbsp;Bisdorf, Thorsten&nbsp;Cramer, Artur&nbsp;Lissin, Isabel&nbsp;Schober, Julius&nbsp;Witte, Thomas&nbsp;Riedel, Marie&nbsp;Wende, Katrin&nbsp;A.&nbsp;Winter, Alessandra&nbsp;Riva, Stefanie&nbsp;Trinh, Laura&nbsp;Mitchell, Jonathan&nbsp;Hartman, David&nbsp;Berry, Jochen&nbsp;Seitz, Lukas&nbsp;C.&nbsp;Bossert, Thorsten&nbsp;Allers, Till&nbsp;Strowig, Birte&nbsp;Abt, Lorenz&nbsp;C.&nbsp;Reimer, Jörg&nbsp;Overmann, Thomas&nbsp;Clavel"),
             "(2024).",
             "\"Broad diversity of human gut bacteria accessible via a traceable strain deposition system\".",
