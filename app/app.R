@@ -324,11 +324,16 @@ ui <- navbarPage(
         column(
           width = 6,
           h2("Strain availability", align = "center"),
-          "We strive to have our strains deposited in international collections and corresponding collection",
-          "numbers are provided whenever available. However, due to chronic underfunding of culture collections,",
-          "this is a continuous process and updates will be released whenever relevant.",
-          "In the case of strains not yet available, we do our best to provide our strains on request,",
-          "without guarantee of time due to the difficulty of funding staff for service purposes.",
+          "All isolates have been deposited at the DSMZ under the bulk-submission system proposed in",
+          a(href="https://doi.org/10.1101/2024.06.20.599854", "Hitch et al (2024)",.noWS = "after"),
+          ". As such, each isolate has received a",
+          a(href="https://straininfo.dsmz.de/", "StrainInfo DOI"),
+          "which can be used to monitor the 'Strain status', which confirms the current stage of deposition.",
+          "Once available, the DSMZ will assign a DSM number to the isolate and it can be requested.",
+          "Type strains for novel taxa described at part of this, or previous work, are also available",
+          "in at least one additional collection. Please check the StrainInfo link of the isolate of interest",
+          "to find further details. For further inquires regarding strain availability, please contact",
+          a( href="https://www.ukaachen.de/en/clinics-institutes/institute-of-medical-microbiology/research/ag-clavel/","AG Clavel.")
         ),
         column(
           width = 6,
