@@ -243,7 +243,9 @@ ui <- navbarPage(
         .shepherd-button-secondary {
           background-color: #17a2b8 ;
         }")
-    )),
+    ),
+    tags$script(type="application/ld+json",src = "Bioschemas_DataCatalog.jsonld")
+    ),
     use_glouton(),
     use_conductor(),
     tags$script(js),

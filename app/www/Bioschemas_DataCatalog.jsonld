@@ -1,0 +1,242 @@
+{
+  "@context": "https://schema.org",
+  "@id": "https://hibc.rwth-aachen.de/",
+  "@type": "DataCatalog",
+  "alternateName": "HiBC",
+  "dct:conformsTo": "https://bioschemas.org/profiles/DataCatalog/0.3-RELEASE-2019_07_01",
+  "description": "The Human intestinal Bacterial Collection (HiBC) is a collection of bacterial strains, isolated from the human gut for which 16S rRNA gene sequences, genome sequences and culture conditions are made available to the research community",
+  "keywords": [
+    "gut microbiome",
+    "anaerobe",
+    "human intestine",
+    "bacteria",
+    "genomes",
+    "plasmids",
+    "16S rRNA gene",
+    "bacterial collection"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "name": "Human Intestinal Bacterial Collection",
+  "provider": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://www.wikidata.org/wiki/Q99534506",
+      "name": "NFDI4Microbiota",
+      "url": "https://nfdi4microbiota.de/"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://ror.org/02gm5zw39",
+      "name": "University Hospital Aachen",
+      "url": "http://www.ukaachen.de/"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://ror.org/04xfq0f34",
+      "name": "RWTH Aachen University",
+      "url": "https://www.rwth-aachen.de"
+    }
+  ],
+  "url": "https://hibc.rwth-aachen.de/",
+  "sameAs": "https://hibc.otc.coscine.dev/",
+  "inLanguage": "en",
+  "citation": {
+    "@type": "ScholarlyArticle",
+    "headline": "Broad diversity of human gut bacteria accessible via a traceable strain deposition system",
+    "identifier": "https://doi.org/10.1101/2024.06.20.599854",
+    "datePublished": "2024-06-20"
+  },
+  "dataset": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "@id": "HiBC-I_Genomes",
+      "dct:conformsTo": "https://bioschemas.org/profiles/Dataset/1.0-RELEASE",
+      "description": "Genome sequences of bacterial strains isolated from the human gut",
+      "identifier": "DOI:10.5281/zenodo.12180083",
+      "keywords": [
+        {
+          "@type": "DefinedTerm",
+          "@id": " http://edamontology.org/topic_3301",
+          "name": "Microbiology"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "http://edamontology.org/topic_0622",
+          "name": "Genomics"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "http://edamontology.org/data_3494",
+          "name": "DNA sequences"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "http://edamontology.org/format_1929",
+          "name": "FASTA"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "http://purl.obolibrary.org/obo/SO_0001026",
+          "name": "genome"
+        }
+      ],
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/",
+        "@type": "CreativeWork"
+      },
+      "name": "Human intestinal Bacterial Collection (HiBC): Genome sequences",
+      "url": "https://doi.org/10.5281/zenodo.12180083",
+      "datePublished": "2024-06-20"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "@id": "HiBC-I_16S_rRNA",
+      "dct:conformsTo": "https://bioschemas.org/profiles/Dataset/1.0-RELEASE",
+      "description": "16S rRNA gene sequences of bacterial strains isolated from the human gut",
+      "identifier": "DOI:10.5281/zenodo.12180259",
+      "keywords": [
+        {
+          "@type": "DefinedTerm",
+          "@id": " http://edamontology.org/topic_3301",
+          "name": "Microbiology"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "http://edamontology.org/topic_0622",
+          "name": "Genomics"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "http://edamontology.org/data_3494",
+          "name": "DNA sequences"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "http://edamontology.org/format_1929",
+          "name": "FASTA"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "http://purl.obolibrary.org/obo/SO_0002237",
+          "name": "cytosolic_rRNA_16S_gene"
+        }
+      ],
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/",
+        "@type": "CreativeWork"
+      },
+      "name": "Human intestinal Bacterial Collection (HiBC): 16S rRNA gene sequences",
+      "url": "https://doi.org/10.5281/zenodo.12180259",
+      "datePublished": "2024-06-20"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "@id": "HiBC-I_Plasmids",
+      "dct:conformsTo": "https://bioschemas.org/profiles/Dataset/1.0-RELEASE",
+      "description": "Plasmids sequences of bacterial strains isolated from the human gut",
+      "identifier": "DOI:10.5281/zenodo.12187897",
+      "keywords": [
+        {
+          "@type": "DefinedTerm",
+          "@id": " http://edamontology.org/topic_3301",
+          "name": "Microbiology"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "http://edamontology.org/topic_0622",
+          "name": "Genomics"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "http://edamontology.org/data_3494",
+          "name": "DNA sequences"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "http://edamontology.org/format_1929",
+          "name": "FASTA"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "http://edamontology.org/topic_0798",
+          "name": "Mobile genetic elements"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "http://purl.obolibrary.org/obo/SO_0000155",
+          "name": "plasmid"
+        }
+      ],
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/",
+        "@type": "CreativeWork"
+      },
+      "name": "Human intestinal Bacterial Collection (HiBC): Plasmids sequences",
+      "url": "https://doi.org/10.5281/zenodo.12187897",
+      "datePublished": "2024-06-20"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "@id": "HiBC-I_Metadata",
+      "dct:conformsTo": "https://bioschemas.org/profiles/Dataset/1.0-RELEASE",
+      "description": "Isolates and genomes metadata of bacterial strains isolated from the human gut",
+      "identifier": "DOI:10.5281/zenodo.12180506",
+      "keywords": [
+        {
+          "@type": "DefinedTerm",
+          "@id": " http://edamontology.org/topic_3301",
+          "name": "Microbiology"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "http://edamontology.org/topic_0622",
+          "name": "Genomics"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "http://edamontology.org/format_3475",
+          "name": "TSV"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "http://edamontology.org/data_3028",
+          "name": "Taxonomy"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "http://edamontology.org/data_2337",
+          "name": "Resource metadata"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "http://edamontology.org/data_3721",
+          "name": "Isolation source"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "http://edamontology.org/data_3724",
+          "name": "Cultivation parameter"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "http://edamontology.org/data_3181",
+          "name": "Sequence assembly report"
+        }
+      ],
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/",
+        "@type": "CreativeWork"
+      },
+      "name": "Human intestinal Bacterial Collection (HiBC): Isolates and genomes metadata",
+      "url": "https://doi.org/10.5281/zenodo.12180506",
+      "datePublished": "2024-06-20"
+    }
+  ]
+}
