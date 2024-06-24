@@ -244,7 +244,7 @@ ui <- navbarPage(
           background-color: #17a2b8 ;
         }")
     ),
-    tags$script(type="application/ld+json",src = "Bioschemas_DataCatalog.jsonld")
+    includeScript(type="application/ld+json","www/Bioschemas_DataCatalog.jsonld"),
     ),
     use_glouton(),
     use_conductor(),
