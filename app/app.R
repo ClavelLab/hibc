@@ -377,7 +377,7 @@ ui <- navbarPage(
               card(
                 align = "center",
                 card_header(icon("dna"), "Genomes sequences"),
-                a(href = "https://doi.org/10.5281/zenodo.12755281", "Zenodo", target = "_blank",
+                a(href = "https://doi.org/10.5281/zenodo.12755497", "Zenodo", target = "_blank",
                   rel = "noopener noreferrer"), br(), br(),
                 tags$button(
                   class = "btn btn-warning",
@@ -385,7 +385,7 @@ ui <- navbarPage(
                   a(
                     class = "text-reset text-decoration-none", target = "_blank",
                     rel = "noopener noreferrer",
-                    href = "https://zenodo.org/records/12755281/files/HiBC_Genome_sequences_20240717.zip?download=1",
+                    href = "https://zenodo.org/records/12755497/files/HiBC_Genome_sequences_20240717.zip?download=1",
                     "Download"
                   )
                 )
