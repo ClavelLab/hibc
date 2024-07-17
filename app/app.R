@@ -377,7 +377,7 @@ ui <- navbarPage(
               card(
                 align = "center",
                 card_header(icon("dna"), "Genomes sequences"),
-                a(href = "https://doi.org/10.5281/zenodo.12180083", "Zenodo", target = "_blank",
+                a(href = "https://doi.org/10.5281/zenodo.12755281", "Zenodo", target = "_blank",
                   rel = "noopener noreferrer"), br(), br(),
                 tags$button(
                   class = "btn btn-warning",
@@ -385,7 +385,7 @@ ui <- navbarPage(
                   a(
                     class = "text-reset text-decoration-none", target = "_blank",
                     rel = "noopener noreferrer",
-                    href = "https://zenodo.org/records/12180083/files/HiBC_Genome_sequences_20240620.zip?download=1",
+                    href = "https://zenodo.org/records/12755281/files/HiBC_Genome_sequences_20240717.zip?download=1",
                     "Download"
                   )
                 )
@@ -412,7 +412,7 @@ ui <- navbarPage(
               card(
                 align = "center",
                 card_header(icon("file"), "Isolates and genomes metadata"),
-                a(href = "https://doi.org/10.5281/zenodo.12180506", "Zenodo", target = "_blank",
+                a(href = "https://doi.org/10.5281/zenodo.12755263", "Zenodo", target = "_blank",
                   rel = "noopener noreferrer"), br(), br(),
                 downloadButton("download_metadata", class = "btn-warning")
               )
@@ -1028,7 +1028,7 @@ server <- function(input, output, session) {
     contentType = "text/plain"
   )
   output$download_metadata <- downloadHandler(
-    filename = "2024-06-20_HiBC_metadata.tsv",
+    filename = "2024-07-17_HiBC_metadata.tsv",
     content = function(file) {
       preview_hibc() %>%
         rename(`Isolation date` = `Date of isolation (JJJJ-MM-DD)`) %>%
