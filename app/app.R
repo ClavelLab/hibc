@@ -162,7 +162,7 @@ if (coscine_genome_read == "" | coscine_genome_secret == "" |
 }
 
 # Load the hibc table
-hibc_data <- read_delim("2024-07-17.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
+hibc_data <- read_delim("2024-11-07.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
   arrange(Species)
 
 
@@ -279,14 +279,14 @@ ui <- navbarPage(
           title = "Isolates:",
           value = tags$span(textOutput("no_isolates", inline = T), class = "h2 mb-2"),
           theme_color = "info",
-          p("as of 2024-06-16")
+          p("as of 2024-07-17")
         ),
         value_box(
           showcase = icon("bugs", class = "fa-3x"),
           title = "Species:",
           value = tags$span(textOutput("no_species", inline = T), class = "h2 mb-2"),
           theme_color = "warning",
-          p("as of 2024-06-16")
+          p("as of 2024-11-07")
         )
       ),
       br(),
@@ -412,7 +412,7 @@ ui <- navbarPage(
               card(
                 align = "center",
                 card_header(icon("file"), "Isolates and genomes metadata"),
-                a(href = "https://doi.org/10.5281/zenodo.12755263", "Zenodo", target = "_blank",
+                a(href = "https://doi.org/10.5281/zenodo.14049995", "Zenodo", target = "_blank",
                   rel = "noopener noreferrer"), br(), br(),
                 downloadButton("download_metadata", class = "btn-warning")
               )
@@ -1028,7 +1028,7 @@ server <- function(input, output, session) {
     contentType = "text/plain"
   )
   output$download_metadata <- downloadHandler(
-    filename = "2024-07-17_HiBC_metadata.tsv",
+    filename = "2024-11-07_HiBC_metadata.tsv",
     content = function(file) {
       preview_hibc() %>%
         rename(`Isolation date` = `Date of isolation (JJJJ-MM-DD)`) %>%
