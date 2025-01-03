@@ -879,7 +879,9 @@ server <- function(input, output, session) {
     req(input$taxonomy_rows_selected)
     #
     assembly_qual <- preview_hibc() %>%
-      .[input$taxonomy_rows_selected, ] %>%
+      .[input$taxonomy_rows_selected, ]
+    accession <- assembly_qual %>% str_glue_data("This genome ({Accession})")
+    assembly_qual <- assembly_qual %>%
       pull("assembly_qual") %>%
       stringr::str_split(., "[:,]") %>%
       unlist() %>%
@@ -887,11 +889,11 @@ server <- function(input, output, session) {
     # Return the adequate statement
     if_else(
       length(assembly_qual) == 1,
-      str_glue("The genome is a high-quality draft"),
+      str_glue("{accession} is a high-quality draft"),
       assembly_qual[-1] %>%
         translate(translator = qual_flags_translation) %>%
         str_flatten_comma() %>%
-        str_glue("The genome could be a high-quality draft but is has: {flags}.",
+        str_glue("{accession} could be a high-quality draft but is has: {flags}.",
           flags = .
         )
     )
