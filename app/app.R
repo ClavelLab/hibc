@@ -162,7 +162,7 @@ if (coscine_genome_read == "" | coscine_genome_secret == "" |
 }
 
 # Load the hibc table
-hibc_data <- read_delim("2024-11-07.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
+hibc_data <- read_delim("2025-01-03.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
   arrange(Species)
 
 
@@ -412,7 +412,7 @@ ui <- navbarPage(
               card(
                 align = "center",
                 card_header(icon("file"), "Isolates and genomes metadata"),
-                a(href = "https://doi.org/10.5281/zenodo.14049995", "Zenodo", target = "_blank",
+                a(href = "https://doi.org/10.5281/zenodo.14592301", "Zenodo", target = "_blank",
                   rel = "noopener noreferrer"), br(), br(),
                 downloadButton("download_metadata", class = "btn-warning")
               )
@@ -712,7 +712,7 @@ server <- function(input, output, session) {
   # Genome table
   output$genome <- DT::renderDT(
     preview_hibc() %>%
-      select(StrainID, genome_length, number_contig, N50, coverage, compl_score, contam_score),
+      select(StrainID, Accession, genome_length, number_contig, N50, coverage, compl_score, contam_score),
     filter = "top",
     extensions = c("Responsive", "Buttons"),
     options = list(
@@ -1028,7 +1028,7 @@ server <- function(input, output, session) {
     contentType = "text/plain"
   )
   output$download_metadata <- downloadHandler(
-    filename = "2024-11-07_HiBC_metadata.tsv",
+    filename = "2025-01-03_HiBC_metadata.tsv",
     content = function(file) {
       preview_hibc() %>%
         rename(`Isolation date` = `Date of isolation (JJJJ-MM-DD)`) %>%
@@ -1037,7 +1037,7 @@ server <- function(input, output, session) {
           `Recommended medium for growth`, `Growth atm.`, `Incubation time`, `Risk Group`,
           `Geographic location`, `Host age class`,
           `Sample material`, `Isolation date`,
-          genome_md5, assembly_qual,
+          Accession, genome_md5, assembly_qual,
           coverage, compl_score, compl_software, contam_score, contam_software,
           genome_length, max_contig_length, N50, number_contig, number_contig_below_1kb,
           plasmid_length, trnas, trna_ext_software,
@@ -1048,7 +1048,7 @@ server <- function(input, output, session) {
           `Recommended medium for growth`, `Growth atm.`, `Incubation time`, `Risk Group`,
           `Geographic location`, `Host age class`,
           `Sample material`, `Isolation date`,
-          genome_md5, assembly_qual,
+          Accession, genome_md5, assembly_qual,
           coverage, compl_score, compl_software, contam_score, contam_software,
           genome_length, max_contig_length, N50, number_contig, number_contig_below_1kb,
           plasmid_length, trnas, trna_ext_software,
