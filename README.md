@@ -4,7 +4,6 @@
 It contains the [R](https://www.r-project.org/) code to generate the website in the form of a [Shiny](https://shiny.posit.co/) interactive application. The application is then build as a [Docker](https://www.docker.com/) container and served online to the public at <https://hibc.rwth-aachen.de>.
 
 
-
 ## Development
 
 Whilst all the code is accessible and pull-requests are welcome, some of the features for the deployment of the shiny application are restricted to RWTH personnel.
@@ -44,3 +43,8 @@ Once the edits and tests are satisfying, the deployment of the website is trigge
 
 
 > Thomas C. A. Hitch, Johannes M. Masson, Charlie Pauvert, Johanna Bosch, Selina Nüchtern, Nicole Treichel, Marko Baloh, Soheila Razavi, Afrizal Afrizal, Ntana Kousetzi, Andrea M. Aguirre, David Wylensek, Amy Coates, Susan A. V. Jennings, Atscharah Panyot, Alina Viehof, Matthias A. Schmitz, Maximilian Stuhrmann, Evelyn C. Deis, Kevin Bisdorf, Thorsten Cramer, Artur Lissin, Isabel Schober, Julius Witte, Thomas Riedel, Marie Wende, Katrin A. Winter, Alessandra Riva, Stefanie Trinh, Laura Mitchell, Jonathan Hartman, David Berry, Jochen Seitz, Lukas C. Bossert, Thorsten Allers, Till Strowig, Birte Abt, Lorenz C. Reimer, Jörg Overmann, Thomas Clavel (2024). "Broad diversity of human gut bacteria accessible via a traceable strain deposition system". *bioRxiv*. 2024.06.20.599854. doi: [10.1101/2024.06.20.599854](https://doi.org/10.1101/2024.06.20.599854)
+
+## Acknowledgements
+
+This work is supported by the NFDI4Microbiota (<https://nfdi4microbiota.de>), a German consortium of the National Research Data Infrastructure that supports and train the microbiology community for better research data production and management. 
+
