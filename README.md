@@ -1,8 +1,27 @@
 # hibc
 
-The Human Intestinal Bacterial Collection
+`hibc` is the code repository for the website of ["Human Intestinal Bacterial Collection"](https://hibc.rwth-aachen.de). 
+It contains the [R](https://www.r-project.org/) code to generate the website in the form of a [Shiny](https://shiny.posit.co/) interactive application. The application is then build as a [Docker](https://www.docker.com/) container and served online to the public at <https://hibc.rwth-aachen.de>.
 
-## Usage
+
+
+## Development
+
+Whilst all the code is accessible and pull-requests are welcome, some of the features for the deployment of the shiny application are restricted to RWTH personnel.
+
+### Create the R project via Rstudio
+
+1. Clone the repository using `git clone https://git.rwth-aachen.de/clavellab/hibc`
+2. Open the Rstudio project in `hibc/app/app.Rproj` to create the `app` project
+3. Rstudio warns you that `One or more packages recorded in the lockfile are not installed` because a couple of R packages and dependencies are needed.
+	1. Install the dependencies by typing `renv::restore()` in the Console and agree to the installation of the packages.
+	2. Check that all dependencies are set by typing `renv::status()` in the Console where you should have `No issues found`
+4. Preview the Shiny app via the "Run app" button or by typing `shiny::runApp()` in the R console.
+
+
+### Build the docker container locally
+
+You can test if the Shiny application is ready for deployment by building the docker container locally.
 
 ```bash
 # build the Dockerfile
@@ -13,29 +32,15 @@ docker run -it -d -p 3838:3838 hibc-shiny
 firefox http://localhost:3838
 ```
 
-## TODO
+### Create a release to trigger the deployment
 
-### Data/metadata
+Once the edits and tests are satisfying, the deployment of the website is triggered by the creation of a tagged release.
 
-- [x] merge the hibc metadata table and the assembly metadata table
-- [ ] have the columns labelled in a machine-readable manner prefixed by categories: `cultivation_` or `genome_`
-- [ ] prepare a translation table/vector from the machine-readable columns to the actual human-readable columns to be used for display
-- [ ] IMPROVEMENT: describe the columns in a schemasheets/linkml metadata model
-- [ ] IMPROVEMENT: display the data using the DataHarmonizer to ease edition/validation 
+1. Tag the git commit using `git tag -a vX.Y.Z` where X, Y and Z follows the <https://semver.org>
+2. Push the tag to the remote with `git push --tags`
+3. Create a Gitlab release using the Releases section or <https://git.rwth-aachen.de/clavellab/hibc/-/releases/new>
 
-### Visualisation
-
-- [x] add an interactive scatter plot (plotly) of contamination-completion
-- [x] add a plot for the distribution of the genome size with N50
-
-### Search
-
-- [x] remove the panel with dropdown menus that is not subsetting anything
-- [x] include the code from the mi-atlas to summarise data on one isolate. This might involve restricting DT table selection to one only.
+## Citation
 
 
-### misc
-
-- ~~[ ] replace the deprecated shinyforms package by mailtoR with a template, especially in the subject. NO TC does not want any request~~
-- [x] name the tab of the website
-- [ ] IMPROVEMENT: link the media to the mediadive website identifier.
+> Thomas C. A. Hitch, Johannes M. Masson, Charlie Pauvert, Johanna Bosch, Selina Nüchtern, Nicole Treichel, Marko Baloh, Soheila Razavi, Afrizal Afrizal, Ntana Kousetzi, Andrea M. Aguirre, David Wylensek, Amy Coates, Susan A. V. Jennings, Atscharah Panyot, Alina Viehof, Matthias A. Schmitz, Maximilian Stuhrmann, Evelyn C. Deis, Kevin Bisdorf, Thorsten Cramer, Artur Lissin, Isabel Schober, Julius Witte, Thomas Riedel, Marie Wende, Katrin A. Winter, Alessandra Riva, Stefanie Trinh, Laura Mitchell, Jonathan Hartman, David Berry, Jochen Seitz, Lukas C. Bossert, Thorsten Allers, Till Strowig, Birte Abt, Lorenz C. Reimer, Jörg Overmann, Thomas Clavel (2024). "Broad diversity of human gut bacteria accessible via a traceable strain deposition system". *bioRxiv*. 2024.06.20.599854. doi: [10.1101/2024.06.20.599854](https://doi.org/10.1101/2024.06.20.599854)
