@@ -4,7 +4,9 @@
   "@type": "DataCatalog",
   "alternateName": "HiBC",
   "dct:conformsTo": "https://bioschemas.org/profiles/DataCatalog/0.3-RELEASE-2019_07_01",
-  "description": "The Human intestinal Bacterial Collection (HiBC) is a collection of bacterial strains, isolated from the human gut for which 16S rRNA gene sequences, genome sequences and culture conditions are made available to the research community",
+  "dateCreated": "2023-01-20",
+  "dateModified": "2025-01-20",
+  "description": "The Human intestinal Bacteria Collection (HiBC) is a collection of bacterial strains, isolated from the human gut for which 16S rRNA gene sequences, genome sequences and culture conditions are made available to the research community",
   "keywords": [
     "gut microbiome",
     "anaerobe",
@@ -16,7 +18,7 @@
     "bacterial collection"
   ],
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "name": "Human Intestinal Bacterial Collection",
+  "name": "Human Intestinal Bacteria Collection",
   "provider": [
     {
       "@context": "https://schema.org",
@@ -88,7 +90,7 @@
         "@id": "https://creativecommons.org/licenses/by/4.0/",
         "@type": "CreativeWork"
       },
-      "name": "Human intestinal Bacterial Collection (HiBC): Genome sequences",
+      "name": "Human intestinal Bacteria Collection (HiBC): Genome sequences",
       "url": "https://doi.org/10.5281/zenodo.12180083",
       "datePublished": "2024-06-20"
     },
@@ -130,7 +132,7 @@
         "@id": "https://creativecommons.org/licenses/by/4.0/",
         "@type": "CreativeWork"
       },
-      "name": "Human intestinal Bacterial Collection (HiBC): 16S rRNA gene sequences",
+      "name": "Human intestinal Bacteria Collection (HiBC): 16S rRNA gene sequences",
       "url": "https://doi.org/10.5281/zenodo.12180259",
       "datePublished": "2024-06-20"
     },
@@ -177,7 +179,7 @@
         "@id": "https://creativecommons.org/licenses/by/4.0/",
         "@type": "CreativeWork"
       },
-      "name": "Human intestinal Bacterial Collection (HiBC): Plasmids sequences",
+      "name": "Human intestinal Bacteria Collection (HiBC): Plasmids sequences",
       "url": "https://doi.org/10.5281/zenodo.12187897",
       "datePublished": "2024-06-20"
     },
@@ -234,7 +236,7 @@
         "@id": "https://creativecommons.org/licenses/by/4.0/",
         "@type": "CreativeWork"
       },
-      "name": "Human intestinal Bacterial Collection (HiBC): Isolates and genomes metadata",
+      "name": "Human intestinal Bacteria Collection (HiBC): Isolates and genomes metadata",
       "url": "https://doi.org/10.5281/zenodo.12180506",
       "datePublished": "2024-06-20"
     }

@@ -199,7 +199,7 @@ ui <- navbarPage(
     class = "text-reset text-decoration-none",
     tags$img(src = "hibc.png", height = 40), "HiBC"
   )),
-  windowTitle = "HiBC: Human Intestinal Bacterial Collection",
+  windowTitle = "HiBC: Human Intestinal Bacteria Collection",
   theme = bs_theme(
     version = 5,
     bootswatch = "litera",
@@ -267,7 +267,7 @@ ui <- navbarPage(
     tags$head(tags$link(rel = "shortcut icon", href = "favicon.ico")),
     column(
       width = 12, align = "center",
-      h1(tags$img(src = "hibc.png", height = 80, class = "mx-auto d-none d-md-inline"), "HiBC: Human Intestinal Bacterial Collection")
+      h1(tags$img(src = "hibc.png", height = 80, class = "mx-auto d-none d-md-inline"), "HiBC: Human Intestinal Bacteria Collection")
     ),
     column(
       width = 8, offset = 2,
@@ -294,7 +294,7 @@ ui <- navbarPage(
         column(
           width = 6,
           h2("About HiBC", align = "center"),
-          "The Human intestinal Bacterial Collection (HiBC) is a collection of bacterial strains,",
+          "The Human intestinal Bacteria Collection (HiBC) is a collection of bacterial strains,",
           "isolated from the human gut for which 16S rRNA gene sequences, genome sequences and culture",
           "conditions are made available to the research community.",
           "In addition to previously described bacteria, we include strains that represent novel species",

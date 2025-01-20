@@ -1,6 +1,6 @@
 # hibc
 
-`hibc` is the code repository for the website of ["Human Intestinal Bacterial Collection"](https://hibc.rwth-aachen.de). 
+`hibc` is the code repository for the website of ["Human Intestinal Bacteria Collection"](https://hibc.rwth-aachen.de). 
 It contains the [R](https://www.r-project.org/) code to generate the website in the form of a [Shiny](https://shiny.posit.co/) interactive application. The application is then build as a [Docker](https://www.docker.com/) container and served online to the public at <https://hibc.rwth-aachen.de>.
 
 
