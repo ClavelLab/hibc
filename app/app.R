@@ -162,7 +162,7 @@ if (coscine_genome_read == "" | coscine_genome_secret == "" |
 }
 
 # Load the hibc table
-hibc_data <- read_delim("2025-03-31.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
+hibc_data <- read_delim("2025-04-25.Merged_HiBC.tsv", delim = "\t", show_col_types = FALSE) %>%
   arrange(Species)
 
 
@@ -412,7 +412,7 @@ ui <- navbarPage(
               card(
                 align = "center",
                 card_header(icon("file"), "Isolates and genomes metadata"),
-                a(href = "https://doi.org/10.5281/zenodo.15114289", "Zenodo", target = "_blank",
+                a(href = "https://doi.org/10.5281/zenodo.15282166", "Zenodo", target = "_blank",
                   rel = "noopener noreferrer"), br(), br(),
                 downloadButton("download_metadata", class = "btn-warning")
               )
@@ -1030,7 +1030,7 @@ server <- function(input, output, session) {
     contentType = "text/plain"
   )
   output$download_metadata <- downloadHandler(
-    filename = "2025-03-31_HiBC_metadata.tsv",
+    filename = "2025-04-25_HiBC_metadata.tsv",
     content = function(file) {
       preview_hibc() %>%
         rename(`Isolation date` = `Date of isolation (JJJJ-MM-DD)`) %>%
