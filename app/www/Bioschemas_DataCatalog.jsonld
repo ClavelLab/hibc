@@ -5,7 +5,7 @@
   "alternateName": "HiBC",
   "dct:conformsTo": "https://bioschemas.org/profiles/DataCatalog/0.3-RELEASE-2019_07_01",
   "dateCreated": "2023-01-20",
-  "dateModified": "2025-01-20",
+  "dateModified": "2025-05-07",
   "description": "The Human intestinal Bacteria Collection (HiBC) is a collection of bacterial strains, isolated from the human gut for which 16S rRNA gene sequences, genome sequences and culture conditions are made available to the research community",
   "keywords": [
     "gut microbiome",
@@ -45,12 +45,20 @@
   "url": "https://hibc.rwth-aachen.de/",
   "sameAs": "https://hibc.otc.coscine.dev/",
   "inLanguage": "en",
-  "citation": {
-    "@type": "ScholarlyArticle",
-    "headline": "Broad diversity of human gut bacteria accessible via a traceable strain deposition system",
-    "identifier": "https://doi.org/10.1101/2024.06.20.599854",
-    "datePublished": "2024-06-20"
-  },
+  "citation": [
+    {
+        "@type": "ScholarlyArticle",
+        "headline": "HiBC: a publicly available collection of bacterial strains isolated from the human gut",
+        "identifier": "https://doi.org/10.1038/s41467-025-59229-9",
+        "datePublished": "2025-05-06"
+    },
+    {
+        "@type": "ScholarlyArticle",
+        "headline": "Broad diversity of human gut bacteria accessible via a traceable strain deposition system",
+        "identifier": "https://doi.org/10.1101/2024.06.20.599854",
+        "datePublished": "2024-06-20"
+    }
+  ],
   "dataset": [
     {
       "@context": "https://schema.org",
