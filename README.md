@@ -41,8 +41,7 @@ Once the edits and tests are satisfying, the deployment of the website is trigge
 
 ## Citation
 
-
-> Thomas C. A. Hitch, Johannes M. Masson, Charlie Pauvert, Johanna Bosch, Selina Nüchtern, Nicole Treichel, Marko Baloh, Soheila Razavi, Afrizal Afrizal, Ntana Kousetzi, Andrea M. Aguirre, David Wylensek, Amy Coates, Susan A. V. Jennings, Atscharah Panyot, Alina Viehof, Matthias A. Schmitz, Maximilian Stuhrmann, Evelyn C. Deis, Kevin Bisdorf, Thorsten Cramer, Artur Lissin, Isabel Schober, Julius Witte, Thomas Riedel, Marie Wende, Katrin A. Winter, Alessandra Riva, Stefanie Trinh, Laura Mitchell, Jonathan Hartman, David Berry, Jochen Seitz, Lukas C. Bossert, Thorsten Allers, Till Strowig, Birte Abt, Lorenz C. Reimer, Jörg Overmann, Thomas Clavel (2024). "Broad diversity of human gut bacteria accessible via a traceable strain deposition system". *bioRxiv*. 2024.06.20.599854. doi: [10.1101/2024.06.20.599854](https://doi.org/10.1101/2024.06.20.599854)
+> Hitch, T.C.A., Masson, J.M., Pauvert, C., Bosch, J., Nüchtern, S., Treichel, N.S., Baloh, M., Razavi, S., Afrizal, A., Kousetzi, N., Aguirre, A.M., Wylensek, D., Coates, A.C., Jennings, S.A.V., Panyot, A., Viehof, A., Schmitz, M.A., Stuhrmann, M., Deis, E.C., Bisdorf, K., Chiotelli, M.D., Lissin, A., Schober, I., Witte, J., Cramer, T., Riedel, T., Wende, M., Winter, K.A., Amend, L., Riva, A., Trinh, S., Mitchell, L., Hartman, J., Berry, D., Seitz, J., Bossert, L.C., Grognot, M., Allers, T., Strowig, T., Pester, M., Abt, B., Reimer, L.C., Overmann, J., Clavel, T., 2025. HiBC: a publicly available collection of bacterial strains isolated from the human gut. *Nat Commun* 16, 4203. <https://doi.org/10.1038/s41467-025-59229-9>
 
 ## Acknowledgements
 

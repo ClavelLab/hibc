@@ -327,7 +327,7 @@ ui <- navbarPage(
           width = 6,
           h2("Strain availability", align = "center"),
           "All isolates have been deposited at the DSMZ under the bulk-submission system proposed in",
-          a(href="https://doi.org/10.1101/2024.06.20.599854", "Hitch et al (2024)",.noWS = "after"),
+          a(href=" https://doi.org/10.1038/s41467-025-59229-9", "Hitch et al (2025)",.noWS = "after"),
           ". As such, each isolate has received a",
           a(href="https://straininfo.dsmz.de/", "StrainInfo DOI"),
           "which can be used to monitor the 'Strain status', which confirms the current stage of deposition.",
@@ -423,15 +423,12 @@ ui <- navbarPage(
           width = 6,
           div(
             id = "disclaimer",
-            h2("Disclaimer", align = "center"),
-            "If you make use of HiBC, please cite our preprint as follows:", br(), br(),
-            p(style="margin-left: 2em; text-indent:-2em;",
-              HTML("Thomas&nbsp;C.&nbsp;A.&nbsp;Hitch, Johannes&nbsp;M.&nbsp;Masson, Charlie&nbsp;Pauvert, Johanna&nbsp;Bosch, Selina&nbsp;Nüchtern, Nicole&nbsp;Treichel, Marko&nbsp;Baloh, Soheila&nbsp;Razavi, Afrizal&nbsp;Afrizal, Ntana&nbsp;Kousetzi, Andrea&nbsp;M.&nbsp;Aguirre, David&nbsp;Wylensek, Amy&nbsp;Coates, Susan&nbsp;A.&nbsp;V.&nbsp;Jennings, Atscharah&nbsp;Panyot, Alina&nbsp;Viehof, Matthias&nbsp;A.&nbsp;Schmitz, Maximilian&nbsp;Stuhrmann, Evelyn&nbsp;C.&nbsp;Deis, Kevin&nbsp;Bisdorf, Thorsten&nbsp;Cramer, Artur&nbsp;Lissin, Isabel&nbsp;Schober, Julius&nbsp;Witte, Thomas&nbsp;Riedel, Marie&nbsp;Wende, Katrin&nbsp;A.&nbsp;Winter, Alessandra&nbsp;Riva, Stefanie&nbsp;Trinh, Laura&nbsp;Mitchell, Jonathan&nbsp;Hartman, David&nbsp;Berry, Jochen&nbsp;Seitz, Lukas&nbsp;C.&nbsp;Bossert, Thorsten&nbsp;Allers, Till&nbsp;Strowig, Birte&nbsp;Abt, Lorenz&nbsp;C.&nbsp;Reimer, Jörg&nbsp;Overmann, Thomas&nbsp;Clavel"),
-            "(2024).",
-            "\"Broad diversity of human gut bacteria accessible via a traceable strain deposition system\".",
-            tags$em("bioRxiv", .noWS = "after"), ".",
-            "2024.06.20.599854. doi: ",
-            a(href = "https://doi.org/10.1101/2024.06.20.599854", "10.1101/2024.06.20.599854", .noWS = "after")
+            h2("Citation", align = "center"),
+            "If you make use of HiBC, please cite the corresponding paper:", br(), br(),
+            p(
+              "Hitch, T.C.A., Masson, J.M., Pauvert, C., Bosch, J., Nüchtern, S., Treichel, N.S., Baloh, M., Razavi, S., Afrizal, A., Kousetzi, N., Aguirre, A.M., Wylensek, D., Coates, A.C., Jennings, S.A.V., Panyot, A., Viehof, A., Schmitz, M.A., Stuhrmann, M., Deis, E.C., Bisdorf, K., Chiotelli, M.D., Lissin, A., Schober, I., Witte, J., Cramer, T., Riedel, T., Wende, M., Winter, K.A., Amend, L., Riva, A., Trinh, S., Mitchell, L., Hartman, J., Berry, D., Seitz, J., Bossert, L.C., Grognot, M., Allers, T., Strowig, T., Pester, M., Abt, B., Reimer, L.C., Overmann, J., Clavel, T., 2025. HiBC: a publicly available collection of bacterial strains isolated from the human gut.",
+            tags$em("Nat Commun"), "16, 4203.",
+            a(href = "https://doi.org/10.1038/s41467-025-59229-9", "https://doi.org/10.1038/s41467-025-59229-9", .noWS = "after")
             )
           )
         )
